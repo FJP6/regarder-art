@@ -1,11 +1,18 @@
-REGARDER L’ART — STATISTIQUES
+AJOUT DE PAOLO UCCELLO — REGARDER L’ART
 
-1. Décompresser cette archive.
-2. Dans le dépôt fjp6/regarder-art, ajouter les fichiers HTML à la racine et analytics.js dans assets/ (en conservant les dossiers). Remplacer les fichiers correspondants.
-3. Valider les modifications et attendre la publication GitHub Pages.
-4. Ouvrir https://regarder-art.fr/ et accepter les statistiques pour le test.
-5. Dans Google Analytics, ouvrir le rapport Temps réel pour vérifier sa propre visite. Si un bloqueur empêche Analytics, effectuer le test sans ce bloqueur.
+Installation
+1. Décompresser ce ZIP.
+2. Dans le dépôt fjp6/regarder-art, ajouter les neuf fichiers HTML et sitemap.xml à la racine, en remplaçant les fichiers existants.
+3. Ajouter le dossier assets/images/uccello/ et ses trois images, en conservant cette arborescence.
+4. Valider les modifications et attendre la publication GitHub Pages.
+5. Ouvrir https://regarder-art.fr/uccello.html (rafraîchir si nécessaire).
 
-Le bouton « Préférences de statistiques » permet de changer le choix. Google Analytics ne charge qu’après accord. Les visites refusées ne sont pas comptées. Les statistiques démarrent après cette installation : elles ne reconstituent pas les visites passées.
+La fiche reprend la démo validée : biographie, Un regard singulier, Hawkwood, panneau du Louvre, Saint Georges et le Dragon, calques par étapes et zooms.
 
-Identifiant : G-WGG4K867X7
+Mises à jour : liste des artistes et filtre Peinture ; trois thèmes du parcours Renaissance ; parcours Peinture ; lieux à Florence, Paris et Londres ; crédits ; liens réciproques avec Alberti, Masaccio et Donatello ; sitemap ; titre, description, URL canonique, métadonnées de partage et données structurées de la nouvelle fiche.
+
+Le menu de l’accueil est repris sur la nouvelle fiche. Les menus des autres pages sont conservés. Le script assets/analytics.js déjà installé est référencé sur toutes les pages livrées ; son contenu et le choix de consentement sont conservés.
+
+Vérifications : nouveaux liens, ancres et fichiers images ; images identiques aux reproductions sources ; syntaxe des scripts ; fonctionnement des étapes, retours à l’œuvre seule et zooms ; sitemap sans doublon. Règles responsives présentes pour les petits écrans. Le rendu visuel en navigateur mobile n’a pas pu être vérifié ici : contrôler le menu, les calques et les zooms sur téléphone après publication.
+
+Aucune photo supplémentaire n’est nécessaire. Les trois reproductions et leurs crédits sont inclus. Les images ne sont pas générées par IA.
