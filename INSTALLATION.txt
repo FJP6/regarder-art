@@ -1,0 +1,11 @@
+REGARDER L’ART — STATISTIQUES
+
+1. Décompresser cette archive.
+2. Dans le dépôt fjp6/regarder-art, ajouter les fichiers HTML à la racine et analytics.js dans assets/ (en conservant les dossiers). Remplacer les fichiers correspondants.
+3. Valider les modifications et attendre la publication GitHub Pages.
+4. Ouvrir https://regarder-art.fr/ et accepter les statistiques pour le test.
+5. Dans Google Analytics, ouvrir le rapport Temps réel pour vérifier sa propre visite. Si un bloqueur empêche Analytics, effectuer le test sans ce bloqueur.
+
+Le bouton « Préférences de statistiques » permet de changer le choix. Google Analytics ne charge qu’après accord. Les visites refusées ne sont pas comptées. Les statistiques démarrent après cette installation : elles ne reconstituent pas les visites passées.
+
+Identifiant : G-WGG4K867X7
