@@ -1,10 +1,15 @@
-PAGE ARTISTES — VERSION VALIDÉE
+HARMONISATION VALIDÉE — MASACCIO ET PIERO
 
-Dans le dépôt GitHub regarder-art, remplacez uniquement artistes.html à la racine par le fichier fourni.
-Les images et assets/analytics.js sont déjà présents dans le site : aucun autre fichier du site n’est à remplacer.
-INSTALLATION.txt est une notice, elle ne doit pas être publiée.
+Dans le dépôt GitHub regarder-art, remplacez à la racine :
+- masaccio.html
+- piero-della-francesca.html
 
-Après la publication, actualisez la page artistes.html et vérifiez la recherche, les disciplines, le tri et l’affichage sur téléphone.
-La page conserve les neuf fiches, leurs illustrations, le menu et les statistiques avec le consentement existant.
+Aucun autre fichier du site n’est à remplacer. Les images et assets/analytics.js existent déjà.
+INSTALLATION.txt est une notice : ne la publiez pas.
 
-Pour ajouter une future fiche, ajoutez son entrée dans la liste artists et actualisez les cartes HTML initiales ainsi que les données structurées. Les compteurs et filtres sont calculés automatiquement.
+Présentation commune : Tahoma, navigation dans la fiche, espacement resserré, tableaux associés aux descriptions dans la section de reconnaissance, zoom +/− et vue d’ensemble.
+Palettes distinctes ; analyses et images conservées. Piero conserve les traits rouges, les détails ciblés et les revers des portraits.
+Statistiques avec le consentement existant et métadonnées de référencement conservées.
+
+Après publication, actualisez les deux pages et testez sur téléphone. La vérification visuelle en navigateur mobile n’a pas été effectuée ici.
+Les mentions de crédits encore à préciser dans Masaccio sont conservées comme dans la fiche fournie.
