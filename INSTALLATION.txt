@@ -1,13 +1,10 @@
-NOUVELLE PAGE LIEUX & MUSÉES — REGARDER L’ART
+PAGE ARTISTES — VERSION VALIDÉE
 
-Base : dernière version du dépôt, 50c94f8, 12 octobre 2026.
+Dans le dépôt GitHub regarder-art, remplacez uniquement artistes.html à la racine par le fichier fourni.
+Les images et assets/analytics.js sont déjà présents dans le site : aucun autre fichier du site n’est à remplacer.
+INSTALLATION.txt est une notice, elle ne doit pas être publiée.
 
-Remplacez uniquement lieux.html à la racine du dépôt GitHub. Aucun dossier d’images ni autre page ne doit être remplacé.
+Après la publication, actualisez la page artistes.html et vérifiez la recherche, les disciplines, le tri et l’affichage sur téléphone.
+La page conserve les neuf fiches, leurs illustrations, le menu et les statistiques avec le consentement existant.
 
-La version validée comprend la recherche, les filtres Ville et Artiste, les accès rapides aux villes, les lieux à déplier et les zooms avec crédits. Le bouton Taille originale est retiré.
-
-Les 39 entrées et leurs sources sont conservées. Santa Maria Novella est regroupée dans un seul lieu. Les filtres et les regroupements sont générés automatiquement à partir de la liste des œuvres de cette page. Le menu actuel et le script de statistiques existant sont conservés.
-
-Les entrées sont aussi présentes dans le HTML initial pour rester lisibles sans JavaScript et accessibles aux moteurs de recherche. Les images existantes du site sont réutilisées.
-
-Vérifications : liens et images présents dans le dépôt, recherche sans accents, filtres combinés, résultat vide, réinitialisation, crédits et zoom par clic ou clavier. La mise en page est adaptée aux petits écrans dans le code ; le rendu visuel sur téléphone reste à vérifier après import.
+Pour ajouter une future fiche, ajoutez son entrée dans la liste artists et actualisez les cartes HTML initiales ainsi que les données structurées. Les compteurs et filtres sont calculés automatiquement.
