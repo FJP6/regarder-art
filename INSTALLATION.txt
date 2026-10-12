@@ -1,20 +1,17 @@
-UCCELLO — VERSION FRANÇAISE ET ANGLAISE POUR LE SITE
+PIERO ET MASACCIO — VERSION ANGLAISE POUR LE SITE
 
-Ajoutez les fichiers dans GitHub en conservant leurs chemins :
-- uccello.html : remplace la fiche française.
-- en/uccello.html : nouvelle fiche anglaise, dans le dossier en.
-- assets/analytics.js : remplace le script existant, avec consentement affiché selon la langue.
-- sitemap.xml : remplace le sitemap, avec la page anglaise et les correspondances FR/EN.
+Ajoutez ou remplacez les fichiers suivants dans GitHub, en conservant les dossiers :
+- masaccio.html et piero-della-francesca.html : présentations validées avec le sélecteur FR | EN.
+- en/masaccio.html et en/piero-della-francesca.html : nouvelles fiches anglaises.
+- en/uccello.html : met à jour les liens vers les fiches anglaises de Masaccio et Piero.
+- assets/analytics.js : même script bilingue livré avec Uccello ; identifiant et consentement conservés.
+- sitemap.xml : conserve les pages et déclare les correspondances FR/EN des trois artistes.
 
-INSTALLATION.txt est une notice, elle ne doit pas être publiée.
+La fiche française d’Uccello n’est pas remplacée. Ce ZIP complète la livraison Uccello FR/EN déjà fournie.
+Aucune image à remplacer : les six fiches partagent les fichiers existants.
+INSTALLATION.txt est une notice, ne la publiez pas.
 
-Les images existantes sont partagées et ne sont pas à remplacer. Les autres fiches ne sont pas modifiées. Le sélecteur FR | EN conserve l’ancre de la section lors du changement de langue.
+Les textes, analyses interactives, légendes et zooms sont traduits. Les sources conservent leurs liens authentiques. Les autres rubriques ouvrent encore le site français ; les ressources audio françaises sont indiquées comme telles.
 
-Adresses après publication :
-https://regarder-art.fr/uccello.html
-https://regarder-art.fr/en/uccello.html
-
-La version anglaise indique que les autres pages du site sont encore en français. Les zooms, repères colorés, sources et crédits sont conservés.
-Le script conserve l’identifiant G-WGG4K867X7 et les mêmes choix et règles de consentement.
-
-Après publication, actualisez les deux pages et testez FR/EN et les zooms sur téléphone. Les contrôles structurels et fonctionnels ont été effectués ; le rendu visuel sur téléphone reste à contrôler.
+Après publication, actualisez les pages. Vérifiez FR | EN, les passerelles entre les trois artistes et les zooms sur téléphone. Le rendu visuel mobile reste à contrôler.
+Les mentions de crédits encore à préciser sur Masaccio ont été conservées et traduites.
