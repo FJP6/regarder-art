@@ -2,6 +2,7 @@
 (function () {
   'use strict';
   const measurementId = 'G-WGG4K867X7';
+  const isEnglish = (document.documentElement?.lang || 'fr').toLowerCase().startsWith('en');
   if (!/^G-[A-Z0-9]+$/.test(measurementId)) return;
   const storageKey = 'regarder-art-statistiques-v1';
   const maxAge = 180 * 24 * 60 * 60 * 1000;
@@ -58,12 +59,12 @@
     const panel = document.createElement('section');
     panel.id = 'ra-stat-choice';
     panel.setAttribute('aria-labelledby', 'ra-stat-heading');
-    panel.innerHTML = '<h2 id="ra-stat-heading">Statistiques de fréquentation</h2><p>Acceptez-vous les cookies de Google Analytics pour mesurer les visites, les pages consultées et la provenance des visites ? Ces statistiques sont réservées à l’auteur du site. Vous pouvez refuser et changer votre choix à tout moment. <a href="https://policies.google.com/privacy?hl=fr" target="_blank" rel="noopener noreferrer">Confidentialité chez Google</a>.</p><div class="ra-stat-actions"><button type="button" data-choice="refused">Refuser</button><button type="button" data-choice="accepted">Accepter</button></div>';
+    panel.innerHTML = isEnglish ? "<h2 id=\"ra-stat-heading\">Visitor statistics</h2><p>Do you accept Google Analytics cookies to measure visits, pages viewed and where visits come from? These statistics are private to the site author. You can refuse and change your choice at any time. <a href=\"https://policies.google.com/privacy?hl=en\" target=\"_blank\" rel=\"noopener noreferrer\">Google privacy policy</a>.</p><div class=\"ra-stat-actions\"><button type=\"button\" data-choice=\"refused\">Decline</button><button type=\"button\" data-choice=\"accepted\">Accept</button></div>" : '<h2 id="ra-stat-heading">Statistiques de fréquentation</h2><p>Acceptez-vous les cookies de Google Analytics pour mesurer les visites, les pages consultées et la provenance des visites ? Ces statistiques sont réservées à l’auteur du site. Vous pouvez refuser et changer votre choix à tout moment. <a href="https://policies.google.com/privacy?hl=fr" target="_blank" rel="noopener noreferrer">Confidentialité chez Google</a>.</p><div class="ra-stat-actions"><button type="button" data-choice="refused">Refuser</button><button type="button" data-choice="accepted">Accepter</button></div>';
     panel.hidden = currentChoice !== null;
     const settings = document.createElement('button');
     settings.id = 'ra-stat-settings';
     settings.type = 'button';
-    settings.textContent = 'Préférences de statistiques';
+    settings.textContent = isEnglish ? 'Statistics preferences' : 'Préférences de statistiques';
     settings.setAttribute('aria-controls', panel.id);
     settings.setAttribute('aria-expanded', String(!panel.hidden));
     settings.addEventListener('click', function () { panel.hidden = !panel.hidden; settings.setAttribute('aria-expanded', String(!panel.hidden)); if (!panel.hidden) panel.querySelector('button').focus(); });

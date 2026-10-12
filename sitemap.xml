@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://regarder-art.fr/</loc>
@@ -52,6 +52,6 @@
     <loc>https://regarder-art.fr/donatello.html</loc>
   </url>
   <url><loc>https://regarder-art.fr/alberti.html</loc></url>
-  <url><loc>https://regarder-art.fr/uccello.html</loc><lastmod>2026-10-12</lastmod></url>
+  <url><loc>https://regarder-art.fr/uccello.html</loc><lastmod>2026-10-12</lastmod><xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="fr" href="https://regarder-art.fr/uccello.html"/><xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="en" href="https://regarder-art.fr/en/uccello.html"/><xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="x-default" href="https://regarder-art.fr/uccello.html"/></url>
   <url><loc>https://regarder-art.fr/piero-della-francesca.html</loc><lastmod>2026-10-12</lastmod></url>
-</urlset>
+<url><loc>https://regarder-art.fr/en/uccello.html</loc><lastmod>2026-10-12</lastmod><xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="fr" href="https://regarder-art.fr/uccello.html"/><xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="en" href="https://regarder-art.fr/en/uccello.html"/><xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="x-default" href="https://regarder-art.fr/uccello.html"/></url></urlset>

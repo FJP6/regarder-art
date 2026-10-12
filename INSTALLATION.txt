@@ -1,15 +1,20 @@
-HARMONISATION VALIDÉE — MASACCIO ET PIERO
+UCCELLO — VERSION FRANÇAISE ET ANGLAISE POUR LE SITE
 
-Dans le dépôt GitHub regarder-art, remplacez à la racine :
-- masaccio.html
-- piero-della-francesca.html
+Ajoutez les fichiers dans GitHub en conservant leurs chemins :
+- uccello.html : remplace la fiche française.
+- en/uccello.html : nouvelle fiche anglaise, dans le dossier en.
+- assets/analytics.js : remplace le script existant, avec consentement affiché selon la langue.
+- sitemap.xml : remplace le sitemap, avec la page anglaise et les correspondances FR/EN.
 
-Aucun autre fichier du site n’est à remplacer. Les images et assets/analytics.js existent déjà.
-INSTALLATION.txt est une notice : ne la publiez pas.
+INSTALLATION.txt est une notice, elle ne doit pas être publiée.
 
-Présentation commune : Tahoma, navigation dans la fiche, espacement resserré, tableaux associés aux descriptions dans la section de reconnaissance, zoom +/− et vue d’ensemble.
-Palettes distinctes ; analyses et images conservées. Piero conserve les traits rouges, les détails ciblés et les revers des portraits.
-Statistiques avec le consentement existant et métadonnées de référencement conservées.
+Les images existantes sont partagées et ne sont pas à remplacer. Les autres fiches ne sont pas modifiées. Le sélecteur FR | EN conserve l’ancre de la section lors du changement de langue.
 
-Après publication, actualisez les deux pages et testez sur téléphone. La vérification visuelle en navigateur mobile n’a pas été effectuée ici.
-Les mentions de crédits encore à préciser dans Masaccio sont conservées comme dans la fiche fournie.
+Adresses après publication :
+https://regarder-art.fr/uccello.html
+https://regarder-art.fr/en/uccello.html
+
+La version anglaise indique que les autres pages du site sont encore en français. Les zooms, repères colorés, sources et crédits sont conservés.
+Le script conserve l’identifiant G-WGG4K867X7 et les mêmes choix et règles de consentement.
+
+Après publication, actualisez les deux pages et testez FR/EN et les zooms sur téléphone. Les contrôles structurels et fonctionnels ont été effectués ; le rendu visuel sur téléphone reste à contrôler.
