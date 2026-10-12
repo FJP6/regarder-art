@@ -1,18 +1,12 @@
-AJOUT DE PAOLO UCCELLO — REGARDER L’ART
+CORRECTIONS UCCELLO — 12 octobre 2026
 
-Installation
-1. Décompresser ce ZIP.
-2. Dans le dépôt fjp6/regarder-art, ajouter les neuf fichiers HTML et sitemap.xml à la racine, en remplaçant les fichiers existants.
-3. Ajouter le dossier assets/images/uccello/ et ses trois images, en conservant cette arborescence.
-4. Valider les modifications et attendre la publication GitHub Pages.
-5. Ouvrir https://regarder-art.fr/uccello.html (rafraîchir si nécessaire).
+Remplacez uniquement uccello.html à la racine du dépôt GitHub par le fichier fourni. Aucun dossier d’images ni autre page ne doit être remplacé.
 
-La fiche reprend la démo validée : biographie, Un regard singulier, Hawkwood, panneau du Louvre, Saint Georges et le Dragon, calques par étapes et zooms.
+Base : dernière version du site, dd359ac, comprenant Piero della Francesca.
 
-Mises à jour : liste des artistes et filtre Peinture ; trois thèmes du parcours Renaissance ; parcours Peinture ; lieux à Florence, Paris et Londres ; crédits ; liens réciproques avec Alberti, Masaccio et Donatello ; sitemap ; titre, description, URL canonique, métadonnées de partage et données structurées de la nouvelle fiche.
+Modifications :
+- Pour aller plus loin, les trois Batailles de San Romano : après la section 3 consacrée au dragon.
+- Agrandissement par clic sur chacune des six images, ou par Entrée/Espace au clavier ; boutons Agrandir l’œuvre retirés.
+- Légende des couleurs sous la bataille retirée.
 
-Le menu de l’accueil est repris sur la nouvelle fiche. Les menus des autres pages sont conservés. Le script assets/analytics.js déjà installé est référencé sur toutes les pages livrées ; son contenu et le choix de consentement sont conservés.
-
-Vérifications : nouveaux liens, ancres et fichiers images ; images identiques aux reproductions sources ; syntaxe des scripts ; fonctionnement des étapes, retours à l’œuvre seule et zooms ; sitemap sans doublon. Règles responsives présentes pour les petits écrans. Le rendu visuel en navigateur mobile n’a pas pu être vérifié ici : contrôler le menu, les calques et les zooms sur téléphone après publication.
-
-Aucune photo supplémentaire n’est nécessaire. Les trois reproductions et leurs crédits sont inclus. Les images ne sont pas générées par IA.
+Les images, repères, analyses, sources, menu et statistiques sont conservés.
