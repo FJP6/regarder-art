@@ -1,17 +1,15 @@
-PIERO ET MASACCIO — VERSION ANGLAISE POUR LE SITE
+HARMONISATION VALIDÉE — MASACCIO ET PIERO
 
-Ajoutez ou remplacez les fichiers suivants dans GitHub, en conservant les dossiers :
-- masaccio.html et piero-della-francesca.html : présentations validées avec le sélecteur FR | EN.
-- en/masaccio.html et en/piero-della-francesca.html : nouvelles fiches anglaises.
-- en/uccello.html : met à jour les liens vers les fiches anglaises de Masaccio et Piero.
-- assets/analytics.js : même script bilingue livré avec Uccello ; identifiant et consentement conservés.
-- sitemap.xml : conserve les pages et déclare les correspondances FR/EN des trois artistes.
+Dans le dépôt GitHub regarder-art, remplacez à la racine :
+- masaccio.html
+- piero-della-francesca.html
 
-La fiche française d’Uccello n’est pas remplacée. Ce ZIP complète la livraison Uccello FR/EN déjà fournie.
-Aucune image à remplacer : les six fiches partagent les fichiers existants.
-INSTALLATION.txt est une notice, ne la publiez pas.
+Aucun autre fichier du site n’est à remplacer. Les images et assets/analytics.js existent déjà.
+INSTALLATION.txt est une notice : ne la publiez pas.
 
-Les textes, analyses interactives, légendes et zooms sont traduits. Les sources conservent leurs liens authentiques. Les autres rubriques ouvrent encore le site français ; les ressources audio françaises sont indiquées comme telles.
+Présentation commune : Tahoma, navigation dans la fiche, espacement resserré, tableaux associés aux descriptions dans la section de reconnaissance, zoom +/− et vue d’ensemble.
+Palettes distinctes ; analyses et images conservées. Piero conserve les traits rouges, les détails ciblés et les revers des portraits.
+Statistiques avec le consentement existant et métadonnées de référencement conservées.
 
-Après publication, actualisez les pages. Vérifiez FR | EN, les passerelles entre les trois artistes et les zooms sur téléphone. Le rendu visuel mobile reste à contrôler.
-Les mentions de crédits encore à préciser sur Masaccio ont été conservées et traduites.
+Après publication, actualisez les deux pages et testez sur téléphone. La vérification visuelle en navigateur mobile n’a pas été effectuée ici.
+Les mentions de crédits encore à préciser dans Masaccio sont conservées comme dans la fiche fournie.
