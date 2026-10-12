@@ -1,7 +1,13 @@
-CORRECTION PIERO DELLA FRANCESCA — ZOOM PAR CLIC
+NOUVELLE PAGE LIEUX & MUSÉES — REGARDER L’ART
 
-Remplacez uniquement piero-della-francesca.html à la racine du dépôt GitHub.
+Base : dernière version du dépôt, 50c94f8, 12 octobre 2026.
 
-Les boutons Agrandir l’œuvre ont été retirés. Les tableaux s’agrandissent par clic, y compris dans les comparaisons et la section Reconnaître Piero. Entrée/Espace fonctionnent aussi au clavier.
+Remplacez uniquement lieux.html à la racine du dépôt GitHub. Aucun dossier d’images ni autre page ne doit être remplacé.
 
-Les zooms ciblés des détails, les repères rouges, les revers des portraits, les analyses, le menu et les statistiques sont conservés. Les images ne sont pas modifiées.
+La version validée comprend la recherche, les filtres Ville et Artiste, les accès rapides aux villes, les lieux à déplier et les zooms avec crédits. Le bouton Taille originale est retiré.
+
+Les 39 entrées et leurs sources sont conservées. Santa Maria Novella est regroupée dans un seul lieu. Les filtres et les regroupements sont générés automatiquement à partir de la liste des œuvres de cette page. Le menu actuel et le script de statistiques existant sont conservés.
+
+Les entrées sont aussi présentes dans le HTML initial pour rester lisibles sans JavaScript et accessibles aux moteurs de recherche. Les images existantes du site sont réutilisées.
+
+Vérifications : liens et images présents dans le dépôt, recherche sans accents, filtres combinés, résultat vide, réinitialisation, crédits et zoom par clic ou clavier. La mise en page est adaptée aux petits écrans dans le code ; le rendu visuel sur téléphone reste à vérifier après import.
