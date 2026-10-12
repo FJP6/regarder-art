@@ -1,10 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="fr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
 <title>Contact — Regarder l’Art</title>
-<meta name="description" content="Contacter Regarder l’Art.">
+<meta content="Contacter Regarder l’Art." name="description"/>
 <style>
 :root{--navy:#123d61;--red:#a7282e;--cream:#f7f3ea;--paper:#fffdf8;--line:#d9d2c5;--ink:#18334b;--muted:#65727c}
 *{box-sizing:border-box} body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.55}
@@ -19,22 +20,36 @@ button{margin-top:22px;border:0;border-radius:999px;background:var(--red);color:
 .help{font-size:.9rem;color:var(--muted);margin-top:16px} footer{margin-top:60px;background:var(--navy);color:#fff;padding:28px 0} footer a{color:#fff}
 @media(max-width:720px){.links{display:none}}
 </style>
-<script src="assets/analytics.js" defer></script></head>
-<body>
-<header><nav class="wrap"><a class="brand" href="index.html">REGARDER L’ART</a>
-<div class="links"><a href="artistes.html">Artistes</a><a href="parcours.html#aube">À l’aube de la Renaissance</a><a href="parcours.html">Parcours</a><a href="lieux.html">Lieux & musées</a><a href="hors-parcours.html">Hors parcours</a><a href="a-propos.html">À propos</a><a href="contact.html">Contact</a></div></nav></header>
+<script defer="" src="assets/analytics.js"></script><style>
+/* Regarder l'Art: unified navigation and editorial typography */
+.ra-site-header{position:relative!important;z-index:1000!important;background:#102d4b!important;color:#fff!important;width:100%!important;box-sizing:border-box!important;font-family:Tahoma,Arial,sans-serif!important}
+.ra-site-header .ra-nav{box-sizing:border-box!important;max-width:1280px!important;width:100%!important;margin:0 auto!important;padding:15px 22px!important;display:flex!important;align-items:center!important;justify-content:space-between!important;gap:18px!important;flex-wrap:wrap!important;background:transparent!important;min-height:68px!important}
+.ra-site-header .ra-brand{font-size:17px!important;letter-spacing:.08em!important;font-weight:700!important;white-space:nowrap!important;color:#fff!important;text-decoration:none!important}
+.ra-site-header .ra-links{display:flex!important;flex-wrap:wrap!important;align-items:center!important;gap:17px!important;flex:1!important;justify-content:center!important}
+.ra-site-header .ra-links a{font-family:Tahoma,Arial,sans-serif!important;color:#f3f5f8!important;text-decoration:none!important;font-size:13px!important;font-weight:400!important;white-space:nowrap!important;opacity:1!important}
+.ra-site-header .ra-links a:hover,.ra-site-header .ra-links a:focus-visible{text-decoration:underline!important}
+.ra-site-header .ra-languages{display:flex!important;align-items:center!important;gap:5px!important;flex-shrink:0!important}
+.ra-site-header .ra-languages a{display:inline-flex!important;align-items:center!important;justify-content:center!important;min-width:34px!important;height:31px!important;box-sizing:border-box!important;padding:5px 8px!important;border:1px solid #d2dbe4!important;border-radius:5px!important;background:transparent!important;color:#fff!important;font-family:Tahoma,Arial,sans-serif!important;font-size:12px!important;font-weight:700!important;text-decoration:none!important;cursor:pointer!important;pointer-events:auto!important;position:relative!important;z-index:1001!important}
+.ra-site-header .ra-languages a[aria-current="page"]{background:#fff!important;color:#102d4b!important}
+.ra-site-header .ra-languages a:hover{outline:2px solid #fff!important;outline-offset:2px!important}
+@media(max-width:850px){.ra-site-header .ra-nav{justify-content:center!important;padding:12px!important}.ra-site-header .ra-links{order:3!important;flex-basis:100%!important;gap:12px!important}.ra-site-header .ra-links a{font-size:12px!important}}
+/* Common heading family, without overriding artists' intentionally distinct accent colors */
+body h1,body h2,body h3{font-family:Tahoma,Arial,sans-serif!important}
+</style></head>
+<body><header class="ra-site-header"><nav aria-label="Navigation principale" class="ra-nav"><a class="ra-brand" href="index.html">REGARDER L’ART</a><div class="ra-links"><a href="parcours.html">Parcours</a><a href="artistes.html">Artistes</a><a href="lieux.html">Lieux &amp; musées</a><a href="ressources.html">Écouter &amp; regarder</a><a href="hors-parcours.html">Carnets de visites</a><a href="a-propos.html">À propos</a></div><div aria-label="Language / Langue" class="ra-languages"><a aria-current="page" href="contact.html" lang="fr">FR</a><a href="en/index.html" lang="en">EN</a></div></nav></header>
+
 <main><div class="wrap">
 <div class="kicker">Écrire</div><h1>Contact</h1>
 <p class="lead">Une remarque, une correction ou simplement envie d’échanger autour d’une œuvre ? Vous pouvez m’écrire ici.</p>
 <div class="card">
 <form action="https://formspree.io/f/mqpekonq" method="POST">
-<label for="name">Nom</label><input id="name" name="name" type="text" autocomplete="name" required>
-<label for="email">Adresse e-mail</label><input id="email" name="email" type="email" autocomplete="email" required>
-<label for="message">Message</label><textarea id="message" name="message" required></textarea>
-<input type="hidden" name="_subject" value="Nouveau message — Regarder l’Art">
+<label for="name">Nom</label><input autocomplete="name" id="name" name="name" required="" type="text"/>
+<label for="email">Adresse e-mail</label><input autocomplete="email" id="email" name="email" required="" type="email"/>
+<label for="message">Message</label><textarea id="message" name="message" required=""></textarea>
+<input name="_subject" type="hidden" value="Nouveau message — Regarder l’Art"/>
 <button type="submit">Envoyer le message</button>
 <p class="help">Votre adresse e-mail est utilisée uniquement pour pouvoir vous répondre.</p>
 </form>
 </div></div></main>
-<footer><div class="wrap">REGARDER L’ART — Comprendre ce que l’on voit · <a href="credits.html">Sources & crédits</a></div></footer>
+<footer><div class="wrap">REGARDER L’ART — Comprendre ce que l’on voit · <a href="credits.html">Sources &amp; crédits</a></div></footer>
 </body></html>
