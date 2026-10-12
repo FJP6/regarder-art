@@ -1,0 +1,13 @@
+MISE À JOUR PAOLO UCCELLO — REGARDER L’ART
+
+Base : dépôt fjp6/regarder-art, main c893453, 12 octobre 2026.
+
+Copiez le contenu de ce ZIP à la racine du dépôt, en conservant le dossier assets et ses sous-dossiers. Remplacez les fichiers de même nom. Ne supprimez pas les autres fichiers du site.
+
+La fiche Uccello était déjà reliée aux artistes, aux thèmes et aux fiches Alberti, Masaccio et Donatello : ces liens ont été contrôlés et sont conservés. Ce ZIP actualise la fiche, les images, les lieux, les crédits et la date du sitemap.
+
+Les statistiques utilisent le script existant G-WGG4K867X7, avec son choix de consentement.
+
+Les œuvres sont intactes. Les repères sont des calques masquables. Le panneau de Florence est une photographie CC0 de Gleb Simonov.
+
+Vérifications : images, ancres, liens locaux sur la version combinée, scripts et interactions. La mise en page mobile a été contrôlée dans le code ; le rendu visuel sur téléphone reste à tester après import.
