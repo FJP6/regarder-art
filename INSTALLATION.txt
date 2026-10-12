@@ -1,12 +1,7 @@
-CORRECTIONS UCCELLO — 12 octobre 2026
+CORRECTION PIERO DELLA FRANCESCA — ZOOM PAR CLIC
 
-Remplacez uniquement uccello.html à la racine du dépôt GitHub par le fichier fourni. Aucun dossier d’images ni autre page ne doit être remplacé.
+Remplacez uniquement piero-della-francesca.html à la racine du dépôt GitHub.
 
-Base : dernière version du site, dd359ac, comprenant Piero della Francesca.
+Les boutons Agrandir l’œuvre ont été retirés. Les tableaux s’agrandissent par clic, y compris dans les comparaisons et la section Reconnaître Piero. Entrée/Espace fonctionnent aussi au clavier.
 
-Modifications :
-- Pour aller plus loin, les trois Batailles de San Romano : après la section 3 consacrée au dragon.
-- Agrandissement par clic sur chacune des six images, ou par Entrée/Espace au clavier ; boutons Agrandir l’œuvre retirés.
-- Légende des couleurs sous la bataille retirée.
-
-Les images, repères, analyses, sources, menu et statistiques sont conservés.
+Les zooms ciblés des détails, les repères rouges, les revers des portraits, les analyses, le menu et les statistiques sont conservés. Les images ne sont pas modifiées.
