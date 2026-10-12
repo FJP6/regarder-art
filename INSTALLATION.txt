@@ -1,15 +1,16 @@
-HARMONISATION VALIDÉE — MASACCIO ET PIERO
+CIMABUE ET GIOTTO — PAGES VALIDÉES EN FRANÇAIS ET EN ANGLAIS
 
-Dans le dépôt GitHub regarder-art, remplacez à la racine :
-- masaccio.html
-- piero-della-francesca.html
+Ajoutez ou remplacez dans GitHub en conservant les dossiers :
+- cimabue.html et giotto.html : fiches françaises harmonisées et sélecteur FR | EN.
+- en/cimabue.html et en/giotto.html : nouvelles fiches anglaises.
+- sitemap.xml : les pages existantes sont conservées ; les deux fiches anglaises et leurs correspondances sont ajoutées.
+- assets/analytics.js : copie inchangée du script actuel, avec consentement bilingue et identifiant G-WGG4K867X7.
 
-Aucun autre fichier du site n’est à remplacer. Les images et assets/analytics.js existent déjà.
-INSTALLATION.txt est une notice : ne la publiez pas.
+INSTALLATION.txt est une notice, ne la publiez pas.
+Aucune image à remplacer. Les autres fiches restent inchangées.
 
-Présentation commune : Tahoma, navigation dans la fiche, espacement resserré, tableaux associés aux descriptions dans la section de reconnaissance, zoom +/− et vue d’ensemble.
-Palettes distinctes ; analyses et images conservées. Piero conserve les traits rouges, les détails ciblés et les revers des portraits.
-Statistiques avec le consentement existant et métadonnées de référencement conservées.
+Cimabue conserve les grandes images avec les pastilles et textes à côté et la phrase de synthèse validée. Giotto conserve les deux baisers, la comparaison des crucifix et ses repères biographiques à ouvrir.
+Textes, descriptions, légendes des zooms et crédits sont traduits. Les liens entre artistes traduits restent en anglais. Les autres rubriques sont signalées comme françaises.
 
-Après publication, actualisez les deux pages et testez sur téléphone. La vérification visuelle en navigateur mobile n’a pas été effectuée ici.
-Les mentions de crédits encore à préciser dans Masaccio sont conservées comme dans la fiche fournie.
+Après publication, actualisez les pages et testez FR | EN et les zooms sur téléphone. Les scripts et les liens sont vérifiés ; le rendu visuel mobile reste à contrôler.
+Les incertitudes de la fiche d’origine, notamment l’attribution et la localisation de la Flagellation de Cimabue, sont conservées.
