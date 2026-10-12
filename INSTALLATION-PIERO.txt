@@ -1,0 +1,24 @@
+AJOUT PIERO DELLA FRANCESCA — REGARDER L’ART
+
+Base : dernière version du dépôt fjp6/regarder-art, main 032db17, 12 octobre 2026. Les changements Uccello précédents sont conservés.
+
+INSTALLATION
+1. Décompressez le ZIP.
+2. Ajoutez son contenu à la racine du dépôt GitHub. Conservez le dossier assets et ses sous-dossiers.
+3. Remplacez les fichiers de même nom, sans supprimer les autres fichiers du site.
+4. Validez l’ajout des fichiers, puis attendez la publication GitHub Pages.
+
+NOUVELLE PAGE : piero-della-francesca.html
+La fiche comprend cinq œuvres : Baptême, Flagellation, Résurrection, Sainte Conversation et portraits des Montefeltro, avec leurs revers.
+En quelques mots : portrait court de sa peinture. Repères rouges fins, zooms généraux et ciblés, retournement des portraits, comparaison du duc, reconnaître Piero, sources et crédits.
+
+MISES À JOUR
+Artistes et filtre peinture ; parcours et quatre thèmes ; parcours peinture ; lieux et musées ; crédits ; ressources ; passerelles réciproques depuis Uccello, Masaccio, Fra Angelico et Alberti ; sitemap et référencement de la nouvelle fiche.
+Menu existant conservé. Script Google Analytics existant G-WGG4K867X7 et choix de consentement conservés.
+
+VÉRIFICATIONS
+Les six reproductions ont été conservées à l’identique. Les liens et ancres locaux ont été vérifiés sur l’ensemble formé par le dépôt et cette mise à jour. Les scripts, étapes de lecture, zooms ciblés et revers ont été contrôlés. Les interactions Uccello restent inchangées.
+La mise en page mobile a été contrôlée dans le code : colonnes adaptées, images intégrales, menu et commandes repliables. Le rendu visuel sur téléphone reste à tester après import.
+L’écoute des contenus Radio France dépend de leur disponibilité sur la plateforme ; la lecture audio n’a pas pu être testée ici.
+
+Aucun fichier de démonstration Piero ni lien vers une fiche non créée n’est ajouté.
