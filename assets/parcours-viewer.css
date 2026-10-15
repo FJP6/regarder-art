@@ -1,0 +1,5 @@
+#artist-zoom .ra-gallery-nav{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:10px;padding:0;border:0;background:transparent}
+#artist-zoom .ra-gallery-nav span{color:#cbd6dc;font-size:12px;white-space:nowrap}
+#artist-zoom .ra-gallery-links{display:flex;gap:12px;flex-wrap:wrap;font-size:12px;margin-top:5px}
+#artist-zoom .ra-gallery-links a{color:#edc27a}
+#artist-zoom.ra-viewer button{margin:0}
