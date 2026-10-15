@@ -1,0 +1,27 @@
+GIOTTO — ZOOM DÉPLAÇABLE (FR / EN)
+
+Copiez les fichiers de cette archive à la racine de votre dépôt GitHub,
+en conservant les dossiers assets et en. Acceptez le remplacement des
+2 pages Giotto. Les 2 fichiers artwork-viewer sont nouveaux.
+
+Contenu :
+- giotto.html
+- en/giotto.html
+- assets/artwork-viewer.css
+- assets/artwork-viewer.js
+
+Utilisation : cliquez sur une œuvre. Elle s’ouvre entière sur fond sombre.
++ / − pour zoomer ; Vue entière pour revenir au cadrage initial.
+Téléphone : pincez avec 2 doigts pour zoomer, glissez pour vous déplacer.
+Ordinateur : molette pour zoomer, cliquez-glissez pour vous déplacer.
+Croix rouge ou touche Échap pour fermer.
+Clavier : + / − pour zoomer, 0 pour la vue entière, flèches pour explorer.
+
+Les légendes et crédits existants sont conservés.
+Cette mise à jour concerne uniquement les pages Giotto FR et EN.
+Aucune nouvelle image à télécharger, aucune dépendance externe.
+
+Vérifications : syntaxe JavaScript, chemins des 22 images, cibles des zooms,
+et simulation des commandes souris, tactiles et clavier.
+Le contrôle visuel en navigateur et sur un iPhone réel reste à effectuer.
+Après déploiement, rechargez la page pour charger la nouvelle version.
