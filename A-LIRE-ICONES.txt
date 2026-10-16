@@ -1,0 +1,10 @@
+Regarder l'Art — harmonisation des médaillons
+Décompresser à la racine du dépôt GitHub, en conservant les dossiers.
+Les pages modifiées pointent désormais toutes vers :
+  assets/images/icone-livre.png (récits)
+  assets/images/icone-oeil-serrure.png (détails suggestifs)
+Cinq autres médaillons sont prêts pour les usages futurs :
+  icone-loupe.png, icone-compas.png, icone-balance.png,
+  icone-masque.png, icone-plume.png
+Les anciennes images restent sur GitHub, mais ne sont plus référencées
+par les pages modifiées. Leurs dimensions CSS existantes sont conservées.
