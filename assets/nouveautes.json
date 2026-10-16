@@ -1,0 +1,30 @@
+[
+  {
+    "date": "2026-10-16",
+    "type": "new",
+    "fr": {
+      "title": "Regards croisés",
+      "description": "Une nouvelle rubrique pour faire dialoguer les œuvres à travers les époques. Les premiers thèmes arrivent bientôt.",
+      "url": "regards-croises.html"
+    },
+    "en": {
+      "title": "Art in Dialogue",
+      "description": "A new section to explore themes across artistic periods. The first topics are coming soon.",
+      "url": "regards-croises.html"
+    }
+  },
+  {
+    "date": "2026-10-16",
+    "type": "updated",
+    "fr": {
+      "title": "Andrea Mantegna",
+      "description": "La fiche artiste a été enrichie : Chambre des Époux, Triomphe de la Vertu et regard croisé sur saint Sébastien.",
+      "url": "mantegna.html"
+    },
+    "en": {
+      "title": "Andrea Mantegna",
+      "description": "Updated artist profile: the Camera degli Sposi, the Triumph of Virtue and a closer look at Saint Sebastian.",
+      "url": "mantegna.html"
+    }
+  }
+]
