@@ -1,5 +1,24 @@
-Correction du fichier effectivement charge par les pages artistes.
-Source : CSS plus complet present a la racine du ZIP n°10, adapte a 76px ordinateur / 64px mobile.
-A remplacer : assets/css/medaillons-communs.css
-Tester sur Netlify et rafraichir avec Ctrl+F5.
-Verification CSS/HTML effectuee, pas de test navigateur.
+CORRECTIF DES PAGES ARTISTES — 17/10/2026
+
+Ce ZIP modifie directement les 14 pages FR/EN des sept artistes, et non le CSS commun.
+Il ajoute une feuille de style ciblée en fin de chaque page, sans toucher aux textes, liens, images, récits ni scripts.
+Référence de taille : Botticelli, image 76 px sur ordinateur, 64 px sur téléphone.
+
+Copier les fichiers HTML à leur emplacement correspondant sur le site de test, puis Ctrl+F5.
+Ne pas publier sur le site principal avant vérification visuelle.
+
+Pages :
+giotto.html
+en/giotto.html
+donatello.html
+en/donatello.html
+fra-angelico.html
+en/fra-angelico.html
+piero-della-francesca.html
+en/piero-della-francesca.html
+masaccio.html
+en/masaccio.html
+mantegna.html
+en/mantegna.html
+uccello.html
+en/uccello.html
