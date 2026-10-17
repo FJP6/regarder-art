@@ -1,0 +1,1 @@
+Correctif basé sur regarder-art-main (10).zip. Remplacer assets/css/medaillons-communs.css. Référence : Botticelli 76px. Cible les pages classiques (span > img), Donatello et leurs versions EN. Aucun HTML ou contenu modifié. Tester sur Netlify, actualiser avec Ctrl+F5. Le rendu navigateur n’a pas été validé automatiquement.
