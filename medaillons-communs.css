@@ -1,192 +1,93 @@
-/* Regarder l'Art — médaillons v1.0 (17 octobre 2026)
-   Source unique de présentation. Ne modifie ni les récits ni les zooms.
-   64 px desktop / 56 px mobile ; aucune boîte décorative. */
-:root { --ra-medal-size:64px; --ra-medal-gap:18px; }
-/* Les trois structures historiques ont la même géométrie. */
-a.ra-reveal-link,
-.b-medallion-holder,
-.l-medal-row {
-  display:flex!important;
-  flex-flow:row nowrap!important;
-  justify-content:flex-start!important;
-  align-items:center!important;
-  gap:var(--ra-medal-gap)!important;
-  width:100%!important;
-  max-width:720px!important;
-  min-height:var(--ra-medal-size)!important;
-  margin:24px 0 30px!important;
-  padding:0!important;
-  border:0!important;
-  border-radius:0!important;
-  background:transparent!important;
-  box-shadow:none!important;
-  text-align:left!important;
-  text-decoration:none;
+/* Regarder l’Art — harmonisation des médaillons, 17 octobre 2026.
+   Botticelli est la référence : 78 px pour la zone, 76 px pour l'image.
+   Règles ciblées pour ne modifier ni les autres photos ni les zooms. */
+:root { --ra-medal-slot:78px; --ra-medal-image:76px; --ra-medal-gap:20px; }
+/* Les trois structures historiques : lien récit, bouton Lippi, bouton Botticelli. */
+a.ra-reveal-link, .l-medal-row, .b-medallion-holder {
+  display:flex !important; flex-direction:row !important; flex-wrap:nowrap !important;
+  justify-content:flex-start !important; align-items:center !important;
+  gap:var(--ra-medal-gap) !important; width:100% !important; max-width:720px !important;
+  min-height:var(--ra-medal-slot) !important; margin:24px 0 30px !important;
+  padding:0 !important; border:0 !important; border-radius:0 !important;
+  background:transparent !important; box-shadow:none !important; text-align:left !important;
+  text-decoration:none !important;
 }
-/* Colonne icône : fixe. Le premier span du lien contient l'image. */
+/* Le premier span, oublié par l'ancien CSS, porte l'icône sur les fiches classiques. */
 a.ra-reveal-link > span:first-child,
-.b-medallion-holder > .b-medallion-trigger,
-.l-medal-row > .l-medal {
-  position:static!important;
-  display:flex!important;
-  flex:0 0 var(--ra-medal-size)!important;
-  align-items:center!important;
-  justify-content:center!important;
-  width:var(--ra-medal-size)!important;
-  min-width:var(--ra-medal-size)!important;
-  max-width:var(--ra-medal-size)!important;
-  height:var(--ra-medal-size)!important;
-  min-height:var(--ra-medal-size)!important;
-  max-height:var(--ra-medal-size)!important;
-  padding:0!important;
-  margin:0!important;
-  border:0!important;
-  border-radius:0!important;
-  background:transparent!important;
-  box-shadow:none!important;
-  transform:none!important;
-  overflow:visible!important;
+.l-medal-row > button.l-medal,
+.b-medallion-holder > button.b-medallion-trigger {
+  display:flex !important; flex:0 0 var(--ra-medal-slot) !important;
+  align-items:center !important; justify-content:center !important;
+  width:var(--ra-medal-slot) !important; min-width:var(--ra-medal-slot) !important;
+  max-width:var(--ra-medal-slot) !important;
+  height:var(--ra-medal-slot) !important; min-height:var(--ra-medal-slot) !important;
+  max-height:var(--ra-medal-slot) !important;
+  margin:0 !important; padding:0 !important; border:0 !important;
+  border-radius:0 !important; background:transparent !important; box-shadow:none !important;
+  transform:none !important; overflow:visible !important;
 }
 a.ra-reveal-link > span:first-child > img,
-.b-medallion-holder > .b-medallion-trigger > img,
-.l-medal-row > .l-medal > img {
-  display:block!important;
-  flex:none!important;
-  width:var(--ra-medal-size)!important;
-  height:var(--ra-medal-size)!important;
-  max-width:var(--ra-medal-size)!important;
-  max-height:var(--ra-medal-size)!important;
-  min-width:0!important;
-  object-fit:contain!important;
-  padding:0!important;
-  margin:0!important;
-  border:0!important;
-  border-radius:0!important;
-  box-shadow:none!important;
-  transform:none!important;
+.l-medal-row > button.l-medal > img,
+.b-medallion-holder > button.b-medallion-trigger > img {
+  display:block !important; flex:none !important;
+  width:var(--ra-medal-image) !important; height:var(--ra-medal-image) !important;
+  min-width:0 !important; min-height:0 !important;
+  max-width:var(--ra-medal-image) !important; max-height:var(--ra-medal-image) !important;
+  margin:0 !important; padding:0 !important; border:0 !important;
+  object-fit:contain !important; box-shadow:none !important; transform:none !important;
 }
 a.ra-reveal-link > .ra-reveal-copy,
-.b-medallion-holder > .ra-reveal-label,
-.l-medal-row > .ra-reveal-label {
-  position:static!important;
-  display:flex!important;
-  flex:1 1 auto!important;
-  flex-direction:column!important;
-  justify-content:center!important;
-  align-items:flex-start!important;
-  min-width:0!important;
-  width:auto!important;
-  height:auto!important;
-  padding:0!important;
-  margin:0!important;
-  border:0!important;
-  border-radius:0!important;
-  background:transparent!important;
-  box-shadow:none!important;
-  text-align:left!important;
-  font-family:Tahoma,Arial,sans-serif!important;
-  color:#183c58!important;
-  cursor:pointer;
+.l-medal-row > .ra-reveal-label,
+.b-medallion-holder > .ra-reveal-label {
+  display:flex !important; flex:1 1 auto !important; flex-direction:column !important;
+  align-items:flex-start !important; justify-content:center !important;
+  min-width:0 !important; width:auto !important; height:auto !important;
+  margin:0 !important; padding:0 !important; border:0 !important;
+  border-radius:0 !important; background:transparent !important; box-shadow:none !important;
+  text-align:left !important; font:15px/1.5 Tahoma,Arial,sans-serif !important;
+  color:#183c58 !important; cursor:pointer;
 }
-.ra-reveal-copy strong,.ra-reveal-label strong {
-  display:block!important;
-  color:#183c58!important;
-  font-size:15px!important;
-  font-weight:700!important;
-  line-height:1.45!important;
-}
-.ra-reveal-copy small,.ra-reveal-label small {
-  display:block!important;
-  color:#8b714d!important;
-  font-size:12px!important;
-  line-height:1.5!important;
-  margin-top:4px!important;
-}
-/* Le David de Donatello possède un bouton spécial « Une autre vue ».
-   Il partage la taille du livre, mais conserve sa fonction et son HTML. */
+.ra-reveal-copy strong, .ra-reveal-label strong {display:block !important; font-size:16px !important; font-weight:700 !important; color:#183c58 !important; line-height:1.4 !important;}
+.ra-reveal-copy small, .ra-reveal-label small {display:block !important; margin-top:5px !important; font-size:12px !important; color:#8b714d !important; line-height:1.5 !important;}
+/* Le David de Donatello : les deux actions utilisent exactement le même gabarit. */
 body.don-page #david .david-actions {
-  display:grid!important;
-  grid-template-columns:repeat(2,minmax(0,1fr))!important;
-  align-items:start!important;
-  column-gap:24px!important;
-  row-gap:14px!important;
+  display:grid !important; grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  align-items:start !important; gap:22px !important;
 }
 body.don-page #david .david-actions > .don-david-hint,
 body.don-page #david .david-actions > a.ra-reveal-link {
-  position:static!important;
-  display:flex!important;
-  align-items:center!important;
-  justify-content:flex-start!important;
-  gap:var(--ra-medal-gap)!important;
-  width:100%!important;
-  min-width:0!important;
-  max-width:none!important;
-  height:auto!important;
-  min-height:var(--ra-medal-size)!important;
-  margin:0!important;
-  padding:0!important;
-  border:0!important;
-  border-radius:0!important;
-  background:transparent!important;
-  box-shadow:none!important;
-  text-align:left!important;
+  display:flex !important; align-items:center !important; justify-content:flex-start !important;
+  gap:var(--ra-medal-gap) !important; width:100% !important; min-width:0 !important;
+  max-width:none !important; min-height:var(--ra-medal-slot) !important;
+  margin:0 !important; padding:0 !important; border:0 !important; border-radius:0 !important;
+  background:transparent !important; box-shadow:none !important;
 }
-body.don-page #david .david-actions > .don-david-hint > .action-icon,
-body.don-page #david .david-actions > a.ra-reveal-link > span:first-child {
-  position:static!important;
-  display:flex!important;
-  flex:0 0 var(--ra-medal-size)!important;
-  align-items:center!important;
-  justify-content:center!important;
-  width:var(--ra-medal-size)!important;
-  height:var(--ra-medal-size)!important;
-  min-width:var(--ra-medal-size)!important;
-  min-height:var(--ra-medal-size)!important;
-  max-width:var(--ra-medal-size)!important;
-  max-height:var(--ra-medal-size)!important;
-  padding:0!important;
-  margin:0!important;
-  border:0!important;
-  border-radius:0!important;
-  background:transparent!important;
-  box-shadow:none!important;
+body.don-page #david .david-actions > .don-david-hint > .action-icon {
+  display:flex !important; flex:0 0 var(--ra-medal-slot) !important;
+  align-items:center !important; justify-content:center !important;
+  width:var(--ra-medal-slot) !important; min-width:var(--ra-medal-slot) !important;
+  max-width:var(--ra-medal-slot) !important;
+  height:var(--ra-medal-slot) !important; min-height:var(--ra-medal-slot) !important;
+  max-height:var(--ra-medal-slot) !important;
+  margin:0 !important; padding:0 !important; border:0 !important;
+  background:transparent !important; box-shadow:none !important;
 }
-body.don-page #david .david-actions > .don-david-hint > .action-icon > img,
-body.don-page #david .david-actions > a.ra-reveal-link > span:first-child > img {
-  display:block!important;
-  width:var(--ra-medal-size)!important;
-  height:var(--ra-medal-size)!important;
-  min-width:0!important;
-  max-width:var(--ra-medal-size)!important;
-  max-height:var(--ra-medal-size)!important;
-  object-fit:contain!important;
-  margin:0!important;
-  padding:0!important;
-  transform:none!important;
+body.don-page #david .david-actions > .don-david-hint > .action-icon > img {
+  display:block !important; width:var(--ra-medal-image) !important; height:var(--ra-medal-image) !important;
+  min-width:0 !important; max-width:var(--ra-medal-image) !important; max-height:var(--ra-medal-image) !important;
+  margin:0 !important; padding:0 !important; object-fit:contain !important; transform:none !important;
 }
 body.don-page #david .david-actions > .don-david-hint > .action-copy {
-  position:static!important;
-  display:block!important;
-  flex:1 1 auto!important;
-  width:auto!important;
-  min-width:0!important;
-  margin:0!important;
-  padding:0!important;
-  text-align:left!important;
-  color:#183c58!important;
-  font-size:15px!important;
-  line-height:1.45!important;
+  display:block !important; flex:1 1 auto !important; width:auto !important; min-width:0 !important;
+  margin:0 !important; padding:0 !important; text-align:left !important;
+  color:#183c58 !important; font:700 16px/1.4 Tahoma,Arial,sans-serif !important;
 }
 body.don-page #david .david-actions > .don-david-hint > .action-copy small {
-  display:block!important;
-  margin-top:4px!important;
-  color:#8b714d!important;
-  font-size:12px!important;
+  display:block !important; margin-top:5px !important; color:#8b714d !important;
+  font:400 12px/1.5 Tahoma,Arial,sans-serif !important;
 }
-@media(max-width:650px){
- :root { --ra-medal-size:56px; --ra-medal-gap:13px; }
- body.don-page #david .david-actions{grid-template-columns:1fr!important}
-}
-@media(prefers-reduced-motion:reduce){
- .b-medallion-trigger,.l-medal{transition:none!important}
+@media(max-width:650px) {
+  :root { --ra-medal-slot:66px; --ra-medal-image:64px; --ra-medal-gap:14px; }
+  body.don-page #david .david-actions { grid-template-columns:1fr !important; gap:18px !important; }
+  .ra-reveal-copy strong, .ra-reveal-label strong {font-size:14px !important;}
 }

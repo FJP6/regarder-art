@@ -1,0 +1,28 @@
+Source : regarder-art-main (10).zip
+Botticelli : référence 78 px / image 76 px.
+Pages contenant des médaillons : 19
+
+botticelli.html : 4 médaillon(s)
+donatello (1).html : 2 médaillon(s)
+donatello.html : 2 médaillon(s)
+en/botticelli.html : 4 médaillon(s)
+en/donatello.html : 2 médaillon(s)
+en/fra-angelico.html : 1 médaillon(s)
+en/fra-filippo-lippi.html : 2 médaillon(s)
+en/giotto.html : 2 médaillon(s)
+en/mantegna.html : 1 médaillon(s)
+en/masaccio.html : 1 médaillon(s)
+en/piero-della-francesca.html : 2 médaillon(s)
+en/uccello.html : 1 médaillon(s)
+fra-angelico.html : 1 médaillon(s)
+fra-filippo-lippi.html : 2 médaillon(s)
+giotto.html : 2 médaillon(s)
+mantegna.html : 1 médaillon(s)
+masaccio.html : 1 médaillon(s)
+piero-della-francesca.html : 2 médaillon(s)
+uccello.html : 1 médaillon(s)
+
+Images manquantes dans le ZIP : [('regarder-art-main/donatello (1).html', '../assets/images/icone-livre.png'), ('regarder-art-main/donatello (1).html', '../assets/images/icone-livre.png')]
+
+Ce correctif change uniquement le CSS commun. Les fichiers HTML, les images et les fonctions JavaScript restent inchangés.
+Test visuel navigateur recommandé avant publication.
