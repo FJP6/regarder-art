@@ -1,13 +1,14 @@
-MISE À JOUR BOTTICELLI — REGARDER L’ART
+MISE À JOUR BOTTICELLI — VERSION COMPLÈTE FR/EN
 
-Décompresser cette archive et copier son contenu à la racine du dépôt du site.
-Fusionner les dossiers assets et en avec ceux existants ; remplacer les quatre pages homonymes.
-Ne pas déposer le dossier output lui-même.
+Cette archive remplace le précédent ZIP Botticelli.
+Copier son contenu à la racine du site, fusionner assets et en et remplacer les fichiers homonymes. Ne pas supprimer les autres fichiers du site.
 
-NOUVEAU : botticelli.html et en/botticelli.html ; images, médaillons, feuille de style et script associés.
-MIS À JOUR : artistes.html, parcours.html, credits.html, lieux.html.
+Comprend :
+- Fiches Botticelli FR/EN, les quatre tableaux et les détails.
+- Médaillons livre et œil-serrure assortis fournis le 17 octobre.
+- Artistes, Parcours et Lieux en français et en anglais.
+- Nouveautés en français et en anglais, annonce Botticelli du 17 octobre 2026.
+- Crédits en français.
 
-Les quatre pages transmises restent en français. Les deux nouvelles fiches Botticelli sont entièrement en français et en anglais, avec une bascule directe FR/EN.
-Les tableaux sont entiers ; seuls les détails fournis sont recadrés. Les crédits et liens des licences sont regroupés dans credits.html, rubrique Sandro Botticelli.
-
-Après publication, ouvrir /botticelli.html puis /en/botticelli.html et actualiser avec Ctrl+F5 si nécessaire.
+Le fil des nouveautés existant est conservé : la nouvelle annonce est ajoutée sans remplacer assets/nouveautes.json.
+En cas de cache, actualiser avec Ctrl+F5.
