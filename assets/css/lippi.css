@@ -3,5 +3,41 @@
 /* Lippi: sparse layout based on Botticelli */
 .b-hero{padding-bottom:25px}.b-bio{margin-bottom:35px}.b-work{padding:36px 0 48px}.b-work-intro{margin:18px 0}.b-artwork{margin-top:18px}.b-art-button img{max-height:650px}.l-medal-row{margin:16px 0 0;display:flex;gap:18px}.l-medal{border:0;background:transparent;padding:0;cursor:pointer}.l-medal img{width:84px;height:84px;object-fit:contain;display:block}.l-medal:hover{transform:translateY(-2px)}.l-story{border:0;border-radius:9px;padding:36px;max-width:650px;width:calc(100% - 28px);background:#fffdf8;color:#304148;box-shadow:0 14px 60px #0005}.l-story::backdrop{background:#0c1a2ac2}.l-story h2{font-size:26px;margin-right:40px}.l-story .b-close{position:absolute;top:10px;right:10px}.l-story p{margin-bottom:0}.l-story img{max-width:100%;max-height:300px;object-fit:contain;display:block;margin:18px auto}.b-recognize{padding:45px 0}.b-recognize p{max-width:830px}.l-bio-link{margin:14px 0 0!important}.l-bio-link a{font-size:14px}.b-sources{padding-top:32px}.b-work h2{margin-bottom:8px}@media(max-width:700px){.l-story{padding:25px 20px}.l-medal img{width:72px;height:72px}}
 
-/* Readable but compact guided observation */
-.b-work .b-reading{margin:24px 0 10px;gap:32px}.b-work .b-reading li{padding-bottom:8px}.b-work .b-reading p{margin-bottom:10px}.b-work .l-medal-row{margin-top:18px}
+
+/* Fenêtres de récits — mise en page de type carnet d'art */
+.l-story {
+ width:min(92vw,850px)!important;
+ max-width:850px!important;
+ max-height:min(88vh,960px)!important;
+ overflow-y:auto!important;
+ padding:0!important;
+ border:1px solid #c9b48f!important;
+ border-radius:8px!important;
+ background:#fcfaf5!important;
+ color:#31424a!important;
+ box-shadow:0 24px 90px #071d30a8!important;
+}
+.l-story::backdrop{background:rgba(11,28,43,.82)!important;backdrop-filter:blur(3px)}
+.l-story .b-close{position:sticky!important;top:12px!important;float:right;margin:12px 14px -58px 0!important}
+.l-story .l-story-header{
+ padding:44px clamp(24px,6vw,62px) 30px;
+ background:linear-gradient(135deg,#123551,#234c63);
+ color:#f7f1e5;
+ border-bottom:4px solid #bd9c65;
+}
+.l-story .l-story-eyebrow{color:#e1c68d;text-transform:uppercase;letter-spacing:.18em;font-size:11px;margin:0 0 15px}
+.l-story .l-story-header h2{font-size:clamp(25px,3.5vw,37px);line-height:1.25;color:#fff9ee;margin:0;max-width:650px}
+.l-story .l-story-body{padding:34px clamp(24px,6vw,62px) 48px}
+.l-story .l-story-body p{margin:0 0 20px!important;font-size:16px;line-height:1.9;max-width:680px}
+.l-story .l-story-body p:first-of-type:first-letter{font-size:1.25em;color:#947247}
+.l-story .l-story-figure{margin:8px 0 30px;background:#eee9de;border:1px solid #e2d8c7;padding:14px}
+.l-story .l-story-figure img{width:100%;max-height:350px;object-fit:contain;margin:0 auto!important}
+.l-story .l-story-figure figcaption{font-size:12px;color:#6d746f;line-height:1.5;text-align:center;margin-top:10px}
+.l-story .l-story-divider{height:1px;background:linear-gradient(90deg,#b49361,transparent);margin:24px 0}
+.l-story .l-story-note{background:#eef0e9;border-left:3px solid #b49361;padding:16px 20px;font-size:14px;line-height:1.75}
+@media(max-width:600px){
+ .l-story{width:calc(100vw - 18px)!important;max-height:92dvh!important}
+ .l-story .l-story-header{padding-top:48px}
+ .l-story .l-story-body{padding-top:22px}
+ .l-story .l-story-figure img{max-height:240px}
+}
