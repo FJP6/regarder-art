@@ -1,3 +1,13 @@
-Mise à jour Regarder l’Art : ressources.html et parcours.html.
-Décompresser puis importer ces deux fichiers à la racine du dépôt GitHub.
-Aucun autre fichier à remplacer. Les liens externes pointent vers Radio France et ARTE.
+MISE À JOUR BOTTICELLI — REGARDER L’ART
+
+Décompresser cette archive et copier son contenu à la racine du dépôt du site.
+Fusionner les dossiers assets et en avec ceux existants ; remplacer les quatre pages homonymes.
+Ne pas déposer le dossier output lui-même.
+
+NOUVEAU : botticelli.html et en/botticelli.html ; images, médaillons, feuille de style et script associés.
+MIS À JOUR : artistes.html, parcours.html, credits.html, lieux.html.
+
+Les quatre pages transmises restent en français. Les deux nouvelles fiches Botticelli sont entièrement en français et en anglais, avec une bascule directe FR/EN.
+Les tableaux sont entiers ; seuls les détails fournis sont recadrés. Les crédits et liens des licences sont regroupés dans credits.html, rubrique Sandro Botticelli.
+
+Après publication, ouvrir /botticelli.html puis /en/botticelli.html et actualiser avec Ctrl+F5 si nécessaire.
