@@ -1,0 +1,11 @@
+/* Medaillons narratifs — langage visuel commun FR/EN */
+.ra-reveal-link,.l-medal-row,.b-medallion-holder{display:flex!important;align-items:center;gap:17px;margin:22px 0 28px;max-width:720px;min-height:82px}
+.ra-reveal-link{color:#183c58;text-decoration:none!important;padding:8px 12px;border:1px solid #d9d9cb;border-radius:8px;background:#fffdf8;font:15px/1.5 Tahoma,Arial,sans-serif}
+.ra-reveal-link:hover,.ra-reveal-link:focus-visible{background:#f0eee4;border-color:#b69a6c}
+.ra-reveal-link img,.l-medal img,.b-medallion-trigger img{display:block!important;width:76px!important;height:76px!important;max-width:76px!important;max-height:76px!important;object-fit:contain!important;flex:none}
+.ra-reveal-copy{display:flex;flex-direction:column;gap:3px}.ra-reveal-copy strong{font-size:16px;font-weight:600}.ra-reveal-copy small{font-size:13px;color:#66736f}
+.l-medal-row,.b-medallion-holder{padding:9px 14px;border:1px solid #d9d9cb;border-radius:8px;background:#fffdf8}
+.l-medal-row .l-medal,.b-medallion-trigger{border:0;background:transparent;cursor:pointer;padding:0;flex:none}
+.ra-reveal-label{border:0;background:transparent;color:#183c58;text-align:left;cursor:pointer;font:15px/1.5 Tahoma,Arial,sans-serif;padding:8px}
+.ra-reveal-label strong,.ra-reveal-label small{display:block}.ra-reveal-label small{color:#66736f;margin-top:3px}
+@media(max-width:600px){.ra-reveal-link,.l-medal-row,.b-medallion-holder{gap:10px}.ra-reveal-link img,.l-medal img,.b-medallion-trigger img{width:62px!important;height:62px!important}}
