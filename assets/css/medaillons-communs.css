@@ -1,114 +1,72 @@
-/* Regarder l'Art — médaillons éditoriaux communs (FR / EN)
-   Une seule règle pour les trois icônes, sans cadre et sans centrage. */
-.ra-reveal-link,
-.l-medal-row,
-.b-medallion-holder {
-  display:flex !important;
-  align-items:center !important;
-  justify-content:flex-start !important;
-  gap:20px !important;
-  width:100% !important;
-  max-width:720px !important;
-  min-height:80px !important;
-  margin:25px 0 34px !important;
-  padding:0 !important;
-  border:0 !important;
-  border-radius:0 !important;
-  background:transparent !important;
-  box-shadow:none !important;
-  text-align:left !important;
+/* Medaillons narratifs — langage visuel commun FR/EN */
+.ra-reveal-link,.l-medal-row,.b-medallion-holder{display:flex!important;align-items:center;gap:17px;margin:22px 0 28px;max-width:720px;min-height:82px}
+.ra-reveal-link{color:#183c58;text-decoration:none!important;padding:8px 12px;border:1px solid #d9d9cb;border-radius:8px;background:#fffdf8;font:15px/1.5 Tahoma,Arial,sans-serif}
+.ra-reveal-link:hover,.ra-reveal-link:focus-visible{background:#f0eee4;border-color:#b69a6c}
+.ra-reveal-link img,.l-medal img,.b-medallion-trigger img{display:block!important;width:76px!important;height:76px!important;max-width:76px!important;max-height:76px!important;object-fit:contain!important;flex:none}
+.ra-reveal-copy{display:flex;flex-direction:column;gap:3px}.ra-reveal-copy strong{font-size:16px;font-weight:600}.ra-reveal-copy small{font-size:13px;color:#66736f}
+.l-medal-row,.b-medallion-holder{padding:9px 14px;border:1px solid #d9d9cb;border-radius:8px;background:#fffdf8}
+.l-medal-row .l-medal,.b-medallion-trigger{border:0;background:transparent;cursor:pointer;padding:0;flex:none}
+.ra-reveal-label{border:0;background:transparent;color:#183c58;text-align:left;cursor:pointer;font:15px/1.5 Tahoma,Arial,sans-serif;padding:8px}
+.ra-reveal-label strong,.ra-reveal-label small{display:block}.ra-reveal-label small{color:#66736f;margin-top:3px}
+@media(max-width:600px){.ra-reveal-link,.l-medal-row,.b-medallion-holder{gap:10px}.ra-reveal-link img,.l-medal img,.b-medallion-trigger img{width:62px!important;height:62px!important}}
+
+
+/* Médaillons — présentation éditoriale commune, sans centrage flottant */
+.b-medallion-holder, .l-medal-row {
+  box-sizing:border-box;
+  display:grid!important;
+  grid-template-columns:78px minmax(0,1fr);
+  align-items:center!important;
+  column-gap:20px!important;
+  width:min(100%,680px);
+  max-width:680px!important;
+  min-height:112px!important;
+  margin:24px 0 30px!important;
+  padding:14px 24px!important;
+  border:1px solid #dcd5c5!important;
+  border-left:3px solid #b49361!important;
+  border-radius:5px!important;
+  background:linear-gradient(115deg,#fffdf8 0%,#f8f5ec 100%)!important;
+  box-shadow:0 5px 18px rgba(24,60,88,.035);
+}
+.b-medallion-holder .b-medallion-trigger, .l-medal-row .l-medal {
+  grid-column:1;justify-self:center;
+  width:78px;height:78px;
+  display:flex;align-items:center;justify-content:center;
+  padding:0!important;margin:0!important;border:0!important;
+  background:transparent!important;
+}
+.b-medallion-holder .b-medallion-trigger img, .l-medal-row .l-medal img {
+  display:block!important;width:76px!important;height:76px!important;
+  max-width:76px!important;max-height:76px!important;object-fit:contain;
+}
+.b-medallion-holder .ra-reveal-label, .l-medal-row .ra-reveal-label {
+  grid-column:2;
+  width:100%;min-width:0;
+  text-align:left!important;
+  display:block;
+  padding:9px 0!important;margin:0!important;
+  border:0;background:transparent;
   font-family:Tahoma,Arial,sans-serif;
 }
-.ra-reveal-link {color:#183c58;text-decoration:none !important}
-.ra-reveal-link:hover,.l-medal-row:hover,.b-medallion-holder:hover {
-  background:transparent !important;
-  border:0 !important;
-  box-shadow:none !important;
-}
-.ra-reveal-link > img,
-.l-medal-row > .l-medal,
-.b-medallion-holder > .b-medallion-trigger {
-  display:flex !important;
-  align-items:center !important;
-  justify-content:center !important;
-  flex:0 0 78px !important;
-  width:78px !important;
-  height:78px !important;
-  min-width:78px !important;
-  padding:0 !important;
-  margin:0 !important;
-  border:0 !important;
-  border-radius:50%;
-  background:transparent !important;
-  box-shadow:none !important;
-  cursor:pointer;
-  transition:transform .2s ease;
-}
-.ra-reveal-link > img,
-.l-medal-row > .l-medal img,
-.b-medallion-holder > .b-medallion-trigger img {
-  display:block !important;
-  width:76px !important;
-  height:76px !important;
-  max-width:76px !important;
-  max-height:76px !important;
-  object-fit:contain !important;
-  margin:0 !important;
-}
-.l-medal-row > .l-medal:hover,
-.b-medallion-holder > .b-medallion-trigger:hover {
-  transform:translateY(-2px);
-}
-.ra-reveal-copy,
-.l-medal-row > .ra-reveal-label,
-.b-medallion-holder > .ra-reveal-label {
-  display:flex !important;
-  flex:1 1 auto !important;
-  flex-direction:column !important;
-  justify-content:center !important;
-  align-items:flex-start !important;
-  min-width:0 !important;
-  width:auto !important;
-  padding:0 !important;
-  margin:0 !important;
-  border:0 !important;
-  border-radius:0 !important;
-  background:transparent !important;
-  box-shadow:none !important;
-  text-align:left !important;
-  font:15px/1.5 Tahoma,Arial,sans-serif !important;
-  color:#183c58 !important;
-  cursor:pointer;
-}
-.ra-reveal-copy strong,.ra-reveal-label strong {
-  display:block;
+.b-medallion-holder .ra-reveal-label strong, .l-medal-row .ra-reveal-label strong {
+  font-size:16px;line-height:1.5;font-weight:700;letter-spacing:0;
   color:#183c58;
-  font-size:16px;
-  font-weight:700;
-  line-height:1.4;
 }
-.ra-reveal-copy small,.ra-reveal-label small {
-  display:block;
-  margin-top:5px;
-  color:#8b714d;
-  font-size:12px;
-  line-height:1.5;
+.b-medallion-holder .ra-reveal-label small, .l-medal-row .ra-reveal-label small {
+  display:block;font-size:12px;letter-spacing:.015em;
+  color:#8c704b;margin-top:5px;
 }
-.ra-reveal-link:hover strong,.ra-reveal-label:hover strong {
-  text-decoration:underline;
-  text-decoration-color:#b89b6a;
-  text-underline-offset:5px;
+.b-medallion-holder:hover,.l-medal-row:hover {
+  border-color:#bca782!important;
+  background:#f5f0e5!important;
 }
-@media(max-width:600px){
-  .ra-reveal-link,.l-medal-row,.b-medallion-holder{gap:14px !important;min-height:64px !important}
-  .ra-reveal-link > img,.l-medal-row > .l-medal,.b-medallion-holder > .b-medallion-trigger {
-    flex-basis:64px !important;width:64px !important;height:64px !important;min-width:64px !important;
-  }
-  .ra-reveal-link > img,.l-medal-row > .l-medal img,.b-medallion-holder > .b-medallion-trigger img {
-    width:62px !important;height:62px !important;max-width:62px !important;max-height:62px !important;
-  }
-  .ra-reveal-copy strong,.ra-reveal-label strong{font-size:14px}
-}
-@media(prefers-reduced-motion:reduce){
- .l-medal-row > .l-medal,.b-medallion-holder > .b-medallion-trigger{transition:none}
+@media(max-width:520px){
+ .b-medallion-holder,.l-medal-row {
+   grid-template-columns:62px minmax(0,1fr);
+   column-gap:14px!important;padding:12px 14px!important;min-height:92px!important;
+ }
+ .b-medallion-holder .b-medallion-trigger,.l-medal-row .l-medal{width:62px;height:62px}
+ .b-medallion-holder .b-medallion-trigger img,.l-medal-row .l-medal img{width:62px!important;height:62px!important}
+ .b-medallion-holder .ra-reveal-label strong,.l-medal-row .ra-reveal-label strong{font-size:14px}
 }
