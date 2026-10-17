@@ -1,14 +1,8 @@
-MISE À JOUR BOTTICELLI — VERSION COMPLÈTE FR/EN
+CORRECTIF LIEUX & MUSÉES — FR/EN
 
-Cette archive remplace le précédent ZIP Botticelli.
-Copier son contenu à la racine du site, fusionner assets et en et remplacer les fichiers homonymes. Ne pas supprimer les autres fichiers du site.
+Copier le contenu de ce ZIP à la racine du site. Remplacer lieux.html et en/lieux.html ; fusionner assets/images/lieux avec les dossiers existants.
 
-Comprend :
-- Fiches Botticelli FR/EN, les quatre tableaux et les détails.
-- Médaillons livre et œil-serrure assortis fournis le 17 octobre.
-- Artistes, Parcours et Lieux en français et en anglais.
-- Nouveautés en français et en anglais, annonce Botticelli du 17 octobre 2026.
-- Crédits en français.
+Six reproductions précédemment chargées depuis des liens Wikimedia sont désormais incluses et chargées localement. Les liens des fiches sources sont conservés dans les zooms.
+Les chemins des images en anglais sont corrigés. Les titres des tableaux Botticelli sont remis en correspondance avec les bonnes reproductions ; les liens vers le parcours Antiquité sont conservés.
 
-Le fil des nouveautés existant est conservé : la nouvelle annonce est ajoutée sans remplacer assets/nouveautes.json.
-En cas de cache, actualiser avec Ctrl+F5.
+Actualiser avec Ctrl+F5 après publication.
