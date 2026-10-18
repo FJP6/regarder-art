@@ -1,0 +1,12 @@
+Mise à jour Filippino Lippi — GitHub Pages
+
+Copiez le contenu de cette archive à la racine du dépôt regarder-art (en conservant les dossiers).
+Ne supprimez pas les autres fichiers du site.
+
+Fichiers FR/EN de l'artiste et trois récits par langue, plus images associées.
+Zoom : réutilise les fichiers communs assets/artwork-viewer.css et .js déjà présents sur le site.
+Bandeau : repris de la fiche Masaccio du dernier ZIP fourni.
+Médaillons : sans cadre et liés à des pages HTML indépendantes.
+
+Attention : cette archive ne met pas automatiquement à jour les pages transversales (artistes, lieux, crédits, parcours).
+Vérifiez le rendu dans le navigateur après déploiement.
