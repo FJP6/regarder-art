@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-10-18",
+    "type": "new",
+    "fr": {
+      "title": "Filippino Lippi",
+      "description": "Quand la Renaissance devient plus expressive, plus théâtrale… et parfois fantastique.",
+      "url": "filippino-lippi.html"
+    },
+    "en": {
+      "title": "Filippino Lippi",
+      "description": "When the Renaissance becomes more expressive, more theatrical… and sometimes fantastical.",
+      "url": "filippino-lippi.html"
+    }
+  },
+  {
     "date": "2026-10-16",
     "type": "new",
     "fr": {
