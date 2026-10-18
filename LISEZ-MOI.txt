@@ -1,1 +1,1 @@
-Déposer lieux.html à la racine de GitHub et les 5 fichiers JPG dans assets/images/. Ne pas supprimer les autres images.
+Correctif bandeau Filippino : français et anglais inclus. Déposer filippino-lippi.html à la racine GitHub et en/filippino-lippi.html dans en/. Les récits compacts restent inclus. Vérifier la page française à regarder-art.fr/filippino-lippi.html et la page anglaise à regarder-art.fr/en/filippino-lippi.html. Ne pas déposer les fichiers à plat.
