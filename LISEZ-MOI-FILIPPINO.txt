@@ -1,0 +1,11 @@
+MISE À JOUR — FILIPPINO LIPPI (18 octobre 2026)
+
+À déposer à la racine du dépôt GitHub Pages, en conservant les sous-dossiers.
+
+Fichiers créés : filippino-lippi.html ; en/filippino-lippi.html ; images/filippino-lippi/...
+Fichiers modifiés à partir du site fourni : artistes.html ; en/artistes.html ; credits.html.
+
+IMPORTANT : les pages parcours, lieux, nouveautés ne sont pas modifiées ici : elles demandent une insertion éditoriale ciblée dans les pages les plus récentes.
+La page source exacte de la photo Justin Benttinen doit être ajoutée aux crédits dès qu'elle est retrouvée.
+Les deux pages artistes exportées par V15 utilisent leur propre gabarit ; navigation ajoutée mais harmonie visuelle à vérifier dans le navigateur avant publication.
+Vérifier également les traductions anglaises avant publication.
