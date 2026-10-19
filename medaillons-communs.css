@@ -1,192 +1,114 @@
-/* Regarder l'Art — médaillons v1.0 (17 octobre 2026)
-   Source unique de présentation. Ne modifie ni les récits ni les zooms.
-   76 px desktop / 64 px mobile ; aucune boîte décorative. */
-:root { --ra-medal-size:76px; --ra-medal-gap:18px; }
-/* Les trois structures historiques ont la même géométrie. */
-a.ra-reveal-link,
-.b-medallion-holder,
-.l-medal-row {
-  display:flex!important;
-  flex-flow:row nowrap!important;
-  justify-content:flex-start!important;
-  align-items:center!important;
-  gap:var(--ra-medal-gap)!important;
-  width:100%!important;
-  max-width:720px!important;
-  min-height:var(--ra-medal-size)!important;
-  margin:24px 0 30px!important;
-  padding:0!important;
-  border:0!important;
-  border-radius:0!important;
-  background:transparent!important;
-  box-shadow:none!important;
-  text-align:left!important;
-  text-decoration:none;
+/* Regarder l'Art — médaillons éditoriaux communs (FR / EN)
+   Une seule règle pour les trois icônes, sans cadre et sans centrage. */
+.ra-reveal-link,
+.l-medal-row,
+.b-medallion-holder {
+  display:flex !important;
+  align-items:center !important;
+  justify-content:flex-start !important;
+  gap:20px !important;
+  width:100% !important;
+  max-width:720px !important;
+  min-height:80px !important;
+  margin:25px 0 34px !important;
+  padding:0 !important;
+  border:0 !important;
+  border-radius:0 !important;
+  background:transparent !important;
+  box-shadow:none !important;
+  text-align:left !important;
+  font-family:Tahoma,Arial,sans-serif;
 }
-/* Colonne icône : fixe. Le premier span du lien contient l'image. */
-a.ra-reveal-link > span:first-child,
-.b-medallion-holder > .b-medallion-trigger,
-.l-medal-row > .l-medal {
-  position:static!important;
-  display:flex!important;
-  flex:0 0 var(--ra-medal-size)!important;
-  align-items:center!important;
-  justify-content:center!important;
-  width:var(--ra-medal-size)!important;
-  min-width:var(--ra-medal-size)!important;
-  max-width:var(--ra-medal-size)!important;
-  height:var(--ra-medal-size)!important;
-  min-height:var(--ra-medal-size)!important;
-  max-height:var(--ra-medal-size)!important;
-  padding:0!important;
-  margin:0!important;
-  border:0!important;
-  border-radius:0!important;
-  background:transparent!important;
-  box-shadow:none!important;
-  transform:none!important;
-  overflow:visible!important;
+.ra-reveal-link {color:#183c58;text-decoration:none !important}
+.ra-reveal-link:hover,.l-medal-row:hover,.b-medallion-holder:hover {
+  background:transparent !important;
+  border:0 !important;
+  box-shadow:none !important;
 }
-a.ra-reveal-link > span:first-child > img,
-.b-medallion-holder > .b-medallion-trigger > img,
-.l-medal-row > .l-medal > img {
-  display:block!important;
-  flex:none!important;
-  width:var(--ra-medal-size)!important;
-  height:var(--ra-medal-size)!important;
-  max-width:var(--ra-medal-size)!important;
-  max-height:var(--ra-medal-size)!important;
-  min-width:0!important;
-  object-fit:contain!important;
-  padding:0!important;
-  margin:0!important;
-  border:0!important;
-  border-radius:0!important;
-  box-shadow:none!important;
-  transform:none!important;
+.ra-reveal-link > img,
+.l-medal-row > .l-medal,
+.b-medallion-holder > .b-medallion-trigger {
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  flex:0 0 78px !important;
+  width:78px !important;
+  height:78px !important;
+  min-width:78px !important;
+  padding:0 !important;
+  margin:0 !important;
+  border:0 !important;
+  border-radius:50%;
+  background:transparent !important;
+  box-shadow:none !important;
+  cursor:pointer;
+  transition:transform .2s ease;
 }
-a.ra-reveal-link > .ra-reveal-copy,
-.b-medallion-holder > .ra-reveal-label,
-.l-medal-row > .ra-reveal-label {
-  position:static!important;
-  display:flex!important;
-  flex:1 1 auto!important;
-  flex-direction:column!important;
-  justify-content:center!important;
-  align-items:flex-start!important;
-  min-width:0!important;
-  width:auto!important;
-  height:auto!important;
-  padding:0!important;
-  margin:0!important;
-  border:0!important;
-  border-radius:0!important;
-  background:transparent!important;
-  box-shadow:none!important;
-  text-align:left!important;
-  font-family:Tahoma,Arial,sans-serif!important;
-  color:#183c58!important;
+.ra-reveal-link > img,
+.l-medal-row > .l-medal img,
+.b-medallion-holder > .b-medallion-trigger img {
+  display:block !important;
+  width:76px !important;
+  height:76px !important;
+  max-width:76px !important;
+  max-height:76px !important;
+  object-fit:contain !important;
+  margin:0 !important;
+}
+.l-medal-row > .l-medal:hover,
+.b-medallion-holder > .b-medallion-trigger:hover {
+  transform:translateY(-2px);
+}
+.ra-reveal-copy,
+.l-medal-row > .ra-reveal-label,
+.b-medallion-holder > .ra-reveal-label {
+  display:flex !important;
+  flex:1 1 auto !important;
+  flex-direction:column !important;
+  justify-content:center !important;
+  align-items:flex-start !important;
+  min-width:0 !important;
+  width:auto !important;
+  padding:0 !important;
+  margin:0 !important;
+  border:0 !important;
+  border-radius:0 !important;
+  background:transparent !important;
+  box-shadow:none !important;
+  text-align:left !important;
+  font:15px/1.5 Tahoma,Arial,sans-serif !important;
+  color:#183c58 !important;
   cursor:pointer;
 }
 .ra-reveal-copy strong,.ra-reveal-label strong {
-  display:block!important;
-  color:#183c58!important;
-  font-size:15px!important;
-  font-weight:700!important;
-  line-height:1.45!important;
+  display:block;
+  color:#183c58;
+  font-size:16px;
+  font-weight:700;
+  line-height:1.4;
 }
 .ra-reveal-copy small,.ra-reveal-label small {
-  display:block!important;
-  color:#8b714d!important;
-  font-size:12px!important;
-  line-height:1.5!important;
-  margin-top:4px!important;
+  display:block;
+  margin-top:5px;
+  color:#8b714d;
+  font-size:12px;
+  line-height:1.5;
 }
-/* Le David de Donatello possède un bouton spécial « Une autre vue ».
-   Il partage la taille du livre, mais conserve sa fonction et son HTML. */
-body.don-page #david .david-actions {
-  display:grid!important;
-  grid-template-columns:repeat(2,minmax(0,1fr))!important;
-  align-items:start!important;
-  column-gap:24px!important;
-  row-gap:14px!important;
+.ra-reveal-link:hover strong,.ra-reveal-label:hover strong {
+  text-decoration:underline;
+  text-decoration-color:#b89b6a;
+  text-underline-offset:5px;
 }
-body.don-page #david .david-actions > .don-david-hint,
-body.don-page #david .david-actions > a.ra-reveal-link {
-  position:static!important;
-  display:flex!important;
-  align-items:center!important;
-  justify-content:flex-start!important;
-  gap:var(--ra-medal-gap)!important;
-  width:100%!important;
-  min-width:0!important;
-  max-width:none!important;
-  height:auto!important;
-  min-height:var(--ra-medal-size)!important;
-  margin:0!important;
-  padding:0!important;
-  border:0!important;
-  border-radius:0!important;
-  background:transparent!important;
-  box-shadow:none!important;
-  text-align:left!important;
-}
-body.don-page #david .david-actions > .don-david-hint > .action-icon,
-body.don-page #david .david-actions > a.ra-reveal-link > span:first-child {
-  position:static!important;
-  display:flex!important;
-  flex:0 0 var(--ra-medal-size)!important;
-  align-items:center!important;
-  justify-content:center!important;
-  width:var(--ra-medal-size)!important;
-  height:var(--ra-medal-size)!important;
-  min-width:var(--ra-medal-size)!important;
-  min-height:var(--ra-medal-size)!important;
-  max-width:var(--ra-medal-size)!important;
-  max-height:var(--ra-medal-size)!important;
-  padding:0!important;
-  margin:0!important;
-  border:0!important;
-  border-radius:0!important;
-  background:transparent!important;
-  box-shadow:none!important;
-}
-body.don-page #david .david-actions > .don-david-hint > .action-icon > img,
-body.don-page #david .david-actions > a.ra-reveal-link > span:first-child > img {
-  display:block!important;
-  width:var(--ra-medal-size)!important;
-  height:var(--ra-medal-size)!important;
-  min-width:0!important;
-  max-width:var(--ra-medal-size)!important;
-  max-height:var(--ra-medal-size)!important;
-  object-fit:contain!important;
-  margin:0!important;
-  padding:0!important;
-  transform:none!important;
-}
-body.don-page #david .david-actions > .don-david-hint > .action-copy {
-  position:static!important;
-  display:block!important;
-  flex:1 1 auto!important;
-  width:auto!important;
-  min-width:0!important;
-  margin:0!important;
-  padding:0!important;
-  text-align:left!important;
-  color:#183c58!important;
-  font-size:15px!important;
-  line-height:1.45!important;
-}
-body.don-page #david .david-actions > .don-david-hint > .action-copy small {
-  display:block!important;
-  margin-top:4px!important;
-  color:#8b714d!important;
-  font-size:12px!important;
-}
-@media(max-width:650px){
- :root { --ra-medal-size:64px; --ra-medal-gap:13px; }
- body.don-page #david .david-actions{grid-template-columns:1fr!important}
+@media(max-width:600px){
+  .ra-reveal-link,.l-medal-row,.b-medallion-holder{gap:14px !important;min-height:64px !important}
+  .ra-reveal-link > img,.l-medal-row > .l-medal,.b-medallion-holder > .b-medallion-trigger {
+    flex-basis:64px !important;width:64px !important;height:64px !important;min-width:64px !important;
+  }
+  .ra-reveal-link > img,.l-medal-row > .l-medal img,.b-medallion-holder > .b-medallion-trigger img {
+    width:62px !important;height:62px !important;max-width:62px !important;max-height:62px !important;
+  }
+  .ra-reveal-copy strong,.ra-reveal-label strong{font-size:14px}
 }
 @media(prefers-reduced-motion:reduce){
- .b-medallion-trigger,.l-medal{transition:none!important}
+ .l-medal-row > .l-medal,.b-medallion-holder > .b-medallion-trigger{transition:none}
 }
