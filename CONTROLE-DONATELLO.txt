@@ -1,0 +1,36 @@
+DONATELLO - CONTROLE DE PUBLICATION
+
+Fichiers du correctif :
+assets/artwork-viewer.css
+assets/artwork-viewer.js
+assets/css/medaillons-communs.css
+donatello.html
+en/donatello.html
+en/recit-Donatello-id-1792423871411-cv2md.html
+en/recit-Donatello-id-1792423947131-yppkb.html
+images/Donatello/Bronze_David_by_Donatello-Bargello-3.jpg
+images/Donatello/Casa_vasari_FI,_salone,_ritratti_a,_donatello (1).jpg
+images/Donatello/Donatello,_crocifisso.jpg
+images/Donatello/Donatello,_maddalena_nella_nuova_collocazione_03.JPG
+images/Donatello/Donatello_-_David_-_Florence.jpg
+images/Donatello/Filippo_brunelleschi,_crocifisso_di_santa_maria_novella,_1410-15_ca-178.jpg
+images/Donatello/Lille_PdBA_donatello_festin_herode.jpg
+images/Donatello/Orsanmichele,_san_giorgio_e_la_principessa_di_donatello.jpg
+images/Donatello/Possible_Self_Portrait_of_Donatello_in_the_Museo_Antoniano.jpg
+images/Donatello/St._Georg,_Donatello,_1416-17,_Bargello_Florenz-02.jpg
+images/Donatello/assets/medaillons/icone-livre.png
+images/icone-balance.png
+images/icone-compas.png
+images/icone-livre.png
+images/icone-loupe.png
+images/icone-masque.png
+images/icone-oeil-serrure.png
+images/icone-plume.png
+recit-Donatello-id-1792423871411-cv2md.html
+recit-Donatello-id-1792423947131-yppkb.html
+
+Liens locaux absents :
+Aucun lien local absent detecte.
+
+Pages transversales du site de reference : Artistes, Lieux et Credits contiennent deja des references Donatello ; Nouveautes et Accueil non modifies pour eviter des changements editoriaux non valides.
+Controle visuel navigateur non effectue.
