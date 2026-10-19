@@ -1,5 +1,4 @@
-CORRECTIF CIBLE FILIPPINO LIPPI
-
-Les trois medaillons de la page francaise pointent explicitement vers les recits a la racine du site. Les trois medaillons anglais pointent explicitement vers /en/.
-
-Deployer les fichiers en conservant les dossiers. Les six recits sont inclus pour assurer la correspondance des langues. Aucune autre page du site ne doit etre remplacee.
+Correctif ciblé de la page anglaise Filippino Lippi.
+Remplacer uniquement en/filippino-lippi.html dans le dépôt GitHub.
+Les trois récits anglais existants sont conservés et déjà rédigés en anglais.
+La page française et les autres fichiers du site ne sont pas modifiés.
