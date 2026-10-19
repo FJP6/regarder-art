@@ -1,1 +1,5 @@
-Correctif bandeau Filippino : français et anglais inclus. Déposer filippino-lippi.html à la racine GitHub et en/filippino-lippi.html dans en/. Les récits compacts restent inclus. Vérifier la page française à regarder-art.fr/filippino-lippi.html et la page anglaise à regarder-art.fr/en/filippino-lippi.html. Ne pas déposer les fichiers à plat.
+Correctif ciblé : remplacer les deux fichiers HTML en conservant les dossiers.
+filippino-lippi.html => racine du site (FR)
+en/filippino-lippi.html => dossier en/ (EN)
+Corrige les attributs href/lang et les liens vers les récits EN.
+Les six pages de récits déjà publiées doivent rester en place.
