@@ -1,0 +1,1 @@
+Remplacer les fichiers aux mêmes chemins dans GitHub. Photos originales inchangées. Vérifier le rendu sur mobile et ordinateur. Les pages récit reviennent au médaillon via une ancre.
