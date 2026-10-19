@@ -1,5 +1,5 @@
-Correctif ciblé : remplacer les deux fichiers HTML en conservant les dossiers.
-filippino-lippi.html => racine du site (FR)
-en/filippino-lippi.html => dossier en/ (EN)
-Corrige les attributs href/lang et les liens vers les récits EN.
-Les six pages de récits déjà publiées doivent rester en place.
+CORRECTIF CIBLE FILIPPINO LIPPI
+
+Les trois medaillons de la page francaise pointent explicitement vers les recits a la racine du site. Les trois medaillons anglais pointent explicitement vers /en/.
+
+Deployer les fichiers en conservant les dossiers. Les six recits sont inclus pour assurer la correspondance des langues. Aucune autre page du site ne doit etre remplacee.
