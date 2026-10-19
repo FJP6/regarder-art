@@ -1,1 +1,1 @@
-Fichiers à déposer à la racine du dépôt GitHub regarder-art. Les pages Donatello FR et EN remplacent les anciennes. Médaillon œil-serrure : photographie seule. Vérifier en prévisualisation avant mise en ligne.
+IMPORTANT : extraire le ZIP puis copier les fichiers dans la racine du depot GitHub, en remplacant donatello.html et en/donatello.html. Ne pas televerser le ZIP tel quel. Verifier le commit et le deploiement GitHub Pages.
