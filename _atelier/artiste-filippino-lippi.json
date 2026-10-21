@@ -238,13 +238,17 @@
   "artistLinks": [
     {
       "title": "Sandro Botticelli",
-      "description": "Retrouver la grâce de son maître.\nRecapturing the Grace of His Master.",
-      "url": "botticelli.html"
+      "description": "Retrouver la grâce de son maître.",
+      "url": "botticelli.html",
+      "descriptionEN": "Recapturing the Grace of His Master.",
+      "titleEN": "Sandro Botticelli"
     },
     {
       "title": "Masaccio",
-      "description": "Découvrir l’héritage de la chapelle Brancacci.\nDiscovering the Legacy of the Brancacci Chapel.",
-      "url": "masaccio.html"
+      "description": "Découvrir l’héritage de la chapelle Brancacci.",
+      "url": "masaccio.html",
+      "descriptionEN": "Discovering the Legacy of the Brancacci Chapel.",
+      "titleEN": "Masaccio"
     }
   ],
   "resources": [],
