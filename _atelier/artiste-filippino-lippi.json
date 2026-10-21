@@ -1,0 +1,531 @@
+{
+  "version": 15,
+  "artist": {
+    "name": "Filippino Lippi",
+    "slug": "filippino-lippi",
+    "dates": "vers 1457–1504",
+    "intro": "Élève de Botticelli, héritier de Masaccio, Filippino Lippi fait entrer le trouble et la fantaisie dans la Renaissance florentine.",
+    "bio": "Né vers 1457, Filippino Lippi est le fils du peintre Fra Filippo Lippi. Formé dans l'atelier de Botticelli, il participe à l'achèvement des fresques de la chapelle Brancacci, commencées par Masaccio. Mais il développe rapidement un style personnel : personnages expressifs, décors foisonnants et architectures étranges. À la fin du XVe siècle, sa peinture révèle une Renaissance moins sereine, plus inquiète et théâtrale.",
+    "takeaway": "Filippino Lippi hérite de la grâce de Botticelli, mais développe un univers bien à lui : des visages expressifs, des compositions foisonnantes et des décors antiques parfois presque fantastiques.\n\nChez lui, la Renaissance devient plus théâtrale, plus mouvementée, parfois même inquiétante.\n\nAvec Filippino Lippi, la beauté ne suffit plus : la peinture cherche aussi à surprendre, à émouvoir et à raconter.",
+    "portrait": "images/filippino-lippi/Filippino_Lippi.jpg",
+    "introEN": "A pupil of Botticelli and heir to Masaccio’s legacy, Filippino Lippi brings a sense of unease and fantasy to the Florentine Renaissance.",
+    "bioEN": "Born around 1457, Filippino Lippi was the son of the painter Fra Filippo Lippi. Trained in Botticelli’s workshop, he helped complete the frescoes of the Brancacci Chapel, begun by Masaccio. But he soon developed his own distinctive style: expressive figures, richly detailed settings and unusual architecture. By the end of the 15th century, his paintings revealed a less serene, more unsettling and theatrical side of the Renaissance.",
+    "takeawayEN": "Filippino Lippi inherits Botticelli’s grace but develops a world of his own: expressive faces, richly detailed compositions and classical settings that sometimes seem almost fantastical.\n\nIn his work, the Renaissance becomes more theatrical, more dynamic and, at times, even unsettling.\n\nWith Filippino Lippi, beauty alone is no longer enough: painting also seeks to surprise, to move and to tell stories."
+  },
+  "library": [
+    {
+      "id": "oeuvre-1",
+      "artist": "Filippino Lippi",
+      "title": "L’Apparition de la Vierge à saint Bernard",
+      "titleEN": "The Apparition of the Virgin to Saint Bernard",
+      "image": "images/filippino-lippi/Bernardo_claraval_filippino_lippi_Apparition of The Virgin to St. Bernard.jpg",
+      "credit": {
+        "artist": "Filippino Lippi",
+        "photographer": "Reproduction fidèle d’une œuvre du domaine public — photographe non identifié",
+        "source": "Wikimedia Commons — Badia Fiorentina, Florence",
+        "license": "Domaine public — Public Domain Mark 1.0 (PD-Art)",
+        "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Bernardo_claraval_filippino_lippi_Apparition&title=Special%3AMediaSearch&type=image",
+        "originalReference": "Bernardo_claraval_filippino_lippi_Apparition of The Virgin to St. Bernard;Web Gallery of Art:   Image  Info about artwork;This work is in the public domain in its country of origin and other countries and areas where the copyright term is the author's life plus 100 years or fewer.  This work is in the public domain in the United States because it was published (or registered with the U.S. Copyright Office) before January 1, 1931."
+      },
+      "originalBlock": 1
+    },
+    {
+      "id": "oeuvre-2",
+      "artist": "Filippino Lippi",
+      "title": "L’Adoration des Mages",
+      "titleEN": "Adoration of the Magi",
+      "image": "images/filippino-lippi/Filippino Lippi - Adorazione dei Magi.jpg",
+      "credit": {
+        "artist": "Filippino Lippi",
+        "photographer": "Google Arts & Culture — reproduction photographique",
+        "source": "Google Arts & Culture — Galeries des Offices, Florence",
+        "license": "Domaine public — Public Domain Mark 1.0 (PD-Art)",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Filippino_Lippi_-_Adorazione_dei_Magi_-_Google_Art_Project.jpg",
+        "originalReference": "Filippino Lippi - Adorazione dei Magi;Google Arts & Culture — -QFNUqt9evHu8A;This work is in the public domain in its country of origin and other countries and areas where the copyright term is the author's life plus 100 years or fewer.  This work is in the public domain in the United States because it was published (or registered with the U.S. Copyright Office) before January 1, 1931."
+      },
+      "originalBlock": 2
+    },
+    {
+      "id": "oeuvre-3",
+      "artist": "Filippino Lippi",
+      "title": "Saint Philippe et le dragon",
+      "titleEN": "Saint Philip and the Dragon",
+      "image": "images/filippino-lippi/Filippino_lippi_san_filippo_Dragon.jpg",
+      "credit": {
+        "artist": "Filippino Lippi",
+        "photographer": "Photographe non identifié — Wikimedia Commons",
+        "source": "Chapelle Filippo Strozzi, Santa Maria Novella, Florence",
+        "license": "Domaine public indiqué sur Wikimedia Commons — auteur de la photographie non identifié",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Filippino_lippi,_san_filippo_apostolo_evoca_il_mostro_dal_tempio_di_marte_di_hierapolis,_cappella_di_filippo_strozzi,_santa_maria_novella_1486-1502,_firenze.jpg#Summary",
+        "originalReference": "Filippino_lippi_san_filippo_Dragon;This work is in the public domain in its country of origin and other countries and areas where the copyright term is the author's life plus 70 years or fewer.   You must also include a United States public domain tag to indicate why this work is in the public domain in the United States.  Note that a few countries have copyright terms longer than 70 years: Mexico has 100 years, Jamaica has 95 years, Colombia has 80 years, and Guatemala and Samoa have 75 years. This image may not be in the public domain in these countries, which moreover do not implement the rule of the shorter term. Honduras has a general copyright term of 75 years, but it does implement the rule of the shorter term. Copyright may extend on works created by French who died for France in World War II (more information), Russians who served in the Eastern Front of World War II (known as the Great Patriotic War in Russia) and posthumously rehabilitated victims of Soviet repressions (more information)."
+      },
+      "originalBlock": 3
+    },
+    {
+      "id": "leonard-adoration",
+      "artist": "Léonard de Vinci",
+      "title": "L’Adoration des Mages",
+      "titleEN": "Adoration of the Magi",
+      "image": "images/filippino-lippi/Adoration of the Magi.jpg",
+      "credit": {
+        "artist": "Léonard de Vinci",
+        "photographer": "Justin Benttinen",
+        "source": "Photographie personnelle de Justin Benttinen, Galeries des Offices, Florence — Wikimedia Commons",
+        "license": "CC BY-SA 4.0 — photographie de Justin Benttinen",
+        "sourceUrl": "https://www.uffizi.it/en/artworks/leonardo-adoration-of-the-magi"
+      }
+    },
+    {
+      "id": "id-1792337225661-f15oy",
+      "artist": "Filippino Lippi",
+      "title": "L’Apparition de la Vierge",
+      "titleEN": "Apparition of The Virgin",
+      "image": "images/filippino-lippi/Bernardo_claraval_filippino_lippi_Apparition of The Virgin to St. Bernard_Zoom1.jpg",
+      "credit": {
+        "photographer": "Reproduction fidèle d’une œuvre du domaine public — photographe non identifié",
+        "source": "Wikimedia Commons — Badia Fiorentina, Florence",
+        "license": "Domaine public — Public Domain Mark 1.0 (PD-Art)",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bernardo_claraval_filippino_lippiFXD.jpg"
+      }
+    },
+    {
+      "id": "id-1792337260461-2gr5m",
+      "artist": "Filippino Lippi",
+      "title": "Saint Philippe et le dragon",
+      "titleEN": "Saint Philippe and the Dragon",
+      "image": "images/filippino-lippi/Filippino_lippi_san_filippo_Dragon_Zoom3.jpg",
+      "credit": {
+        "photographer": "Photographe non identifié — Wikimedia Commons",
+        "source": "Chapelle Filippo Strozzi, Santa Maria Novella, Florence",
+        "license": "Domaine public indiqué sur Wikimedia Commons — auteur de la photographie non identifié",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Filippino_lippi,_san_filippo_apostolo_evoca_il_mostro_dal_tempio_di_marte_di_hierapolis,_cappella_di_filippo_strozzi,_santa_maria_novella_1486-1502,_firenze.jpg#Summary"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "section-1",
+      "type": "oeuvre",
+      "workId": "oeuvre-1",
+      "title": "L’Apparition de la Vierge à saint Bernard",
+      "look": "Regardez la délicatesse des gestes et la proximité des visages. La Vierge apparaît entourée d'anges, mais la scène semble presque familière. Filippino transforme une vision miraculeuse en rencontre pleine de douceur et d'émotion.",
+      "understand": "Filippino transforme une vision miraculeuse en rencontre pleine de douceur et d'émotion.",
+      "originalBlock": 1,
+      "titleEN": "The Apparition of the Virgin to Saint Bernard",
+      "lookEN": "Look at the delicacy of the gestures and the closeness of the faces. The Virgin appears surrounded by angels, yet the scene feels almost intimate. Filippino transforms a miraculous vision into an encounter filled with tenderness and emotion.",
+      "understandEN": "Filippino transforms a miraculous vision into an encounter filled with tenderness and emotion."
+    },
+    {
+      "id": "section-2",
+      "type": "oeuvre",
+      "workId": "oeuvre-2",
+      "title": "L’Adoration des Mages",
+      "look": "Le regard se perd dans la foule : personnages agenouillés, chevaux, conversations et petites scènes à l'arrière-plan. Pourtant, tout converge vers l'Enfant Jésus. ",
+      "understand": "Filippino transforme un épisode biblique en un spectacle vivant où le sacré rencontre le monde des hommes.",
+      "originalBlock": 2,
+      "titleEN": "The Adoration of the Magi",
+      "lookEN": "The eye wanders through the crowd: kneeling figures, horses, conversations and small scenes in the background. Yet everything draws the viewer’s attention towards the Christ Child.",
+      "understandEN": "Filippino transforms a biblical episode into a vivid spectacle where the sacred meets the human world."
+    },
+    {
+      "id": "section-3",
+      "type": "oeuvre",
+      "workId": "oeuvre-3",
+      "title": "Saint Philippe et le dragon",
+      "look": "Observez les architectures antiques, les statues et les personnages agités. Au milieu de ce décor spectaculaire, un dragon surgit du temple. ",
+      "understand": "Filippino mêle références à l'Antiquité, récit religieux et imagination fantastique : la Renaissance devient un véritable théâtre.",
+      "originalBlock": 3,
+      "titleEN": "Saint Philip and the Dragon",
+      "lookEN": "Observe the classical architecture, the statues and the agitated figures. Amid this spectacular setting, a dragon emerges from the temple.",
+      "understandEN": "Filippino combines references to classical antiquity, religious storytelling and fantastical imagination: the Renaissance becomes a true theatrical spectacle."
+    },
+    {
+      "id": "comparaison-1",
+      "type": "comparaison",
+      "work1": "leonard-adoration",
+      "work2": "oeuvre-2",
+      "title": "Léonard et Filippino : une commande, deux destins",
+      "look": "Deux visions d'un même sujet : Léonard explore le mouvement, Filippino privilégie le récit.",
+      "understand": "Deux œuvres, deux démarches : l'une révèle la recherche du peintre, l'autre présente une composition achevée.",
+      "originalBlock": 6,
+      "caption1": "Les personnages surgissent de l'ombre, les gestes s'entrecroisent et la composition semble en pleine recherche.",
+      "caption2": "Les couleurs, les costumes et les détails foisonnent. La scène est plus lumineuse et organisée autour de l'Enfant Jésus. La scène est plus lumineuse et organisée autour de l'Enfant Jésus.",
+      "compareGlobal": "Deux visions d'un même sujet : \nLéonard laisse son Adoration des Mages inachevée en 1481. \nFilippino reprend la commande et livre son tableau en 1496.\nLéonard explore le mouvement, Filippino privilégie le récit.",
+      "caption1EN": "The figures emerge from the shadows, gestures intertwine, and the composition seems to be still taking shape.",
+      "caption2EN": "The scene is rich in colour, costumes and intricate details. It is brighter and arranged around the Christ Child.",
+      "compareGlobalEN": "Two Visions of the Same Subject:\nLeonardo leaves his Adoration of the Magi unfinished in 1481.\nFilippino takes over the commission and completes his painting in 1496.\nLeonardo explores movement, while Filippino focuses on storytelling.\n",
+      "lookEN": "Two Visions of the Same Subject: Leonardo explores movement, while Filippino focuses on storytelling.",
+      "understandEN": "Two Works, Two Approaches: one reveals the artist’s creative process, while the other presents a finished composition.",
+      "titleEN": "Leonardo and Filippino: One Commission, Two Destinies"
+    }
+  ],
+  "medallions": [
+    {
+      "id": "med-bernard",
+      "kind": "recit",
+      "target": "section-1",
+      "title": "Quand la Vierge apparaît à un moine",
+      "text": "Saint Bernard de Clairvaux, moine du XIIᵉ siècle, est connu pour sa profonde dévotion à la Vierge Marie.\n\nSelon la tradition, alors qu’il médite sur les Écritures, Marie lui apparaît, entourée d’anges. Elle vient récompenser sa foi et l’inspirer dans ses écrits.\n\nMais regardez bien : la Vierge ne se présente pas comme une reine inaccessible. Elle s’approche du moine avec douceur, tandis que les anges observent cette rencontre extraordinaire.\n\nFilippino Lippi transforme ainsi une vision mystique en une scène presque intime : le monde céleste semble entrer, pour un instant, dans celui des hommes.",
+      "original": {
+        "kind": "recit",
+        "work": "Saint Philippe et le dragon",
+        "captionFR": "Découvrir le récit de Saint Philippe et le dragon",
+        "captionEN": "Discover",
+        "fr": "Un dragon au cœur d’un temple païen\n\nSaint Philippe et le dragon — Filippino Lippi\n\nDans la cité antique d’Hiérapolis, les habitants adorent le dieu Mars. Mais un jour, un dragon surgit du temple et répand un souffle empoisonné. Plusieurs personnes s’effondrent, parmi lesquelles le fils du prêtre chargé du culte.\n\nSaint Philippe intervient. Face au monstre, il ne brandit aucune arme : il lui ordonne, au nom du Christ, de quitter le temple et de disparaître dans le désert.\n\nLe dragon s’enfuit. Philippe prie alors pour les victimes, qui reviennent à la vie.\n\nMais pourquoi Filippino Lippi a-t-il peint un dragon au milieu d’une architecture antique ?\n\nParce que cette créature représente bien davantage qu’un monstre. Dans la légende, elle incarne les forces maléfiques associées aux anciennes idoles. En la chassant, saint Philippe manifeste la victoire de la foi chrétienne sur le paganisme.\n\nFilippino Lippi donne à cet épisode une dimension spectaculaire : un temple aux décors étranges, des personnages bouleversés et un dragon presque fantastique. La scène ressemble à une représentation théâtrale dont le spectateur serait le témoin.\n\nCe récit provient de la tradition légendaire de saint Philippe, notamment transmise par les Actes de Philippe et la Légende dorée. Il ne s’agit pas d’un événement historiquement établi.",
+        "en": "",
+        "image": "images/filippino-lippi/Filippino_lippi_san_filippo_Dragon.jpg",
+        "titleFR": "",
+        "titleEN": ""
+      },
+      "workId": "oeuvre-1",
+      "textEN": "Saint Bernard of Clairvaux, a 12th-century monk, is known for his profound devotion to the Virgin Mary.\n\nAccording to tradition, while meditating on the Scriptures, Mary appears to him, surrounded by angels. She comes to reward his faith and inspire his writings.\n\nBut look closely: the Virgin does not appear as a distant, unapproachable queen. She approaches the monk with tenderness, while the angels watch this extraordinary encounter.\n\nFilippino Lippi thus transforms a mystical vision into an almost intimate scene: for a brief moment, the heavenly world seems to enter the world of humankind.",
+      "titleEN": "When the Virgin Appears to a Monk"
+    },
+    {
+      "id": "med-dragon",
+      "kind": "recit",
+      "target": "section-3",
+      "title": "Un dragon au cœur d’un temple païen",
+      "text": "Un dragon au cœur d’un temple païen\n\nSaint Philippe et le dragon — Filippino Lippi\n\nDans la cité antique d’Hiérapolis, les habitants adorent le dieu Mars. Mais un jour, un dragon surgit du temple et répand un souffle empoisonné. Plusieurs personnes s’effondrent, parmi lesquelles le fils du prêtre chargé du culte.\n\nSaint Philippe intervient. Face au monstre, il ne brandit aucune arme : il lui ordonne, au nom du Christ, de quitter le temple et de disparaître dans le désert.\n\nLe dragon s’enfuit. Philippe prie alors pour les victimes, qui reviennent à la vie.\n\nMais pourquoi Filippino Lippi a-t-il peint un dragon au milieu d’une architecture antique ?\n\nParce que cette créature représente bien davantage qu’un monstre. Dans la légende, elle incarne les forces maléfiques associées aux anciennes idoles. En la chassant, saint Philippe manifeste la victoire de la foi chrétienne sur le paganisme.\n\nFilippino Lippi donne à cet épisode une dimension spectaculaire : un temple aux décors étranges, des personnages bouleversés et un dragon presque fantastique. La scène ressemble à une représentation théâtrale dont le spectateur serait le témoin.\n\nCe récit provient de la tradition légendaire de saint Philippe, notamment transmise par les Actes de Philippe et la Légende dorée. Il ne s’agit pas d’un événement historiquement établi.",
+      "workId": "oeuvre-3",
+      "titleEN": "A Dragon at the Heart of a Pagan Temple",
+      "textEN": "A Dragon at the Heart of a Pagan Temple\n\nSaint Philip and the Dragon — Filippino Lippi\n\nIn the ancient city of Hierapolis, the inhabitants worship the god Mars. But one day, a dragon emerges from the temple, spreading its poisonous breath. Several people collapse, including the son of the priest responsible for the cult.\n\nSaint Philip intervenes. Confronting the monster, he raises no weapon: instead, in the name of Christ, he commands it to leave the temple and disappear into the desert.\n\nThe dragon flees. Philip then prays for the victims, who are brought back to life.\n\nBut why did Filippino Lippi paint a dragon in the middle of an ancient temple?\n\nBecause this creature represents far more than a monster. In the legend, it embodies the forces of evil associated with the ancient pagan idols. By driving it away, Saint Philip demonstrates the triumph of the Christian faith over paganism.\n\nFilippino Lippi gives this episode a spectacular dimension: a temple adorned with strange decorations, figures overwhelmed by emotion, and an almost fantastical dragon. The scene resembles a theatrical performance unfolding before the viewer's eyes.\n\nThis story comes from the legendary tradition of Saint Philip, notably preserved in the Acts of Philip and The Golden Legend. It is not a historically established event."
+    },
+    {
+      "id": "med-adoration-anecdote",
+      "kind": "anecdote",
+      "target": "comparaison-1",
+      "title": "Le jour où Filippino remplaça Léonard",
+      "text": "Le jour où Filippino Lippi remplaça Léonard de Vinci\n\nFlorence, 1481. Les religieux de San Donato a Scopeto commandent à Léonard de Vinci une Adoration des Mages destinée au maître-autel de leur église.\n\nMais Léonard a d'autres projets. Il part pour Milan, laissant derrière lui un tableau inachevé.\n\nLes religieux attendent son retour. En vain.\n\nLes années passent… et toujours pas de tableau !\n\nFinalement, ils perdent patience et confient la commande à Filippino Lippi.\n\nEn 1496, celui-ci livre son Adoration des Mages, achevée, signée et datée.\n\nLe comble ? Aujourd'hui, les deux tableaux se trouvent aux Offices de Florence : celui que Léonard n'a jamais terminé et celui que Filippino a réalisé à sa place.\n\nComme quoi, même un génie peut laisser ses clients sur leur faim !\n\nUne histoire documentée par les archives de la commande et les notices des Galeries des Offices. Rien ne permet toutefois d'affirmer qu'il existait une rivalité personnelle entre les deux peintres.",
+      "titleEN": "The Day Filippino Took Leonardo’s Place",
+      "textEN": "The Day Filippino Lippi Took Leonardo da Vinci’s Place\n\nFlorence, 1481. The monks of San Donato a Scopeto commission Leonardo da Vinci to paint an Adoration of the Magi for the high altar of their church.\n\nBut Leonardo has other plans. He leaves for Milan, abandoning the painting unfinished.\n\nThe monks wait for his return. In vain.\n\nThe years go by… and still no painting!\n\nEventually, they lose patience and entrust the commission to Filippino Lippi.\n\nIn 1496, he delivers his Adoration of the Magi, completed, signed and dated.\n\nThe irony? Today, both paintings hang in the Uffizi Gallery in Florence: the one Leonardo never finished and the one Filippino painted in his place.\n\nIt just goes to show that even a genius can leave his clients wanting more!\n\nThis story is documented by the commission records and the Uffizi Galleries’ official descriptions. However, there is no evidence to suggest that a personal rivalry existed between the two painters.",
+      "workId": "oeuvre-2"
+    }
+  ],
+  "recognize": [
+    {
+      "text": "Des visages expressifs et délicats\nSes personnages ont des regards intenses, des visages fins et des gestes subtils. Ils semblent habités par une émotion intérieure.",
+      "image": "images/filippino-lippi/Bernardo_claraval_filippino_lippi_Apparition of The Virgin to St. Bernard_Zoom1.jpg",
+      "textEN": "Expressive and Delicate Faces\nHis figures have intense gazes, finely drawn faces and subtle gestures. They seem filled with inner em"
+    },
+    {
+      "text": "Des compositions foisonnantes\nFilippino aime multiplier les personnages, les mouvements et les petits épisodes secondaires. Le regard circule sans cesse dans ses tableaux.",
+      "image": "images/filippino-lippi/Filippino_lippi_san_filippo_Dragon.jpg",
+      "textEN": "Rich, Detailed Compositions\nFilippino loves filling his paintings with figures, movement and small secondary scenes. The viewer’s eye is constantly drawn from one detail to another."
+    },
+    {
+      "text": "Des décors antiques presque fantastiques\nColonnes, statues, ornements et architectures imaginaires envahissent ses scènes. L'Antiquité devient un décor spectaculaire, parfois inquiétant.",
+      "image": "images/filippino-lippi/Filippino_lippi_san_filippo_Dragon_Zoom3.jpg",
+      "textEN": "Almost Fantastical Classical Settings\nColumns, statues, ornaments and imaginary architecture fill his scenes. Antiquity becomes a spectacular, sometimes unsettling backdrop."
+    },
+    {
+      "text": "Une Renaissance théâtrale et agitée\nLà où d'autres recherchent l'équilibre et le calme, Filippino privilégie les attitudes mouvementées, les drapés tourmentés et les scènes pleines de tension.",
+      "image": "images/filippino-lippi/Filippino Lippi - Adorazione dei Magi.jpg",
+      "textEN": "A Dramatic and Dynamic Renaissance\nWhile other artists seek balance and serenity, Filippino favours animated poses, swirling draperies and scenes filled with tension."
+    }
+  ],
+  "quiz": {
+    "title": "À vous de jouer ! Qui a peint ce tableau ?",
+    "question": "Lequel de ces deux Saint Sébastien a été peint par Mantegna ?",
+    "image1": "",
+    "image2": "",
+    "artist1": "Andrea Mantegna",
+    "artist2": "Sandro Botticelli",
+    "answer": "1",
+    "explanation": "Observez la construction du corps, le paysage, les drapés et la manière de représenter l’espace.",
+    "enabled": false
+  },
+  "artistLinks": [
+    {
+      "title": "Sandro Botticelli",
+      "description": "Retrouver la grâce de son maître.\nRecapturing the Grace of His Master.",
+      "url": "botticelli.html"
+    },
+    {
+      "title": "Masaccio",
+      "description": "Découvrir l’héritage de la chapelle Brancacci.\nDiscovering the Legacy of the Brancacci Chapel.",
+      "url": "masaccio.html"
+    }
+  ],
+  "resources": [],
+  "appearance": {
+    "mainColor": "#B87F05",
+    "secondaryColor": "#e0c7c8",
+    "pageBackground": "#FAF8F4",
+    "understandBackground": "#F4EAE6",
+    "understandAccent": "#e3bab5",
+    "workLayout": "masaccio-two-columns",
+    "font": "Tahoma",
+    "bannerStyle": "dark",
+    "showPortrait": true,
+    "compactHero": "on",
+    "introColor": "#7c5555",
+    "titleColor": "#811212"
+  },
+  "legacy": {
+    "schemaVersion": 5,
+    "slug": "filippino-lippi",
+    "name": "Filippino Lippi",
+    "dates": "vers 1457–1504",
+    "color": "#b87f05",
+    "hero": "images/filippino-lippi/Filippino_Lippi.jpg",
+    "status": "brouillon",
+    "intro": {
+      "fr": "Élève de Botticelli, héritier de Masaccio, Filippino Lippi fait entrer le trouble et la fantaisie dans la Renaissance florentine.",
+      "en": "A pupil of Botticelli and heir to Masaccio, Filippino Lippi brings unease and imagination into the Florentine Renaissance"
+    },
+    "blocks": [
+      {
+        "type": "texte",
+        "titleFR": "En quelques mots",
+        "titleEN": "In a few words",
+        "fr": "Né vers 1457, Filippino Lippi est le fils du peintre Fra Filippo Lippi. Formé dans l'atelier de Botticelli, il participe à l'achèvement des fresques de la chapelle Brancacci, commencées par Masaccio. Mais il développe rapidement un style personnel : personnages expressifs, décors foisonnants et architectures étranges. À la fin du XVe siècle, sa peinture révèle une Renaissance moins sereine, plus inquiète et théâtrale.",
+        "en": "Born around 1457, Filippino Lippi was the son of the painter Fra Filippo Lippi. Trained in Botticelli's workshop, he helped complete the frescoes of the Brancacci Chapel begun by Masaccio. Yet he soon developed his own style: expressive figures, richly detailed settings and unusual architecture. By the late fifteenth century, his paintings revealed a less serene, more restless and theatrical Renaissance.",
+        "refs": "",
+        "translationStatus": "présente"
+      },
+      {
+        "type": "oeuvre",
+        "titleFR": "L’Apparition de la Vierge à saint Bernard",
+        "titleEN": "The Apparition of the Virgin to Saint Bernard",
+        "fr": "Regardez la délicatesse des gestes et la proximité des visages. La Vierge apparaît entourée d'anges, mais la scène semble presque familière. Filippino transforme une vision miraculeuse en rencontre pleine de douceur et d'émotion.",
+        "en": "Notice the delicate gestures and the closeness of the faces. The Virgin appears surrounded by angels, yet the scene feels almost intimate. Filippino transforms a miraculous vision into an encounter filled with tenderness and emotion.",
+        "refs": "Bernardo_claraval_filippino_lippi_Apparition of The Virgin to St. Bernard;Web Gallery of Art:   Image  Info about artwork;This work is in the public domain in its country of origin and other countries and areas where the copyright term is the author's life plus 100 years or fewer.  This work is in the public domain in the United States because it was published (or registered with the U.S. Copyright Office) before January 1, 1931.",
+        "image": "images/filippino-lippi/Bernardo_claraval_filippino_lippi_Apparition of The Virgin to St. Bernard.jpg",
+        "look": {
+          "fr": "Regardez la délicatesse des gestes et la proximité des visages. La Vierge apparaît entourée d'anges, mais la scène semble presque familière. Filippino transforme une vision miraculeuse en rencontre pleine de douceur et d'émotion.",
+          "en": "Notice the delicate gestures and the closeness of the faces. The Virgin appears surrounded by angels, yet the scene feels almost intimate. "
+        },
+        "understand": {
+          "fr": "Filippino transforme une vision miraculeuse en rencontre pleine de douceur et d'émotion.",
+          "en": "Filippino transforms a miraculous vision into an encounter filled with tenderness and emotion."
+        },
+        "credit": {
+          "artist": "Filippino Lippi",
+          "photographer": "À vérifier",
+          "source": "À vérifier à partir de la référence fournie",
+          "license": "Domaine public (mention fournie ; reproduction à vérifier)",
+          "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Bernardo_claraval_filippino_lippi_Apparition&title=Special%3AMediaSearch&type=image",
+          "originalReference": "Bernardo_claraval_filippino_lippi_Apparition of The Virgin to St. Bernard;Web Gallery of Art:   Image  Info about artwork;This work is in the public domain in its country of origin and other countries and areas where the copyright term is the author's life plus 100 years or fewer.  This work is in the public domain in the United States because it was published (or registered with the U.S. Copyright Office) before January 1, 1931."
+        },
+        "translationStatus": "à vérifier"
+      },
+      {
+        "type": "oeuvre",
+        "titleFR": "L’Adoration des Mages",
+        "titleEN": "Adoration of the Magi",
+        "fr": "Le regard se perd dans la foule : personnages agenouillés, chevaux, conversations et petites scènes à l'arrière-plan. Pourtant, tout converge vers l'Enfant Jésus. Filippino transforme un épisode biblique en un spectacle vivant où le sacré rencontre le monde des hommes.",
+        "en": "The eye wanders through the crowd: kneeling figures, horses, conversations and small scenes in the background. Yet everything leads back to the Christ Child. Filippino turns a biblical episode into a lively spectacle in which the sacred meets the human world.",
+        "refs": "Filippino Lippi - Adorazione dei Magi;Google Arts & Culture — -QFNUqt9evHu8A;This work is in the public domain in its country of origin and other countries and areas where the copyright term is the author's life plus 100 years or fewer.  This work is in the public domain in the United States because it was published (or registered with the U.S. Copyright Office) before January 1, 1931.",
+        "image": "images/filippino-lippi/Filippino Lippi - Adorazione dei Magi.jpg",
+        "look": {
+          "fr": "Le regard se perd dans la foule : personnages agenouillés, chevaux, conversations et petites scènes à l'arrière-plan. Pourtant, tout converge vers l'Enfant Jésus. ",
+          "en": "The eye wanders through the crowd: kneeling figures, horses, conversations and small scenes in the background. Yet everything leads back to the Christ Child. "
+        },
+        "understand": {
+          "fr": "Filippino transforme un épisode biblique en un spectacle vivant où le sacré rencontre le monde des hommes.",
+          "en": "Filippino turns a biblical episode into a lively spectacle in which the sacred meets the human world."
+        },
+        "credit": {
+          "artist": "Filippino Lippi",
+          "photographer": "Google Arts & Culture — -QFNUqt9evHu8A",
+          "source": "À vérifier à partir de la référence fournie",
+          "license": "Domaine public (mention fournie ; reproduction à vérifier)",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Filippino_Lippi_-_Adorazione_dei_Magi_-_Google_Art_Project.jpg",
+          "originalReference": "Filippino Lippi - Adorazione dei Magi;Google Arts & Culture — -QFNUqt9evHu8A;This work is in the public domain in its country of origin and other countries and areas where the copyright term is the author's life plus 100 years or fewer.  This work is in the public domain in the United States because it was published (or registered with the U.S. Copyright Office) before January 1, 1931."
+        },
+        "translationStatus": "à vérifier"
+      },
+      {
+        "type": "oeuvre",
+        "titleFR": "Saint Philippe et le dragon",
+        "titleEN": "Saint Philip and the Dragon",
+        "fr": "Observez les architectures antiques, les statues et les personnages agités. Au milieu de ce décor spectaculaire, un dragon surgit du temple. Filippino mêle références à l'Antiquité, récit religieux et imagination fantastique : la Renaissance devient un véritable théâtre.",
+        "en": "Observe the ancient architecture, statues and agitated figures. Amid this spectacular setting, a dragon emerges from the temple. Filippino combines references to antiquity, religious storytelling and fantastic imagination: the Renaissance becomes a theatrical spectacle.",
+        "refs": "Filippino_lippi_san_filippo_Dragon;This work is in the public domain in its country of origin and other countries and areas where the copyright term is the author's life plus 70 years or fewer.   You must also include a United States public domain tag to indicate why this work is in the public domain in the United States.  Note that a few countries have copyright terms longer than 70 years: Mexico has 100 years, Jamaica has 95 years, Colombia has 80 years, and Guatemala and Samoa have 75 years. This image may not be in the public domain in these countries, which moreover do not implement the rule of the shorter term. Honduras has a general copyright term of 75 years, but it does implement the rule of the shorter term. Copyright may extend on works created by French who died for France in World War II (more information), Russians who served in the Eastern Front of World War II (known as the Great Patriotic War in Russia) and posthumously rehabilitated victims of Soviet repressions (more information).",
+        "image": "images/filippino-lippi/Filippino_lippi_san_filippo_Dragon.jpg",
+        "look": {
+          "fr": "Observez les architectures antiques, les statues et les personnages agités. Au milieu de ce décor spectaculaire, un dragon surgit du temple. ",
+          "en": "Observe the ancient architecture, statues and agitated figures. Amid this spectacular setting, a dragon emerges from the temple. "
+        },
+        "understand": {
+          "fr": "Filippino mêle références à l'Antiquité, récit religieux et imagination fantastique : la Renaissance devient un véritable théâtre.",
+          "en": "Filippino combines references to antiquity, religious storytelling and fantastic imagination: the Renaissance becomes a theatrical spectacle."
+        },
+        "credit": {
+          "artist": "Filippino Lippi",
+          "photographer": "À vérifier",
+          "source": "À vérifier à partir de la référence fournie",
+          "license": "Domaine public (mention fournie ; reproduction à vérifier)",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Filippino_lippi,_san_filippo_apostolo_evoca_il_mostro_dal_tempio_di_marte_di_hierapolis,_cappella_di_filippo_strozzi,_santa_maria_novella_1486-1502,_firenze.jpg#Summary",
+          "originalReference": "Filippino_lippi_san_filippo_Dragon;This work is in the public domain in its country of origin and other countries and areas where the copyright term is the author's life plus 70 years or fewer.   You must also include a United States public domain tag to indicate why this work is in the public domain in the United States.  Note that a few countries have copyright terms longer than 70 years: Mexico has 100 years, Jamaica has 95 years, Colombia has 80 years, and Guatemala and Samoa have 75 years. This image may not be in the public domain in these countries, which moreover do not implement the rule of the shorter term. Honduras has a general copyright term of 75 years, but it does implement the rule of the shorter term. Copyright may extend on works created by French who died for France in World War II (more information), Russians who served in the Eastern Front of World War II (known as the Great Patriotic War in Russia) and posthumously rehabilitated victims of Soviet repressions (more information)."
+        },
+        "translationStatus": "à vérifier"
+      },
+      {
+        "type": "recit",
+        "titleFR": "Que se joue-t-il sous nos yeux ?",
+        "titleEN": "What is happening before our eyes?",
+        "fr": "",
+        "en": "",
+        "refs": "",
+        "translationStatus": "à compléter",
+        "medallions": [
+          {
+            "kind": "recit",
+            "work": "L’Apparition de la Vierge à saint Bernard",
+            "captionFR": "Découvrir le récit",
+            "captionEN": "Discover the story",
+            "fr": "Saint Bernard de Clairvaux, moine du XIIᵉ siècle, est connu pour sa profonde dévotion à la Vierge Marie.\n\nSelon la tradition, alors qu’il médite sur les Écritures, Marie lui apparaît, entourée d’anges. Elle vient récompenser sa foi et l’inspirer dans ses écrits.\n\nMais regardez bien : la Vierge ne se présente pas comme une reine inaccessible. Elle s’approche du moine avec douceur, tandis que les anges observent cette rencontre extraordinaire.\n\nFilippino Lippi transforme ainsi une vision mystique en une scène presque intime : le monde céleste semble entrer, pour un instant, dans celui des hommes.",
+            "en": "Saint Bernard of Clairvaux, a 12th-century monk, is known for his profound devotion to the Virgin Mary.\n\nAccording to tradition, while meditating on the Scriptures, Mary appears to him, surrounded by angels. She comes to reward his faith and inspire his writings.\n\nBut look closely: the Virgin does not appear as a distant, unapproachable queen. She approaches the monk with tenderness, while the angels witness this extraordinary encounter.\n\nFilippino Lippi thus transforms a mystical vision into an almost intimate scene: for a brief moment, the heavenly world seems to enter the world of humankind.",
+            "image": "images/filippino-lippi/Bernardo_claraval_filippino_lippi_Apparition of The Virgin to St. Bernard.jpg",
+            "titleFR": "Quand la Vierge apparaît à un moine",
+            "titleEN": ""
+          },
+          {
+            "kind": "recit",
+            "work": "Saint Philippe et le dragon",
+            "captionFR": "Découvrir le récit de Saint Philippe et le dragon",
+            "captionEN": "Discover",
+            "fr": "Un dragon au cœur d’un temple païen\n\nSaint Philippe et le dragon — Filippino Lippi\n\nDans la cité antique d’Hiérapolis, les habitants adorent le dieu Mars. Mais un jour, un dragon surgit du temple et répand un souffle empoisonné. Plusieurs personnes s’effondrent, parmi lesquelles le fils du prêtre chargé du culte.\n\nSaint Philippe intervient. Face au monstre, il ne brandit aucune arme : il lui ordonne, au nom du Christ, de quitter le temple et de disparaître dans le désert.\n\nLe dragon s’enfuit. Philippe prie alors pour les victimes, qui reviennent à la vie.\n\nMais pourquoi Filippino Lippi a-t-il peint un dragon au milieu d’une architecture antique ?\n\nParce que cette créature représente bien davantage qu’un monstre. Dans la légende, elle incarne les forces maléfiques associées aux anciennes idoles. En la chassant, saint Philippe manifeste la victoire de la foi chrétienne sur le paganisme.\n\nFilippino Lippi donne à cet épisode une dimension spectaculaire : un temple aux décors étranges, des personnages bouleversés et un dragon presque fantastique. La scène ressemble à une représentation théâtrale dont le spectateur serait le témoin.\n\nCe récit provient de la tradition légendaire de saint Philippe, notamment transmise par les Actes de Philippe et la Légende dorée. Il ne s’agit pas d’un événement historiquement établi.",
+            "en": "",
+            "image": "images/filippino-lippi/Filippino_lippi_san_filippo_Dragon.jpg",
+            "titleFR": "",
+            "titleEN": ""
+          }
+        ]
+      },
+      {
+        "type": "anecdote",
+        "titleFR": "On raconte que…",
+        "titleEN": "It is said that…",
+        "fr": "",
+        "en": "",
+        "refs": "",
+        "translationStatus": "à compléter",
+        "medallions": [
+          {
+            "kind": "anecdote",
+            "work": "L’Adoration des Mages",
+            "captionFR": "Découvrir l’indiscrétion",
+            "captionEN": "Discover the anecdote",
+            "fr": "Le jour où Filippino Lippi remplaça Léonard de Vinci\n\nFlorence, 1481. Les religieux de San Donato a Scopeto commandent à Léonard de Vinci une Adoration des Mages destinée au maître-autel de leur église.\n\nMais Léonard a d'autres projets. Il part pour Milan, laissant derrière lui un tableau inachevé.\n\nLes religieux attendent son retour. En vain.\n\nLes années passent… et toujours pas de tableau !\n\nFinalement, ils perdent patience et confient la commande à Filippino Lippi.\n\nEn 1496, celui-ci livre son Adoration des Mages, achevée, signée et datée.\n\nLe comble ? Aujourd'hui, les deux tableaux se trouvent aux Offices de Florence : celui que Léonard n'a jamais terminé et celui que Filippino a réalisé à sa place.\n\nComme quoi, même un génie peut laisser ses clients sur leur faim !\n\nUne histoire documentée par les archives de la commande et les notices des Galeries des Offices. Rien ne permet toutefois d'affirmer qu'il existait une rivalité personnelle entre les deux peintres.",
+            "en": "",
+            "image": "images/filippino-lippi/Filippino Lippi - Adorazione dei Magi.jpg",
+            "titleFR": "",
+            "titleEN": ""
+          }
+        ]
+      },
+      {
+        "type": "comparaison",
+        "titleFR": "Léonard et Filippino : deux peintres pour une Adoration",
+        "titleEN": "Open comparison",
+        "fr": "",
+        "en": "",
+        "refs": "masaccio",
+        "translationStatus": "à compléter",
+        "comparison": {
+          "artist1": "Filippino Lippi",
+          "artist2": "Léonard de Vinci (1481-1482)",
+          "work1FR": "L’Adoration des Mages",
+          "work1EN": "",
+          "work2FR": "L’Adoration des Mages",
+          "work2EN": "",
+          "image1": "images/filippino-lippi/Filippino Lippi - Adorazione dei Magi.jpg",
+          "image2": "images/filippino-lippi/Adoration of the Magi (Leonardo).jpeg",
+          "lookFR": "Chez Léonard, le regard se perd dans une foule agitée. Les personnages se tournent, se penchent et semblent surgir de l'ombre. Au fond, des chevaux et des architectures en ruine ajoutent au mouvement.\n\nChez Filippino, la scène est plus lumineuse et colorée. Les personnages se répartissent autour de la Vierge et de l'Enfant. Les vêtements, les visages et les détails du paysage invitent à parcourir toute la composition.\n\nLéonard expérimente. Son tableau inachevé nous laisse voir sa recherche : les gestes, les expressions, les mouvements et la construction d'une composition ambitieuse.\n\nFilippino répond à une commande destinée à un autel. Il organise une scène foisonnante, mais lisible, où chaque personnage participe à la célébration de l'Enfant Jésus.\n\nLe paradoxe ? L'œuvre que Léonard n'a jamais terminée est aujourd'hui aussi célèbre que celle qui l'a remplacée.",
+          "lookEN": ""
+        }
+      },
+      {
+        "type": "comparaison",
+        "titleFR": "Comparaison libre",
+        "titleEN": "Open comparison",
+        "fr": "",
+        "en": "",
+        "refs": "botticelli",
+        "translationStatus": "à compléter",
+        "comparison": {
+          "artist1": "",
+          "artist2": "",
+          "work1FR": "",
+          "work1EN": "",
+          "work2FR": "",
+          "work2EN": "",
+          "image1": "",
+          "image2": "",
+          "lookFR": "",
+          "lookEN": ""
+        }
+      },
+      {
+        "type": "reconnaitre",
+        "titleFR": "Comment reconnaître Filippino Lippi ?",
+        "titleEN": "How to recognize Filippino Lippi",
+        "points": [
+          {
+            "fr": "Des visages expressifs et délicats\nSes personnages ont des regards intenses, des visages fins et des gestes subtils. Ils semblent habités par une émotion intérieure.",
+            "en": "Delicate, expressive faces\nHis figures have intense gazes, refined features and subtle gestures. They seem filled with inner emotion.",
+            "image": "images/filippino-lippi/Bernardo_claraval_filippino_lippi_Apparition of The Virgin to St. Bernard_Zoom1.jpg"
+          },
+          {
+            "fr": "Des compositions foisonnantes\nFilippino aime multiplier les personnages, les mouvements et les petits épisodes secondaires. Le regard circule sans cesse dans ses tableaux.",
+            "en": "Rich, bustling compositions\nFilippino loves filling his paintings with figures, movement and small secondary scenes. The viewer’s eye is constantly drawn from one detail to another.",
+            "image": "images/filippino-lippi/Filippino_lippi_san_filippo_Dragon.jpg"
+          },
+          {
+            "fr": "Des décors antiques presque fantastiques\nColonnes, statues, ornements et architectures imaginaires envahissent ses scènes. L'Antiquité devient un décor spectaculaire, parfois inquiétant.",
+            "en": "Almost fantastical classical settings\nColumns, statues, elaborate decorations and imaginary architecture fill his scenes. Antiquity becomes a spectacular, sometimes unsettling backdrop.",
+            "image": "images/filippino-lippi/Filippino_lippi_san_filippo_Dragon_Zoom3.jpg"
+          },
+          {
+            "fr": "Une Renaissance théâtrale et agitée\nLà où d'autres recherchent l'équilibre et le calme, Filippino privilégie les attitudes mouvementées, les drapés tourmentés et les scènes pleines de tension.",
+            "en": "A dramatic, restless Renaissance\nWhile other artists seek balance and serenity, Filippino favours dynamic poses, swirling drapery and scenes charged with tension.",
+            "image": "images/filippino-lippi/Filippino Lippi - Adorazione dei Magi.jpg"
+          }
+        ]
+      },
+      {
+        "type": "retenir",
+        "titleFR": "À retenir",
+        "titleEN": "Key takeaways",
+        "fr": "À retenir pour ton site : Filippino Lippi se reconnaît à sa capacité à mêler la grâce héritée de Botticelli, l'expressivité des figures et une imagination presque fantastique.",
+        "en": "Filippino Lippi can be recognized by his ability to combine the grace inherited from Botticelli, expressive figures and an almost fantastical imagination.",
+        "refs": "",
+        "translationStatus": "à compléter"
+      }
+    ],
+    "appearance": {
+      "workLayout": "masaccio-two-columns",
+      "understandBackground": "#F4EAE6",
+      "understandAccent": "#AD655B",
+      "font": "Tahoma"
+    },
+    "portrait": {
+      "src": "images/filippino-lippi/Filippino_Lippi.jpg",
+      "credit": {
+        "artist": "À vérifier (portrait)",
+        "photographer": "À vérifier",
+        "source": "À vérifier",
+        "license": "À vérifier",
+        "sourceUrl": ""
+      }
+    },
+    "editorNotes": [
+      "Les textes existants sont conservés sans séparation éditoriale automatique : les textes des œuvres sont provisoirement dans « À regarder » ; compléter « À comprendre ».",
+      "Les sources photographiques et le portrait doivent être vérifiés avant publication.",
+      "Les récits et anecdotes restent masqués jusqu’au clic sur leurs médaillons.",
+      "Les comparaisons et À retenir sont encore à rédiger."
+    ],
+    "understandColor": "#F4EAE6",
+    "associations": [
+      "Parcours",
+      "accueil"
+    ],
+    "news": {
+      "fr": "Nouvel artiste : Filippino Lippi\nQuand la Renaissance devient plus expressive, plus théâtrale… et parfois fantastique",
+      "en": "New Artist: Filippino Lippi\nWhen the Renaissance becomes more expressive, more theatrical… and sometimes fantastical."
+    }
+  }
+}

@@ -11,7 +11,7 @@ lieux.html (inchangé)
 en/lieux.html (inchangé)
 nouveautes.html (inchangé)
 en/nouveautes.html (inchangé)
-credits.html (mis à jour)
+credits.html (inchangé)
 
 HTML FOURNIS MAIS REMPLACÉS PAR LES FICHES GÉNÉRÉES :
 (aucun)
