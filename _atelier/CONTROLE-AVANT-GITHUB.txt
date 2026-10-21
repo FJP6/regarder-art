@@ -1,0 +1,7 @@
+ATELIER ARTISTES — RAPPORT DE PRÉPUBLICATION
+STATUT : PROJET DE TRAVAIL — NON VALIDÉ POUR GITHUB
+
+VÉRIFICATIONS MANUELLES OBLIGATOIRES : comparer chaque page FR/EN, ouvrir chaque médaillon et récit, tester les liens de langue et le zoom, vérifier les crédits et les pages transversales.
+V19.9 : Artistes et Crédits peuvent être mis à jour de façon ciblée ; Lieux, Parcours et Nouveautés restent à valider.
+
+Aucune traduction automatique n’est effectuée dans l’atelier hors ligne. Confier le ZIP à ChatGPT pour traduction intégrale et validation avant publication.

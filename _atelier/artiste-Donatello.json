@@ -1,0 +1,298 @@
+{
+  "version": 15,
+  "artist": {
+    "name": "Donatello",
+    "slug": "Donatello",
+    "dates": "Vers 1386–1466",
+    "intro": "Donner vie à la sculpture. Donatello transforme les corps, les visages et l’espace sculpté en une expérience profondément humaine.",
+    "bio": "Un Florentin qui renouvelle la sculpture\nNé à Florence vers 1386, Donatello se forme dans le milieu artistique de Lorenzo Ghiberti. Proche de Brunelleschi, il travaille le marbre, le bronze et le bois. Actif à Florence et à Padoue, il fait de la sculpture un art du mouvement, des émotions et de la profondeur. Il meurt à Florence en 1466.\n\nComment Donatello donne vie à la sculpture ? \nDes corps crédibles, des gestes expressifs, des visages sans idéalisation systématique et un relief d’une finesse étonnante : le stiacciato.",
+    "takeaway": "A retenir : \n\nDonatello donne une présence nouvelle aux figures humaines. Il explore la vérité du corps, l’intensité des émotions et la profondeur de l’espace, jusque dans un relief presque plat.",
+    "portrait": "images/Donatello/Possible_Self_Portrait_of_Donatello_in_the_Museo_Antoniano.jpg",
+    "introEN": "Bringing sculpture to life. Donatello transforms bodies, faces and sculpted space into a profoundly human experience.",
+    "bioEN": "A Florentine Who Revolutionised Sculpture\n\nBorn in Florence around 1386, Donatello trained in the artistic circle of Lorenzo Ghiberti. A close associate of Brunelleschi, he worked in marble, bronze and wood. Active in Florence and Padua, he transformed sculpture into an art of movement, emotion and depth. He died in Florence in 1466.\n\nHow does Donatello bring sculpture to life?\n\nLifelike bodies, expressive gestures, faces that are not always idealised, and relief carving of astonishing delicacy: stiacciato.",
+    "takeawayEN": "Donatello gives the human figure a new sense of presence. He explores the realism of the body, the intensity of emotions and the depth of space, even in almost flat relief."
+  },
+  "library": [
+    {
+      "id": "id-1792411796305-flzjj",
+      "artist": "Donatello",
+      "title": "Portrait",
+      "titleEN": "Portrait",
+      "image": "images/Donatello/Possible_Self_Portrait_of_Donatello_in_the_Museo_Antoniano.jpg",
+      "credit": {
+        "photographer": "Sailko",
+        "source": "Basilique Saint-Antoine, Padoue",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Portraits_of_Donatello?utm_source=chatgpt.com#/media/File:Possible_Self_Portrait_of_Donatello_in_the_Museo_Antoniano.jpg"
+      }
+    },
+    {
+      "id": "id-1792411797920-htvdf",
+      "artist": "Donatello",
+      "title": "Saint Georges (1415–1417)",
+      "titleEN": "Saint Georges (1415–1417)",
+      "image": "images/Donatello/St._Georg,_Donatello,_1416-17,_Bargello_Florenz-02.jpg",
+      "credit": {
+        "photographer": "Rufus46",
+        "source": "Musée national du Bargello, Florence.",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:St._Georg,_Donatello,_1416-17,_Bargello_Florenz-02.jpg"
+      }
+    },
+    {
+      "id": "id-1792416156330-5by00",
+      "artist": "Donatello",
+      "title": "David, vue de face — Bargello",
+      "titleEN": "David, front view — Bargello",
+      "image": "images/Donatello/Donatello_-_David_-_Florence.jpg",
+      "credit": {
+        "photographer": "Patrick A. Rodgers",
+        "source": "Musée national du Bargello",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Donatello_-_David_-_Florence.jpg"
+      }
+    },
+    {
+      "id": "id-1792416428265-d2uqf",
+      "artist": "Donatello",
+      "title": "David, vue de dos — Bargello",
+      "titleEN": "David, rear view — Bargello",
+      "image": "images/Donatello/Bronze_David_by_Donatello-Bargello-3.jpg",
+      "credit": {
+        "photographer": "Yair Haklai",
+        "source": "Musée national du Bargello",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bronze_David_by_Donatello-Bargello-3.jpg"
+      }
+    },
+    {
+      "id": "id-1792418515619-f62if",
+      "artist": "Donatello",
+      "title": "Marie-Madeleine pénitente ",
+      "titleEN": "Penitent Mary Magdalene",
+      "image": "images/Donatello/Donatello,_maddalena_nella_nuova_collocazione_03.JPG",
+      "credit": {
+        "photographer": "Sailko",
+        "source": "Museo dell’Opera del Duomo ",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Donatello,_maddalena_nella_nuova_collocazione_03.JPG"
+      }
+    },
+    {
+      "id": "id-1792418721274-1pq3q",
+      "artist": "Donatello",
+      "title": "Saint Georges et le dragon",
+      "titleEN": "Saint George and the Dragon",
+      "image": "images/Donatello/Orsanmichele,_san_giorgio_e_la_principessa_di_donatello.jpg",
+      "credit": {
+        "photographer": "Sailko",
+        "source": "Musée national du Bargello",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Orsanmichele,_san_giorgio_e_la_principessa_di_donatello.jpg"
+      }
+    },
+    {
+      "id": "id-1792418880755-mahrz",
+      "artist": "Donatello",
+      "title": "Le Festin d’Hérode ",
+      "titleEN": "The Feast of Herod",
+      "image": "images/Donatello/Lille_PdBA_donatello_festin_herode.jpg",
+      "credit": {
+        "photographer": "Velvet",
+        "source": "Palais des Beaux-Arts de Lille",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_donatello_festin_herode.jpg"
+      }
+    },
+    {
+      "id": "id-1792425870204-u560x",
+      "artist": "Donatello",
+      "title": "Crucifix de Donatello — Santa Croce ",
+      "titleEN": "Donatello’s Crucifix — Santa Croce",
+      "image": "images/Donatello/Donatello,_crocifisso.jpg",
+      "credit": {
+        "photographer": "Sailko",
+        "source": "Basilica di Santa Croce",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Donatello,_crocifisso_%27contadino%27,_1406-08_ca.jpg"
+      }
+    },
+    {
+      "id": "id-1792425934725-ngz0g",
+      "artist": "Donatello",
+      "title": "Crucifix de Brunelleschi ",
+      "titleEN": "Brunelleschi s Crucifix — Santa Croce",
+      "image": "images/Donatello/Filippo_brunelleschi,_crocifisso_di_santa_maria_novella,_1410-15_ca-178.jpg",
+      "credit": {
+        "photographer": "Sailko",
+        "source": "Santa Maria Novella",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Filippo_brunelleschi,_crocifisso_di_santa_maria_novella,_1410-15_ca-178.jpg"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "id-1792414424649-ew2kb",
+      "type": "oeuvre",
+      "title": "Saint Georges",
+      "workId": "id-1792411797920-htvdf",
+      "work1": "",
+      "work2": "",
+      "look": "Observe ses jambes bien ancrées, le bouclier et le regard attentif.",
+      "understand": "Le saint semble prêt à agir : Donatello fait sentir une présence humaine.",
+      "titleEN": "Saint George",
+      "lookEN": "Observe his firmly planted legs, his shield and his alert gaze.",
+      "understandEN": "The saint seems ready for action: Donatello conveys a powerful sense of human presence."
+    },
+    {
+      "id": "id-1792421165331-vw4rb",
+      "type": "oeuvre",
+      "title": "David",
+      "workId": "id-1792416156330-5by00",
+      "work1": "",
+      "work2": "",
+      "look": "Observe le déhanchement, le chapeau, l’épée et la tête de Goliath.",
+      "understand": "Un nu en ronde-bosse qui renouvelle le dialogue avec l’Antiquité.",
+      "titleEN": "David",
+      "lookEN": "Observe the contrapposto stance, the hat, the sword and Goliath’s head.",
+      "understandEN": "A freestanding nude sculpture that renews the dialogue with classical antiquity."
+    },
+    {
+      "id": "id-1792423529052-a35es",
+      "type": "oeuvre",
+      "title": "Marie-Madeleine pénitente",
+      "workId": "id-1792418515619-f62if",
+      "work1": "",
+      "work2": "",
+      "look": "Observe le visage marqué, les mains rapprochées et les cheveux qui enveloppent le corps.",
+      "understand": "La fragilité et la souffrance deviennent des moyens d’expression puissants.",
+      "titleEN": "Penitent Mary Magdalene",
+      "lookEN": "Observe her weathered face, her hands held close together and the hair that envelops her body.",
+      "understandEN": "Fragility and suffering become powerful means of expression."
+    },
+    {
+      "id": "id-1792423788067-srzh9",
+      "type": "oeuvre",
+      "title": "Saint Georges et le dragon",
+      "workId": "id-1792418721274-1pq3q",
+      "work1": "",
+      "work2": "",
+      "look": "Suis le cavalier, le dragon, la princesse et les lignes de l’architecture.",
+      "understand": "Le relief très mince donne une impression de profondeur grâce au stiacciato.",
+      "titleEN": "Saint Georges and the dragon",
+      "lookEN": "Follow the horseman, the dragon, the princess and the architectural lines.",
+      "understandEN": "The very shallow relief creates a sense of depth through the stiacciato technique."
+    },
+    {
+      "id": "id-1792487534274-204w3",
+      "type": "oeuvre",
+      "title": "Le festin d'Hérode",
+      "workId": "id-1792418880755-mahrz",
+      "work1": "",
+      "work2": "",
+      "look": "Observe comment Donatello raconte deux moments d'une même histoire dans un seul relief. À gauche, Salomé danse devant Hérode et ses invités ; à droite, la tête de saint Jean-Baptiste est présentée au banquet. Regarde aussi l'architecture : les arcades, les colonnes et les ouvertures organisent l'espace en profondeur et séparent les scènes sans les isoler. Donatello utilise ainsi la perspective pour faire coexister plusieurs lieux et plusieurs instants dans une même image.",
+      "understand": "Donatello représente un épisode tragique : la tête de saint Jean-Baptiste est présentée lors du banquet d'Hérode, après la demande de Salomé. Plutôt que de montrer simplement un événement biblique, le sculpteur met en scène les réactions humaines. Les expressions et les mouvements des personnages transforment le relief en un véritable théâtre.",
+      "caption1": "",
+      "caption2": "",
+      "compareGlobal": "",
+      "technique": "",
+      "techniqueText": "",
+      "titleEN": "The Feast of Herod",
+      "lookEN": "Observe how Donatello tells two moments of the same story in a single relief. On the left, Salome dances before Herod and his guests; on the right, the head of Saint John the Baptist is presented at the banquet. Look also at the architecture: the arches, columns and openings create a sense of depth and separate the scenes without isolating them. Donatello thus uses perspective to bring together different places and moments in a single image.",
+      "understandEN": "Donatello depicts a tragic episode: the head of Saint John the Baptist is presented at Herod’s banquet, following Salome’s request. Rather than simply illustrating a biblical event, the sculptor brings human reactions to life. The characters’ expressions and movements transform the relief into a truly theatrical scene."
+    },
+    {
+      "id": "id-1792515700039-74dtn",
+      "type": "comparaison",
+      "title": "Deux crucifix, deux visions du Christ",
+      "workId": "",
+      "work1": "id-1792425870204-u560x",
+      "work2": "id-1792425934725-ngz0g",
+      "look": "Observe la position des bras, l'inclinaison des têtes et la manière dont les torses sont sculptés.",
+      "understand": "Donatello privilégie l'humanité du corps souffrant. Il montre un homme dont la douleur est physiquement perceptible.\n\nBrunelleschi recherche une beauté fondée sur l'équilibre et les proportions. Son Christ conserve une dignité idéale jusque dans la mort.",
+      "caption1": "Le corps du Christ paraît lourd, marqué par la souffrance. Les muscles et les proportions donnent une impression de réalité presque brutale.",
+      "caption2": "Le corps est plus harmonieux, les proportions plus équilibrées. La souffrance reste présente, mais elle s'exprime avec davantage de retenue.",
+      "compareGlobal": "À quelques années d'intervalle, deux artistes florentins proposent deux visions différentes du corps du Christ.\n\nDeux démarches qui annoncent les grandes interrogations de la Renaissance : faut-il représenter le corps tel qu'il est ou tel qu'il devrait être ?",
+      "technique": "",
+      "techniqueText": "",
+      "caption1EN": "Christ's body appears heavy and marked by suffering. The muscles and proportions create an almost brutally realistic impression.",
+      "caption2EN": "The body is more harmonious, with more balanced proportions. Suffering is still present, but it is expressed with greater restraint.",
+      "compareGlobalEN": "Only a few years apart, two Florentine artists offered two different visions of Christ's body.\nTwo approaches that anticipate one of the great questions of the Renaissance: should the human body be represented as it is, or as it ought to be?",
+      "titleEN": "Two Crucifixes, Two Visions of Christ",
+      "lookEN": "Observe the position of the arms, the tilt of the heads and the way the torsos are sculpted.",
+      "understandEN": "Donatello emphasises the humanity of the suffering body. He depicts a man whose pain is physically tangible.\n\nBrunelleschi seeks beauty through balance and proportion. His Christ retains an ideal dignity even in death."
+    }
+  ],
+  "medallions": [
+    {
+      "id": "id-1792423871411-cv2md",
+      "kind": "recit",
+      "target": "id-1792421165331-vw4rb",
+      "title": "David — Le plus fragile n’est pas le plus faible",
+      "text": "Dans le récit biblique, Goliath est un redoutable guerrier philistin qui défie les Israélites. Aucun soldat n’ose l’affronter. David, un jeune berger, se porte volontaire.\n\nOn lui prête une armure, mais il l’enlève : elle gêne ses mouvements. Il avance avec sa fronde et quelques pierres, convaincu que Dieu l’aidera.\n\nUne pierre lancée au front fait tomber Goliath. David s’empare alors de l’épée du géant et lui tranche la tête. Celui que personne ne prenait au sérieux a remporté le combat.\n\nÀ regarder dans la sculpture : \n\nDonatello choisit l’instant d’après. David se tient debout, le pied posé sur la tête de Goliath. L’immense épée rappelle la force de l’adversaire ; son corps juvénile souligne le contraste.\n\nMais pourquoi est-il nu, à l’exception de son chapeau et de ses bottes ? Donatello ne cherche pas à illustrer littéralement le récit : il réinvente le héros à travers le nu, renouant avec l’Antiquité.\n\nLa victoire n’a pas ici le corps d’un colosse. Elle prend les traits d’un adolescent, à la fois vulnérable et assuré.",
+      "workId": "id-1792416156330-5by00",
+      "textEN": "In the biblical story, Goliath is a fearsome Philistine warrior who challenges the Israelites. No soldier dares to face him. David, a young shepherd, volunteers.\n\nHe is given a suit of armour, but takes it off because it restricts his movements. He steps forward with his sling and a few stones, convinced that God will help him.\n\nA stone strikes Goliath on the forehead, bringing him down. David then seizes the giant’s sword and cuts off his head. The young man whom no one had taken seriously has won the battle.\n\nWhat to look for in the sculpture:\n\nDonatello chooses to depict the moment just after the victory. David stands with one foot resting on Goliath’s head. The enormous sword recalls the strength of his opponent, while his youthful body emphasises the contrast.\n\nBut why is he naked, apart from his hat and boots? Donatello is not trying to illustrate the biblical story literally: he reinvents the hero through the nude figure, reconnecting with the art of Antiquity.\n\nHere, victory does not take the form of a giant. It takes the shape of an adolescent, both vulnerable and self-assured.",
+      "titleEN": "The Most Vulnerable Is Not the Weakest"
+    },
+    {
+      "id": "id-1792423947131-yppkb",
+      "kind": "indiscret",
+      "target": "id-1792421165331-vw4rb",
+      "title": "",
+      "text": "",
+      "workId": "id-1792416428265-d2uqf"
+    }
+  ],
+  "recognize": [
+    {
+      "text": "1. Des corps vivants\nLes personnages ne sont pas figés. Leurs attitudes, leurs gestes et leurs postures donnent l'impression qu'ils pourraient bouger d'un instant à l'autre.",
+      "image": "images/Donatello/St._Georg,_Donatello,_1416-17,_Bargello_Florenz-02.jpg",
+      "textEN": "1. Lifelike Figures\nThe figures are not static. Their attitudes, gestures and postures give the impression that they could move at any moment."
+    },
+    {
+      "text": "2. Des émotions visibles\nDonatello ne recherche pas toujours la beauté idéale. Il montre aussi la souffrance, la fragilité, la jeunesse ou la vieillesse à travers les visages et les corps.",
+      "image": "images/Donatello/Donatello,_maddalena_nella_nuova_collocazione_03.JPG",
+      "textEN": "2. Visible Emotions\nDonatello does not always strive for ideal beauty. He also portrays suffering, vulnerability, youth and old age through faces and bodies."
+    },
+    {
+      "text": "3. Une profondeur sculptée\nGrâce au stiacciato, un relief parfois presque plat suffit à créer l'illusion de la profondeur. Quelques millimètres de sculpture peuvent suggérer tout un espace.",
+      "image": "images/Donatello/Lille_PdBA_donatello_festin_herode.jpg",
+      "textEN": "3. Sculpted Depth\nThrough stiacciato, even an almost flat relief can create the illusion of depth. Just a few millimetres of carving can suggest an entire space."
+    },
+    {
+      "text": "4. Une Antiquité réinventée\nDonatello redécouvre le nu, les proportions et les attitudes de la sculpture antique, mais leur donne une présence nouvelle, profondément humaine.",
+      "image": "images/Donatello/Donatello_-_David_-_Florence.jpg",
+      "textEN": "4. Antiquity Reimagined\nDonatello rediscovers the nude, the proportions and the poses of ancient sculpture, but gives them a new, profoundly human presence."
+    }
+  ],
+  "quiz": {
+    "title": "À vous de jouer !",
+    "question": "",
+    "image1": "",
+    "image2": "",
+    "artist1": "",
+    "artist2": "",
+    "answer": "1",
+    "explanation": "",
+    "enabled": false
+  },
+  "artistLinks": [],
+  "resources": [],
+  "appearance": {
+    "mainColor": "#e6ba5b",
+    "secondaryColor": "#f1eee9",
+    "pageBackground": "#fafafa",
+    "understandBackground": "#F4EAE6",
+    "understandAccent": "#c27a70",
+    "workLayout": "masaccio-two-columns",
+    "font": "Tahoma",
+    "bannerStyle": "dark",
+    "showPortrait": true,
+    "introColor": "#050505",
+    "titleColor": "#bf7c08",
+    "compactHero": "on",
+    "titleSize": "50",
+    "introSize": "17"
+  }
+}
