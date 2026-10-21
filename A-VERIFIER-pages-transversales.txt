@@ -1,10 +1,10 @@
 REGARDER L’ART — RAPPORT V16
-Artiste : Filippino Lippi
+Artiste : Donatello
 
 Ce rapport liste les pages potentielles ; il ne prouve pas qu’elles ont été modifiées.
 
-filippino-lippi.html — existe, à comparer
-en/filippino-lippi.html — existe, à comparer
+Donatello.html — existe, à comparer
+en/Donatello.html — existe, à comparer
 artistes.html — existe, à comparer
 en/artistes.html — existe, à comparer
 parcours.html — existe, à comparer

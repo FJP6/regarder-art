@@ -1,13 +1,13 @@
 FUSION DES PAGES TRANSVERSALES — V19.7
 
-artistes.html : 0 lien(s) Donatello reconnus ; conservés
-en/artistes.html : 0 lien(s) Donatello reconnus ; conservés
+artistes.html : 1 lien(s) Donatello reconnus ; conservés
+en/artistes.html : 1 lien(s) Donatello reconnus ; conservés
 parcours.html : conservé sans modification (validation éditoriale requise)
 en/parcours.html : conservé sans modification (validation éditoriale requise)
 lieux.html : conservé sans modification (validation éditoriale requise)
 en/lieux.html : conservé sans modification (validation éditoriale requise)
 nouveautes.html : conservé sans modification (validation éditoriale requise)
 en/nouveautes.html : conservé sans modification (validation éditoriale requise)
-credits.html : 0 crédit(s) ajouté(s), crédits existants préservés
+credits.html : 2 crédit(s) ajouté(s), crédits existants préservés
 
 Vérifier visuellement chaque page avant publication. Les pages non reconnues ne sont pas réécrites.
