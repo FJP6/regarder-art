@@ -3,20 +3,21 @@ REGARDER L’ART — EXPORT UNIFIÉ
 GÉNÉRÉS : fiches artiste FR/EN et récits FR/EN, plus assets communs.
 
 HTML IMPORTÉS SANS MODIFICATION (versions FR/EN retrouvées dans le dossier) :
-artistes.html (inchangé)
-en/artistes.html (inchangé)
-parcours.html (inchangé)
-en/parcours.html (inchangé)
-lieux.html (inchangé)
-en/lieux.html (inchangé)
-nouveautes.html (inchangé)
-en/nouveautes.html (inchangé)
-credits.html (mis à jour)
+(aucun)
 
 HTML FOURNIS MAIS REMPLACÉS PAR LES FICHES GÉNÉRÉES :
 (aucun)
 
 HTML DEMANDÉS MAIS NON TROUVÉS :
+artistes.html
+en/artistes.html
+parcours.html
+en/parcours.html
+lieux.html
+en/lieux.html
+nouveautes.html
+en/nouveautes.html
+credits.html
 en/credits.html
 
 IMPORTANT : V19.7 actualise de façon limitée Artistes/Crédits lorsque leur structure est reconnue. Lieux, Parcours, Nouveautés, Accueil exigent encore une mise à jour éditoriale. Voir RAPPORT-FUSION-V19-7.txt.

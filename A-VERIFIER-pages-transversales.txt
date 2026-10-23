@@ -1,19 +1,19 @@
 REGARDER L’ART — RAPPORT V16
-Artiste : Donatello
+Artiste : Andrea del Verrocchio
 
 Ce rapport liste les pages potentielles ; il ne prouve pas qu’elles ont été modifiées.
 
-Donatello.html — existe, à comparer
-en/Donatello.html — existe, à comparer
-artistes.html — existe, à comparer
-en/artistes.html — existe, à comparer
-parcours.html — existe, à comparer
-en/parcours.html — existe, à comparer
-lieux.html — existe, à comparer
-en/lieux.html — existe, à comparer
-nouveautes.html — existe, à comparer
-en/nouveautes.html — existe, à comparer
-credits.html — existe, à comparer
+verrocchio.html — absent, à examiner
+en/verrocchio.html — absent, à examiner
+artistes.html — absent, à examiner
+en/artistes.html — absent, à examiner
+parcours.html — absent, à examiner
+en/parcours.html — absent, à examiner
+lieux.html — absent, à examiner
+en/lieux.html — absent, à examiner
+nouveautes.html — absent, à examiner
+en/nouveautes.html — absent, à examiner
+credits.html — absent, à examiner
 
 Le ZIP JSON/images n’est PAS un ZIP de publication HTML.
 

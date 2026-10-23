@@ -1,0 +1,417 @@
+{
+  "version": 15,
+  "artist": {
+    "name": "Andrea del Verrocchio",
+    "slug": "verrocchio",
+    "dates": "Vers 1435, Florence – 1488, Venise",
+    "intro": "« Il donne vie au bronze, fait parler les gestes et forme l'un des plus grands génies de la Renaissance. »",
+    "bio": "Né à Florence vers 1435, Andrea del Verrocchio est l'un des grands artistes de la Renaissance florentine. D'abord formé à l'orfèvrerie, il devient un sculpteur renommé, apprécié notamment par les Médicis.\n\nDans ses œuvres, les corps prennent vie, les mains expriment les émotions et les personnages semblent prêts à bouger. Son atelier, l'un des plus prestigieux de Florence, accueille de jeunes artistes promis à un avenir exceptionnel, parmi lesquels Léonard de Vinci.\n\nVerrocchio meurt à Venise en 1488, laissant derrière lui des œuvres remarquables et une nouvelle génération d'artistes.",
+    "takeaway": "1. Donner vie au bronze. Verrocchio transforme ses sculptures en personnages vivants, grâce au mouvement, aux expressions et aux gestes.\n\n2. Faire parler les corps. Un sourire, une main ou un regard suffisent à raconter une histoire et à exprimer une émotion.\n\n3. Transmettre son art. À Florence, son atelier forme une nouvelle génération d'artistes, dont Léonard de Vinci, qui poursuivra ses recherches sur la nature et le mouvement.",
+    "portrait": "images//Delle_vite_de'_più_eccellenti_pittori,_scultori,_et_architetti_(1648)_(14776760341).jpg",
+    "introEN": "« He brings bronze to life, makes gestures speak, and trains one of the greatest geniuses of the Renaissance. »",
+    "bioEN": "1. Born in Florence around 1435, Andrea del Verrocchio was one of the leading artists of the Florentine Renaissance. Initially trained as a goldsmith, he became a renowned sculptor, admired by the Medici family.\n\n2. In his works, bodies come alive, hands express emotions, and figures seem ready to move. His workshop, one of the most prestigious in Florence, welcomed talented young artists, including Leonardo da Vinci.\n\n3. Verrocchio died in Venice in 1488, leaving behind remarkable works and a new generation of artists.",
+    "takeawayEN": "1. Bringing bronze to life. Verrocchio makes his sculptures seem alive through movement, facial expressions, and gestures.\n\n2. Letting bodies speak. A smile, a hand, or a glance can tell a story and express an emotion.\n\n3. Passing on his art. In Florence, his workshop trains a new generation of artists, including Leonardo da Vinci, who will continue exploring nature and movement."
+  },
+  "library": [
+    {
+      "id": "id-1792673908177-t2pzm",
+      "artist": "Andrea del Verrocchio",
+      "title": "Portrait d'Andrea del Verrocchio, illustration tirée d'une édition des Vies des artistes de Giorgio Vasari",
+      "titleEN": "Portrait of Andrea del Verrocchio, illustration from an edition of Giorgio Vasari’s Lives of the Artists.",
+      "image": "images//Delle_vite_de'_più_eccellenti_pittori,_scultori,_et_architetti_(1648)_(14776760341).jpg",
+      "credit": {
+        "photographer": "Auteur de l'illustration : non identifié (Giorgio Vasari est l'auteur du livre)",
+        "source": "Getty Research Institute — Internet Archive",
+        "license": "Public Domain Mark 1.0 (domaine public).",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Delle_vite_de%27_pi%C3%B9_eccellenti_pittori,_scultori,_et_architetti_(1648)_(14776760341).jpg"
+      }
+    },
+    {
+      "id": "id-1792674312617-g5ufo",
+      "artist": "Andrea del Verrocchio",
+      "title": "David",
+      "titleEN": "David",
+      "image": "images/verrocchio/David,_Andrea_del_Verrocchio,_ca._1466-69,_Bargello_Florenz-01.jpg",
+      "credit": {
+        "photographer": "Rufus46",
+        "source": "Bargello National Museum",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:David,_Andrea_del_Verrocchio,_ca._1466-69,_Bargello_Florenz-01.jpg"
+      }
+    },
+    {
+      "id": "id-1792676411233-7q6em",
+      "artist": "Andrea del Verrocchio",
+      "title": "L'Incrédulité de saint Thomas",
+      "titleEN": "Christ and Saint Thomas",
+      "image": "images/verrocchio/Andrea_del_verrocchio,_incredulità_di_san_tommaso,_1467-83_(orsanmichele).jpg",
+      "credit": {
+        "photographer": "Francesco Bini (Sailko)",
+        "source": "Musée d'Orsanmichele, Florence",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Andrea_del_verrocchio,_incredulit%C3%A0_di_san_tommaso,_1467-83_(orsanmichele).jpg"
+      }
+    },
+    {
+      "id": "id-1792685246830-i7ak0",
+      "artist": "Andrea del Verrocchio",
+      "title": "La Dame au bouquet",
+      "titleEN": "Lady with a Bunch of Flowers (Dama col mazzolino)",
+      "image": "images/verrocchio/Andrea_del_verrocchio,_dama_dal_mazzolino,_1475_ca._(bargello)_01.jpg",
+      "credit": {
+        "photographer": "Francesco Bini (Sailko)",
+        "source": "Bargello National Museum",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Andrea_del_verrocchio,_dama_dal_mazzolino,_1475_ca._(bargello)_01.jpg"
+      }
+    },
+    {
+      "id": "id-1792685418302-jlm7n",
+      "artist": "Andrea del Verrocchio",
+      "title": "Le Baptême du Christ",
+      "titleEN": "Leonardo Baptism of Christ Uffizi",
+      "image": "images/verrocchio/The_Baptism_of_Christ_(Verrocchio_&_Leonardo).jpg",
+      "credit": {
+        "photographer": "Own work",
+        "source": "Galerie des offices, Florence",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Baptism_of_Christ_(Verrocchio_%26_Leonardo).jpg"
+      }
+    },
+    {
+      "id": "id-1792685551918-4fr1m",
+      "artist": "Andrea del Verrocchio",
+      "title": "Le Putto au dauphin",
+      "titleEN": "Putto with a Dolphin",
+      "image": "images/verrocchio/Putto_col_delfino_di_verrocchio_02.jpg",
+      "credit": {
+        "photographer": "Francesco Bini (Sailko)",
+        "source": "Palazzo Vecchio, Florence",
+        "license": "CC BY-SA 3.0 Unported",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Putto_col_delfino_di_verrocchio_02.JPG"
+      }
+    },
+    {
+      "id": "id-1792685740135-55zq9",
+      "artist": "Andrea del Verrocchio",
+      "title": "Monument équestre de Colleoni",
+      "titleEN": "Verrocchio Bartolomeo Colleoni Venice",
+      "image": "images/verrocchio/Bartolomeo_Colleoni_by_Andrea_del_Verrocchio.jpg",
+      "credit": {
+        "photographer": "Didier Descouens (Archaeodontosaurus)",
+        "source": "Campo Santi Giovanni e Paolo, Venise",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bartolomeo_Colleoni_by_Andrea_del_Verrocchio.jpg"
+      }
+    },
+    {
+      "id": "id-1792685908438-mb9wz",
+      "artist": "Donatello",
+      "title": "David",
+      "titleEN": "David",
+      "image": "images/verrocchio/David,_Donatello,_ca._1440,_Bargello_Florenz-02.jpg",
+      "credit": {
+        "photographer": "Rufus46",
+        "source": "Museo Nazionale del Bargello, Florence",
+        "license": "CC BY-SA 3.0 Unported",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:David,_Donatello,_ca._1440,_Bargello_Florenz-02.jpg"
+      }
+    },
+    {
+      "id": "id-1792686138975-at3he",
+      "artist": "Donatello",
+      "title": "Gattamelata (Erasmo da Narni)",
+      "titleEN": "Gattamelata (Erasmo da Narni)",
+      "image": "images/verrocchio/Gattamelata,_Erasmo_de_Narni_(perfil).jpg",
+      "credit": {
+        "photographer": "Maxima Susana Gómez Lotito (Maximasu)",
+        "source": "Piazza del Santo Padua",
+        "license": "CC BY-SA 3.0 Unported",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gattamelata,_Erasmo_de_Narni_(perfil).JPG"
+      }
+    },
+    {
+      "id": "id-1792686234134-k75p7",
+      "artist": "Andrea del Verrocchio",
+      "title": "Détail Le Baptême du Christ",
+      "titleEN": "Detail of The Baptism of Christ",
+      "image": "images/verrocchio/Bautismo_de_Cristo,_Verrocchio,_Florencia,_Italia,_2019.jpg",
+      "credit": {
+        "photographer": "Benjamín Núñez González",
+        "source": "Galerie des offices, Florence",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bautismo_de_Cristo,_Verrocchio,_Florencia,_Italia,_2019.jpg"
+      }
+    },
+    {
+      "id": "id-1792772831411-3y3h7",
+      "artist": "Andrea del Verrocchio",
+      "title": "Jeune homme endormi",
+      "titleEN": "Sleeping Youth",
+      "image": "images/verrocchio/Andrea_del_verrocchio,_giovane_addormentato,_1465-75_ca._(bode_museum)_01.jpg",
+      "credit": {
+        "photographer": "Sailko",
+        "source": "Bode Museum, Berlin",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Andrea_del_verrocchio,_giovane_addormentato,_1465-75_ca._(bode_museum)_01.jpg"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "id-1792749050852-ybh3m",
+      "type": "comparaison",
+      "title": "Deux David, deux visions du héros",
+      "workId": "",
+      "work1": "id-1792685908438-mb9wz",
+      "work2": "id-1792674312617-g5ufo",
+      "look": "Regardez d'abord les corps. Donatello choisit la nudité et une posture souple, presque fragile. Verrocchio habille son David d'une courte tunique et lui donne une silhouette plus affirmée.\n\nObservez ensuite les visages : l'un semble perdu dans ses pensées, l'autre affiche un sourire discret. Même le geste change : chez Donatello, la victoire paraît silencieuse ; chez Verrocchio, elle devient une affirmation de soi.",
+      "understand": "David n'est pas seulement un personnage biblique. À Florence, il devient aussi un symbole de liberté : celui du plus faible qui triomphe du plus puissant grâce à son courage et à son intelligence.\nDonatello réinvente le nu héroïque inspiré de l'Antiquité. Verrocchio reprend ce sujet célèbre, mais lui donne une autre présence : son David ressemble davantage à un jeune Florentin fier de son exploit.\n\nDeux artistes, un même héros, mais deux façons de lui donner vie.",
+      "caption1": "un David nu, contemplatif, presque énigmatique.",
+      "caption2": "Un David habillé, élégant, fier de sa victoire.",
+      "compareGlobal": "Donatello et Verrocchio représentent le même héros biblique, David, après sa victoire sur le géant Goliath. Pourtant, leurs sculptures semblent raconter deux histoires différentes. Chez Donatello, le jeune vainqueur apparaît nu, presque rêveur. Chez Verrocchio, il est vêtu, souriant et sûr de lui. À quelques décennies d'intervalle, deux manières de représenter la jeunesse, la beauté et l'héroïsme se répondent.",
+      "technique": "",
+      "techniqueText": "",
+      "caption1EN": "A nude, contemplative, almost enigmatic David.",
+      "caption2EN": "A clothed, elegant David, proud of his victory.",
+      "titleEN": "Two Davids, Two Visions of a Hero",
+      "compareGlobalEN": "David n'est pas seulement un personnage biblique. À Florence, il devient aussi un symbole de liberté : celui du plus faible qui triomphe du plus puissant grâce à son courage et à son intelligence.\n\nDonatello réinvente le nu héroïque inspiré de l'Antiquité. Verrocchio reprend ce sujet célèbre, mais lui donne une autre présence : son David ressemble davantage à un jeune Florentin fier de son exploit.\n\nDeux artistes, un même héros, mais deux façons de lui donner vie.",
+      "lookEN": "Start by looking at the bodies. Donatello chooses nudity and a relaxed, almost fragile pose. Verrocchio dresses his David in a short tunic and gives him a more confident stance.\n\nNow look at their faces: one seems lost in thought, while the other wears a subtle smile. Even their gestures differ: Donatello's victory feels silent, while Verrocchio's becomes an expression of self-confidence.",
+      "understandEN": "David is more than a biblical figure. In Florence, he also becomes a symbol of freedom: the weaker figure who defeats the powerful through courage and intelligence.\n\nDonatello revives the heroic nude inspired by classical antiquity. Verrocchio takes up the same celebrated subject but gives it a different presence: his David looks more like a young Florentine proud of his achievement.\n\nTwo artists, one hero, but two different ways of bringing him to life."
+    },
+    {
+      "id": "id-1792754049116-0e879",
+      "type": "oeuvre",
+      "title": "Quand le doute devient un geste",
+      "workId": "id-1792676411233-7q6em",
+      "work1": "",
+      "work2": "",
+      "look": "Regardez les mains. Thomas s'approche du Christ et tend la main vers la plaie de son côté. Le Christ entrouvre son vêtement et semble l'inviter à vérifier par lui-même.\n\nObservez les corps : Thomas avance avec hésitation, tandis que le Christ reste calme et accueillant. Leurs regards et leurs gestes créent un dialogue silencieux.\n\nTout se joue dans cet instant suspendu, entre le doute et la foi.",
+      "understand": "Verrocchio ne représente pas simplement deux personnages religieux : il met en scène une rencontre profondément humaine.\n\nLes deux figures occupent une niche relativement étroite, mais leurs gestes donnent de la profondeur à l'espace. Thomas s'avance depuis le bord de la niche, tandis que le Christ se décale pour l'accueillir.\n\nLe sculpteur transforme ainsi une histoire de foi en une scène presque théâtrale. Le bronze paraît vivant : les corps bougent, les vêtements accompagnent les gestes et les émotions deviennent visibles.\n\nChez Verrocchio, la sculpture ne se contente plus de représenter : elle raconte.",
+      "caption1": "",
+      "caption2": "",
+      "compareGlobal": "",
+      "technique": "",
+      "techniqueText": "",
+      "lookEN": "Look at the hands. Thomas approaches Christ and reaches out towards the wound in his side. Christ opens his garment slightly and seems to invite Thomas to examine the wound for himself.\n\nObserve their bodies: Thomas moves forward hesitantly, while Christ remains calm and welcoming. Their gazes and gestures create a silent dialogue.",
+      "understandEN": "Verrocchio does not simply depict two religious figures: he stages a profoundly human encounter.\n\nThe two figures occupy a relatively narrow niche, yet their gestures give depth to the space. Thomas steps forward from the edge of the niche, while Christ shifts to one side to welcome him.",
+      "titleEN": "When Doubt Becomes a Gesture"
+    },
+    {
+      "id": "id-1792754488556-d29tv",
+      "type": "oeuvre",
+      "title": "Quand les mains prennent la parole",
+      "workId": "id-1792685246830-i7ak0",
+      "work1": "",
+      "work2": "",
+      "look": "Regardez d'abord les mains : leurs doigts fins semblent encore en mouvement autour du bouquet. Elles attirent immédiatement notre attention.\n\nRemontez ensuite vers le visage, calme et réservé. Contrairement aux mains, il ne laisse presque rien deviner des émotions de la jeune femme.\n\nObservez enfin les fleurs et les plis du vêtement : Verrocchio parvient à donner au marbre la douceur de la peau et la légèreté des tissus.",
+      "understand": "À la Renaissance, les bustes sculptés s'arrêtent généralement aux épaules. Verrocchio choisit de montrer les mains, leur donnant un rôle essentiel dans le portrait.\n\nCe choix transforme la sculpture : la jeune femme n'est plus seulement un visage, elle devient une présence vivante. Ses gestes suggèrent une sensibilité, peut-être même une histoire que nous ne connaissons pas.\n\nLe bouquet conserve son mystère : symbole amoureux ou simple attribut élégant ? Rien ne permet de l'affirmer avec certitude.\n\nChez Verrocchio, les mains parlent autant que le visage.",
+      "caption1": "",
+      "caption2": "",
+      "compareGlobal": "",
+      "technique": "",
+      "techniqueText": "",
+      "lookEN": "First, look at the hands: her slender fingers seem to be still moving around the bouquet. They immediately draw our attention.\n\nThen let your gaze move up to her face, calm and reserved. Unlike her hands, it reveals almost nothing of the young woman's emotions.",
+      "understandEN": "During the Renaissance, sculpted busts generally ended at the shoulders. Verrocchio chooses to include the hands, giving them an essential role in the portrait.\n\nThis choice transforms the sculpture: the young woman is no longer simply a face, but becomes a living presence. Her gestures suggest sensitivity, perhaps even a story we know nothing about.\n\nThe bouquet retains its mystery: is it a symbol of love or simply an elegant accessory? Nothing allows us to say for certain.\n\nIn Verrocchio’s work, the hands speak as eloquently as the face.",
+      "titleEN": "When Hands Speak"
+    },
+    {
+      "id": "id-1792754724645-x34h5",
+      "type": "oeuvre",
+      "title": "When Painting Comes to Life",
+      "workId": "id-1792685418302-jlm7n",
+      "work1": "",
+      "work2": "",
+      "look": "Regardez le Christ, debout dans les eaux du Jourdain, tandis que saint Jean verse l'eau sur sa tête. Leurs attitudes sont solennelles, mais leurs gestes restent naturels.\n\nÀ gauche, deux anges assistent à la scène. Observez leurs visages, leurs chevelures et les plis de leurs vêtements : leurs traitements picturaux présentent des différences sensibles.\n\nEnfin, laissez votre regard parcourir le paysage. Les rochers, l'eau et les montagnes lointaines ouvrent la composition sur la nature.",
+      "understand": "Le baptême du Christ marque le début de sa vie publique. La colombe qui descend du ciel symbolise l'Esprit saint, tandis que la main divine apparaît au-dessus de la scène.\n\nVerrocchio organise la composition autour de cet événement sacré, mais lui donne aussi une dimension profondément humaine.\n\nL'œuvre témoigne également du fonctionnement des ateliers florentins, où plusieurs artistes pouvaient participer à une même peinture. Les différences de technique et de style deviennent alors particulièrement intéressantes à observer.\n\nUne seule œuvre, plusieurs sensibilités, et une nouvelle manière de regarder la nature.",
+      "caption1": "",
+      "caption2": "",
+      "compareGlobal": "",
+      "technique": "",
+      "techniqueText": "",
+      "lookEN": "ook at Christ standing in the waters of the Jordan, while Saint John pours water over his head. Their postures are solemn, yet their gestures remain natural.\nJeOn the left, two angels witness the scene. Observe their faces, their hair, and the folds of their garments: there are noticeable differences in the way they are painted.\n\nFinally, let your gaze wander across the landscape. The rocks, the water, and the distant mountains open up the composition to the natural world.",
+      "understandEN": "The Baptism of Christ marks the beginning of his public ministry. The dove descending from heaven symbolizes the Holy Spirit, while the hand of God appears above the scene.\n\nVerrocchio organizes the composition around this sacred event, but also gives it a profoundly human dimension.\nThe painting also reveals how Florentine workshops operated, with several artists sometimes contributing to the same work. The differences in technique and style thus become particularly interesting to observe.\n\nOne painting, several artistic sensibilities, and a new way of looking at nature.",
+      "titleEN": "When the painting take like"
+    },
+    {
+      "id": "id-1792772376717-fqtg2",
+      "type": "quiz",
+      "title": "À vous de jouer !",
+      "workId": "",
+      "work1": "",
+      "work2": "",
+      "look": "",
+      "understand": "",
+      "caption1": "",
+      "caption2": "",
+      "compareGlobal": "",
+      "technique": "",
+      "techniqueText": "",
+      "questions": [
+        {
+          "question": "Quel cheval semble avancer avec le plus de fougue ?",
+          "questionEN": "Which horse seems to move forward with the greatest energy?",
+          "options": [
+            {
+              "fr": "Le Colleoni de Verrocchio",
+              "en": "Verrocchio’s Colleoni"
+            },
+            {
+              "fr": "Le Gattamelata de Donatello",
+              "en": "Donatello’s Gattamelata"
+            }
+          ],
+          "answer": 0,
+          "explanation": "Chez Verrocchio, le cheval semble animé d'une énergie puissante. Son allure dynamique et la posture déterminée du cavalier donnent une impression de mouvement et de conquête. Donatello privilégie au contraire une autorité plus calme et maîtrisée.",
+          "explanationEN": "Verrocchio's horse seems filled with powerful energy. Its dynamic posture and the rider's determined attitude create an impression of movement and conquest. Donatello, by contrast, emphasizes a calmer, more controlled form of authority."
+        },
+        {
+          "question": "Quel cavalier dégage davantage de calme et de maîtrise ?",
+          "questionEN": "Which rider conveys a greater sense of calm and control?",
+          "options": [
+            {
+              "fr": "Le Colleoni de Verrocchio",
+              "en": "Verrocchio’s Colleoni"
+            },
+            {
+              "fr": "Le Gattamelata de Donatello",
+              "en": "Donatello’s Gattamelata"
+            }
+          ],
+          "answer": "1",
+          "explanation": "Donatello représente un chef militaire sûr de lui, dont l'autorité repose sur le calme et la maîtrise. Verrocchio donne à son cavalier une attitude plus énergique, presque provocante. Deux manières de montrer la puissance.",
+          "explanationEN": "Donatello portrays a confident military commander whose authority rests on calmness and self-control. Verrocchio gives his rider a more energetic, almost defiant attitude. Two different ways of expressing power."
+        }
+      ],
+      "images": [
+        {
+          "workId": "id-1792685740135-55zq9",
+          "path": ""
+        },
+        {
+          "workId": "id-1792686138975-at3he",
+          "path": ""
+        }
+      ],
+      "question": "",
+      "questionEN": "",
+      "image1": "",
+      "image2": "",
+      "artist1": "",
+      "artist2": "",
+      "answer": "1",
+      "explanation": "",
+      "explanationEN": "",
+      "linkTitle": "",
+      "linkTitleEN": "",
+      "pageText": "",
+      "pageTextEN": "",
+      "pageImage": "",
+      "pageCredit": "",
+      "titleEN": "Your Turn!"
+    },
+    {
+      "id": "id-1792772814099-o4olk",
+      "type": "complement",
+      "title": "Pour aller plus loin",
+      "workId": "id-1792772831411-3y3h7",
+      "work1": "",
+      "work2": "",
+      "look": "",
+      "understand": "",
+      "caption1": "",
+      "caption2": "",
+      "compareGlobal": "",
+      "technique": "",
+      "techniqueText": "",
+      "questions": [],
+      "images": [],
+      "question": "",
+      "questionEN": "",
+      "image1": "",
+      "image2": "",
+      "artist1": "",
+      "artist2": "",
+      "answer": "1",
+      "explanation": "",
+      "explanationEN": "",
+      "linkTitle": "La beauté désarmée",
+      "linkTitleEN": "Beauty Unarmed",
+      "pageText": "Il ne combat pas, ne triomphe pas, ne cherche même pas à séduire. Et pourtant, impossible de détourner le regard.\n\nObservez le visage de ce jeune homme endormi. Ses traits délicats, ses yeux clos et son expression paisible semblent suspendre le temps. Rien ne vient troubler cet instant d'abandon.\n\nVerrocchio, capable de représenter la puissance d'un chef militaire, révèle ici une tout autre sensibilité. Dans cette simple terre cuite, il donne à la jeunesse et à la fragilité une présence presque vivante.\n\nLa beauté masculine n'est plus celle d'un héros victorieux. Elle se dévoile dans la douceur d'un visage, dans l'intimité du sommeil, dans cette vulnérabilité qui nous touche sans que nous sachions toujours pourquoi.\n\nEt vous, qu'est-ce qui retient votre regard : la beauté du jeune homme, la sérénité de son sommeil ou cette troublante impression qu'il pourrait ouvrir les yeux ?",
+      "pageTextEN": "He does not fight, triumph, or even try to seduce. And yet, it is impossible to look away.\n\nLook at the face of this sleeping youth. His delicate features, closed eyes, and peaceful expression seem to suspend time. Nothing disturbs this moment of complete surrender.\n\nVerrocchio, capable of portraying the power of a military commander, reveals an entirely different sensitivity here. In this simple terracotta sculpture, he gives youth and vulnerability an almost lifelike presence.\n\nMale beauty is no longer that of a victorious hero. It reveals itself in the softness of a face, the intimacy of sleep, and a vulnerability that moves us without our always knowing why.\n\nAnd you, what holds your gaze: the young man's beauty, the serenity of his sleep, or the intriguing feeling that he might open his eyes at any moment?",
+      "pageImage": "",
+      "pageCredit": "",
+      "titleEN": "Explore Further"
+    }
+  ],
+  "medallions": [
+    {
+      "id": "id-1792754216052-kwd16",
+      "kind": "recit",
+      "target": "id-1792754049116-0e879",
+      "workId": "id-1792676411233-7q6em",
+      "photo": "images/verrocchio/Andrea_del_verrocchio,_incredulità_di_san_tommaso,_1467-83_(orsanmichele).jpg",
+      "photoCredit": "",
+      "photoLicense": "",
+      "title": "Thomas : croire sans voir ?",
+      "text": "Évangile selon saint Jean (20, 24-29)\n\nAprès la résurrection de Jésus, les disciples racontent à Thomas qu'ils ont vu le Christ vivant. Mais Thomas refuse de les croire : il veut voir les marques des clous et toucher la blessure laissée par la lance.\n\nHuit jours plus tard, Jésus apparaît de nouveau. Cette fois, Thomas est présent. Le Christ l'invite à regarder ses blessures et à avancer sa main vers son côté.\n\nFace à lui, Thomas reconnaît son Seigneur. Jésus lui répond alors : « Heureux ceux qui croient sans avoir vu. »\n\nLe détail à regarder\n\nVerrocchio choisit l'instant où le doute rencontre la preuve. Le Christ ouvre son vêtement et Thomas approche sa main. Ce simple geste suffit à raconter toute l'histoire.\n\nÀ retenir : la sculpture représente le passage du doute à la foi, mais aussi un moment profondément humain : celui où l'on cherche à comprendre par soi-même.",
+      "textEN": "Gospel of John (20:24–29)\n\nAfter Jesus' resurrection, the disciples tell Thomas that they have seen Christ alive. But Thomas refuses to believe them: he wants to see the nail marks and touch the wound left by the spear.\n\nEight days later, Jesus appears again. This time, Thomas is present. Christ invites him to examine his wounds and reach towards his side.\n\nStanding before him, Thomas acknowledges his Lord. Jesus then tells him: “Blessed are those who have not seen and yet have believed.”\n\nA detail to look at\n\nVerrocchio chooses the moment when doubt meets evidence. Christ opens his garment as Thomas reaches towards him. This simple gesture tells the entire story.\n\nKey takeaway: the sculpture depicts the passage from doubt to faith, but also a deeply human moment: the desire to understand things for oneself.",
+      "titleEN": "Thomas: Believing Without Seeing?"
+    },
+    {
+      "id": "id-1792754911060-ta8oq",
+      "kind": "anecdote",
+      "target": "id-1792754724645-x34h5",
+      "workId": "id-1792685418302-jlm7n",
+      "photo": "images/verrocchio/Bautismo_de_Cristo,_Verrocchio,_Florencia,_Italia,_2019.jpg",
+      "photoCredit": "",
+      "photoLicense": "",
+      "title": "L'ange qui aurait fait abandonner la peinture à Verrocchio",
+      "text": "Regardez les deux anges agenouillés à gauche du Baptême du Christ. Ils semblent appartenir à la même scène. Pourtant, l'un d'eux cache une histoire étonnante.\n\nSelon Giorgio Vasari, Verrocchio aurait confié à un jeune apprenti le soin de peindre l'un des anges. Lorsque le maître aurait découvert le résultat, il aurait été si impressionné par la qualité de cette peinture qu'il aurait décidé de ne plus jamais toucher à un pinceau !\n\nMais qui était donc cet apprenti ?\n\nIl s'agissait de Léonard de Vinci, alors en formation dans l'atelier florentin de Verrocchio.\n\nL'ange de gauche, généralement attribué à Léonard, se distingue par la douceur de son visage, la souplesse de ses cheveux et les transitions subtiles entre lumière et ombre. Le jeune peintre aurait également contribué au paysage.\n\nLa réalité derrière la légende\n\nCette histoire nous vient des Vies des meilleurs peintres, sculpteurs et architectes de Vasari, publiées au XVIe siècle, plusieurs décennies après les faits. Rien ne prouve que Verrocchio ait réellement abandonné la peinture par dépit.\n\nCe qui est remarquable, en revanche, c'est qu'une même œuvre permet d'observer les débuts de celui qui deviendra l'un des artistes les plus célèbres de la Renaissance.\n\nÀ retenir : derrière un ange discret se révèle un jeune Léonard de Vinci. Et derrière une anecdote savoureuse, une question fascinante : comment un élève finit-il par trouver sa propre manière de peindre ?",
+      "titleEN": "The Angel Who Supposedly Made Verrocchio Give Up Painting",
+      "textEN": "The Angel Who Supposedly Made Verrocchio Give Up Painting\nLook at the two kneeling angels on the left of The Baptism of Christ. They appear to belong to the same scene. Yet one of them hides a remarkable story.\n\nAccording to Giorgio Vasari, Verrocchio entrusted a young apprentice with painting one of the angels. When the master saw the result, he was supposedly so impressed by its quality that he decided never to pick up a paintbrush again!\n\nBut who was this apprentice?\n\nIt was Leonardo da Vinci, then training in Verrocchio's Florentine workshop.\n\nThe angel on the left, generally attributed to Leonardo, stands out for the softness of its face, the flowing hair and the subtle transitions between light and shadow. The young painter is also thought to have contributed to the landscape.\n\nThe truth behind the legend\n\nThe story comes from Vasari's Lives of the Most Excellent Painters, Sculptors, and Architects, published in the sixteenth century, decades after the events. There is no proof that Verrocchio actually gave up painting out of frustration.\n\nWhat makes the work remarkable, however, is that it offers a glimpse of the beginnings of an artist who would become one of the most celebrated figures of the Renaissance.\n\nKey takeaway: behind an unassuming angel stands a young Leonardo da Vinci. And behind an entertaining anecdote lies a fascinating question: how does a pupil develop a style of his own?"
+    },
+    {
+      "id": "id-1792773175852-8c1fp",
+      "kind": "indiscret",
+      "target": "id-1792772814099-o4olk",
+      "workId": "id-1792772831411-3y3h7",
+      "photo": "",
+      "photoCredit": "",
+      "photoLicense": "",
+      "title": "",
+      "text": ""
+    }
+  ],
+  "recognize": [],
+  "quiz": {
+    "title": "À vous de jouer !",
+    "question": "",
+    "image1": "",
+    "image2": "",
+    "artist1": "",
+    "artist2": "",
+    "answer": "1",
+    "explanation": "",
+    "enabled": false
+  },
+  "artistLinks": [],
+  "resources": [],
+  "appearance": {
+    "mainColor": "#426d68",
+    "secondaryColor": "#eecf95",
+    "pageBackground": "#fff7e9",
+    "understandBackground": "#f4efe5",
+    "understandAccent": "#AD655B",
+    "workLayout": "masaccio-two-columns",
+    "font": "Tahoma",
+    "bannerStyle": "dark",
+    "showPortrait": true,
+    "titleColor": "#315a55",
+    "introSize": "14",
+    "compactHero": "on",
+    "introColor": "#6b4400",
+    "portraitStyle": "fade",
+    "titleSize": "38"
+  }
+}

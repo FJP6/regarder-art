@@ -1,0 +1,12 @@
+EXPORT PARTIEL — IMAGES NON INCLUSES DANS CE ZIP
+
+Ces références pointent vers des images qui doivent déjà exister sur le site GitHub. Elles ne sont pas ajoutées automatiquement au ZIP afin de conserver un export léger.
+
+recit-verrocchio-id-1792754216052-kwd16.html → images/verrocchio/Andrea_del_verrocchio,_incredulità_di_san_tommaso,_1467-83_(orsanmichele).jpg
+en/recit-verrocchio-id-1792754216052-kwd16.html → images/verrocchio/Andrea_del_verrocchio,_incredulità_di_san_tommaso,_1467-83_(orsanmichele).jpg
+recit-verrocchio-id-1792754911060-ta8oq.html → images/verrocchio/Bautismo_de_Cristo,_Verrocchio,_Florencia,_Italia,_2019.jpg
+en/recit-verrocchio-id-1792754911060-ta8oq.html → images/verrocchio/Bautismo_de_Cristo,_Verrocchio,_Florencia,_Italia,_2019.jpg
+recit-verrocchio-id-1792773175852-8c1fp.html → images/verrocchio/Andrea_del_verrocchio,_giovane_addormentato,_1465-75_ca._(bode_museum)_01.jpg
+en/recit-verrocchio-id-1792773175852-8c1fp.html → images/verrocchio/Andrea_del_verrocchio,_giovane_addormentato,_1465-75_ca._(bode_museum)_01.jpg
+
+Si une image est absente du site, importe-la dans la bibliothèque de l’atelier puis ajoute son fichier au dossier images avant de republier.
