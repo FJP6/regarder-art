@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-10-24",
+    "type": "new",
+    "fr": {
+      "title": "Andrea del Verrocchio",
+      "description": "Il donne vie au bronze, fait parler les gestes et forme l'un des plus grands génies de la Renaissance.",
+      "url": "verrocchio.html"
+    },
+    "en": {
+      "title": "Andrea del Verrocchio",
+      "description": "He brings bronze to life, makes gestures speak, and trains one of the greatest geniuses of the Renaissance.",
+      "url": "verrocchio.html"
+    }
+  },
+  {
     "date": "2026-10-18",
     "type": "new",
     "fr": {
