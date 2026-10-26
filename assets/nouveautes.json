@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-10-25",
+    "type": "new",
+    "fr": {
+      "title": "Quand l’art donne vie à nos monstres",
+      "description": "Spécial Halloween \nQuand l’art donne vie à nos monstres",
+      "url": "halloween.html"
+    },
+    "en": {
+      "title": "When Art Brings Our Monsters to Life",
+      "description": "Halloween Special \nWhen Art Brings Our Monsters to Life",
+      "url": "halloween.html"
+    }
+  },
+  {
     "date": "2026-10-24",
     "type": "new",
     "fr": {
