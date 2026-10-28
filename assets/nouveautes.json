@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-10-27",
+    "type": "update",
+    "fr": {
+      "title": "Mantegna : la perspective comme expérience",
+      "description": "Redécouvrez la Chambre des Époux, Le Christ mort et Le Triomphe de la Vertu, avec des détails à observer et un jeu pour reconnaître Mantegna.",
+      "url": "mantegna.html"
+    },
+    "en": {
+      "title": "Mantegna: Perspective as an Experience",
+      "description": "Rediscover the Camera degli Sposi, The Dead Christ and The Triumph of Virtue, with details to explore and a game to recognise Mantegna.",
+      "url": "mantegna.html"
+    }
+  },
+  {
     "date": "2026-10-28",
     "type": "new",
     "fr": {
