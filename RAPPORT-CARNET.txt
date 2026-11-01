@@ -1,0 +1,65 @@
+CRÉER : assets/carnets/albi/1b7bc7a73fedb60d.png
+CRÉER : assets/carnets/albi/3f339b06d4741936.png
+CRÉER : assets/carnets/albi/7ba88fa5e09d32f2.jpg
+CRÉER : assets/carnets/albi/9947a61272116b8f.jpg
+CRÉER : assets/carnets/albi/64356b838648ecaa.jpg
+CRÉER : assets/carnets/albi/5bd035b453cfc3a8.jpg
+CRÉER : assets/carnets/albi/5114de495f38d368.jpg
+CRÉER : assets/carnets/albi/2e504ae3761d4ae7.jpg
+CRÉER : assets/carnets/albi/b437e779661de0dd.jpg
+CRÉER : assets/carnets/albi/7612aa3387003bd5.jpg
+CRÉER : assets/carnets/albi/eb67bcb46d6276f5.jpg
+CRÉER : assets/carnets/albi/34930a097a0c76ae.jpg
+CRÉER : assets/carnets/albi/ec08ea76158da690.jpg
+CRÉER : assets/carnets/albi/53a7ad917c3e0e3a.jpg
+CRÉER : assets/carnets/albi/98a8d81029ae7325.jpg
+CRÉER : assets/carnets/albi/d1bd197fa8e1286d.jpg
+CRÉER : assets/carnets/albi/12f1dbdbba555883.jpg
+CRÉER : assets/carnets/albi/362c6beac3d376bb.jpg
+CRÉER : assets/carnets/albi/e3633698fe6f25d0.jpg
+CRÉER : assets/carnets/albi/837c8eaf352ce1ea.jpg
+CRÉER : assets/carnets/albi/40af06d0677b85d2.jpg
+CRÉER : assets/carnets/albi/4e6f6dc369dc535a.jpg
+CRÉER : assets/carnets/albi/386384b5c255ec62.jpg
+CRÉER : assets/carnets/albi/e7f27fc3fd821099.jpg
+CRÉER : assets/carnets/albi/d9f2d798ad38d653.jpg
+CRÉER : assets/carnets/albi/90f664a8216151f2.jpg
+CRÉER : assets/carnets/albi/455819f6e5d4608f.jpg
+CRÉER : assets/carnets/albi/bd52d8f68fcf99be.jpg
+CRÉER : assets/carnets/albi/a2c5772edf2e0316.jpg
+CRÉER : assets/carnets/albi/664be587979e0409.jpg
+CRÉER : assets/carnets/albi/ff7a50dee4f89902.jpg
+CRÉER : assets/carnets/albi/3947c212155bfc49.jpg
+CRÉER : assets/carnets/albi/a287e69aab840efb.jpg
+CRÉER : assets/carnets/albi/5e9c490f24f0e14a.jpg
+CRÉER : assets/carnets/albi/d806ddf5f2d8222a.jpg
+CRÉER : assets/carnets/albi/7ca908dd137c982a.jpg
+CRÉER : assets/carnets/albi/01f9ca3df70117bd.jpg
+CRÉER : assets/carnets/albi/0dd96f10c3518a8e.jpg
+CRÉER : carnets-de-visite.html
+CRÉER : albi.html
+CRÉER : toulouse-lautrec.html
+CRÉER : toulouse-lautrec-complement.html
+CRÉER : cathedrale.html
+CRÉER : cathedrale-complement.html
+CRÉER : albi-en-images.html
+CRÉER : en/carnets-de-visite.html
+CRÉER : en/albi.html
+CRÉER : en/toulouse-lautrec.html
+CRÉER : en/toulouse-lautrec-complement.html
+CRÉER : en/cathedrale.html
+CRÉER : en/cathedrale-complement.html
+CRÉER : en/albi-en-images.html
+
+AVERTISSEMENTS
+Le trésor : aucune photo.
+Musée Toulouse-Lautrec / L’apprentissage du regard : titre anglais de photo manquant.
+Cathédrale Sainte-Cécile / Les voûtes peintes — 1509–1512 : titre anglais de photo manquant.
+Albi en images / Au fil des rues : titre anglais de photo manquant.
+Accueil FR des carnets absent du site chargé : un nouvel accueil sera créé.
+
+INSTALLATION
+Décompresser le ZIP et déposer les fichiers/dossiers dans le dépôt GitHub en conservant les chemins.
+Le dossier _atelier contient le JSON de travail, avec les photos importées.
+Les autres pages du site ne sont pas modifiées. Les images distantes restent distantes.
+Les fichiers déjà identiques sont exclus. Les anciens fichiers devenus inutiles ne sont pas supprimés.
