@@ -36,14 +36,14 @@ CRÉER : assets/carnets/albi/d806ddf5f2d8222a.jpg
 CRÉER : assets/carnets/albi/7ca908dd137c982a.jpg
 CRÉER : assets/carnets/albi/01f9ca3df70117bd.jpg
 CRÉER : assets/carnets/albi/0dd96f10c3518a8e.jpg
-CRÉER : carnets-de-visite.html
+METTRE À JOUR : hors-parcours.html
 CRÉER : albi.html
 CRÉER : toulouse-lautrec.html
 CRÉER : toulouse-lautrec-complement.html
 CRÉER : cathedrale.html
 CRÉER : cathedrale-complement.html
 CRÉER : albi-en-images.html
-CRÉER : en/carnets-de-visite.html
+METTRE À JOUR : en/hors-parcours.html
 CRÉER : en/albi.html
 CRÉER : en/toulouse-lautrec.html
 CRÉER : en/toulouse-lautrec-complement.html
@@ -56,7 +56,6 @@ Le trésor : aucune photo.
 Musée Toulouse-Lautrec / L’apprentissage du regard : titre anglais de photo manquant.
 Cathédrale Sainte-Cécile / Les voûtes peintes — 1509–1512 : titre anglais de photo manquant.
 Albi en images / Au fil des rues : titre anglais de photo manquant.
-Accueil FR des carnets absent du site chargé : un nouvel accueil sera créé.
 
 INSTALLATION
 Décompresser le ZIP et déposer les fichiers/dossiers dans le dépôt GitHub en conservant les chemins.
