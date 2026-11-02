@@ -1,29 +1,43 @@
 CRÉER : assets/carnets/albi/1b7bc7a73fedb60d.png
 CRÉER : assets/carnets/albi/3f339b06d4741936.png
-CRÉER : assets/carnets/albi/7ba88fa5e09d32f2.jpg
-CRÉER : assets/carnets/albi/9947a61272116b8f.jpg
-CRÉER : assets/carnets/albi/64356b838648ecaa.jpg
-CRÉER : assets/carnets/albi/5bd035b453cfc3a8.jpg
-CRÉER : assets/carnets/albi/5114de495f38d368.jpg
-CRÉER : assets/carnets/albi/2e504ae3761d4ae7.jpg
-CRÉER : assets/carnets/albi/b437e779661de0dd.jpg
-CRÉER : assets/carnets/albi/7612aa3387003bd5.jpg
-CRÉER : assets/carnets/albi/eb67bcb46d6276f5.jpg
-CRÉER : assets/carnets/albi/34930a097a0c76ae.jpg
-CRÉER : assets/carnets/albi/ec08ea76158da690.jpg
-CRÉER : assets/carnets/albi/53a7ad917c3e0e3a.jpg
-CRÉER : assets/carnets/albi/98a8d81029ae7325.jpg
-CRÉER : assets/carnets/albi/d1bd197fa8e1286d.jpg
+CRÉER : assets/carnets/albi/be9577f0ee383bb9.jpg
+CRÉER : assets/carnets/albi/3e16a1893c8d093e.jpg
+CRÉER : assets/carnets/albi/c4fd760f02bfa5be.jpg
+CRÉER : assets/carnets/albi/09891f87465741a0.jpg
+CRÉER : assets/carnets/albi/cdd9ea827a3f5c28.jpg
+CRÉER : assets/carnets/albi/ee9c834045a5e672.jpg
+CRÉER : assets/carnets/albi/e95e2750292f0838.jpg
+CRÉER : assets/carnets/albi/c5ad8356fef970e8.jpg
+CRÉER : assets/carnets/albi/3637c08762455474.jpg
+CRÉER : assets/carnets/albi/8e2187a104af8023.jpg
+CRÉER : assets/carnets/albi/38eac429ad2e97fe.jpg
+CRÉER : assets/carnets/albi/9af6e19e7c622e5e.jpg
+CRÉER : assets/carnets/albi/33ab44f816050ccc.jpg
+CRÉER : assets/carnets/albi/0f7a25198479fe96.jpg
+CRÉER : assets/carnets/albi/4e3c6b591542777e.jpg
+CRÉER : assets/carnets/albi/816326818f74cabe.jpg
+CRÉER : assets/carnets/albi/726f7a6f8c5f7110.jpg
+CRÉER : assets/carnets/albi/63d1370b39540a8c.jpg
 CRÉER : assets/carnets/albi/12f1dbdbba555883.jpg
-CRÉER : assets/carnets/albi/362c6beac3d376bb.jpg
-CRÉER : assets/carnets/albi/e3633698fe6f25d0.jpg
-CRÉER : assets/carnets/albi/837c8eaf352ce1ea.jpg
+CRÉER : assets/carnets/albi/999796ec21d00b34.jpg
+CRÉER : assets/carnets/albi/62a1970658a1fe38.jpg
+CRÉER : assets/carnets/albi/38c821a3751403d3.jpg
 CRÉER : assets/carnets/albi/40af06d0677b85d2.jpg
 CRÉER : assets/carnets/albi/4e6f6dc369dc535a.jpg
 CRÉER : assets/carnets/albi/386384b5c255ec62.jpg
 CRÉER : assets/carnets/albi/e7f27fc3fd821099.jpg
 CRÉER : assets/carnets/albi/d9f2d798ad38d653.jpg
 CRÉER : assets/carnets/albi/90f664a8216151f2.jpg
+CRÉER : assets/carnets/albi/e12194d2df6a4003.jpg
+CRÉER : assets/carnets/albi/d374e865a5033ab3.jpg
+CRÉER : assets/carnets/albi/08f102210dfd4043.jpg
+CRÉER : assets/carnets/albi/17217aab3abe9325.jpg
+CRÉER : assets/carnets/albi/fd7d2ddc3954d5a2.jpg
+CRÉER : assets/carnets/albi/537cc3285c5c801f.jpg
+CRÉER : assets/carnets/albi/320919dc08a695ba.jpg
+CRÉER : assets/carnets/albi/1ea33d73b649c480.jpg
+CRÉER : assets/carnets/albi/ef700affefe31010.jpg
+CRÉER : assets/carnets/albi/6eb08cae6d4b8f3c.jpg
 CRÉER : assets/carnets/albi/455819f6e5d4608f.jpg
 CRÉER : assets/carnets/albi/bd52d8f68fcf99be.jpg
 CRÉER : assets/carnets/albi/a2c5772edf2e0316.jpg
@@ -32,30 +46,38 @@ CRÉER : assets/carnets/albi/ff7a50dee4f89902.jpg
 CRÉER : assets/carnets/albi/3947c212155bfc49.jpg
 CRÉER : assets/carnets/albi/a287e69aab840efb.jpg
 CRÉER : assets/carnets/albi/5e9c490f24f0e14a.jpg
-CRÉER : assets/carnets/albi/d806ddf5f2d8222a.jpg
 CRÉER : assets/carnets/albi/7ca908dd137c982a.jpg
+CRÉER : assets/carnets/albi/d806ddf5f2d8222a.jpg
 CRÉER : assets/carnets/albi/01f9ca3df70117bd.jpg
 CRÉER : assets/carnets/albi/0dd96f10c3518a8e.jpg
+CRÉER : assets/carnets/albi/e4835f80e8a1435f.jpg
+CRÉER : assets/carnets/albi/27fd3b91c04b4a05.png
 METTRE À JOUR : hors-parcours.html
-CRÉER : albi.html
-CRÉER : toulouse-lautrec.html
-CRÉER : toulouse-lautrec-complement.html
-CRÉER : cathedrale.html
-CRÉER : cathedrale-complement.html
-CRÉER : albi-en-images.html
+METTRE À JOUR : carnets-de-visite.html
+METTRE À JOUR : albi.html
+METTRE À JOUR : toulouse-lautrec.html
+METTRE À JOUR : toulouse-lautrec-complement.html
+METTRE À JOUR : cathedrale.html
+METTRE À JOUR : cathedrale-complement.html
+METTRE À JOUR : albi-en-images.html
+CRÉER : albi-en-images-complement.html
 METTRE À JOUR : en/hors-parcours.html
-CRÉER : en/albi.html
-CRÉER : en/toulouse-lautrec.html
-CRÉER : en/toulouse-lautrec-complement.html
-CRÉER : en/cathedrale.html
-CRÉER : en/cathedrale-complement.html
-CRÉER : en/albi-en-images.html
+METTRE À JOUR : en/carnets-de-visite.html
+METTRE À JOUR : en/albi.html
+METTRE À JOUR : en/toulouse-lautrec.html
+METTRE À JOUR : en/toulouse-lautrec-complement.html
+METTRE À JOUR : en/cathedrale.html
+METTRE À JOUR : en/cathedrale-complement.html
+METTRE À JOUR : en/albi-en-images.html
+CRÉER : en/albi-en-images-complement.html
 
 AVERTISSEMENTS
-Le trésor : aucune photo.
-Musée Toulouse-Lautrec / L’apprentissage du regard : titre anglais de photo manquant.
+Musée Toulouse-Lautrec / complément : titre anglais de photo manquant.
 Cathédrale Sainte-Cécile / Les voûtes peintes — 1509–1512 : titre anglais de photo manquant.
-Albi en images / Au fil des rues : titre anglais de photo manquant.
+Cathédrale Sainte-Cécile / Le trésor : titre anglais de photo manquant.
+Cathédrale Sainte-Cécile / complément : titre anglais de photo manquant.
+Albi en images / complément : commentaire anglais manquant.
+Albi en images / complément : titre anglais de photo manquant.
 
 INSTALLATION
 Décompresser le ZIP et déposer les fichiers/dossiers dans le dépôt GitHub en conservant les chemins.
