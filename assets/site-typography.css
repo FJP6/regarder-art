@@ -1,0 +1,3 @@
+/* Police commune Regarder l’Art : Helvetica. */
+:root{--ra-site-font:Helvetica,Arial,sans-serif}
+html[data-ra-site-font][data-ra-site-font][data-ra-site-font][lang] body,html[data-ra-site-font][data-ra-site-font][data-ra-site-font][lang] body :is(main,section,article,header,footer,nav,div,span,p,li,dt,dd,blockquote,h1,h2,h3,h4,h5,h6,figcaption,a,button,input,textarea,select,label,summary,small,strong,em){font-family:var(--ra-site-font)!important}

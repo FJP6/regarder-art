@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-11-03",
+    "type": "update",
+    "fr": {
+      "title": "Fra Filippo Lippi : les visages de la vie",
+      "description": "Un moine peintre qui donnait aux figures du paradis les visages de la vie.",
+      "url": "fra-filippo-lippi.html"
+    },
+    "en": {
+      "title": "Fra Filippo Lippi: The Faces of Everyday Life",
+      "description": "A painter-monk who gave the figures of paradise the faces of everyday life.",
+      "url": "fra-filippo-lippi.html"
+    }
+  },
+  {
     "date": "2026-10-27",
     "type": "update",
     "fr": {
