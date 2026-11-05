@@ -1,0 +1,46 @@
+body.alberti-page{background:#faf9f4;color:#293e48;font:16px/1.75 Tahoma,Arial,sans-serif}
+body.alberti-page>.hero{background:transparent;color:#293e48;padding:40px 28px 26px;border-bottom:1px solid #d7d6ca}
+body.alberti-page .hero-layout{max-width:1104px;grid-template-columns:minmax(0,1fr) 190px;gap:40px;align-items:center}
+body.alberti-page>.hero h1{font:400 clamp(38px,6vw,64px)/1.15 Tahoma,Arial,sans-serif!important;letter-spacing:-.035em;color:#293e48;margin:12px 0 18px}
+body.alberti-page>.hero .eyebrow{font:600 12px/1.5 Tahoma,Arial,sans-serif;color:#967043;letter-spacing:.14em}
+body.alberti-page>.hero p{font:18px/1.7 Tahoma,Arial,sans-serif}
+body.alberti-page>.hero .tagline{font:21px/1.5 Tahoma,Arial,sans-serif;color:#304d61}
+body.alberti-page .hero-portrait{background:#fff;border-radius:5px;padding:12px;box-shadow:none;margin:0}
+body.alberti-page .hero-portrait img{max-height:215px;object-fit:contain;border-radius:0}
+body.alberti-page .hero-portrait figcaption{font:11px/1.5 Tahoma,Arial,sans-serif;color:#61727a}
+body.alberti-page main.wrap{max-width:1160px;padding:0 28px 35px}
+body.alberti-page main>section{margin:0;padding:36px 0;border-bottom:1px solid #d7d6ca;scroll-margin-top:24px}
+body.alberti-page main h2,body.alberti-page>.recognition h2{font:400 clamp(26px,3.2vw,34px)/1.25 Tahoma,Arial,sans-serif!important;color:#293e48;letter-spacing:-.025em;margin:8px 0 20px}
+body.alberti-page main h3{font:400 23px/1.3 Tahoma,Arial,sans-serif!important;color:#304d61}
+body.alberti-page main .intro{background:none;border-left:0;border-radius:0;box-shadow:none;padding:26px 0}
+body.alberti-page main .intro p{max-width:960px}
+body.alberti-page main .section-head{gap:12px;margin-bottom:18px}
+body.alberti-page main .section-head .number{background:none;color:#967043;border-radius:0;width:auto;height:auto;font:600 14px Tahoma,Arial,sans-serif;min-width:18px}
+body.alberti-page main .section-head h2{margin:0}
+body.alberti-page main .grid{grid-template-columns:minmax(0,1.25fr) minmax(0,.9fr);gap:34px;align-items:start}
+body.alberti-page main .photo{padding:15px;background:#fff;border-radius:5px;box-shadow:0 6px 24px #223b4b08;min-width:0}
+body.alberti-page main .photo img{max-height:560px;object-fit:contain;border-radius:0}
+body.alberti-page main .photo figcaption{font:12px/1.65 Tahoma,Arial,sans-serif;color:#61727a;padding:12px 0 0}
+body.alberti-page main .note,body.alberti-page main .regard-exercice,body.alberti-page main .regard-guide{background:#f4eee3;border-left:2px solid #b38a4a;border-radius:0 5px 5px 0;box-shadow:none;padding:18px 22px}
+body.alberti-page main section.note{margin:26px 0;border-bottom:0}
+body.alberti-page main .tiles{gap:22px}
+body.alberti-page main .tiles img{height:280px;max-height:none;aspect-ratio:auto;object-fit:contain}
+body.alberti-page main .credits{font-size:13px;background:none;border-radius:0}
+body.alberti-page main button{background:#304d61;border-radius:5px;font:14px/1.5 Tahoma,Arial,sans-serif}
+body.alberti-page main button[aria-pressed="true"]{background:#896636}
+body.alberti-page main .uccello-bridge,body.alberti-page main .piero-bridge{max-width:none;margin:24px 0;padding:22px;background:#edf1f0;border-left:2px solid #b38a4a;border-radius:0 5px 5px 0}
+body.alberti-page>.recognition{max-width:1104px;margin:0 auto 36px;padding:25px 0;background:none;border-top:1px solid #d7d6ca;border-radius:0}
+body.alberti-page>.recognition li{margin:12px 0}
+body.alberti-page nav.alberti-page-nav{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+body.alberti-page nav.alberti-page-nav a{color:#304d58;text-decoration:none;font:13px/1.5 Tahoma,Arial,sans-serif;border:1px solid #d4d8ce;border-radius:22px;padding:8px 12px}
+#artist-zoom.ra-viewer button{margin:0}
+@media(max-width:760px){
+ body.alberti-page>.hero{padding:30px 18px 24px}
+ body.alberti-page .hero-layout{grid-template-columns:minmax(0,1fr);gap:24px}
+ body.alberti-page .hero-portrait{width:160px;justify-self:start}
+ body.alberti-page main.wrap{padding:0 18px 24px}
+ body.alberti-page main>section{padding:28px 0}
+ body.alberti-page main .grid{grid-template-columns:minmax(0,1fr);gap:22px}
+ body.alberti-page main .tiles{grid-template-columns:minmax(0,1fr)}
+ body.alberti-page>.recognition{margin:0 18px 28px}
+}

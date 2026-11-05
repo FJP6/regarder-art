@@ -1,0 +1,114 @@
+[
+  {
+    "date": "2026-11-03",
+    "type": "update",
+    "fr": {
+      "title": "Masaccio",
+      "description": "Un nouveau réalisme en peinture : des corps qui ont un poids, des émotions vraies et un espace construit par la perspective.",
+      "url": "masaccio.html"
+    },
+    "en": {
+      "title": "Masaccio",
+      "description": "A new realism in painting: bodies with weight, convincing emotions and space constructed through perspective.",
+      "url": "masaccio.html"
+    }
+  },
+  {
+    "date": "2026-10-27",
+    "type": "update",
+    "fr": {
+      "title": "Mantegna : la perspective comme expérience",
+      "description": "Redécouvrez la Chambre des Époux, Le Christ mort et Le Triomphe de la Vertu, avec des détails à observer et un jeu pour reconnaître Mantegna.",
+      "url": "mantegna.html"
+    },
+    "en": {
+      "title": "Mantegna: Perspective as an Experience",
+      "description": "Rediscover the Camera degli Sposi, The Dead Christ and The Triumph of Virtue, with details to explore and a game to recognise Mantegna.",
+      "url": "mantegna.html"
+    }
+  },
+  {
+    "date": "2026-10-28",
+    "type": "new",
+    "fr": {
+      "title": "Le Pérugin : l’art de l’harmonie",
+      "description": "Des clés de saint Pierre aux gestes silencieux de la Pietà, découvrez comment Le Pérugin fait naître l’émotion dans l’équilibre — puis comparez son Mariage de la Vierge à celui de Raphaël",
+      "url": "perugin.html"
+    },
+    "en": {
+      "title": "Perugino: The Art of Harmony",
+      "description": "From Saint Peter’s keys to the quiet gestures of the Pietà, discover how Perugino creates emotion through balance—then compare his Marriage of the Virgin with Raphael’s",
+      "url": "perugin.html"
+    }
+  },
+  {
+    "date": "2026-10-25",
+    "type": "new",
+    "fr": {
+      "title": "Quand l’art donne vie à nos monstres",
+      "description": "Spécial Halloween \nQuand l’art donne vie à nos monstres",
+      "url": "halloween.html"
+    },
+    "en": {
+      "title": "When Art Brings Our Monsters to Life",
+      "description": "Halloween Special \nWhen Art Brings Our Monsters to Life",
+      "url": "halloween.html"
+    }
+  },
+  {
+    "date": "2026-10-24",
+    "type": "new",
+    "fr": {
+      "title": "Andrea del Verrocchio",
+      "description": "Il donne vie au bronze, fait parler les gestes et forme l'un des plus grands génies de la Renaissance.",
+      "url": "verrocchio.html"
+    },
+    "en": {
+      "title": "Andrea del Verrocchio",
+      "description": "He brings bronze to life, makes gestures speak, and trains one of the greatest geniuses of the Renaissance.",
+      "url": "verrocchio.html"
+    }
+  },
+  {
+    "date": "2026-10-18",
+    "type": "new",
+    "fr": {
+      "title": "Filippino Lippi",
+      "description": "Quand la Renaissance devient plus expressive, plus théâtrale… et parfois fantastique.",
+      "url": "filippino-lippi.html"
+    },
+    "en": {
+      "title": "Filippino Lippi",
+      "description": "When the Renaissance becomes more expressive, more theatrical… and sometimes fantastical.",
+      "url": "filippino-lippi.html"
+    }
+  },
+  {
+    "date": "2026-10-16",
+    "type": "new",
+    "fr": {
+      "title": "Regards croisés",
+      "description": "Une nouvelle rubrique pour faire dialoguer les œuvres à travers les époques. Les premiers thèmes arrivent bientôt.",
+      "url": "regards-croises.html"
+    },
+    "en": {
+      "title": "Art in Dialogue",
+      "description": "A new section to explore themes across artistic periods. The first topics are coming soon.",
+      "url": "regards-croises.html"
+    }
+  },
+  {
+    "date": "2026-10-16",
+    "type": "updated",
+    "fr": {
+      "title": "Andrea Mantegna",
+      "description": "La fiche artiste a été enrichie : Chambre des Époux, Triomphe de la Vertu et regard croisé sur saint Sébastien.",
+      "url": "mantegna.html"
+    },
+    "en": {
+      "title": "Andrea Mantegna",
+      "description": "Updated artist profile: the Camera degli Sposi, the Triumph of Virtue and a closer look at Saint Sebastian.",
+      "url": "mantegna.html"
+    }
+  }
+]

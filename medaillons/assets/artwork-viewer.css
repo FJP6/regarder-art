@@ -1,0 +1,18 @@
+/* Scoped to the shared viewer; artwork page layouts stay independent. */
+#artist-zoom.ra-viewer{position:fixed;inset:0;margin:auto;border:1px solid #364650;border-radius:12px;padding:0;width:calc(100vw - 32px);max-width:1600px;height:94vh;height:94dvh;max-height:100dvh;background:#101c24;color:#f7f3ec;overflow:hidden;font:14px/1.5 Tahoma,Arial,sans-serif;box-shadow:0 20px 80px #0008}
+#artist-zoom.ra-viewer[open]{display:grid;grid-template-rows:auto minmax(0,1fr) auto}
+#artist-zoom.ra-viewer::backdrop{background:#081117ed}
+#artist-zoom .ra-view-bar{display:flex;align-items:center;gap:12px;padding:12px 14px;background:#192a35}
+#artist-zoom .ra-view-controls{display:flex;gap:8px;align-items:center;flex:1}
+#artist-zoom button{position:static;min-width:44px;min-height:44px;border:1px solid #63717b;border-radius:7px;padding:8px 12px;background:#263c49;color:#fff;font:14px Tahoma,Arial,sans-serif;cursor:pointer}
+#artist-zoom button:disabled{opacity:.4;cursor:default}
+#artist-zoom button:focus-visible,#artist-zoom .ra-view-stage:focus-visible{outline:3px solid #edc27a;outline-offset:-3px}
+#artist-zoom button[data-action="close"]{border:0;border-radius:50%;background:#c62828;font-size:24px;font-weight:bold;padding:0;flex-shrink:0}
+#artist-zoom .ra-view-stage{position:relative;min-height:0;overflow:hidden;touch-action:none;user-select:none;-webkit-user-select:none;background:#101c24}
+#artist-zoom .ra-view-stage.is-zoomed{cursor:grab}
+#artist-zoom .ra-view-stage.is-dragging{cursor:grabbing}
+#artist-zoom .ra-view-image{position:absolute;left:50%;top:50%;display:block;max-width:none;max-height:none;margin:0;padding:0;border:0;border-radius:0;object-fit:contain;transform-origin:center;user-select:none;-webkit-user-drag:none;pointer-events:none}
+#artist-zoom .ra-view-footer{padding:8px 16px 12px;background:#192a35;min-height:0;max-height:24vh;overflow:auto}
+#artist-zoom .ra-view-hint{font-size:12px;color:#cbd6dc;margin:0 0 5px}
+#artist-zoom .ra-view-caption{font-size:12px;color:#fff;line-height:1.5;margin:0;white-space:pre-line}
+@media(max-width:600px){#artist-zoom.ra-viewer{width:100vw;height:100vh;height:100dvh;max-width:none;border:0;border-radius:0}#artist-zoom .ra-view-bar{gap:8px;padding:8px 10px;padding-top:max(8px,env(safe-area-inset-top))}#artist-zoom .ra-view-footer{padding-bottom:max(12px,env(safe-area-inset-bottom))}#artist-zoom .ra-view-controls{gap:6px}#artist-zoom button{padding:8px 10px}}
