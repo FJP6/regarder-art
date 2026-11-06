@@ -1,1 +1,0 @@
-IMPORTANT : extraire le ZIP puis copier les fichiers dans la racine du depot GitHub, en remplacant donatello.html et en/donatello.html. Ne pas televerser le ZIP tel quel. Verifier le commit et le deploiement GitHub Pages.

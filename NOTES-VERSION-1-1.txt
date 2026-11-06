@@ -1,1 +1,0 @@
-Version 1.1 : titres provisoires corrigés, descriptions SEO ajoutées aux pages concernées, images intégrées de Masaccio externalisées, robots.txt ajouté. Aucun changement volontaire de présentation. Les doublons images n’ont pas été supprimés par prudence.

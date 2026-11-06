@@ -1,5 +1,0 @@
-REGARDER L ART — mise à jour complète 06/10/2026
-
-Contient le site complet : accueil, artistes, parcours, lieux, à propos, contact, crédits, Fra Angelico + Benozzo Gozzoli, Cimabue et toutes les images.
-
-Décompresser puis remplacer le contenu du dépôt GitHub par ces fichiers en conservant les dossiers assets/style.css et assets/images/.

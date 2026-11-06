@@ -1,1 +1,0 @@
-V19.5 : six pages FR/EN corrigées, image de Lille incluse. Déposer les fichiers dans la racine du dépôt GitHub en conservant les dossiers. Contenu de Lille : texte pédagogique nouveau à valider. Les pages n’ont pas été testées dans un navigateur.
