@@ -1,0 +1,15 @@
+REGARDER L’ART — ÉCOUTER & REGARDER
+
+Copier le contenu de ce dossier à la racine du site GitHub :
+
+ressources.html : page française
+en/ressources.html : page anglaise
+en/index.html : accueil anglais, vignette de ressources mise à jour
+assets/css/ressources-couture.css : nouvelle présentation
+assets/images/ressources-visiteurs.webp : photographie retouchée et optimisée
+
+Les deux fichiers index joints étaient identiques et en anglais. Aucun accueil français n’est remplacé dans ce paquet.
+
+Les 7 ressources et leurs liens ont été conservés dans chaque langue. Les trois entrées sous la photo mènent aux rubriques de la page. Le suivi de fréquentation et la navigation existants sont conservés.
+
+La photographie personnelle a été retouchée : vêtements harmonisés, sac et tissu blanc supprimés, posture de la visiteuse redressée.
