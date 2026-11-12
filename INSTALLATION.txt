@@ -1,0 +1,2 @@
+Copier le contenu à la racine du site en conservant les dossiers et remplacer les fichiers correspondants.
+Accueil et ressources mis à jour en français et anglais. Nouvelle image incluse. Les blocs Ressources et Carnets utilisent les mêmes colonnes et marges, sans fond intérieur.
