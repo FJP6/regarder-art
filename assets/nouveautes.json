@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-11-12",
+    "type": "new",
+    "fr": {
+      "title": "Ghirlandaio — Le goût de la narration",
+      "description": "Quatre œuvres pour découvrir comment Ghirlandaio raconte, et un détour par les ateliers florentins.",
+      "url": "ghirlandaio.html"
+    },
+    "en": {
+      "title": "Ghirlandaio — A Gift for Storytelling",
+      "description": "Four works exploring Ghirlandaio’s storytelling, with a visit to Florentine workshops.",
+      "url": "ghirlandaio.html"
+    }
+  },
+  {
     "date": "2026-11-03",
     "type": "update",
     "fr": {
