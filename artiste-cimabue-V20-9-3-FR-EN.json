@@ -1,0 +1,271 @@
+{
+  "version": 15,
+  "artist": {
+    "name": "Cimabue",
+    "slug": "cimabue",
+    "portrait": "images/cimabue/cimabue.png",
+    "dates": "Vers 1240–1302",
+    "intro": "<span style=\"color:#7c5555\">Quand l’image sacrée commence à prendre corps.</span>",
+    "thesis": "<p><span style=\"color:#7c5555\">Cimabue ne rompt pas avec la peinture médiévale. Il commence à la transformer de l’intérieur.</span></p>",
+    "bio": "<p>Peintre florentin de la fin du Moyen Âge, Cimabue renouvelle la tradition byzantine en donnant davantage de volume et d’expression aux figures religieuses. Son œuvre annonce les transformations majeures de la peinture italienne, notamment celles de Giotto.</p>",
+    "takeaway": "<p>L’image garde sa force sacrée, mais les figures gagnent en volume, en poids et en présence humaine.</p>",
+    "datesEN": "Vers 1240–1302",
+    "introEN": "When the sacred image begins to take physical form.",
+    "thesisEN": "<p><span style=\"color:#7c5555\">Cimabue does not break with medieval painting. He begins to transform it from within.</span></p>",
+    "bioEN": "<p>A Florentine painter of the late Middle Ages, Cimabue renews the Byzantine tradition by giving religious figures greater volume and expression. His work anticipates major changes in Italian painting, particularly those developed by Giotto.</p>",
+    "takeawayEN": "<p>The image retains its sacred power, while the figures gain volume, weight and human presence.</p>"
+  },
+  "library": [
+    {
+      "id": "icone-byzantine",
+      "artist": "Tradition byzantine",
+      "title": "Icône byzantine",
+      "titleEN": "Byzantine icon",
+      "image": "images/cimabue/icone-avant-cimabue.png",
+      "credit": {
+        "source": "Œuvre ancienne ; source exacte et photographie à identifier · Œuvre ancienne dans le domaine public ; droits de la reproduction à vérifier",
+        "photographer": "",
+        "license": "",
+        "sourceUrl": ""
+      }
+    },
+    {
+      "id": "maesta-santa-trinita",
+      "artist": "Cimabue",
+      "title": "Maestà de Santa Trinita",
+      "titleEN": "Santa Trinita Maestà",
+      "image": "images/cimabue/cimabue-maesta.jpg",
+      "credit": {
+        "source": "Reproduction associée à Google Arts & Culture dans les crédits du site ; fichier photographique exact à confirmer · Œuvre ancienne dans le domaine public ; droits de la reproduction à vérifier",
+        "photographer": "",
+        "license": "",
+        "sourceUrl": ""
+      }
+    },
+    {
+      "id": "crucifix-santa-croce",
+      "artist": "Cimabue",
+      "title": "Crucifix de Santa Croce",
+      "titleEN": "Santa Croce Crucifix",
+      "image": "images/cimabue/cimabue-crucifix.png",
+      "credit": {
+        "source": "Photographie et licence à confirmer · Œuvre ancienne dans le domaine public ; droits de la reproduction à vérifier",
+        "photographer": "",
+        "license": "",
+        "sourceUrl": ""
+      }
+    },
+    {
+      "id": "flagellation",
+      "artist": "Cimabue",
+      "title": "La Flagellation du Christ",
+      "titleEN": "The Flagellation of Christ",
+      "image": "images/cimabue/cimabue-flagellation.png",
+      "credit": {
+        "source": "Reproduction de l’œuvre ancienne ; fichier photographique exact à confirmer · Œuvre ancienne dans le domaine public ; droits de la reproduction à vérifier",
+        "photographer": "",
+        "license": "",
+        "sourceUrl": ""
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "section-comparaison",
+      "anchor": "oeuvres",
+      "type": "comparaison-detaillee",
+      "columns": [
+        {
+          "image": "images/cimabue/icone-avant-cimabue.png",
+          "caption": "<p>Vierge à l’Enfant — tradition byzantine. Image source conservée sans modification.</p>",
+          "credit": "Œuvre ancienne ; source exacte et photographie à identifier · Œuvre ancienne dans le domaine public ; droits de la reproduction à vérifier",
+          "captionEN": "<p>Virgin and Child — Byzantine tradition. The source image is shown unchanged.</p>",
+          "details": [
+            {
+              "image": "images/cimabue/crop-icon-visage.jpg",
+              "title": "Visage",
+              "text": "<p>Frontal, hiératique et codifié : le regard paraît intemporel.</p>",
+              "titleEN": "Face",
+              "textEN": "<p>Frontal, solemn and governed by conventions: the gaze seems timeless.</p>"
+            },
+            {
+              "image": "images/cimabue/crop-icon-geste.jpg",
+              "title": "Geste",
+              "text": "<p>La main allongée adopte un geste symbolique plutôt que spontané.</p>",
+              "titleEN": "Gesture",
+              "textEN": "<p>The elongated hand makes a symbolic rather than spontaneous gesture.</p>"
+            },
+            {
+              "image": "images/cimabue/crop-icon-fond-or.jpg",
+              "title": "Fond d’or",
+              "text": "<p>Il évoque un espace sacré, hors du temps et sans profondeur naturelle.</p>",
+              "titleEN": "Gold background",
+              "textEN": "<p>It evokes a sacred space, outside time and without natural depth.</p>"
+            }
+          ],
+          "title": "Icône byzantine",
+          "subtitle": "Une image sacrée qui rend présent le divin",
+          "text": "<p><strong>L’icône n’est pas une simple représentation.</strong></p><p>Elle ne cherche pas d’abord à ressembler à une personne réelle. Elle rend présent le sacré et permet une relation avec lui : présence, éternité et spiritualité priment sur le réalisme et la perspective.</p>",
+          "titleEN": "Byzantine icon",
+          "subtitleEN": "A sacred image that makes the divine present",
+          "textEN": "<p><strong>An icon is more than a representation.</strong></p><p>Its primary purpose is not to resemble a real person. It makes the sacred present and allows a relationship with it: presence, eternity and spirituality take precedence over realism and perspective.</p>",
+          "workId": "icone-byzantine"
+        },
+        {
+          "image": "images/cimabue/cimabue-maesta.jpg",
+          "caption": "<p><strong>1 — Maestà de Santa Trinita</strong> , vers 1290–1300 — Galerie des Offices, Florence.</p>",
+          "credit": "Reproduction associée à Google Arts & Culture dans les crédits du site ; fichier photographique exact à confirmer · Œuvre ancienne dans le domaine public ; droits de la reproduction à vérifier",
+          "captionEN": "<p><strong>1 — Santa Trinita Maestà</strong> , c. 1290–1300 — Uffizi Gallery, Florence.</p>",
+          "details": [
+            {
+              "image": "images/cimabue/crop-maesta-visage.jpg",
+              "title": "Visage",
+              "text": "<p>Plus de modelé, moins d’abstraction : la figure gagne en présence humaine.</p>",
+              "titleEN": "Face",
+              "textEN": "<p>More modelling, less abstraction: the figure gains a human presence.</p>"
+            },
+            {
+              "image": "images/cimabue/crop-maesta-corps.jpg",
+              "title": "Corps",
+              "text": "<p>On perçoit davantage le volume sous les vêtements : la Vierge a un poids physique.</p>",
+              "titleEN": "Body",
+              "textEN": "<p>We sense more volume beneath the clothing: the Virgin has physical weight.</p>"
+            },
+            {
+              "image": "images/cimabue/crop-maesta-trone.jpg",
+              "title": "Trône",
+              "text": "<p>Il tente de construire un espace et une profondeur, au-delà du simple fond plat.</p>",
+              "titleEN": "Throne",
+              "textEN": "<p>It attempts to create space and depth, beyond a flat background.</p>"
+            },
+            {
+              "image": "images/cimabue/crop-maesta-anges.jpg",
+              "title": "Anges",
+              "text": "<p>Encore superposés, ils commencent à s’organiser autour d’un espace commun.</p>",
+              "titleEN": "Angels",
+              "textEN": "<p>Still arranged one above another, they begin to be organised around a shared space.</p>"
+            }
+          ],
+          "title": "Cimabue",
+          "subtitle": "L’image sacrée commence à prendre corps",
+          "titleEN": "Cimabue",
+          "subtitleEN": "The sacred image begins to take physical form",
+          "workId": "maesta-santa-trinita"
+        }
+      ],
+      "title": "De la tradition byzantine à Cimabue",
+      "titleEN": "From the Byzantine tradition to Cimabue"
+    },
+    {
+      "id": "section-autres-oeuvres",
+      "anchor": "autres-oeuvres",
+      "type": "libre",
+      "layout": "columns",
+      "blocks": [
+        {
+          "image": "images/cimabue/cimabue-crucifix.png",
+          "caption": "<p>Avant 1288 — Santa Croce, Florence. L’œuvre source est affichée telle quelle.</p>",
+          "credit": "Photographie et licence à confirmer · Œuvre ancienne dans le domaine public ; droits de la reproduction à vérifier",
+          "captionEN": "<p>Before 1288 — Santa Croce, Florence. The source artwork is shown unchanged.</p>",
+          "title": "Crucifix de Santa Croce",
+          "text": "<p><strong>Visage</strong> La souffrance devient plus visible et expressive.</p><p><strong>Corps</strong> Le corps a un poids : il s’affaisse et son modelé se lit davantage.</p><p><strong>Pose</strong> Elle paraît moins abstraite et plus humaine.</p>",
+          "titleEN": "Santa Croce Crucifix",
+          "textEN": "<p><strong>Face</strong> Suffering becomes more visible and expressive.</p><p><strong>Body</strong> The body has weight: it sags, and its modelling becomes more evident.</p><p><strong>Pose</strong> It appears less abstract and more human.</p>",
+          "workId": "crucifix-santa-croce"
+        },
+        {
+          "image": "images/cimabue/cimabue-flagellation.png",
+          "caption": "<p>Attribuée à Cimabue.</p>",
+          "credit": "Reproduction de l’œuvre ancienne ; fichier photographique exact à confirmer · Œuvre ancienne dans le domaine public ; droits de la reproduction à vérifier",
+          "captionEN": "<p>Attributed to Cimabue.</p>",
+          "title": "La Flagellation du Christ",
+          "text": "<p><strong>Corps</strong> Le Christ est modelé et légèrement tourné : la souffrance devient physique.</p><p><strong>Gestes</strong> Les bras levés des bourreaux rendent l’action immédiatement lisible et expressive.</p><p><strong>Espace</strong> Les architectures suggèrent un lieu, même si le fond d’or reste dominant.</p>",
+          "titleEN": "The Flagellation of Christ",
+          "textEN": "<p><strong>Body</strong> Christ’s body is modelled and slightly turned: suffering becomes physical.</p><p><strong>Gestures</strong> The executioners’ raised arms make the action immediately readable and expressive.</p><p><strong>Space</strong> The architecture suggests a setting, although the gold background remains dominant.</p>",
+          "workId": "flagellation"
+        }
+      ],
+      "title": "Le corps et l’action deviennent plus sensibles",
+      "titleEN": "Bodies and action become more tangible"
+    }
+  ],
+  "medallions": [
+    {
+      "id": "id-1793976764148-fr2h6",
+      "kind": "masque",
+      "target": "section-autres-oeuvres",
+      "photo": "images/cimabue/cimabue-crucifix.png",
+      "title": "L’histoire de l’œuvre — l’inondation de 1966",
+      "text": "Le 4 novembre 1966, l’inondation de Florence submerge Santa Croce. Le Crucifix est souillé par l’eau et la boue et perd environ 60 % de sa surface peinte. Après un long travail de restauration, il devient l’un des symboles du sauvetage du patrimoine florentin. Les grandes lacunes claires visibles aujourd’hui sont les traces de cette catastrophe.",
+      "photoCredit": "Photographie et licence à confirmer · Opera di Santa Croce · Œuvre ancienne dans le domaine public ; droits de la reproduction à vérifier",
+      "titleEN": "The artwork’s history — the 1966 flood",
+      "textEN": "On 4 November 1966, Florence’s flood submerged Santa Croce. Water and mud damaged the Crucifix, which lost about 60% of its painted surface. After lengthy restoration, it became a symbol of the efforts to save Florence’s heritage. The large pale areas visible today are the traces of that catastrophe."
+    }
+  ],
+  "recognize": [
+    {
+      "image": "images/cimabue/cimabue-maesta.jpg",
+      "titleFR": "Des corps qui gagnent en volume",
+      "text": "<p>On perçoit davantage le volume sous les vêtements : la Vierge a un poids physique.</p>",
+      "titleEN": "Bodies gaining volume",
+      "textEN": "<p>We sense more volume beneath the clothing: the Virgin has physical weight.</p>"
+    },
+    {
+      "image": "images/cimabue/cimabue-crucifix.png",
+      "titleFR": "Une souffrance plus sensible",
+      "text": "<p>Le corps a un poids : il s’affaisse et son modelé se lit davantage.</p>",
+      "titleEN": "More tangible suffering",
+      "textEN": "<p>The body has weight: it sags, and its modelling becomes more evident.</p>"
+    },
+    {
+      "image": "images/cimabue/cimabue-flagellation.png",
+      "titleFR": "Une action immédiatement lisible",
+      "text": "<p>Les bras levés des bourreaux rendent l’action immédiatement lisible et expressive.</p>",
+      "titleEN": "Action that is immediately readable",
+      "textEN": "<p>The executioners’ raised arms make the action immediately readable and expressive.</p>"
+    }
+  ],
+  "quiz": {
+    "title": "À vous de jouer !",
+    "question": "",
+    "image1": "",
+    "image2": "",
+    "artist1": "",
+    "artist2": "",
+    "answer": "1",
+    "explanation": "",
+    "enabled": false
+  },
+  "artistLinks": [
+    {
+      "url": "giotto.html",
+      "title": "Après Cimabue : Giotto",
+      "description": "Avec Giotto, les personnages prennent davantage de poids, de mouvement et d’émotion. Découvrez comment la peinture devient un récit vivant.",
+      "titleEN": "After Cimabue: Giotto",
+      "descriptionEN": "With Giotto, figures gain more weight, movement and emotion. Discover how painting becomes a living story."
+    }
+  ],
+  "resources": [],
+  "appearance": {
+    "mainColor": "#b18b55",
+    "secondaryColor": "#f4f0ea",
+    "pageBackground": "#f8f6f0",
+    "understandBackground": "#F4EAE6",
+    "understandAccent": "#AD655B",
+    "workLayout": "masaccio-two-columns",
+    "font": "Tahoma",
+    "bannerStyle": "light",
+    "showPortrait": true,
+    "headingColor": "#173c63",
+    "titleFont": "Tahoma,Arial,sans-serif",
+    "titleColor": "#173c63",
+    "titleSize": 42,
+    "introFont": "Tahoma,Arial,sans-serif",
+    "introColor": "#304148",
+    "introSize": 17,
+    "compactHero": true,
+    "portraitStyle": "classic",
+    "wallpaper": "none",
+    "readingFont": "Tahoma"
+  }
+}
