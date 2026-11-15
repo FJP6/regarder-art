@@ -1,6 +1,20 @@
 [
   {
     "date": "2026-11-15",
+    "type": "update",
+    "fr": {
+      "title": "Masaccio",
+      "description": "Un nouveau réalisme en peinture : des corps qui ont un poids, des émotions vraies et un espace construit par la perspective.",
+      "url": "masaccio.html"
+    },
+    "en": {
+      "title": "Masaccio",
+      "description": "A new realism in painting: bodies with weight, convincing emotions and space constructed through perspective.",
+      "url": "masaccio.html"
+    }
+  },
+  {
+    "date": "2026-11-15",
     "type": "new",
     "fr": {
       "title": "Léonard de Vinci — Peindre ce qui ne se voit pas",
