@@ -1,0 +1,12 @@
+BANDEAUX HARMONISÉS — 36 PAGES
+
+Copier le contenu du ZIP à la racine du site en conservant le sous-dossier en/.
+Les noms de téléchargement entre parenthèses ont été retirés des fichiers HTML.
+Les images, textes, liens, couleurs et scripts des fiches sont conservés ; seul un correctif de dimensions du bandeau de navigation a été ajouté.
+Dans artistes.html et en/artistes.html, Antonello suit immédiatement Mantegna dans l’ordre de parcours, avec et sans JavaScript. Le tri alphabétique et le tri par nouveauté restent indépendants.
+
+VERSIONS ANGLAISES NON FOURNIES :
+- en/alberti.html
+- en/piero-della-francesca.html
+Les derniers fichiers Alberti et Piero reçus sont en français et ont été utilisés pour les pages françaises.
+Les pages Parcours restent hors du périmètre, conformément à votre demande.
