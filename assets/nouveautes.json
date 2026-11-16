@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-11-16",
+    "type": "new",
+    "fr": {
+      "title": "Antonello de Messine : un visage, une lumière, une présence",
+      "description": "Quatre œuvres pour découvrir une peinture étonnamment proche : portraits, silence et émotion.",
+      "url": "antonello-de-messine.html"
+    },
+    "en": {
+      "title": "Antonello da Messina: a face, a light, a presence",
+      "description": "Four works reveal a remarkably intimate art of portraiture, silence and emotion.",
+      "url": "antonello-de-messine.html"
+    }
+  },
+  {
     "date": "2026-11-15",
     "type": "update",
     "fr": {
