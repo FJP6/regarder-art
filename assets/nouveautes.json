@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-11-17",
+    "type": "new",
+    "fr": {
+      "title": "Giovanni Bellini — Le peintre qui donna à Venise sa lumière",
+      "description": "Entre douceur des visages, paysages lumineux et émotions silencieuses, Giovanni Bellini renouvelle la peinture religieuse et ouvre la voie aux grands maîtres vénitiens.",
+      "url": "bellini.html"
+    },
+    "en": {
+      "title": "Giovanni Bellini — The Painter Who Gave Venice Its Light",
+      "description": "Through tender expressions, luminous landscapes and quiet emotion, Giovanni Bellini transformed religious painting and paved the way for the great Venetian masters.",
+      "url": "bellini.html"
+    }
+  },
+  {
     "date": "2026-11-16",
     "type": "new",
     "fr": {
