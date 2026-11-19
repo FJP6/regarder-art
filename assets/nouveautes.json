@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-11-19",
+    "type": "new",
+    "fr": {
+      "title": "Giovanni Bellini — La lumière et les paysages de Venise",
+      "description": "Des Frari au paysage de saint François, quatre tableaux montrent comment Bellini fait avancer le regard. Un face-à-face avec Mantegna révèle ce qu’un cadrage peut changer.",
+      "url": "bellini.html"
+    },
+    "en": {
+      "title": "Giovanni Bellini — Light and landscape in Venetian painting",
+      "description": "From the Frari Triptych to the landscape of Saint Francis, four paintings show how Bellini leads the eye. A comparison with Mantegna reveals what a change of framing can do.",
+      "url": "bellini.html"
+    }
+  },
+  {
     "date": "2026-11-17",
     "type": "new",
     "fr": {
