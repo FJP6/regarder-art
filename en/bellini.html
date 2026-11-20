@@ -339,6 +339,38 @@ body header.ra-site-header .ra-languages a{box-sizing:border-box!important;displ
 }
 
 
+/* Image au-dessus du texte : cadre centré et photographie entière. */
+.site-preview .site-art[data-work-layout="stacked"]>figure {
+ --stacked-artwork-height: min(700px, 76vh);
+ justify-self: center!important;
+ text-align: center!important;
+}
+.site-preview .site-art[data-work-layout="stacked"]>figure>.artwork-image {
+ max-width: min(100%, 900px);
+}
+.site-preview .site-art[data-work-layout="stacked"]>figure :is(.ra-trace-stage,.ra-guide-stage) {
+ display: inline-block!important;
+ width: auto!important;
+ container-type: normal;
+}
+.site-preview .site-art[data-work-layout="stacked"]>figure :is(img.zoomable, .ra-trace-stage>img, .ra-guide-stage>img) {
+ width: auto!important;
+ max-width: min(100%, 900px)!important;
+ max-height: var(--stacked-artwork-height)!important;
+ margin-inline: auto!important;
+ object-position: center!important;
+}
+.site-preview .site-art[data-work-layout="stacked"]>figure .ra-trace-controls {
+ justify-content: center;
+}
+@media (max-width: 760px) {
+ .site-preview .site-art[data-work-layout="stacked"]>figure {
+  --stacked-artwork-height: min(340px, 48vh);
+ }
+}
+.preview-viewport[data-preview-device="mobile"] .site-preview .site-art[data-work-layout="stacked"]>figure {
+ --stacked-artwork-height: min(340px, 48vh);
+}
 .site-preview .artwork-image{display:inline-block;position:relative;max-width:100%;line-height:0;vertical-align:top}
 .site-preview .artwork-image>img{display:block;max-width:100%}
 .site-preview .artwork-zoom-button{
