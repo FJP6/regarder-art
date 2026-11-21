@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-11-21",
+    "type": "new",
+    "fr": {
+      "title": "Andrea del Verrocchio",
+      "description": "Un pied dépasse, deux mains entrent dans un portrait, un sabot reste en l’air. Découvrez comment Verrocchio trouve des solutions qui changent toute une œuvre.",
+      "url": "verrocchio.html"
+    },
+    "en": {
+      "title": "Andrea del Verrocchio",
+      "description": "A foot over the edge, hands in a portrait, a hoof in the air. Discover the small decisions that change the way you see Verrocchio’s work.",
+      "url": "verrocchio.html"
+    }
+  },
+  {
     "date": "2026-11-19",
     "type": "new",
     "fr": {
