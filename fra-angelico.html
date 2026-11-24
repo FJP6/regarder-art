@@ -62,6 +62,25 @@
 .site-preview .ra-quiz-question{padding:12px 0;border-top:1px solid #ddd}
 .site-preview .ra-quiz-question h3{font-size:17px;margin:0 0 10px}
 .site-preview .ra-quiz-question .quiz-actions{display:flex;flex-wrap:wrap;gap:8px}
+.site-preview .ra-quiz-question .quiz-result[data-feedback]{
+ --quiz-tone:#215743;--quiz-paper:#eaf4ec;--quiz-border:#86ad90;
+ color:#242d29;background:var(--quiz-paper);border:1px solid var(--quiz-border);border-left:4px solid var(--quiz-tone);
+ padding:clamp(12px,2.5vw,20px);margin-top:12px;border-radius:8px;
+}
+.site-preview .ra-quiz-question .quiz-result[data-feedback="retry"]{
+ --quiz-tone:#794521;--quiz-paper:#fbefdc;--quiz-border:#cfab72;
+}
+.site-preview .ra-quiz-feedback-title{display:flex;align-items:center;gap:10px;color:var(--quiz-tone);font-size:clamp(17px,3.2vw,21px);line-height:1.25;margin:0 0 8px}
+.site-preview .ra-quiz-feedback-icon{display:block;flex:0 0 44px;width:44px;height:48px}
+.site-preview .ra-quiz-question .quiz-result[data-feedback] p{color:inherit;margin:0}
+.site-preview .ra-quiz-question .quiz-result[data-feedback] p+p{margin-top:8px}
+.site-preview .ra-quiz-question button[data-feedback="success"]{background:#215743!important;color:#fff!important;box-shadow:0 0 0 2px #fff,0 0 0 4px #215743}
+.site-preview .ra-quiz-question button[data-feedback="retry"]{background:#794521!important;color:#fff!important;box-shadow:0 0 0 2px #fff,0 0 0 4px #794521}
+.site-preview .ra-quiz-question button[data-act="sectionquizanswer"]{max-width:100%;overflow-wrap:anywhere}
+@media(prefers-reduced-motion:no-preference){
+ .site-preview .ra-quiz-question .quiz-result[data-feedback]:not([hidden]){animation:ra-quiz-feedback-in .2s ease-out}
+ @keyframes ra-quiz-feedback-in{from{opacity:.65;transform:translateY(-3px)}to{opacity:1;transform:translateY(0)}}
+}
 .quiz-editor-item{border:1px solid #ddd;border-radius:10px;padding:14px;margin:12px 0}
 .quiz-option-editor{padding:8px 12px;margin:8px 0;background:#f8f7f4;border-radius:8px}
 @media(max-width:600px){.site-preview .ra-quiz-images figure{flex-basis:42%;max-width:42%}.site-preview .ra-quiz-images img{height:125px}}
@@ -197,8 +216,255 @@
 .site-preview .site-section.takeaway{color:#292421}
 .site-preview .site-section.takeaway h2{font-size:26px;line-height:1.3;font-family:var(--reading-font,Tahoma,Arial,sans-serif);color:var(--heading-color,#96523c)}
 .site-preview .site-section.takeaway .takeaway-copy{font-size:16px;line-height:1.65;color:#292421}
-.site-preview .site-section.takeaway .takeaway-copy p{margin:0 0 12px!important}
+.site-preview .site-section.takeaway .takeaway-copy p{text-align:justify;hyphens:auto;overflow-wrap:break-word;margin:0 0 12px!important}
 .site-preview .site-section.takeaway .takeaway-copy p:last-child{margin-bottom:0!important}
+
+
+/* Shared navigation dimensions; exclude the separate artist introduction panel. */
+body header.ra-site-header{box-sizing:border-box!important;width:100%!important;max-width:none!important;margin:0!important;padding:0!important;border:0!important;min-height:0!important;height:auto!important;box-shadow:none!important}
+body header.ra-site-header .ra-nav{box-sizing:border-box!important;width:100%!important;max-width:1180px!important;min-height:72px!important;height:auto!important;margin:0 auto!important;padding:16px 28px!important;display:flex!important;align-items:center!important;justify-content:space-between!important;gap:22px!important;flex-wrap:nowrap!important}
+body header.ra-site-header .ra-brand{font:700 15px/1.3 Tahoma,Arial,sans-serif!important;letter-spacing:.07em!important;white-space:nowrap!important}
+body header.ra-site-header .ra-links{display:flex!important;flex:1!important;align-items:center!important;justify-content:center!important;gap:16px!important;flex-wrap:nowrap!important}
+body header.ra-site-header .ra-links a{font:400 12px/1.4 Tahoma,Arial,sans-serif!important;padding:5px 0!important;white-space:nowrap!important}
+body header.ra-site-header .ra-languages{display:flex!important;gap:6px!important;flex-shrink:0!important;margin-left:0!important}
+body header.ra-site-header .ra-languages a{box-sizing:border-box!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;width:32px!important;min-width:32px!important;height:32px!important;padding:0!important;border-radius:3px!important;font:700 11px/1 Tahoma,Arial,sans-serif!important}
+@media(max-width:1100px){body header.ra-site-header .ra-nav{flex-wrap:wrap!important;gap:14px!important}body header.ra-site-header .ra-links{order:3!important;flex-basis:100%!important;justify-content:flex-start!important;flex-wrap:wrap!important;gap:8px 20px!important}body header.ra-site-header .ra-languages{margin-left:auto!important}}
+@media(max-width:760px){body header.ra-site-header .ra-nav{padding:14px 20px!important}}
+
+/* Aération du bandeau. */
+.site-preview:is(:not([data-wallpaper]),[data-wallpaper="none"]) #ra-artist-hero{
+  margin-block-start:clamp(16px,2vw,24px)!important;
+}
+.site-preview #ra-artist-hero .lead > p{margin:0}
+@media(max-width:680px){
+  .site-preview:is(:not([data-wallpaper]),[data-wallpaper="none"]) #ra-artist-hero{
+    width:calc(100% - 32px)!important
+  }
+}
+.preview-viewport[data-preview-device="mobile"]
+.site-preview:is(:not([data-wallpaper]),[data-wallpaper="none"]) #ra-artist-hero{
+  width:calc(100% - 32px)!important
+}
+
+
+.site-preview #reconnaitre .recognize-grid{column-gap:28px!important;row-gap:0!important}
+.site-preview #reconnaitre .recognize-item{grid-template-columns:minmax(0,1fr)!important;align-items:center!important;background:transparent!important;border:0!important;border-top:1px solid var(--understand-accent,#94613d)!important;border-radius:0!important;padding:12px 0!important}
+.site-preview #reconnaitre .recognize-item:has(.recognize-photo){grid-template-columns:auto minmax(0,1fr)!important}
+.site-preview #reconnaitre .recognize-copy p{text-align:start!important;hyphens:manual!important}
+.site-preview:has(#section-biographie) {
+  --biography-gutter:32px;
+  --biography-sheet-edge:16px;
+}
+.site-preview:has(#section-biographie) #ra-artist-hero {
+  width:100%!important;
+  padding-inline:var(--biography-gutter)!important;
+}
+.site-preview #ra-artist-hero[data-hero-alignment="center"] {text-align:center}
+.site-preview #ra-artist-hero[data-hero-alignment="end"] {text-align:end}
+.site-preview #ra-artist-hero[data-hero-alignment="justify"] .lead {text-align:justify}
+.site-preview #ra-artist-hero .lead {
+  inline-size:100%;
+  max-width:none!important;
+}
+.site-preview #section-biographie {
+  position:relative;
+  isolation:isolate;
+  box-sizing:border-box;
+  margin:clamp(24px,4vw,40px) 0 0;
+  padding:clamp(22px,3vw,34px) 0;
+  border-bottom:0;
+}
+.site-preview #section-biographie::before {
+  content:"";
+  position:absolute;
+  inset:0 calc(-1 * var(--biography-sheet-edge));
+  z-index:-1;
+  pointer-events:none;
+  border:1px solid #2f241517;
+  border-radius:2px;
+  background:linear-gradient(160deg,#fffdf8,#faf7ee);
+  background:linear-gradient(160deg,color-mix(in srgb,var(--paper,#f4f0e7) 19%,#fffdf8),color-mix(in srgb,var(--paper,#f4f0e7) 36%,#fffdf8));
+  box-shadow:0 1px 2px #372c1a0d,0 5px 13px #372c1a0f;
+}
+.preview-viewport[data-preview-device="mobile"] .site-preview:has(#section-biographie) {
+  --biography-gutter:20px;
+  --biography-sheet-edge:10px;
+}
+@media(max-width:680px) {
+  .site-preview:has(#section-biographie) {
+    --biography-gutter:20px;
+    --biography-sheet-edge:10px;
+  }
+}
+.site-preview #section-biographie h2 {
+  margin:0 0 14px!important;
+  font:normal clamp(24px,3vw,32px)/1.2 Georgia,serif!important;
+}
+.site-preview #section-biographie h2::before {
+  content:"";
+  display:block;
+  width:36px;
+  height:2px;
+  margin-bottom:12px;
+  background:var(--understand-accent,#94613d);
+}
+.site-preview #section-biographie .artist-bio-copy p {
+  margin:0!important;
+  line-height:1.7;
+  text-align:start!important;
+  hyphens:manual!important;
+}
+.site-preview #section-biographie .artist-bio-copy p+p {margin-block-start:.75em!important}
+
+.site-preview .site-art[data-work-layout]>figure>img,
+.site-preview .site-art[data-work-layout]>figure>.artwork-image>img,
+.site-preview .site-art[data-work-layout]>figure :is(.ra-trace-stage,.ra-guide-stage)>img {
+  display:block!important;
+  width:auto!important;
+  height:auto!important;
+  max-width:100%!important;
+  max-height:min(450px,53vh)!important;
+  object-fit:contain!important;
+}
+.site-preview .site-art:is([data-work-layout="stacked"],[data-work-layout="text-top"]) {
+  grid-template-columns:minmax(0,1fr)!important;
+  align-items:start!important;
+}
+.site-preview .site-art:is([data-work-layout="stacked"],[data-work-layout="text-top"])>figure {
+  width:min(100%,700px);
+  min-width:0;
+  justify-self:center;
+  text-align:center;
+}
+.site-preview .site-art:is([data-work-layout="stacked"],[data-work-layout="text-top"])>figure img {
+  max-height:min(490px,56vh)!important;
+  margin-inline:auto!important;
+}
+.site-preview .site-art[data-work-layout="text-top"]>.site-notes {order:-1!important}
+.site-preview .site-art[data-work-layout="text-top"]>figure {order:0!important}
+.preview-viewport[data-preview-device="mobile"] .site-preview .site-art[data-work-layout]>figure img {
+  max-height:min(340px,48vh)!important;
+}
+@media(max-width:680px){
+  .site-preview .site-art[data-work-layout]>figure img {max-height:min(340px,48vh)!important}
+}
+.site-preview .site-art[data-work-layout]>figure .ra-guide-stage {
+  display:inline-block;
+  width:auto;
+  container-type:normal;
+}
+.site-preview .site-art[data-work-layout]>figure .ra-guide-stage>img {
+  width:auto!important;
+}
+
+
+/* Image au-dessus du texte : cadre centré et photographie entière. */
+.site-preview .site-art[data-work-layout="stacked"]>figure {
+ --stacked-artwork-height: min(700px, 76vh);
+ justify-self: center!important;
+ text-align: center!important;
+}
+.site-preview .site-art[data-work-layout="stacked"]>figure>.artwork-image {
+ max-width: min(100%, 900px);
+}
+.site-preview .site-art[data-work-layout="stacked"]>figure :is(.ra-trace-stage,.ra-guide-stage) {
+ display: inline-block!important;
+ width: auto!important;
+ container-type: normal;
+}
+.site-preview .site-art[data-work-layout="stacked"]>figure :is(img.zoomable, .ra-trace-stage>img, .ra-guide-stage>img) {
+ width: auto!important;
+ max-width: min(100%, 900px)!important;
+ max-height: var(--stacked-artwork-height)!important;
+ margin-inline: auto!important;
+ object-position: center!important;
+}
+.site-preview .site-art[data-work-layout="stacked"]>figure .ra-trace-controls {
+ justify-content: center;
+}
+@media (max-width: 760px) {
+ .site-preview .site-art[data-work-layout="stacked"]>figure {
+  --stacked-artwork-height: min(340px, 48vh);
+ }
+}
+.preview-viewport[data-preview-device="mobile"] .site-preview .site-art[data-work-layout="stacked"]>figure {
+ --stacked-artwork-height: min(340px, 48vh);
+}
+.site-preview .artwork-image{display:inline-block;position:relative;max-width:100%;line-height:0;vertical-align:top}
+.site-preview .artwork-image>img{display:block;max-width:100%}
+.site-preview .artwork-zoom-button{
+ position:absolute;z-index:3;right:8px;bottom:8px;display:grid;place-items:center;
+ width:36px;height:36px;padding:0;border:1px solid rgba(255,255,255,.65);border-radius:5px;
+ background:rgba(18,27,42,.82);color:#fff;font:24px/1 Arial,sans-serif;cursor:zoom-in;
+}
+.site-preview .artwork-zoom-button:hover,.site-preview .artwork-zoom-button:focus-visible{background:#121b2a}
+.site-preview .artwork-zoom-button:focus-visible{outline:2px solid #fff;outline-offset:2px}
+.site-preview .artwork-zoom-button::after{
+ content:attr(aria-label);display:none;position:absolute;right:0;bottom:calc(100% + 6px);
+ padding:5px 8px;border-radius:4px;background:#121b2a;color:#fff;
+ font:12px/1.4 Tahoma,Arial,sans-serif;white-space:nowrap;pointer-events:none;
+}
+.site-preview .artwork-zoom-button:focus-visible::after{display:block}
+@media (hover:hover){.site-preview .artwork-zoom-button:hover::after{display:block}}
+@media (pointer:coarse){.site-preview .artwork-zoom-button{width:44px;height:44px}}
+.preview-viewport[data-preview-device="mobile"] .site-preview .artwork-zoom-button{width:44px;height:44px}
+
+@media (min-width:761px){
+ :is(body,.preview-viewport:not([data-preview-device="mobile"]))>.site-preview .site-art:is([data-work-layout="masaccio-two-columns"],[data-work-layout="image-right"]){
+  column-gap:24px;
+ }
+ :is(body,.preview-viewport:not([data-preview-device="mobile"]))>.site-preview .site-art:is([data-work-layout="masaccio-two-columns"],[data-work-layout="image-right"])>figure{
+  align-self:center!important;
+  width:100%;
+  min-width:0;
+  text-align:center!important;
+ }
+ :is(body,.preview-viewport:not([data-preview-device="mobile"]))>.site-preview .site-art:is([data-work-layout="masaccio-two-columns"],[data-work-layout="image-right"])>figure :is(.artwork-image,.ra-trace-stage,.ra-guide-stage){
+  display:inline-block!important;
+  width:auto!important;
+  vertical-align:top;
+ }
+ :is(body,.preview-viewport:not([data-preview-device="mobile"]))>.site-preview .site-art:is([data-work-layout="masaccio-two-columns"],[data-work-layout="image-right"])>figure img.zoomable{
+  width:auto!important;
+  max-width:100%!important;
+  height:auto!important;
+  max-height:min(680px,75vh)!important;
+ }
+}
+/* La photo fixe la largeur de la légende, indépendamment du crédit. */
+.site-preview .site-art:is([data-work-layout="masaccio-two-columns"],[data-work-layout="image-right"])>figure:has(>.artwork-image) {
+ display:grid;
+ grid-template-columns:minmax(0,1fr) minmax(0,max-content) minmax(0,1fr);
+ width:100%;
+ min-width:0;
+}
+.site-preview .site-art:is([data-work-layout="masaccio-two-columns"],[data-work-layout="image-right"])>figure:has(>.artwork-image)>* {
+ grid-column:1/-1;
+ min-width:0;
+}
+.site-preview .site-art:is([data-work-layout="masaccio-two-columns"],[data-work-layout="image-right"])>figure:has(>.artwork-image)>:is(.artwork-image,figcaption) {
+ grid-column:2;
+}
+.site-preview .site-art:is([data-work-layout="masaccio-two-columns"],[data-work-layout="image-right"])>figure>.artwork-image {
+ grid-row:1;
+}
+.site-preview .site-art:is([data-work-layout="masaccio-two-columns"],[data-work-layout="image-right"])>figure:has(>.artwork-image)>figcaption {
+ grid-row:2;
+ contain:inline-size;
+ text-align:center;
+ overflow-wrap:anywhere;
+}
+@media (max-width:760px){
+ .site-preview .site-art:is([data-work-layout="masaccio-two-columns"],[data-work-layout="image-right"]){grid-template-columns:minmax(0,1fr)!important}
+ .site-preview .site-art[data-work-layout="image-right"]>:is(figure,.site-notes){order:initial!important}
+ .site-preview .site-art[data-work-layout]>figure :is(.ra-trace-stage,.ra-guide-stage){display:inline-block!important;width:auto!important;max-width:100%}
+ .site-preview .site-art[data-work-layout]>figure img.zoomable{width:auto!important;max-width:100%!important;height:auto!important;max-height:min(340px,48vh)!important}
+}
+.preview-viewport[data-preview-device="mobile"] .site-preview .site-art[data-work-layout]{grid-template-columns:minmax(0,1fr)!important}
+.preview-viewport[data-preview-device="mobile"] .site-preview .site-art[data-work-layout="image-right"]>figure,
+.preview-viewport[data-preview-device="mobile"] .site-preview .site-art[data-work-layout="image-right"]>.site-notes{order:initial!important}
+.preview-viewport[data-preview-device="mobile"] .site-preview .site-art[data-work-layout]>figure :is(.ra-trace-stage,.ra-guide-stage){display:inline-block!important;width:auto!important;max-width:100%}
+.preview-viewport[data-preview-device="mobile"] .site-preview .site-art[data-work-layout]>figure img.zoomable{width:auto!important;max-width:100%!important;height:auto!important;max-height:min(340px,48vh)!important}
 
 /* Atelier V20.6.5: layout and quiz photographs */
 .site-preview .site-inner{max-width:1100px;padding-left:32px;padding-right:32px}
@@ -249,20 +515,81 @@
 .preview-viewport[data-preview-device="mobile"] .site-preview[data-portrait-style="fade"] .site-hero:has(>img)>div:first-child>p:not(.dates){grid-column:1/-1!important;grid-row:auto!important;width:100%!important;max-width:100%!important;min-width:0!important;margin:12px 0 0!important}
 .preview-viewport[data-preview-device="mobile"] .site-preview[data-portrait-style="fade"] .site-hero:has(>img)>div:first-child>p:empty{display:none!important}
 
-.site-preview .site-compare:not(.quiz-works){display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:36px!important;align-items:start!important}
-.site-preview .site-compare:not(.quiz-works)>figure{width:min(100%,var(--comparison-width,100%))!important;min-width:0!important;justify-self:center!important;margin:0 auto!important;display:grid!important;grid-template-rows:437.5px auto!important;text-align:left!important}
-.site-preview .site-compare:not(.quiz-works)>figure>img{display:block!important;width:100%!important;height:437.5px!important;max-height:none!important;object-fit:contain!important;object-position:center top!important;margin:0 auto!important}
-.site-preview .site-compare figcaption{width:100%;box-sizing:border-box;line-height:1.6;padding-top:12px!important}
-.site-preview .site-compare figcaption p{text-align:justify!important;hyphens:auto;overflow-wrap:break-word;font-size:14px;line-height:1.75;margin-top:12px!important}
-.site-preview .ra-quiz-images{display:grid!important;grid-template-columns:repeat(2,minmax(0,489.99999999999994px))!important;justify-content:center!important;gap:16px!important;align-items:start!important}
-.site-preview .ra-quiz-images figure{width:100%!important;min-width:0!important;max-width:489.99999999999994px!important;justify-self:center!important}
-.site-preview .ra-quiz-images img{height:461.99999999999994px!important;object-fit:contain!important;object-position:center center!important}
-.site-preview .quiz-works img{height:461.99999999999994px!important;object-position:center!important}
+
+.site-preview .site-compare{--paired-image-height:437.5px;display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:clamp(12px,4vw,36px);row-gap:20px;align-items:start}
+.site-preview :is(.ra-quiz-images,.quiz-works){--paired-image-height:461.99999999999994px}
+.site-preview .ra-quiz-images{display:grid!important;grid-template-columns:repeat(2,minmax(0,489.99999999999994px))!important;justify-content:center;column-gap:16px;row-gap:20px;align-items:start}
+.site-preview :is(.site-compare,.ra-quiz-images)>figure,
+.site-preview .rich209-comparison>.rich209-column>.rich209-photo{
+ display:grid!important;
+ grid-template-columns:minmax(0,1fr);
+ row-gap:6px;
+ width:100%!important;
+ max-width:100%!important;
+ min-width:0;
+ justify-self:center!important;
+ margin-inline:0!important;
+}
+.site-preview :is(.site-compare,.ra-quiz-images)>figure{margin-block:0!important}
+.site-preview :is(.site-compare,.ra-quiz-images)>figure>img,
+.site-preview .rich209-comparison>.rich209-column>.rich209-photo>img{
+ grid-row:1;
+ display:block!important;
+ box-sizing:border-box;
+ width:100%!important;
+ height:auto!important;
+ aspect-ratio:5 / 4;
+ max-width:100%!important;
+ max-height:var(--paired-image-height,540px)!important;
+ margin:0!important;
+ object-fit:contain!important;
+ object-position:center!important;
+ padding:var(--paired-mat,10px);
+ background:#171614;
+ border-radius:2px;
+}
+.site-preview :is(.site-compare,.ra-quiz-images)>figure>figcaption,
+.site-preview .rich209-comparison>.rich209-column>.rich209-photo>figcaption{
+ grid-row:2;
+ min-width:0;
+ overflow-wrap:anywhere;
+ text-align:center;
+ line-height:1.45;
+ margin:0!important;
+ padding:0!important;
+}
+.site-preview :is(.site-compare,.ra-quiz-images)>figure>figcaption:empty{display:none}
+.site-preview .site-compare figcaption p{text-align:justify!important;hyphens:auto;overflow-wrap:break-word;font-size:14px;line-height:1.75;margin-top:8px!important}
+/* Dans une comparaison détaillée, les titres peuvent avoir des hauteurs différentes. */
+@supports (grid-template-rows:subgrid){
+ @media(min-width:701px){
+  :is(body,.preview-viewport:not([data-preview-device="mobile"]))>.site-preview .rich209-comparison>.rich209-column{
+   display:grid;
+   grid-template-rows:subgrid;
+   grid-row:span 4;
+   row-gap:0;
+   align-self:stretch;
+  }
+  :is(body,.preview-viewport:not([data-preview-device="mobile"]))>.site-preview .rich209-comparison>.rich209-column>.rich209-photo{grid-row:2}
+  :is(body,.preview-viewport:not([data-preview-device="mobile"]))>.site-preview .rich209-comparison>.rich209-column>.rich209-details{grid-row:3}
+  :is(body,.preview-viewport:not([data-preview-device="mobile"]))>.site-preview .rich209-comparison>.rich209-column>.rich209-note{grid-row:4}
+ }
+}
 .site-preview[data-wallpaper]:not([data-wallpaper="none"]){padding:32px;box-sizing:border-box;background-repeat:repeat!important;background-size:var(--wallpaper-size)!important}
 .site-preview[data-wallpaper]:not([data-wallpaper="none"]) .site-inner{background:var(--reading-paper);box-shadow:0 8px 32px #1b21181c}
 .site-preview[data-wallpaper]:not([data-wallpaper="none"]) .site-hero{max-width:1100px;margin:0 auto;box-sizing:border-box}
-@media(max-width:680px){.site-preview .site-compare:not(.quiz-works){grid-template-columns:1fr!important;gap:28px!important}.site-preview .site-compare:not(.quiz-works)>figure{max-width:100%!important;grid-template-rows:auto auto!important}.site-preview .site-compare:not(.quiz-works)>figure>img{height:auto!important;max-height:560px!important}.site-preview .ra-quiz-images{grid-template-columns:repeat(2,minmax(0,1fr))!important}.site-preview .ra-quiz-images figure{max-width:100%!important}.site-preview .ra-quiz-images img{height:210px!important}.site-preview[data-wallpaper]:not([data-wallpaper="none"]){padding:12px!important}}
-.preview-viewport[data-preview-device="mobile"] .site-preview .site-compare:not(.quiz-works){grid-template-columns:1fr!important;gap:28px!important}.preview-viewport[data-preview-device="mobile"] .site-preview .site-compare:not(.quiz-works)>figure{max-width:100%!important;grid-template-rows:auto auto!important}.preview-viewport[data-preview-device="mobile"] .site-preview .site-compare:not(.quiz-works)>figure>img{height:auto!important;max-height:560px!important}.preview-viewport[data-preview-device="mobile"] .site-preview .ra-quiz-images{grid-template-columns:repeat(2,minmax(0,1fr))!important}.preview-viewport[data-preview-device="mobile"] .site-preview .ra-quiz-images figure{max-width:100%!important}.preview-viewport[data-preview-device="mobile"] .site-preview .ra-quiz-images img{height:210px!important}.preview-viewport[data-preview-device="mobile"] .site-preview[data-wallpaper]:not([data-wallpaper="none"]){padding:12px!important}
+@media(max-width:680px){
+.site-preview .site-compare:not(.quiz-works){grid-template-columns:minmax(0,1fr)!important;row-gap:28px}
+.site-preview :is(.ra-quiz-images,.quiz-works){--paired-image-height:210px;grid-template-columns:repeat(2,minmax(0,1fr))!important}
+.site-preview :is(.site-compare,.ra-quiz-images,.rich209-comparison){--paired-mat:6px}
+.site-preview[data-wallpaper]:not([data-wallpaper="none"]){padding:12px!important}
+}
+
+.preview-viewport[data-preview-device="mobile"] .site-preview .site-compare:not(.quiz-works){grid-template-columns:minmax(0,1fr)!important;row-gap:28px}
+.preview-viewport[data-preview-device="mobile"] .site-preview :is(.ra-quiz-images,.quiz-works){--paired-image-height:210px;grid-template-columns:repeat(2,minmax(0,1fr))!important}
+.preview-viewport[data-preview-device="mobile"] .site-preview :is(.site-compare,.ra-quiz-images,.rich209-comparison){--paired-mat:6px}
+.preview-viewport[data-preview-device="mobile"] .site-preview[data-wallpaper]:not([data-wallpaper="none"]){padding:12px!important}
+
 .wallpaper-choices{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin:14px 0}.wallpaper-choice{padding:0;background:#fff;color:#173b65;border:2px solid #d4c9b7;overflow:hidden;text-align:left}.wallpaper-choice[aria-pressed="true"]{border-color:#a8751b;box-shadow:0 0 0 2px #a8751b}.wallpaper-choice span{display:block;padding:10px;font-size:12px}.wallpaper-choice i{display:block;height:88px;background-size:100px}
 .site-preview[data-wallpaper="damas"],.wallpaper-choice[data-wallpaper-choice="damas"] i{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22180%22%20height%3D%22180%22%20viewBox%3D%220%200%20180%20180%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23183647%22%2F%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23bf9b52%22%20stroke-width%3D%221.6%22%3E%3Cpath%20d%3D%22M90%2012C62%2039%2051%2055%2068%2070C41%2066%2035%2089%2055%20101C69%20107%2082%2097%2090%2086C98%2097%20111%20107%20125%20101C145%2089%20139%2066%20112%2070C129%2055%20118%2039%2090%2012ZM90%2086V156M65%20135Q90%20113%20115%20135M90%20156Q47%20142%2028%20116M90%20156Q133%20142%20152%20116%22%2F%3E%3Cpath%20d%3D%22M0%200L90%20180L180%200M0%20180L90%200L180%20180%22%20opacity%3D%22.18%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E")!important}.site-preview[data-wallpaper="studiolo"],.wallpaper-choice[data-wallpaper-choice="studiolo"] i{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22160%22%20height%3D%22160%22%20viewBox%3D%220%200%20160%20160%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23493223%22%2F%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23d3b47c%22%20stroke-width%3D%221.6%22%3E%3Cpath%20d%3D%22M0%2040L80%200L160%2040V120L80%20160L0%20120ZM0%2040L80%2080L160%2040M80%2080V160M40%2020L120%2060V140M120%2020L40%2060V140%22%2F%3E%3Cpath%20d%3D%22M0%2040V120L40%20140V60ZM80%2080L120%2060V140L80%20160Z%22%20fill%3D%22%23ba8750%22%20stroke%3D%22none%22%20opacity%3D%22.45%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E")!important}.site-preview[data-wallpaper="marbre"],.wallpaper-choice[data-wallpaper-choice="marbre"] i{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22340%22%20height%3D%22340%22%20viewBox%3D%220%200%20340%20340%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23e4dfd3%22%2F%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%239d9f98%22%20stroke-width%3D%221.6%22%3E%3Cpath%20d%3D%22M-20%20275C110%20180%2030%20110%20190%2050S270-40%20370-80M30%20370C180%20290%20120%20200%20280%20165S275%2075%20380%2035%22%20stroke-width%3D%223%22%20opacity%3D%22.6%22%2F%3E%3Cpath%20d%3D%22M-20%20280C110%20185%2035%20113%20195%2056S274-35%20375-75M80%20370C160%20280%20200%20250%20350%20225M110%20150L40%20105L-20%2085M230%20175L210%20250L235%20340%22%20stroke-width%3D%221%22%20opacity%3D%22.55%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E")!important}.site-preview[data-wallpaper="fresque"],.wallpaper-choice[data-wallpaper-choice="fresque"] i{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22260%22%20height%3D%22260%22%20viewBox%3D%220%200%20260%20260%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23c08d65%22%2F%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23f3dfb6%22%20stroke-width%3D%221.6%22%3E%3Cpath%20d%3D%22M0%2032Q65%208%20130%2032T260%2032M0%20220Q65%20196%20130%20220T260%20220%22%20opacity%3D%22.4%22%2F%3E%3Cpath%20d%3D%22M32%2070Q130%200%20228%2070V190Q130%20260%2032%20190Z%22%20opacity%3D%22.3%22%2F%3E%3Cpath%20d%3D%22M0%20120L55%20100L64%20135L110%20145L98%20185M260%2077L219%2090L205%2063L159%2070M130%200L125%2025L146%2042%22%20opacity%3D%22.28%22%2F%3E%3Ccircle%20cx%3D%22130%22%20cy%3D%22130%22%20r%3D%2240%22%20opacity%3D%22.2%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E")!important}.site-preview[data-wallpaper="grotesques"],.wallpaper-choice[data-wallpaper-choice="grotesques"] i{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22240%22%20height%3D%22240%22%20viewBox%3D%220%200%20240%20240%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23efe5ce%22%2F%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%2364745b%22%20stroke-width%3D%221.6%22%3E%3Cpath%20d%3D%22M120%2020V218M120%2072C45%2015%2045%20125%2099%20108C38%20145%2085%20181%20120%20150C155%20181%20202%20145%20141%20108C195%20125%20195%2015%20120%2072ZM98%20187H142L135%20218H105ZM103%2042Q120%2017%20137%2042L120%2058Z%22%2F%3E%3Cpath%20d%3D%22M72%2071Q102%2063%2099%20108M168%2071Q138%2063%20141%20108M93%20140Q120%20105%20147%20140%22%20stroke%3D%22%23b38a4a%22%2F%3E%3Ccircle%20cx%3D%22120%22%20cy%3D%2292%22%20r%3D%226%22%20fill%3D%22%23b38a4a%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E")!important}
 
@@ -304,34 +631,35 @@
 @media(max-width:480px){.site-preview[data-portrait-style="classic"] #ra-artist-hero{grid-template-columns:minmax(0,1fr) 90px!important}.site-preview[data-portrait-style="classic"] #ra-artist-hero>img{width:90px!important;max-height:130px!important}}.preview-viewport[data-preview-device="mobile"] .site-preview[data-portrait-style="classic"] #ra-artist-hero{grid-template-columns:minmax(0,1fr) 90px!important}.preview-viewport[data-preview-device="mobile"] .site-preview[data-portrait-style="classic"] #ra-artist-hero>img{width:90px!important;max-height:130px!important}
 .site-preview[data-body-font],.site-preview[data-body-font] :is(p,li,figcaption,small,button,summary,label,input,textarea,select,h3){font-family:var(--reading-font,Tahoma,Arial,sans-serif)!important}#view .site-preview[data-site-font],#view .site-preview[data-site-font] :is(div,span,p,li,h1,h2,h3,h4,h5,h6,a,button,figcaption,small,strong,em){font-family:var(--preview-site-font)!important}
 
-.site-preview .site-art figure:has(.ra-guide-stage){width:100%!important;max-width:100%!important}
-.site-preview .ra-guide-stage{position:relative;display:block;width:100%;max-width:100%;line-height:0;container-type:inline-size}
-.site-preview .site-art .ra-guide-stage>img{display:block!important;width:100%!important;max-width:100%!important;height:auto!important;max-height:none!important;margin:0!important;object-fit:contain!important}
-.site-preview .ra-guide-label{position:absolute;z-index:2;box-sizing:border-box;line-height:1.2;font-family:Tahoma,Arial,sans-serif!important;font-size:clamp(9px,3cqw,13px);font-weight:400;text-align:center;background:#8e2433e8;color:#fff;padding:7px 5px;border:1px solid white;border-radius:3px;box-shadow:0 2px 6px #0004;pointer-events:none;overflow-wrap:break-word;white-space:pre-line}
-.site-preview .ra-guide-label[hidden]{display:none!important}
-.site-preview .ra-guide-label[data-arrow="down"]::after{content:'↓';display:block;font-size:1.3em;margin-top:3px}
-.site-preview .ra-guide-label[data-arrow="up"]::before{content:'↑';display:block;font-size:1.3em;margin-bottom:3px}
-.site-preview .ra-guide-toggle{display:inline-block;margin:12px 0 0;padding:10px 14px;background:#8d6a35;color:#fff;border:0;border-radius:5px;font:14px Tahoma,Arial,sans-serif;line-height:1.4;cursor:pointer}
-.site-preview .ra-guide-toggle:focus-visible{outline:3px solid #8e2433;outline-offset:3px}
-.guide-editor-2092{margin-top:18px;padding:15px;border:1px solid #d6c0a3;border-radius:8px;background:#fffaf0}
-
-
 .ra-trace-stage{display:inline-block;position:relative;max-width:100%;vertical-align:top;line-height:0}
 .site-preview .ra-trace-stage>img{display:block!important;margin:0!important;max-width:100%;width:auto;height:auto}
 .ra-trace-svg{position:absolute;inset:0;width:100%;height:100%;overflow:hidden;pointer-events:none}
-.ra-trace-svg [hidden]{display:none!important}.ra-trace-controls{display:flex;flex-wrap:wrap;gap:7px;margin:14px 0;line-height:1.5}
+.ra-trace-stage [data-trace-layer][hidden]{display:none!important}
+.ra-trace-text-layer{position:absolute;inset:0;display:block;container-type:inline-size;pointer-events:none}
+.ra-trace-text{position:absolute;display:grid;place-items:center;overflow:hidden;border:1px solid currentColor;border-radius:3px;padding:min(1cqw,4px);text-align:center;font-size:clamp(8px,var(--trace-text-size),48px);line-height:1.2;white-space:pre-wrap;overflow-wrap:anywhere}
+.ra-trace-text-content{display:block;width:100%;max-height:100%;overflow:hidden}
+.ra-trace-text-content:empty::before{content:attr(data-placeholder)}
+.trace-drawing .ra-trace-text-layer{z-index:1}
+.trace-drawing>svg{z-index:2}
+.trace-drawing .ra-trace-text.is-selected{outline:2px dashed #ff00bc}
+.ra-trace-controls{display:flex;flex-wrap:wrap;justify-content:center;gap:7px;margin:14px 0;line-height:1.5}
 .ra-trace-controls button{background:#fff;color:#173b66;border:1px solid #aab6bd;border-radius:6px;padding:9px 12px;font:14px Tahoma,Arial,sans-serif;cursor:pointer}
 .ra-trace-controls button[aria-pressed=true]{background:#173b66;color:#fff}.ra-trace-output{font:15px/1.7 Tahoma,Arial,sans-serif;border-left:3px solid #ae8550;padding:10px 15px;margin-top:12px;text-align:left;color:#25282c}
-.ra-trace-output[hidden]{display:none!important}.ra-trace-output p{margin:4px 0!important}.ra-trace-panel{margin-top:16px;padding:16px;border:1px solid #b7c8d5;background:#f0f5f8;border-radius:8px}
+.ra-trace-output[hidden],.ra-trace-output:empty{display:none!important}.ra-trace-output p{margin:4px 0!important}.ra-trace-panel{margin-top:16px;padding:16px;border:1px solid #b7c8d5;background:#f0f5f8;border-radius:8px}
 #trace-dialog-2093{width: min(1280px,98vw);max-width:98vw;height:94vh;max-height:94vh;padding:0;border:0;border-radius:10px;background:#f3f5f8;color:#1e293b;font:14px Tahoma,Arial,sans-serif}
 #trace-dialog-2093::backdrop{background:#102336ba}.trace-editor-head{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;background:#173b66;color:#fff;gap:10px}.trace-editor-head h2{font-size:18px;margin:0;color:#fff}
 .trace-editor-grid{display:grid;grid-template-columns:290px minmax(0,1fr);height:calc(100% - 64px)}.trace-editor-side{overflow:auto;padding:16px;background:#fff}.trace-editor-side textarea{min-height:70px;font-size:14px}.trace-editor-side .toolbar{gap:5px}.trace-editor-side button{font-size:12px;padding:8px 10px}
 .trace-editor-main{overflow:auto;padding:14px;min-width:0}.trace-tools{display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin-bottom:12px}.trace-tools button[aria-pressed=true]{background:#9b6924;color:white}.trace-tools label{margin:0;display:inline-flex;gap:7px;align-items:center;font-size:13px}.trace-tools input{width:52px;height:34px;padding:3px}
-.trace-drawing-wrap{display:flex;justify-content:center;align-items:flex-start;background:#dce3e8;border-radius:8px;min-height:160px;padding:12px}.trace-drawing{position:relative;display:inline-block;max-width:100%;line-height:0;touch-action:none;user-select:none}
-.trace-drawing>img{display:block;width:auto;height:auto;max-width:100%;max-height:66vh;pointer-events:none}.trace-drawing>svg{position:absolute;inset:0;width:100%;height:100%;touch-action:none;cursor:crosshair;overflow:hidden}
-.trace-drawing svg g[data-shape]{pointer-events:stroke;cursor:move}.trace-drawing svg g.trace-selected{filter:drop-shadow(0 0 3px #ff00bc)}
+.trace-drawing-wrap{overflow:auto;height:min(62vh,640px);background:#dce3e8;border-radius:8px;padding:12px}
+.trace-drawing{position:relative;width:max-content;margin:auto;line-height:0;touch-action:none;user-select:none}
+.trace-zoom-controls{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin:0 0 10px}
+.trace-zoom-controls output{min-width:54px;text-align:center}
+.trace-drawing>svg:focus-visible{outline:2px solid #173b66;outline-offset:2px}
+.trace-tools button:disabled,.trace-zoom-controls button:disabled{opacity:.45}
+.trace-drawing>img{display:block;width:100%;height:auto;pointer-events:none}.trace-drawing>svg{position:absolute;inset:0;width:100%;height:100%;touch-action:none;cursor:crosshair;overflow:hidden}
+.trace-drawing svg g[data-shape]{pointer-events:stroke;cursor:move}.trace-drawing svg g[data-shape-kind="text"]>rect{pointer-events:all}.trace-drawing svg g[data-shape-kind=marker]{pointer-events:all}.trace-drawing svg g.trace-selected{filter:drop-shadow(0 0 3px #ff00bc)}
 .trace-image-status{line-height:1.6;margin:10px 0;color:#526475}.trace-coordinates{display:grid;grid-template-columns:1fr 1fr;gap:6px}.trace-coordinates label{margin-top:6px}.trace-coordinates input{padding:6px}.trace-editor-side .hint{font-size:12px}
-@media(max-width:760px){.trace-editor-grid{grid-template-columns:1fr;height:auto}.trace-editor-side{overflow:visible}.trace-editor-main{overflow:visible}.trace-drawing>img{max-height:65vh}.trace-editor-head{position:sticky;top:0;z-index:2}.trace-editor-side textarea{min-height:55px}}
+@media(max-width:760px){.trace-editor-grid{grid-template-columns:1fr;height:auto}.trace-editor-side{overflow:visible}.trace-editor-main{overflow:visible}.trace-drawing-wrap{height:52vh}.trace-editor-head{position:sticky;top:0;z-index:2}.trace-editor-side textarea{min-height:55px}}
 
 .site-preview .recognize-copy .ra-recognize-body{font-weight:400!important;line-height:1.75}.site-preview .recognize-copy .ra-recognize-body p{font-weight:400!important;margin:0 0 10px!important}.site-preview .recognize-copy h3{font-weight:700!important}.site-preview .site-section.takeaway p{}
 /* V19.18: bilingual discovery links, recognition and compact medallions */
@@ -379,30 +707,81 @@
 .ra-site-header .ra-languages a:hover{outline:2px solid #fff!important;outline-offset:2px!important}
 @media(max-width:850px){.ra-site-header .ra-nav{justify-content:center!important;padding:12px!important}.ra-site-header .ra-links{order:3!important;flex-basis:100%!important;gap:12px!important}.ra-site-header .ra-links a{font-size:12px!important}}
 
-body{margin:0;background:#faf9f4;font-family:Tahoma,Arial,sans-serif}.site-preview{border-radius:0;box-shadow:none}.site-inner{max-width:1100px}.ra-reveal-link{display:flex;align-items:center;gap:16px;border:0!important;background:transparent!important;box-shadow:none!important;padding:12px 0!important;text-decoration:none;color:#173c63}.ra-reveal-link img{width:70px;height:70px;object-fit:contain}.ra-reveal-copy{display:flex;flex-direction:column}.ra-reveal-copy small{margin-top:5px}</style><link rel="stylesheet" href="assets/artwork-viewer.css"><link rel="stylesheet" href="assets/css/medaillons-communs.css"><style>.site-preview .site-compare:not(.quiz-works){display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:36px!important;align-items:start!important}
-.site-preview .site-compare:not(.quiz-works)>figure{width:min(100%,var(--comparison-width,100%))!important;min-width:0!important;justify-self:center!important;margin:0 auto!important;display:grid!important;grid-template-rows:437.5px auto!important;text-align:left!important}
-.site-preview .site-compare:not(.quiz-works)>figure>img{display:block!important;width:100%!important;height:437.5px!important;max-height:none!important;object-fit:contain!important;object-position:center top!important;margin:0 auto!important}
-.site-preview .site-compare figcaption{width:100%;box-sizing:border-box;line-height:1.6;padding-top:12px!important}
-.site-preview .site-compare figcaption p{text-align:justify!important;hyphens:auto;overflow-wrap:break-word;font-size:14px;line-height:1.75;margin-top:12px!important}
-.site-preview .ra-quiz-images{display:grid!important;grid-template-columns:repeat(2,minmax(0,489.99999999999994px))!important;justify-content:center!important;gap:16px!important;align-items:start!important}
-.site-preview .ra-quiz-images figure{width:100%!important;min-width:0!important;max-width:489.99999999999994px!important;justify-self:center!important}
-.site-preview .ra-quiz-images img{height:461.99999999999994px!important;object-fit:contain!important;object-position:center center!important}
-.site-preview .quiz-works img{height:461.99999999999994px!important;object-position:center!important}
-.site-preview[data-wallpaper]:not([data-wallpaper="none"]){padding:32px;box-sizing:border-box;background-repeat:repeat!important;background-size:var(--wallpaper-size)!important}
-.site-preview[data-wallpaper]:not([data-wallpaper="none"]) .site-inner{background:var(--reading-paper);box-shadow:0 8px 32px #1b21181c}
-.site-preview[data-wallpaper]:not([data-wallpaper="none"]) .site-hero{max-width:1100px;margin:0 auto;box-sizing:border-box}
-@media(max-width:680px){.site-preview .site-compare:not(.quiz-works){grid-template-columns:1fr!important;gap:28px!important}.site-preview .site-compare:not(.quiz-works)>figure{max-width:100%!important;grid-template-rows:auto auto!important}.site-preview .site-compare:not(.quiz-works)>figure>img{height:auto!important;max-height:560px!important}.site-preview .ra-quiz-images{grid-template-columns:repeat(2,minmax(0,1fr))!important}.site-preview .ra-quiz-images figure{max-width:100%!important}.site-preview .ra-quiz-images img{height:210px!important}.site-preview[data-wallpaper]:not([data-wallpaper="none"]){padding:12px!important}}
-.preview-viewport[data-preview-device="mobile"] .site-preview .site-compare:not(.quiz-works){grid-template-columns:1fr!important;gap:28px!important}.preview-viewport[data-preview-device="mobile"] .site-preview .site-compare:not(.quiz-works)>figure{max-width:100%!important;grid-template-rows:auto auto!important}.preview-viewport[data-preview-device="mobile"] .site-preview .site-compare:not(.quiz-works)>figure>img{height:auto!important;max-height:560px!important}.preview-viewport[data-preview-device="mobile"] .site-preview .ra-quiz-images{grid-template-columns:repeat(2,minmax(0,1fr))!important}.preview-viewport[data-preview-device="mobile"] .site-preview .ra-quiz-images figure{max-width:100%!important}.preview-viewport[data-preview-device="mobile"] .site-preview .ra-quiz-images img{height:210px!important}.preview-viewport[data-preview-device="mobile"] .site-preview[data-wallpaper]:not([data-wallpaper="none"]){padding:12px!important}
-.wallpaper-choices{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin:14px 0}.wallpaper-choice{padding:0;background:#fff;color:#173b65;border:2px solid #d4c9b7;overflow:hidden;text-align:left}.wallpaper-choice[aria-pressed="true"]{border-color:#a8751b;box-shadow:0 0 0 2px #a8751b}.wallpaper-choice span{display:block;padding:10px;font-size:12px}.wallpaper-choice i{display:block;height:88px;background-size:100px}
-.site-preview[data-wallpaper="damas"],.wallpaper-choice[data-wallpaper-choice="damas"] i{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22180%22%20height%3D%22180%22%20viewBox%3D%220%200%20180%20180%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23183647%22%2F%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23bf9b52%22%20stroke-width%3D%221.6%22%3E%3Cpath%20d%3D%22M90%2012C62%2039%2051%2055%2068%2070C41%2066%2035%2089%2055%20101C69%20107%2082%2097%2090%2086C98%2097%20111%20107%20125%20101C145%2089%20139%2066%20112%2070C129%2055%20118%2039%2090%2012ZM90%2086V156M65%20135Q90%20113%20115%20135M90%20156Q47%20142%2028%20116M90%20156Q133%20142%20152%20116%22%2F%3E%3Cpath%20d%3D%22M0%200L90%20180L180%200M0%20180L90%200L180%20180%22%20opacity%3D%22.18%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E")!important}.site-preview[data-wallpaper="studiolo"],.wallpaper-choice[data-wallpaper-choice="studiolo"] i{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22160%22%20height%3D%22160%22%20viewBox%3D%220%200%20160%20160%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23493223%22%2F%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23d3b47c%22%20stroke-width%3D%221.6%22%3E%3Cpath%20d%3D%22M0%2040L80%200L160%2040V120L80%20160L0%20120ZM0%2040L80%2080L160%2040M80%2080V160M40%2020L120%2060V140M120%2020L40%2060V140%22%2F%3E%3Cpath%20d%3D%22M0%2040V120L40%20140V60ZM80%2080L120%2060V140L80%20160Z%22%20fill%3D%22%23ba8750%22%20stroke%3D%22none%22%20opacity%3D%22.45%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E")!important}.site-preview[data-wallpaper="marbre"],.wallpaper-choice[data-wallpaper-choice="marbre"] i{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22340%22%20height%3D%22340%22%20viewBox%3D%220%200%20340%20340%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23e4dfd3%22%2F%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%239d9f98%22%20stroke-width%3D%221.6%22%3E%3Cpath%20d%3D%22M-20%20275C110%20180%2030%20110%20190%2050S270-40%20370-80M30%20370C180%20290%20120%20200%20280%20165S275%2075%20380%2035%22%20stroke-width%3D%223%22%20opacity%3D%22.6%22%2F%3E%3Cpath%20d%3D%22M-20%20280C110%20185%2035%20113%20195%2056S274-35%20375-75M80%20370C160%20280%20200%20250%20350%20225M110%20150L40%20105L-20%2085M230%20175L210%20250L235%20340%22%20stroke-width%3D%221%22%20opacity%3D%22.55%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E")!important}.site-preview[data-wallpaper="fresque"],.wallpaper-choice[data-wallpaper-choice="fresque"] i{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22260%22%20height%3D%22260%22%20viewBox%3D%220%200%20260%20260%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23c08d65%22%2F%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23f3dfb6%22%20stroke-width%3D%221.6%22%3E%3Cpath%20d%3D%22M0%2032Q65%208%20130%2032T260%2032M0%20220Q65%20196%20130%20220T260%20220%22%20opacity%3D%22.4%22%2F%3E%3Cpath%20d%3D%22M32%2070Q130%200%20228%2070V190Q130%20260%2032%20190Z%22%20opacity%3D%22.3%22%2F%3E%3Cpath%20d%3D%22M0%20120L55%20100L64%20135L110%20145L98%20185M260%2077L219%2090L205%2063L159%2070M130%200L125%2025L146%2042%22%20opacity%3D%22.28%22%2F%3E%3Ccircle%20cx%3D%22130%22%20cy%3D%22130%22%20r%3D%2240%22%20opacity%3D%22.2%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E")!important}.site-preview[data-wallpaper="grotesques"],.wallpaper-choice[data-wallpaper-choice="grotesques"] i{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22240%22%20height%3D%22240%22%20viewBox%3D%220%200%20240%20240%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23efe5ce%22%2F%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%2364745b%22%20stroke-width%3D%221.6%22%3E%3Cpath%20d%3D%22M120%2020V218M120%2072C45%2015%2045%20125%2099%20108C38%20145%2085%20181%20120%20150C155%20181%20202%20145%20141%20108C195%20125%20195%2015%20120%2072ZM98%20187H142L135%20218H105ZM103%2042Q120%2017%20137%2042L120%2058Z%22%2F%3E%3Cpath%20d%3D%22M72%2071Q102%2063%2099%20108M168%2071Q138%2063%20141%20108M93%20140Q120%20105%20147%20140%22%20stroke%3D%22%23b38a4a%22%2F%3E%3Ccircle%20cx%3D%22120%22%20cy%3D%2292%22%20r%3D%226%22%20fill%3D%22%23b38a4a%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E")!important}</style><style id="ra-artist-navigation-harmonised">
-/* Shared navigation dimensions; exclude the separate artist introduction panel. */
-html body header.ra-site-header.ra-site-header{box-sizing:border-box!important;width:100%!important;max-width:none!important;margin:0!important;padding:0!important;border:0!important;min-height:0!important;height:auto!important;box-shadow:none!important}
-html body header.ra-site-header.ra-site-header .ra-nav{box-sizing:border-box!important;width:100%!important;max-width:1180px!important;min-height:72px!important;height:auto!important;margin:0 auto!important;padding:16px 28px!important;display:flex!important;align-items:center!important;justify-content:space-between!important;gap:22px!important;flex-wrap:nowrap!important}
-html body header.ra-site-header.ra-site-header .ra-brand{font:700 15px/1.3 Tahoma,Arial,sans-serif!important;letter-spacing:.07em!important;white-space:nowrap!important}
-html body header.ra-site-header.ra-site-header .ra-links{display:flex!important;flex:1!important;align-items:center!important;justify-content:center!important;gap:16px!important;flex-wrap:nowrap!important}
-html body header.ra-site-header.ra-site-header .ra-links a{font:400 12px/1.4 Tahoma,Arial,sans-serif!important;padding:5px 0!important;white-space:nowrap!important}
-html body header.ra-site-header.ra-site-header .ra-languages{display:flex!important;gap:6px!important;flex-shrink:0!important;margin-left:0!important}
-html body header.ra-site-header.ra-site-header .ra-languages a{box-sizing:border-box!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;width:32px!important;min-width:32px!important;height:32px!important;padding:0!important;border-radius:3px!important;font:700 11px/1 Tahoma,Arial,sans-serif!important}
-@media(max-width:1100px){html body header.ra-site-header.ra-site-header .ra-nav{flex-wrap:wrap!important;gap:14px!important}html body header.ra-site-header.ra-site-header .ra-links{order:3!important;flex-basis:100%!important;justify-content:flex-start!important;flex-wrap:wrap!important;gap:8px 20px!important}html body header.ra-site-header.ra-site-header .ra-languages{margin-left:auto!important}}
-@media(max-width:760px){html body header.ra-site-header.ra-site-header .ra-nav{padding:14px 20px!important}}
-</style></head><body><header class="ra-site-header"><nav aria-label="Navigation principale" class="ra-nav"><a class="ra-brand" href="index.html">REGARDER L’ART</a><div class="ra-links"><a href="parcours.html">Parcours</a><a href="artistes.html">Artistes</a><a href="regards-croises.html">Regards croisés</a><a href="lieux.html">Lieux &amp; musées</a><a href="ressources.html">Écouter &amp; regarder</a><a href="hors-parcours.html">Carnets de visites</a><a href="a-propos.html">À propos</a></div><div aria-label="Language / Langue" class="ra-languages"><a href="fra-angelico.html" lang="fr" aria-current="page">FR</a><a href="en/fra-angelico.html" lang="en">EN</a></div></nav></header><div class="site-preview" style="--main: #b38b45; --secondary: #b38b45; --paper: #f8f6f0; --understand-bg: #ebf0f4; --understand-accent: #AD655B; --heading-color: #173c63; --hero-title-font: Tahoma,Arial,sans-serif; --hero-title-color: #173c63; --hero-title-size: 42px; --hero-intro-font: Tahoma,Arial,sans-serif; --hero-intro-color: #384a52; --hero-intro-size: 17px; --wallpaper-size: 180px; --reading-paper: #f8f6f0f7; --reading-font: Tahoma,Arial,sans-serif;" data-banner="light" data-layout="masaccio-two-columns" data-compact-hero="false" data-portrait-style="classic" data-wallpaper="none" lang="fr" data-body-font="Tahoma"><div class="site-hero" id="ra-artist-hero"><div><span class="eyebrow">REGARDER L’ART · LES ARTISTES</span><h1>Fra Angelico</h1><p class="dates">Vers 1395–1455</p><p class="lead"></p><p><span style="color:#384a55">Quand la lumière devient peinture : entre splendeur gothique et espace de la Renaissance.</span></p><p></p></div><img class="zoomable" data-zoom title="Cliquer pour agrandir" src="images/fra-angelico/Fra_Angelico_Visage.png" alt="Fra Angelico" loading="lazy"></div><div class="site-inner"><section class="site-section" id="section-biographie"><h2>En quelques mots</h2><p></p><p>Peintre florentin et frère dominicain, Fra Angelico (vers 1395–1455) unit la délicatesse gothique aux recherches de la Renaissance. Sa lumière, ses couleurs et ses gestes retenus donnent une présence sensible aux récits sacrés.</p><p></p></section><section class="site-section" id="section-0"><span class="eyebrow">01 · UNE ŒUVRE À REGARDER</span><h2>Le Couronnement de la Vierge</h2><div class="site-art" data-work-layout="masaccio-two-columns"><figure><img class="zoomable" data-zoom title="Cliquer pour agrandir" src="images/fra-angelico/fra-angelico-couronnement.jpg" alt="Le Couronnement de la Vierge" loading="lazy"><figcaption>Fra Angelico · Le Couronnement de la Vierge<br><small>Shonagon, 2024 · Domaine public</small></figcaption></figure><div class="site-notes"><h3>À regarder</h3><p></p><p>Le paradis a-t-il besoin de profondeur ?</p><p><strong>1. Les marches de marbre</strong> — L’escalier guide le regard vers le couronnement et installe une profondeur nouvelle.</p><p><strong>2. Saints et anges</strong> — Une foule de visages et d’attitudes s’ordonne autour de la scène centrale.</p><p><strong>3. Or et couleurs</strong> — L’éclat gothique demeure, mais les drapés et les corps gagnent en volume.</p><p></p><div class="understand"><h3>À comprendre</h3><p></p><p>Chez Fra Angelico, le paradis reste merveilleux, mais il commence à prendre de la profondeur.</p><p></p></div></div></div></section><section class="site-section" id="section-1"><span class="eyebrow">02 · UNE ŒUVRE À REGARDER</span><h2>Le Jugement dernier</h2><div class="site-art" data-work-layout="stacked"><figure><div class="ra-guide-stage" id="ra-guide-stage-1"><img class="zoomable" data-zoom title="Cliquer pour agrandir" src="images/fra-angelico/fra-angelico-jugement-dernier.jpg" alt="Le Jugement dernier" loading="lazy"><span class="ra-guide-label" hidden="" data-arrow="down" style="left: 0%; top: 15%; width: 20%;">Le bonheur devient une danse. Anges et bienheureux se tiennent par la main. Les gestes se répondent et donnent au paradis une harmonie joyeuse.</span><span class="ra-guide-label" hidden="" data-arrow="down" style="left: 70%; top: 15%; width: 20%;">L’harmonie se brise. Les corps se heurtent, les gestes s’agitent. À la ronde paisible des élus répond le désordre des damnés.</span><span class="ra-guide-label" hidden="" data-arrow="down" style="left: 40%; top: 50%; width: 20%;">Un chemin entre deux destinées. La succession des tombeaux creuse la profondeur et sépare les élus des damnés. Le vide central organise toute la scène.</span></div><figcaption>Fra Angelico · Le Jugement dernier<br><small>The Yorck Project / Directmedia · Domaine public</small></figcaption><button type="button" class="ra-guide-toggle" data-guide-toggle="" data-show-label="Afficher les repères" data-hide-label="Masquer les repères" aria-controls="ra-guide-stage-1" aria-expanded="false" aria-pressed="false">Afficher les repères</button></figure><div class="site-notes"><h3>À regarder</h3><p></p><p>Le paradis à gauche, l’enfer à droite. Et vous, de quel côté ?</p><p><strong>1. La ronde des élus</strong> — Les anges et les bienheureux se tiennent par la main : le bonheur devient une danse.</p><p><strong>2. Le tumulte de l’enfer</strong> — Les corps et les gestes s’agitent, en opposition à l’harmonie du paradis.</p><p><strong>3. Les tombeaux ouverts</strong> — Leur disposition conduit le regard vers le fond et organise les deux destinées.</p><p></p><div class="understand"><h3>À comprendre</h3><p></p><p>Chez Fra Angelico, le paradis se danse, l’enfer se débat.</p><p></p></div></div></div></section><section class="site-section" id="section-2"><span class="eyebrow">03 · UNE ŒUVRE À REGARDER</span><h2>La Déposition de croix</h2><div class="site-art" data-work-layout="masaccio-two-columns"><figure><img class="zoomable" data-zoom title="Cliquer pour agrandir" src="images/fra-angelico/fra-angelico-deposition.jpg" alt="La Déposition de croix" loading="lazy"><figcaption>Fra Angelico · La Déposition de croix<br><small>The Yorck Project / Directmedia · Domaine public</small></figcaption></figure><div class="site-notes"><h3>À regarder</h3><p></p><p>Comment peindre la douleur sans montrer le désespoir ?</p><p><strong>1. Les gestes</strong> — Les personnages soutiennent le Christ avec délicatesse : l’émotion reste contenue.</p><p><strong>2. Les couleurs</strong> — Les roses, les bleus et les rouges apportent une lumière inattendue à la scène de deuil.</p><p><strong>3. Le paysage</strong> — Collines, arbres et architectures ouvrent un espace que le regard peut parcourir.</p><p></p><div class="understand"><h3>À comprendre</h3><p></p><p>Chez Fra Angelico, même la douleur garde sa douceur.</p><p></p></div></div></div></section><section class="site-section" id="section-3"><span class="eyebrow">04 · UNE ŒUVRE À REGARDER</span><h2>L’Annonciation de San Marco</h2><div class="site-art" data-work-layout="stacked"><figure><div class="ra-guide-stage" id="ra-guide-stage-3"><img class="zoomable" data-zoom title="Cliquer pour agrandir" src="images/fra-angelico/Fra_Angelico_-_Annunciation.jpg" alt="L’Annonciation de San Marco" loading="lazy"><span class="ra-guide-label" hidden="" data-arrow="none" style="left: 45%; top: 60%; width: 20%;">Un dialogue sans paroles. Les bras croisés et les têtes inclinées se répondent. La rencontre se joue dans la retenue des gestes.</span><span class="ra-guide-label" hidden="" data-arrow="none" style="left: 45%; top: 5%; width: 20%;">Une architecture qui apaise. Les colonnes rythment l’espace et les arcs encadrent les deux figures. L’architecture donne à la rencontre un cadre simple et silencieux.</span></div><figcaption>Fra Angelico · L’Annonciation de San Marco<br><small>Web Gallery of Art / Wikimedia Commons · Domaine public</small></figcaption><button type="button" class="ra-guide-toggle" data-guide-toggle="" data-show-label="Afficher les repères" data-hide-label="Masquer les repères" aria-controls="ra-guide-stage-3" aria-expanded="false" aria-pressed="false">Afficher les repères</button></figure><div class="site-notes"><h3>À regarder</h3><p></p><p>Et si le silence pouvait se peindre ?</p><p><strong>1. Deux gestes qui se répondent</strong> — L’ange et Marie inclinent la tête et croisent les bras : un dialogue sans paroles.</p><p><strong>2. Une architecture paisible</strong> — Colonnes, arcs et lignes du sol organisent l’espace sans chercher l’effet spectaculaire.</p><p><strong>3. Une lumière douce</strong> — La lumière diffuse remplace les effets d’or et accompagne la méditation.</p><p></p><div class="understand"><h3>À comprendre</h3><p></p><p>Fra Angelico n’a plus besoin d’or pour faire entrer le divin dans la peinture.</p><p></p></div><div class="site-medals"><a class="ra-reveal-link" id="medaillon-0" href="recit-fra-angelico-annonciation-recit.html"><span><img src="images/icone-livre.png" alt=""></span><span class="ra-reveal-copy"><strong>Que se joue-t-il sous nos yeux ?</strong><small>Découvrir le récit →</small></span></a></div></div></div></section><section class="site-section" id="section-4"><span class="eyebrow">05 · UNE ŒUVRE À REGARDER</span><h2>Benozzo Gozzoli — Élève et collaborateur</h2><div class="site-art" data-work-layout="masaccio-two-columns"><figure><img class="zoomable" data-zoom title="Cliquer pour agrandir" src="images/fra-angelico/benozzo-gozzoli-procession-mages.png" alt="Procession des Mages" loading="lazy"><figcaption>Benozzo Gozzoli · Procession des Mages<br><small>Voir Sources &amp; crédits · Œuvre dans le domaine public</small></figcaption></figure><div class="site-notes"><h3>À regarder</h3><p></p><p>Il hérite de Fra Angelico des couleurs lumineuses, de l’élégance et du goût du détail, mais son monde devient plus animé et plus fastueux.</p><p></p><div class="understand"><h3>À comprendre</h3><p></p><p>Fra Angelico → silence et spiritualitéGozzoli → récit, luxe et profusion de détails</p><p></p></div></div></div></section><section class="site-section" id="reconnaitre"><h2>Comment reconnaître Fra Angelico ?</h2><div class="recognize-grid"><div class="recognize-item"><div class="recognize-photo"><img class="zoomable" data-zoom title="Cliquer pour agrandir" src="images/fra-angelico/fra-angelico-couronnement.jpg" alt="Des couleurs lumineuses" loading="lazy"></div><div class="recognize-copy"><h3>Des couleurs lumineuses</h3><div class="ra-recognize-body"><p>L’or, les roses délicats et les bleus profonds donnent aux scènes un éclat presque céleste.</p></div></div></div><div class="recognize-item"><div class="recognize-photo"><img class="zoomable" data-zoom title="Cliquer pour agrandir" src="images/fra-angelico/Fra_Angelico_Visage.png" alt="Des visages doux" loading="lazy"></div><div class="recognize-copy"><h3>Des visages doux</h3><div class="ra-recognize-body"><p>Les regards baissés et les expressions retenues privilégient la sérénité.</p></div></div></div><div class="recognize-item"><div class="recognize-photo"><img class="zoomable" data-zoom title="Cliquer pour agrandir" src="images/fra-angelico/fra-angelico-deposition.jpg" alt="Un espace nouveau" loading="lazy"></div><div class="recognize-copy"><h3>Un espace nouveau</h3><div class="ra-recognize-body"><p>Paysages et architectures en perspective dialoguent avec l’élégance gothique.</p></div></div></div><div class="recognize-item"><div class="recognize-photo"><img class="zoomable" data-zoom title="Cliquer pour agrandir" src="images/fra-angelico/Fra_Angelico_-_Annunciation.jpg" alt="Une spiritualité sans agitation" loading="lazy"></div><div class="recognize-copy"><h3>Une spiritualité sans agitation</h3><div class="ra-recognize-body"><p>Un geste ou une lumière douce suffit parfois à suggérer le sacré.</p></div></div></div></div></section><section class="site-section takeaway" id="retenir"><h2>À retenir</h2><div class="takeaway-copy"><p><strong>De l’éclat du paradis au silence d’un cloître.</strong></p><p>Fra Angelico associe les couleurs précieuses et la délicatesse gothique à des corps plus présents et à des espaces construits. Les gestes retenus et la lumière donnent aux récits sacrés une émotion profondément humaine.</p></div></section><section class="site-section"><h2>Poursuivre la découverte</h2><div class="links-list"><div><a href="piero-della-francesca.html" target="_blank" rel="noopener noreferrer">La lumière et les gestes du sacré ↗</a><p>Après Fra Angelico, observez le Baptême de Piero : une lumière claire et des gestes familiers donnent au récit une présence calme.</p></div></div></section><section class="site-section"><h2>Pour aller plus loin</h2><div class="links-list"><div><a href="https://www.radiofrance.fr/franceculture/podcasts/toute-une-vie/fra-angelico-autour-de-1400-1455-l-artiste-mystique-de-la-renaissance-7420870" target="_blank" rel="noopener noreferrer">À écouter · Fra Angelico ↗</a><p>Prolongez la découverte avec le podcast de France Culture consacré à Fra Angelico.</p></div></div></section></div></div><script>document.addEventListener('click',function(e){const b=e.target.closest('[data-act="sectionquizanswer"],[data-act="sectionquizreveal"]');if(!b)return;const list=[null,null,null,null,null][Number(b.dataset.i)];const q=list?.[Number(b.dataset.q)];const out=document.getElementById('sectionQuizResult-'+b.dataset.i+'-'+b.dataset.q);if(!q||!out)return;if(b.dataset.act==='sectionquizreveal'){const show=out.hidden;out.hidden=!show;if(show)out.textContent=q.explanation;b.textContent=(show?'Masquer la réponse':'Voir la réponse');}else{out.hidden=false;out.textContent=(Number(b.dataset.choice)===Number(q.answer)?'✓ ':'✕ ')+q.explanation;}});</script><dialog id="artist-zoom" class="ra-viewer" aria-label="Explorer l’œuvre" aria-describedby="ra-view-hint"><div class="ra-view-bar"><div class="ra-view-controls"><button type="button" data-action="minus" aria-label="Réduire">−</button><button type="button" data-action="plus" aria-label="Agrandir">+</button><button type="button" data-action="reset">Vue entière</button></div><button type="button" data-action="close" aria-label="Fermer" autofocus>×</button></div><div class="ra-view-stage" tabindex="0" role="group" aria-label="Œuvre : faites glisser pour déplacer ; flèches du clavier pour explorer"><img class="ra-view-image" alt="" draggable="false"/></div><div class="ra-view-footer"><p class="ra-view-hint" id="ra-view-hint"></p><p class="ra-view-caption"></p></div></dialog><script src="assets/artwork-viewer.js" defer></script><script>const quiz={"answer":"1","artist1":"","artist2":"","explanation":""};document.addEventListener('click',e=>{const b=e.target.closest('[data-act="quizanswer"]');if(b){const box=document.getElementById('quizResult');if(box){box.hidden=false;box.textContent=(b.dataset.choice===quiz.answer?'Bravo ! ':'Pas tout à fait ! ')+'Tableau A : '+quiz.artist1+' · Tableau B : '+quiz.artist2+'. '+quiz.explanation}}});</script><script>(function alignComparisons208(root=document){root.querySelectorAll('.site-compare:not(.quiz-works)>figure').forEach(f=>{const im=f.querySelector('img');if(!im)return;const apply=()=>{if(im.naturalWidth&&im.naturalHeight)f.style.setProperty('--comparison-width',(im.naturalWidth/im.naturalHeight*parseFloat(getComputedStyle(im).height))+'px')};if(im.complete)apply();else im.addEventListener('load',apply,{once:true})})})(document);</script><script>(function guideRuntime2092(){document.addEventListener('click',function(e){const button=e.target.closest('[data-guide-toggle]');if(!button)return;const stage=document.getElementById(button.getAttribute('aria-controls'));if(!stage)return;const on=button.getAttribute('aria-expanded')!=='true';stage.querySelectorAll('.ra-guide-label').forEach(label=>label.hidden=!on);button.setAttribute('aria-expanded',String(on));button.setAttribute('aria-pressed',String(on));button.textContent=on?button.dataset.hideLabel:button.dataset.showLabel;});})();</script></body></html>
+body{margin:0;background:#faf9f4;font-family:Tahoma,Arial,sans-serif}.site-preview{border-radius:0;box-shadow:none}.site-inner{max-width:1100px}.ra-reveal-link{display:flex;align-items:center;gap:16px;border:0!important;background:transparent!important;box-shadow:none!important;padding:12px 0!important;text-decoration:none;color:#173c63}.ra-reveal-link img{width:70px;height:70px;object-fit:contain}.ra-reveal-copy{display:flex;flex-direction:column}.ra-reveal-copy small{margin-top:5px}</style><link rel="stylesheet" href="assets/artwork-viewer.css"><link rel="stylesheet" href="assets/css/medaillons-communs.css"></head><body><header class="ra-site-header"><nav aria-label="Navigation principale" class="ra-nav"><a class="ra-brand" href="index.html">REGARDER L’ART</a><div class="ra-links"><a href="parcours.html">Parcours</a><a href="artistes.html">Artistes</a><a href="regards-croises.html">Regards croisés</a><a href="lieux.html">Lieux &amp; musées</a><a href="ressources.html">Écouter &amp; regarder</a><a href="hors-parcours.html">Carnets de visites</a><a href="a-propos.html">À propos</a></div><div aria-label="Language / Langue" class="ra-languages"><a href="fra-angelico.html" lang="fr" aria-current="page">FR</a><a href="en/fra-angelico.html" lang="en">EN</a></div></nav></header><div class="site-preview" style="--main: #b38b45; --secondary: #f4eae6; --paper: #f8f6f0; --understand-bg: #F4EAE6; --understand-accent: #AD655B; --heading-color: #173c63; --hero-title-font: Tahoma,Arial,sans-serif; --hero-title-color: #173c63; --hero-title-size: 42px; --hero-intro-font: Tahoma,Arial,sans-serif; --hero-intro-color: #384a52; --hero-intro-size: 17px; --wallpaper-size: 180px; --reading-paper: #f8f6f0f7; --reading-font: Tahoma,Arial,sans-serif;" data-banner="light" data-layout="masaccio-two-columns" data-compact-hero="false" data-portrait-style="classic" data-wallpaper="none" lang="fr" data-body-font="Tahoma"><div class="site-hero" data-hero-alignment="start" id="ra-artist-hero"><div><span class="eyebrow">REGARDER L’ART · LES ARTISTES</span><h1>Fra Angelico</h1><p class="dates">Vers 1395–1455</p><div class="lead"><p><span style="color:#384a55">Une tête qui s’incline, des mains qui se joignent, des regards qui se croisent. Fra Angelico donne aux récits sacrés la force de gestes que chacun peut reconnaître.</span></p></div></div><img class="zoomable" data-zoom src="images/fra-angelico/Fra_Angelico_Visage.PNG" alt="Fra Angelico"></div><div class="site-inner"><section class="site-section" id="section-biographie"><h2>En quelques mots</h2><div class="artist-bio-copy"><p>Né vers 1395–1400 dans le Mugello, près de Florence, Guido di Pietro devient frère dominicain sous le nom de Fra Giovanni. Il peint des retables pour des églises et réalise, avec son atelier, des fresques pour le couvent florentin de San Marco. Il travaille aussi à Rome, où il meurt en 1455. D’un retable destiné à un autel à une fresque placée au passage des frères, les images répondent à des usages différents.</p><p>Devant chacune d’elles, demandez-vous quel détail vous fait entrer dans la scène et où Fra Angelico vous invite à vous arrêter.</p></div></section><section class="site-section" id="section-0"><span class="eyebrow">01 · UNE ŒUVRE À REGARDER</span><h2>Le Couronnement de la Vierge</h2><div class="site-art" data-work-layout="masaccio-two-columns"><figure><div class="artwork-image"><span class="ra-trace-stage"><img class="zoomable" data-zoom title="Cliquer pour agrandir" src="images/fra-angelico/fra-angelico-couronnement.jpg" alt="Le Couronnement de la Vierge" loading="lazy"><svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" class="ra-trace-svg"><g data-trace-layer="0" id="trace-layer-work-0-0" hidden=""><g data-shape="0" data-shape-kind="marker" transform="translate(-0.6281540636263969 -9.442795378006245)"><circle cx="52" cy="67" r="2.55" fill="#8e2433" stroke="#fff" stroke-width="1" vector-effect="non-scaling-stroke"></circle><text x="52" y="67" text-anchor="middle" dominant-baseline="central" fill="#fff" stroke="#202020" stroke-width="0.14" paint-order="stroke" font-size="3" font-family="sans-serif" font-weight="700">1</text></g><g data-shape="1" data-shape-kind="marker" transform="translate(2.5125881391146763 -5.184282009069484)"><circle cx="46" cy="30" r="2.55" fill="#8e2433" stroke="#fff" stroke-width="1" vector-effect="non-scaling-stroke"></circle><text x="46" y="30" text-anchor="middle" dominant-baseline="central" fill="#fff" stroke="#202020" stroke-width="0.14" paint-order="stroke" font-size="3" font-family="sans-serif" font-weight="700">2</text></g><g data-shape="2" data-shape-kind="marker" transform="translate(2.0938375069576907 7.035819289334931)"><circle cx="63" cy="55" r="2.55" fill="#8e2433" stroke="#fff" stroke-width="1" vector-effect="non-scaling-stroke"></circle><text x="63" y="55" text-anchor="middle" dominant-baseline="central" fill="#fff" stroke="#202020" stroke-width="0.14" paint-order="stroke" font-size="3" font-family="sans-serif" font-weight="700">3</text></g></g></svg><span class="ra-trace-text-layer" id="trace-text-work-0-0" data-trace-layer="0" hidden=""></span></span><button type="button" class="artwork-zoom-button" data-artwork-zoom="" aria-label="Agrandir l’image"><span aria-hidden="true">⤢</span></button></div><div class="ra-trace-controls" role="group" aria-label="Lecture guidée"><button type="button" data-trace-step="-1" aria-pressed="true">Image seule</button><button type="button" data-trace-step="0" aria-pressed="false" aria-controls="trace-layer-work-0-0 trace-text-work-0-0 trace-comment-work-0-0">Afficher les repères</button></div><figcaption>Le Couronnement de la Vierge · Musée du Louvre · Domaine public</figcaption><div class="ra-trace-output" id="trace-comment-work-0-0" data-trace-comment="0" hidden="" aria-live="polite"><ol><li>Les marches de marbre</li><li>Le geste du Christ</li><li>Les figures vues de dos</li></ol></div></figure><div class="site-notes"><h3>À regarder</h3><p>Partez des figures agenouillées au premier plan, dont certaines sont vues de dos. Suivez les marches de marbre coloré jusqu’au trône. Tout en haut, le Christ pose la couronne sur la tête de Marie, inclinée devant lui. De part et d’autre des marches, les saints et les anges laissent libre le passage vers le couple central.</p><div class="understand"><h3>À comprendre</h3><h4 class="ra-intertitle">Un escalier pour entrer dans le paradis</h4><p>Les figures de dos vous placent derrière elles, comme si vous rejoigniez l’assemblée. Les marches donnent une distance à parcourir du regard. À leur sommet, le geste du Christ devient le point vers lequel tout converge. Fra Angelico conserve l’éclat de l’or, mais donne à cette scène céleste un espace dans lequel on peut imaginer avancer.</p><p></p></div></div></div></section><section class="site-section" id="section-1"><span class="eyebrow">02 · UNE ŒUVRE À REGARDER</span><h2>Le Jugement dernier</h2><div class="site-art" data-work-layout="stacked"><figure><div class="artwork-image"><span class="ra-trace-stage"><img class="zoomable" data-zoom title="Cliquer pour agrandir" src="images/fra-angelico/fra-angelico-jugement-dernier.jpg" alt="Le Jugement dernier" loading="lazy"><svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" class="ra-trace-svg"><g data-trace-layer="0" id="trace-layer-work-1-0" hidden=""><g data-shape="0" data-shape-kind="marker" transform="translate(0 0)"><circle cx="45.97640770069067" cy="22.55233419471728" r="2.55" fill="#8e2433" stroke="#fff" stroke-width="1" vector-effect="non-scaling-stroke"></circle><text x="45.97640770069067" y="22.55233419471728" text-anchor="middle" dominant-baseline="central" fill="#fff" stroke="#202020" stroke-width="0.14" paint-order="stroke" font-size="3" font-family="sans-serif" font-weight="700">1</text></g><g data-shape="1" data-shape-kind="marker" transform="translate(0 0)"><circle cx="49.9498893042517" cy="75.61497325469136" r="2.55" fill="#8e2433" stroke="#fff" stroke-width="1" vector-effect="non-scaling-stroke"></circle><text x="49.9498893042517" y="75.61497325469136" text-anchor="middle" dominant-baseline="central" fill="#fff" stroke="#202020" stroke-width="0.14" paint-order="stroke" font-size="3" font-family="sans-serif" font-weight="700">2</text></g><g data-shape="2" data-shape-kind="marker" transform="translate(0 0)"><circle cx="10.759260653746566" cy="77.2506465148324" r="2.55" fill="#8e2433" stroke="#fff" stroke-width="1" vector-effect="non-scaling-stroke"></circle><text x="10.759260653746566" y="77.2506465148324" text-anchor="middle" dominant-baseline="central" fill="#fff" stroke="#202020" stroke-width="0.14" paint-order="stroke" font-size="3" font-family="sans-serif" font-weight="700">3</text></g><g data-shape="3" data-shape-kind="marker" transform="translate(0 0)"><circle cx="81.42266327799523" cy="68.04996383580178" r="2.55" fill="#8e2433" stroke="#fff" stroke-width="1" vector-effect="non-scaling-stroke"></circle><text x="81.42266327799523" y="68.04996383580178" text-anchor="middle" dominant-baseline="central" fill="#fff" stroke="#202020" stroke-width="0.14" paint-order="stroke" font-size="3" font-family="sans-serif" font-weight="700">4</text></g></g></svg><span class="ra-trace-text-layer" id="trace-text-work-1-0" data-trace-layer="0" hidden=""></span></span><button type="button" class="artwork-zoom-button" data-artwork-zoom="" aria-label="Agrandir l’image"><span aria-hidden="true">⤢</span></button></div><div class="ra-trace-controls" role="group" aria-label="Lecture guidée"><button type="button" data-trace-step="-1" aria-pressed="true">Image seule</button><button type="button" data-trace-step="0" aria-pressed="false" aria-controls="trace-layer-work-1-0 trace-text-work-1-0 trace-comment-work-1-0">Afficher les repères</button></div><figcaption>Le Jugement dernier · Museo di San Marco · Domaine public</figcaption><div class="ra-trace-output" id="trace-comment-work-1-0" data-trace-comment="0" hidden="" aria-live="polite"><ol><li>Le Christ juge</li><li>Les tombeaux ouverts</li><li>La ronde du paradis</li><li>L’entrée de l’enfer</li></ol></div></figure><div class="site-notes"><h3>À regarder</h3><p>Tout en haut, au centre, repérez le Christ assis parmi les anges. Directement au-dessous, suivez la rangée de tombeaux ouverts jusqu’à l’horizon. À gauche pour vous, des figures se donnent la main dans un jardin. À droite, des démons entraînent les damnés vers l’entrée sombre de l’enfer.</p><div class="understand"><h3>À comprendre</h3><h4 class="ra-intertitle">Deux chemins de part et d’autre des tombeaux</h4><p>La file des tombeaux donne de la profondeur au paysage et sépare les deux groupes. À gauche, les mains jointes en chaîne et les pas de la ronde font du paradis un lieu où l’on avance ensemble. À droite, les gestes de contrainte donnent au mouvement une tout autre direction. Dans ce tableau peuplé de dizaines de figures, Fra Angelico rend les deux destinées lisibles par la disposition des corps.</p><p></p></div></div></div></section><section class="site-section" id="section-2"><span class="eyebrow">03 · UNE ŒUVRE À REGARDER</span><h2>La Déposition de croix</h2><div class="site-art" data-work-layout="masaccio-two-columns"><figure><div class="artwork-image"><span class="ra-trace-stage"><img class="zoomable" data-zoom title="Cliquer pour agrandir" src="images/fra-angelico/fra-angelico-deposition.jpg" alt="La Déposition de croix" loading="lazy"><svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" class="ra-trace-svg"><g data-trace-layer="0" id="trace-layer-work-2-0" hidden=""><g data-shape="0" data-shape-kind="marker" transform="translate(0 0)"><circle cx="47.28297440411124" cy="55.886010299571694" r="2.55" fill="#8e2433" stroke="#fff" stroke-width="1" vector-effect="non-scaling-stroke"></circle><text x="47.28297440411124" y="55.886010299571694" text-anchor="middle" dominant-baseline="central" fill="#fff" stroke="#202020" stroke-width="0.14" paint-order="stroke" font-size="3" font-family="sans-serif" font-weight="700">1</text></g><g data-shape="1" data-shape-kind="marker" transform="translate(0 0)"><circle cx="28.35341430619749" cy="74.40185609092146" r="2.55" fill="#8e2433" stroke="#fff" stroke-width="1" vector-effect="non-scaling-stroke"></circle><text x="28.35341430619749" y="74.40185609092146" text-anchor="middle" dominant-baseline="central" fill="#fff" stroke="#202020" stroke-width="0.14" paint-order="stroke" font-size="3" font-family="sans-serif" font-weight="700">2</text></g><g data-shape="2" data-shape-kind="rect" transform="translate(0 0)"><rect x="62.94400657386401" y="51.39465204408021" width="15.87141374250124" height="5.376307709012629" fill="none" stroke="#142333" stroke-width="4.5" stroke-opacity="0.6" vector-effect="non-scaling-stroke" stroke-linecap="round" stroke-linejoin="round"></rect><rect x="62.94400657386401" y="51.39465204408021" width="15.87141374250124" height="5.376307709012629" fill="none" stroke="#8e2433" stroke-width="2.5" stroke-opacity="1" vector-effect="non-scaling-stroke" stroke-linecap="round" stroke-linejoin="round"></rect></g><g data-shape="3" data-shape-kind="marker" transform="translate(0 0)"><circle cx="70.22337660587004" cy="56.05777643445688" r="2.55" fill="#8e2433" stroke="#fff" stroke-width="1" vector-effect="non-scaling-stroke"></circle><text x="70.22337660587004" y="56.05777643445688" text-anchor="middle" dominant-baseline="central" fill="#fff" stroke="#202020" stroke-width="0.14" paint-order="stroke" font-size="3" font-family="sans-serif" font-weight="700">3</text></g></g></svg><span class="ra-trace-text-layer" id="trace-text-work-2-0" data-trace-layer="0" hidden=""></span></span><button type="button" class="artwork-zoom-button" data-artwork-zoom="" aria-label="Agrandir l’image"><span aria-hidden="true">⤢</span></button></div><div class="ra-trace-controls" role="group" aria-label="Lecture guidée"><button type="button" data-trace-step="-1" aria-pressed="true">Image seule</button><button type="button" data-trace-step="0" aria-pressed="false" aria-controls="trace-layer-work-2-0 trace-text-work-2-0 trace-comment-work-2-0">Afficher les repères</button></div><figcaption>La Déposition de croix · Museo di San Marco · Domaine public</figcaption><div class="ra-trace-output" id="trace-comment-work-2-0" data-trace-comment="0" hidden="" aria-live="polite"><ol><li>Les mains qui portent</li><li>Marie Madeleine</li><li>La couronne et les clous</li></ol></div></figure><div class="site-notes"><h3>À regarder</h3><p>Au centre, suivez le corps du Christ, de l’épaule jusqu’aux pieds. Repérez les mains qui le soutiennent pendant la descente. En bas à gauche, Marie Madeleine se penche vers ses pieds. Puis suivez le paysage derrière les figures : les murailles et les collines se poursuivent d’un côté à l’autre du panneau.</p><div class="understand"><h3>À comprendre</h3><h4 class="ra-intertitle">Un corps que plusieurs personnes se transmettent</h4><p>Le corps incliné et les mains qui le portent vous font sentir le poids de la descente. Le geste de Marie Madeleine attire l’attention vers les pieds du Christ et montre une autre façon de prendre part à la scène. Au fond, le paysage continu rassemble les groupes sous les trois pointes du retable. Dans cette œuvre commencée par Lorenzo Monaco, Fra Angelico fait ainsi tenir un seul moment dans un espace qui se poursuit sur toute la largeur.</p></div><div class="site-medals"><a class="ra-reveal-link" id="medaillon-1" href="recit-fra-angelico-deposition-commande-recit.html"><span><img src="images/icone-livre.png" alt=""></span><span class="ra-reveal-copy"><strong>Que montrent les hommes à droite ?</strong><small>Découvrir le récit →</small></span></a></div></div></div></section><section class="site-section" id="section-3"><span class="eyebrow">04 · UNE ŒUVRE À REGARDER</span><h2>L’Annonciation de San Marco</h2><div class="site-art" data-work-layout="stacked"><figure><div class="artwork-image"><span class="ra-trace-stage"><img class="zoomable" data-zoom title="Cliquer pour agrandir" src="images/fra-angelico/Fra_Angelico_-_Annunciation.jpg" alt="L’Annonciation de San Marco" loading="lazy"><svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" class="ra-trace-svg"><g data-trace-layer="0" id="trace-layer-work-3-0" hidden=""><g data-shape="0" data-shape-kind="marker" transform="translate(0 0)"><circle cx="39" cy="53" r="2.55" fill="#8e2433" stroke="#fff" stroke-width="1" vector-effect="non-scaling-stroke"></circle><text x="39" y="53" text-anchor="middle" dominant-baseline="central" fill="#fff" stroke="#202020" stroke-width="0.14" paint-order="stroke" font-size="3" font-family="sans-serif" font-weight="700">1</text></g><g data-shape="1" data-shape-kind="marker" transform="translate(0 0)"><circle cx="74" cy="53" r="2.55" fill="#8e2433" stroke="#fff" stroke-width="1" vector-effect="non-scaling-stroke"></circle><text x="74" y="53" text-anchor="middle" dominant-baseline="central" fill="#fff" stroke="#202020" stroke-width="0.14" paint-order="stroke" font-size="3" font-family="sans-serif" font-weight="700">2</text></g><g data-shape="2" data-shape-kind="marker" transform="translate(0 0)"><circle cx="54" cy="94" r="2.55" fill="#8e2433" stroke="#fff" stroke-width="1" vector-effect="non-scaling-stroke"></circle><text x="54" y="94" text-anchor="middle" dominant-baseline="central" fill="#fff" stroke="#202020" stroke-width="0.14" paint-order="stroke" font-size="3" font-family="sans-serif" font-weight="700">3</text></g></g></svg><span class="ra-trace-text-layer" id="trace-text-work-3-0" data-trace-layer="0" hidden=""></span></span><button type="button" class="artwork-zoom-button" data-artwork-zoom="" aria-label="Agrandir l’image"><span aria-hidden="true">⤢</span></button></div><div class="ra-trace-controls" role="group" aria-label="Lecture guidée"><button type="button" data-trace-step="-1" aria-pressed="true">Image seule</button><button type="button" data-trace-step="0" aria-pressed="false" aria-controls="trace-layer-work-3-0 trace-text-work-3-0 trace-comment-work-3-0">Afficher les repères</button></div><figcaption>L’Annonciation de San Marco · Museo di San Marco · Domaine public</figcaption><div class="ra-trace-output" id="trace-comment-work-3-0" data-trace-comment="0" hidden="" aria-live="polite"><ol><li>Gabriel</li><li>Marie</li><li>L’inscription</li></ol></div></figure><div class="site-notes"><h3>À regarder</h3><p>Sous le portique, regardez Gabriel, agenouillé à gauche, puis Marie, assise à droite. Comparez leurs bras croisés et leurs têtes légèrement inclinées. Suivez ensuite les arcs vers le fond et revenez à la colonne claire placée entre eux.</p><div class="understand"><h3>À comprendre</h3><h4 class="ra-intertitle">Une réponse que l’on voit dans un geste</h4><p>La colonne marque la distance entre Gabriel et Marie. La ressemblance de leurs gestes vous fait passer de l’un à l’autre. Ce mouvement du regard donne une forme visible à l’échange du récit biblique. Dans le couvent, la fresque accueille les frères en haut de l’escalier qui mène au dortoir. Le portique peint et ses colonnes font écho à l’architecture qu’ils viennent de traverser. La scène semble ainsi se dérouler tout près d’eux.</p><p><a href="https://smarthistory.org/fra-angelico-the-annunciation-c-1438-47/" target="_blank" rel="noopener noreferrer">Smarthistory — The Annunciation at San Marco</a> · <a href="https://www.ausiliotecafirenze.org/facilefacile/scheda.php?language=2&amp;schermata_id=730" target="_blank" rel="noopener noreferrer">Guide accessible de Florence — L’Annonciation du couloir nord</a></p></div><div class="site-medals"><a class="ra-reveal-link" id="medaillon-0" href="recit-fra-angelico-annonciation-recit.html"><span><img src="images/icone-livre.png" alt=""></span><span class="ra-reveal-copy"><strong>Une salutation au haut de l’escalier</strong><small>Découvrir le récit →</small></span></a></div></div></div></section><section class="site-section" id="section-4"><span class="eyebrow">05 · UNE ŒUVRE À REGARDER</span><h2>Pour aller plus loin — Benozzo Gozzoli</h2><div class="site-art" data-work-layout="masaccio-two-columns"><figure><div class="artwork-image"><img class="zoomable" data-zoom title="Cliquer pour agrandir" src="images/fra-angelico/benozzo-gozzoli-procession-mages.png" alt="Procession des Mages" loading="lazy"><button type="button" class="artwork-zoom-button" data-artwork-zoom="" aria-label="Agrandir l’image"><span aria-hidden="true">⤢</span></button></div><figcaption>Procession des Mages · Chapelle des Mages, Palazzo Medici Riccardi · Œuvre dans le domaine public</figcaption></figure><div class="site-notes"><h3>À regarder</h3><p>Suivez les cavaliers le long du chemin peint. Arrêtez-vous sur les motifs des vêtements et les ornements des chevaux, puis reprenez le trajet du cortège à travers les collines.</p><div class="understand"><h3>À comprendre</h3><h4 class="ra-intertitle">Un récit qui se déploie le long des murs</h4><p>Benozzo Gozzoli avait travaillé avec Fra Angelico. Dans la chapelle des Médicis, il se sert des étoffes et des harnachements pour donner à chaque groupe un éclat propre. Le trajet des cavaliers relie ces détails le long des murs. Le récit se découvre en tournant la tête et en parcourant la chapelle du regard.</p><p><a href="https://www.palazzomediciriccardi.it/en/the-magi-chapel/" target="_blank" rel="noopener noreferrer">Palazzo Medici Riccardi — La chapelle des Mages</a> · <a href="https://www.palazzomediciriccardi.it/en/exhibition/benozzo-gozzoli/" target="_blank" rel="noopener noreferrer">Palazzo Medici Riccardi — Benozzo Gozzoli</a></p></div></div></div></section><section class="site-section" id="reconnaitre"><h2>Comment reconnaître Fra Angelico ?</h2><div class="recognize-grid"><div class="recognize-item"><div class="recognize-photo"><img class="zoomable" data-zoom title="Cliquer pour agrandir" src="images/fra-angelico/fra-angelico-couronnement.jpg" alt="Des couleurs que l’œil peut suivre" loading="lazy"></div><div class="recognize-copy"><h3>Des couleurs que l’œil peut suivre</h3><div class="ra-recognize-body"><p>Cherchez une couleur qui revient d’une figure à l’autre. Dans le <em>Couronnement</em>, les rouges et les bleus des vêtements ponctuent la montée jusqu’au trône.</p></div></div></div><div class="recognize-item"><div class="recognize-photo"><img class="zoomable" data-zoom title="Cliquer pour agrandir" src="images/fra-angelico/Fra_Angelico_-_Annunciation.jpg" alt="Des gestes qui se répondent" loading="lazy"></div><div class="recognize-copy"><h3>Des gestes qui se répondent</h3><div class="ra-recognize-body"><p>Comparez les mains de deux figures. Dans l’<em>Annonciation</em>, les bras croisés de Gabriel et de Marie se font écho. Ce geste suffit à relier les deux personnages.</p></div></div></div><div class="recognize-item"><div class="recognize-photo"><img class="zoomable" data-zoom title="Cliquer pour agrandir" src="images/fra-angelico/fra-angelico-jugement-dernier.jpg" alt="Des lignes qui vous emmènent au fond" loading="lazy"></div><div class="recognize-copy"><h3>Des lignes qui vous emmènent au fond</h3><div class="ra-recognize-body"><p>Suivez une rangée d’éléments qui se répètent et deviennent plus petits. Dans le <em>Jugement dernier</em>, les tombeaux vous font avancer du premier plan jusqu’à l’horizon.</p></div></div></div><div class="recognize-item"><div class="recognize-photo"><img class="zoomable" data-zoom title="Cliquer pour agrandir" src="images/fra-angelico/fra-angelico-deposition.jpg" alt="Une émotion qui se lit dans les mains" loading="lazy"></div><div class="recognize-copy"><h3>Une émotion qui se lit dans les mains</h3><div class="ra-recognize-body"><p>Regardez ce que font les mains avant de lire les visages. Dans la <em>Déposition</em>, des mains portent le Christ tandis que Marie Madeleine se penche et touche ses pieds. Chaque geste donne à une figure sa façon de participer au deuil.</p></div></div></div></div></section><section class="site-section takeaway" id="retenir"><h2>À retenir</h2><div class="takeaway-copy"><p>Fra Angelico organise la profondeur, la couleur et les gestes pour donner au spectateur une place dans l’image. Les marches du <em>Couronnement</em> l’introduisent dans une assemblée. Les tombeaux du <em>Jugement dernier</em> séparent deux chemins. Dans la <em>Déposition</em>, quelques mains permettent de sentir ce que demande la descente du corps.</p><p>À San Marco, la fresque fait tenir une rencontre dans l’espace de quelques arcades. Devant un autre Fra Angelico, repérez le premier détail qui capte votre regard. Suivez ensuite la ligne, la couleur ou le geste qui vous emmène ailleurs.</p></div></section><section class="site-section"><h2>Poursuivre la découverte</h2><div class="links-list"><div><a href="piero-della-francesca.html" target="_blank" rel="noopener noreferrer">La lumière et les gestes du sacré ↗</a><p>Après l’*Annonciation*, regardez le *Baptême du Christ* de Piero. Suivez le geste de Jean Baptiste et repérez le détail vers lequel il vous conduit.</p></div></div></section><section class="site-section"><h2>Pour aller plus loin</h2><div class="links-list"><div><a href="https://www.radiofrance.fr/franceculture/podcasts/toute-une-vie/fra-angelico-autour-de-1400-1455-l-artiste-mystique-de-la-renaissance-7420870" target="_blank" rel="noopener noreferrer">À écouter · Fra Angelico ↗</a><p>France Culture · *Toute une vie*. Un épisode en français consacré au peintre et frère dominicain.</p></div></div></section></div></div><script>(function bindArtworkZoom(){
+ document.addEventListener('click',event=>{
+  const button=event.target.closest('button[data-artwork-zoom]');
+  button?.closest('.artwork-image')?.querySelector('img.zoomable')?.click();
+ });
+})();
+ const showSectionQuizFeedback=function showSectionQuizFeedback(box,button,action,choice,answer,explanation,en){
+ if(action==='sectionquizreveal'){
+  const show=box.hidden;
+  if(show)box.innerHTML=explanation;
+  box.hidden=!show;
+  if(button){
+   button.setAttribute('aria-expanded',String(show));
+   button.textContent=en?(show?'Hide the answer':'Reveal the answer'):(show?'Masquer la réponse':'Voir la réponse');
+  }
+  return;
+ }
+ const correct=Number(choice)===Number(answer);
+ const feedback=correct?'success':'retry';
+ const label=en?(correct?'Correct!':'Wrong answer!'):(correct?'Bonne réponse !':'Mauvaise réponse !');
+ const miniature=correct?
+  `<svg class="ra-quiz-feedback-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 84">
+<rect width="72" height="84" fill="#5c391e"/>
+<rect x="2.5" y="2.5" width="67" height="79" fill="#bb8842" stroke="#e1bd74" stroke-width="2"/>
+<rect x="7" y="7" width="58" height="70" fill="#f0cc82"/>
+<rect x="9" y="9" width="54" height="66" fill="#a7b9a1"/>
+<path d="M9 38l12-12 7 9 8-10 9 11 10-8 8 5v42H9z" fill="#708378"/>
+<path d="M9 44l15-9 12 14 17-11 10 5v32H9z" fill="#526e62"/>
+<path d="M9 62c10-7 11-14 17-15m37 3c-11 0-10 9-17 14" fill="none" stroke="#c9b78c" stroke-width="3"/>
+<path d="M21 48c-1-5 0-8 1-18 1-12 6-16 15-16 9 0 14 6 16 17l2 21z" fill="#2e2622"/>
+<path d="M31 36h13v12l7 4-12 11-17-13 9-5z" fill="#b87955"/>
+<path d="M13 75l2-16c2-6 6-11 13-12 6 9 13 12 22 1 6 1 10 7 11 16l2 11z" fill="#332c24"/>
+<path d="M26 22c4-3 12-4 19 1l3 8-2 10c-2 4-5 6-10 6l-6-6-4-11z" fill="#d9a77b"/>
+<path d="M27 30l4-6 14-1c-4-6-15-6-19 0l-2 8z" fill="#342822"/>
+<path d="M31 30l5-1m6 0 4 1m-10 8q4 3 8-1" fill="none" stroke="#50362d" stroke-width="1.7" stroke-linecap="round"/>
+<path d="M18 68l12-7q5-2 7 2l-3 2 10 2 2 4-17 1-12-1z" fill="#b98a64"/>
+<path d="M50 69q-9-5-17-2l-4 4 23 2z" fill="#d5a477"/>
+</svg>`:
+  `<svg class="ra-quiz-feedback-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 84">
+<rect width="72" height="84" fill="#5c391e"/>
+<rect x="2.5" y="2.5" width="67" height="79" fill="#bb8842" stroke="#e1bd74" stroke-width="2"/>
+<rect x="7" y="7" width="58" height="70" fill="#f0cc82"/>
+<rect x="9" y="9" width="54" height="66" fill="#e98a5a"/>
+<path d="M9 14c18 12 26-3 54 1M9 26c18 10 28-5 54-1M9 35c19 7 29-8 54-4" fill="none" stroke="#a73d32" stroke-width="4"/>
+<path d="M9 37c13 7 31-8 54-5v43H9z" fill="#3b6a74"/>
+<path d="M9 44c21 5 31-13 54-4M9 53c21 0 31-13 54-8" fill="none" stroke="#90a8a0" stroke-width="3"/>
+<path d="M9 49l54 20v6H9z" fill="#a46c49"/>
+<path d="M9 44l54 22M9 54l54 18" fill="none" stroke="#533f3c" stroke-width="2"/>
+<path d="M22 75c5-10 5-22 9-27l14-2c4 6 3 15 10 29z" fill="#26353b"/>
+<path d="M29 40c1-7 5-12 10-12 5 0 8 5 8 11 0 5-4 8-4 13-1 6-3 9-7 8-4-1-5-6-5-11-1-2-3-5-2-9z" fill="#efcf9e" stroke="#4d4040" stroke-width="1.5"/>
+<path d="M27 61q4-6 2-15l-3-9m20 24q-2-8 2-14l2-8" fill="none" stroke="#edc39a" stroke-width="4" stroke-linecap="round"/>
+<path d="M33 40l2-1m6 1h2" fill="none" stroke="#4c3934" stroke-width="2" stroke-linecap="round"/>
+<ellipse cx="37.5" cy="49" rx="3.2" ry="5" fill="#3b3030"/>
+</svg>`;
+ const options=button?.closest('.quiz-actions')?.querySelectorAll('[data-act="sectionquizanswer"]')||[];
+ for(const option of options){
+  const selected=option===button;
+  option.setAttribute('aria-pressed',String(selected));
+  if(selected)option.dataset.feedback=feedback;
+  else delete option.dataset.feedback;
+ }
+ box.dataset.feedback=feedback;
+ box.innerHTML='<div class="ra-quiz-feedback-title">'+miniature+'<strong>'+label+'</strong></div>'+explanation;
+ box.hidden=false;
+};
+ const quizQuestions=[null,null,null,null,null];
+ document.addEventListener('click',function(e){
+  const b=e.target.closest('[data-act="sectionquizanswer"],[data-act="sectionquizreveal"]');if(!b)return;
+  const {act,i,q:question,choice}=b.dataset;
+  const q=quizQuestions[Number(i)]?.[Number(question)];
+  const box=document.getElementById('sectionQuizResult-'+i+'-'+question);
+  if(q&&box)showSectionQuizFeedback(box,b,act,choice,q.answer,q.explanation,false);
+ });
+ </script><dialog id="artist-zoom" class="ra-viewer" aria-label="Explorer l’œuvre" aria-describedby="ra-view-hint"><div class="ra-view-bar"><div class="ra-view-controls"><button type="button" data-action="minus" aria-label="Réduire">−</button><button type="button" data-action="plus" aria-label="Agrandir">+</button><button type="button" data-action="reset">Vue entière</button></div><button type="button" data-action="close" aria-label="Fermer" autofocus>×</button></div><div class="ra-view-stage" tabindex="0" role="group" aria-label="Œuvre : faites glisser pour déplacer ; flèches du clavier pour explorer"><img class="ra-view-image" alt="" draggable="false"/></div><div class="ra-view-footer"><p class="ra-view-hint" id="ra-view-hint"></p><p class="ra-view-caption"></p></div></dialog><script src="assets/artwork-viewer.js" defer></script><script>const quiz={"answer":"1","artist1":"","artist2":"","explanation":""};document.addEventListener('click',e=>{const b=e.target.closest('[data-act="quizanswer"]');if(b){const box=document.getElementById('quizResult');if(box){box.hidden=false;box.textContent=(b.dataset.choice===quiz.answer?'Bravo ! ':'Pas tout à fait ! ')+'Tableau A : '+quiz.artist1+' · Tableau B : '+quiz.artist2+'. '+quiz.explanation}}});</script><script>(function traceRuntime2093(){document.addEventListener('click',function(e){const annotated=e.target.closest('[data-annotation-view="annotated"]');
+ if(annotated)annotated.closest('[data-annotation-controls]')?.nextElementSibling?.querySelector('[data-trace-step="-1"]')?.click();
+ const b=e.target.closest('[data-trace-step]');if(!b)return;const figure=b.closest('figure'),n=Number(b.dataset.traceStep);if(!figure)return;
+ if(n>=0){const original=figure.previousElementSibling?.querySelector('[data-annotation-view="original"]');if(original?.getAttribute('aria-pressed')==='false')original.click()}
+ figure.querySelectorAll('[data-trace-step]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));figure.querySelectorAll('[data-trace-layer]').forEach(x=>x.toggleAttribute('hidden',Number(x.dataset.traceLayer)!==n));figure.querySelectorAll('[data-trace-comment]').forEach(x=>x.hidden=Number(x.dataset.traceComment)!==n);});})();</script></body></html>
