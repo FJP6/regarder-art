@@ -62,6 +62,25 @@
 .site-preview .ra-quiz-question{padding:12px 0;border-top:1px solid #ddd}
 .site-preview .ra-quiz-question h3{font-size:17px;margin:0 0 10px}
 .site-preview .ra-quiz-question .quiz-actions{display:flex;flex-wrap:wrap;gap:8px}
+.site-preview .ra-quiz-question .quiz-result[data-feedback]{
+ --quiz-tone:#215743;--quiz-paper:#eaf4ec;--quiz-border:#86ad90;
+ color:#242d29;background:var(--quiz-paper);border:1px solid var(--quiz-border);border-left:4px solid var(--quiz-tone);
+ padding:clamp(12px,2.5vw,20px);margin-top:12px;border-radius:8px;
+}
+.site-preview .ra-quiz-question .quiz-result[data-feedback="retry"]{
+ --quiz-tone:#794521;--quiz-paper:#fbefdc;--quiz-border:#cfab72;
+}
+.site-preview .ra-quiz-feedback-title{display:flex;align-items:center;gap:10px;color:var(--quiz-tone);font-size:clamp(17px,3.2vw,21px);line-height:1.25;margin:0 0 8px}
+.site-preview .ra-quiz-feedback-icon{display:block;flex:0 0 44px;width:44px;height:48px}
+.site-preview .ra-quiz-question .quiz-result[data-feedback] p{color:inherit;margin:0}
+.site-preview .ra-quiz-question .quiz-result[data-feedback] p+p{margin-top:8px}
+.site-preview .ra-quiz-question button[data-feedback="success"]{background:#215743!important;color:#fff!important;box-shadow:0 0 0 2px #fff,0 0 0 4px #215743}
+.site-preview .ra-quiz-question button[data-feedback="retry"]{background:#794521!important;color:#fff!important;box-shadow:0 0 0 2px #fff,0 0 0 4px #794521}
+.site-preview .ra-quiz-question button[data-act="sectionquizanswer"]{max-width:100%;overflow-wrap:anywhere}
+@media(prefers-reduced-motion:no-preference){
+ .site-preview .ra-quiz-question .quiz-result[data-feedback]:not([hidden]){animation:ra-quiz-feedback-in .2s ease-out}
+ @keyframes ra-quiz-feedback-in{from{opacity:.65;transform:translateY(-3px)}to{opacity:1;transform:translateY(0)}}
+}
 .quiz-editor-item{border:1px solid #ddd;border-radius:10px;padding:14px;margin:12px 0}
 .quiz-option-editor{padding:8px 12px;margin:8px 0;background:#f8f7f4;border-radius:8px}
 @media(max-width:600px){.site-preview .ra-quiz-images figure{flex-basis:42%;max-width:42%}.site-preview .ra-quiz-images img{height:125px}}
@@ -114,14 +133,14 @@
 .preview-viewport[data-preview-device="desktop"] .site-preview .site-hero>img{width:145px!important;max-width:145px!important;max-height:205px!important}
 @media(max-width:680px){.site-preview .site-hero>img{width:110px!important;max-width:110px!important;max-height:155px!important}}
 .preview-viewport[data-preview-device="mobile"] .site-preview .site-hero>img{width:110px!important;max-width:110px!important;max-height:155px!important}
-.site-preview .site-section.takeaway{background:var(--secondary,#182c42)!important;color:#fff!important;border:0!important;border-radius:12px!important;padding:28px 32px!important;margin:28px 0 10px!important}
-.site-preview .site-section.takeaway h2{color:var(--main,#e6ba5b)!important;font-family:Georgia,serif!important;font-size:clamp(29px,4vw,38px)!important;line-height:1.2!important;margin:0 0 16px!important}
-.site-preview .site-section.takeaway p{color:#fff!important;font-size:18px!important;line-height:1.75!important;margin:0!important}
+.site-preview .site-section.takeaway{background:var(--understand-bg,#f0e8da)!important;border:0!important;border-radius:12px!important;padding:28px 32px!important;margin:28px 0 10px!important}
+.site-preview .site-section.takeaway h2{line-height:1.2!important;margin:0 0 16px!important}
+.site-preview .site-section.takeaway p{line-height:1.75!important;margin:0!important}
 /* V19.14 : section titles and conclusion follow the artist's palette */
-.site-preview .site-section:not(.takeaway) h2{color:var(--heading-color,var(--secondary,#182c42))!important}
-.site-preview .site-section.takeaway{background:var(--secondary,#182c42)!important;color:var(--hero-title-color,#ffffff)!important}
-.site-preview .site-section.takeaway h2{color:var(--hero-title-color,#ffffff)!important;font-family:var(--hero-title-font,Georgia),serif!important;font-size:clamp(30px,4.5vw,42px)!important}
-.site-preview .site-section.takeaway p{color:var(--hero-intro-color,#ffffff)!important;font-family:var(--hero-intro-font,Tahoma),sans-serif!important;font-size:clamp(16px,2vw,19px)!important}
+.site-preview .site-section h2{color:var(--heading-color,var(--secondary,#182c42))!important}
+.site-preview .site-section.takeaway{background:var(--understand-bg,#f0e8da)!important;}
+.site-preview .site-section.takeaway h2{}
+.site-preview .site-section.takeaway p{}
 
 
 
@@ -139,7 +158,7 @@
 
 
 /* V19.24 — À retenir : même taille que la phrase d'accroche, aperçu et export FR/EN */
-.site-preview .site-section.takeaway p{font-size:var(--hero-intro-size,17px)!important;line-height:1.6!important}
+.site-preview .site-section.takeaway p{line-height:1.6!important}
 /* V19.25 — dates lisibles : même vert que le titre, aperçu et export */
 .site-preview .site-hero .dates{color:var(--hero-title-color,#315A55)!important;opacity:1!important}
 
@@ -152,6 +171,304 @@
 .ra-rich-toolbar button.ra-rich-active{background:#173b65!important;color:#fff!important;outline:3px solid #e4b85a!important;outline-offset:1px}.ra-rich-toolbar button[data-rich="normal"]{background:#f2e8e5;color:#71342d}
 
 .site-preview .ra-quiz-question .ra-quiz-prompt{font-family:Tahoma,Arial,sans-serif!important;font-size:17px!important;font-weight:400!important;line-height:1.7!important;text-align:left!important;margin:0 0 14px!important}.site-preview .ra-quiz-question{border-top:0!important}.site-preview .ra-quiz-question .quiz-actions button{font-size:14px}.site-preview .ra-quiz-question .quiz-result p{font-weight:400!important;line-height:1.7}
+.rich209-editor .panel{border:1px solid #ddd4c8;background:#fffdf9;margin-top:18px}
+.rich209-editor .item{background:#f8f6f0}
+.site-preview .rich209-nav{display:flex;gap:10px 18px;flex-wrap:wrap;padding:15px 0;border-bottom:1px solid #ddd4c8}
+.site-preview .rich209-nav a{font-size:14px;color:var(--secondary,#173c63)}
+.site-preview .rich209-section{scroll-margin-top:20px}
+.site-preview .rich209-comparison{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;align-items:start}
+.site-preview .rich209-column{background:#fff;border:1px solid #e4dbcc;border-radius:8px;padding:20px;min-width:0}
+.site-preview .rich209-column-head h3{font-size:23px;margin:0 0 5px}
+.site-preview .rich209-photo{margin:10px 0 18px;text-align:center;min-width:0}
+.site-preview .rich209-photo img{display:block;max-width:100%;width:auto;height:auto;max-height:540px;object-fit:contain;margin:auto;cursor:zoom-in}
+.site-preview .rich209-photo figcaption{font-size:12px;line-height:1.5;color:#625d56;padding-top:7px;text-align:center}
+.site-preview .rich209-photo figcaption p{font-size:inherit;margin:0}
+.site-preview .rich209-photo figcaption small{display:block}
+.site-preview .rich209-detail{display:grid;grid-template-columns:90px minmax(0,1fr);gap:15px;align-items:center;margin:14px 0}
+.site-preview .rich209-detail:not(:has(figure)){grid-template-columns:minmax(0,1fr)}
+.site-preview .rich209-detail-photo{margin:0}
+.site-preview .rich209-detail-photo img{width:90px;height:90px;object-fit:contain}
+.site-preview .rich209-detail h4{font-size:16px;margin:0 0 3px;color:#173c63}
+.site-preview .rich209-detail p{font-size:15px;line-height:1.6;margin:0;text-align:justify}
+.site-preview .rich209-note{padding:15px;background:#f3ebdf;border-left:3px solid var(--main,#b18b55);margin-top:20px}
+.site-preview .rich209-note p{margin:0 0 9px}
+.site-preview .rich209-blocks{display:grid;gap:22px}
+.site-preview .rich209-columns{grid-template-columns:repeat(2,minmax(0,1fr))}.site-preview .rich209-columns-three{grid-template-columns:repeat(3,minmax(0,1fr))}.site-preview .rich209-columns-three>.rich209-block:last-child:nth-child(3n+1){grid-column:1/-1}
+.site-preview .rich209-block{min-width:0;padding:18px;background:#fff;border:1px solid #e4dbcc;border-radius:7px}
+.site-preview .rich209-block h3{font-size:20px;line-height:1.4;margin:0 0 12px}
+.site-preview .rich209-copy p{margin:0 0 14px;text-align:justify}
+.site-preview .rich209-image-left>.rich209-block:not(details),.site-preview .rich209-image-right>.rich209-block:not(details),.site-preview .rich209-image-left .rich209-block-body,.site-preview .rich209-image-right .rich209-block-body{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:24px}
+.site-preview .rich209-image-right .rich209-photo{order:2}
+.site-preview .rich209-block:not(:has(figure)){display:block!important}
+.site-preview .rich209-fold>summary,.site-preview .rich209-block>summary{cursor:pointer;font-weight:bold;color:var(--secondary,#173c63);padding:10px 0;font-size:20px}
+.site-preview .rich209-fold{background:#f7f2e8;border:1px solid #ddd4c8;border-radius:8px;padding:12px 20px}
+.site-preview .rich209-fold-body,.site-preview .rich209-block-body{padding-top:12px}
+.site-preview .rich209-thesis{font-size:17px;font-weight:bold;line-height:1.55}
+.site-preview .rich209-thesis > p{margin:0}
+.site-preview .rich209-thesis > p + p{margin-top:.5em}
+.site-preview .rich209-thesis + .lead{margin-top:8px}
+@media(max-width:700px){.site-preview .rich209-comparison,.site-preview .rich209-columns,.site-preview .rich209-columns-three,.site-preview .rich209-image-left>.rich209-block:not(details),.site-preview .rich209-image-right>.rich209-block:not(details),.site-preview .rich209-image-left .rich209-block-body,.site-preview .rich209-image-right .rich209-block-body{grid-template-columns:minmax(0,1fr)}.site-preview .rich209-image-right .rich209-photo{order:0}.site-preview .rich209-column,.site-preview .rich209-block{padding:14px}.site-preview .rich209-detail{grid-template-columns:74px minmax(0,1fr);gap:12px}.site-preview .rich209-detail-photo img{width:74px;height:74px}}
+.preview-viewport[data-preview-device="mobile"] .rich209-comparison,.preview-viewport[data-preview-device="mobile"] .rich209-columns,.preview-viewport[data-preview-device="mobile"] .rich209-columns-three,.preview-viewport[data-preview-device="mobile"] .rich209-image-left>.rich209-block:not(details),.preview-viewport[data-preview-device="mobile"] .rich209-image-right>.rich209-block:not(details),.preview-viewport[data-preview-device="mobile"] .rich209-block-body{grid-template-columns:minmax(0,1fr)!important}
+.preview-viewport[data-preview-device="mobile"] .rich209-image-right .rich209-photo{order:0}
+
+
+/* À retenir uses the artist name colour from the upper banner, on a light background. */
+.site-preview .site-section.takeaway :is(h2,h3,h4,p,span,strong,em,li,blockquote){}
+
+
+.site-preview .site-section.takeaway{color:#292421}
+.site-preview .site-section.takeaway h2{font-size:26px;line-height:1.3;font-family:var(--reading-font,Tahoma,Arial,sans-serif);color:var(--heading-color,#96523c)}
+.site-preview .site-section.takeaway .takeaway-copy{font-size:16px;line-height:1.65;color:#292421}
+.site-preview .site-section.takeaway .takeaway-copy p{text-align:justify;hyphens:auto;overflow-wrap:break-word;margin:0 0 12px!important}
+.site-preview .site-section.takeaway .takeaway-copy p:last-child{margin-bottom:0!important}
+
+
+/* Shared navigation dimensions; exclude the separate artist introduction panel. */
+body header.ra-site-header{box-sizing:border-box!important;width:100%!important;max-width:none!important;margin:0!important;padding:0!important;border:0!important;min-height:0!important;height:auto!important;box-shadow:none!important}
+body header.ra-site-header .ra-nav{box-sizing:border-box!important;width:100%!important;max-width:1180px!important;min-height:72px!important;height:auto!important;margin:0 auto!important;padding:16px 28px!important;display:flex!important;align-items:center!important;justify-content:space-between!important;gap:22px!important;flex-wrap:nowrap!important}
+body header.ra-site-header .ra-brand{font:700 15px/1.3 Tahoma,Arial,sans-serif!important;letter-spacing:.07em!important;white-space:nowrap!important}
+body header.ra-site-header .ra-links{display:flex!important;flex:1!important;align-items:center!important;justify-content:center!important;gap:16px!important;flex-wrap:nowrap!important}
+body header.ra-site-header .ra-links a{font:400 12px/1.4 Tahoma,Arial,sans-serif!important;padding:5px 0!important;white-space:nowrap!important}
+body header.ra-site-header .ra-languages{display:flex!important;gap:6px!important;flex-shrink:0!important;margin-left:0!important}
+body header.ra-site-header .ra-languages a{box-sizing:border-box!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;width:32px!important;min-width:32px!important;height:32px!important;padding:0!important;border-radius:3px!important;font:700 11px/1 Tahoma,Arial,sans-serif!important}
+@media(max-width:1100px){body header.ra-site-header .ra-nav{flex-wrap:wrap!important;gap:14px!important}body header.ra-site-header .ra-links{order:3!important;flex-basis:100%!important;justify-content:flex-start!important;flex-wrap:wrap!important;gap:8px 20px!important}body header.ra-site-header .ra-languages{margin-left:auto!important}}
+@media(max-width:760px){body header.ra-site-header .ra-nav{padding:14px 20px!important}}
+
+/* Aération du bandeau. */
+.site-preview:is(:not([data-wallpaper]),[data-wallpaper="none"]) #ra-artist-hero{
+  margin-block-start:clamp(16px,2vw,24px)!important;
+}
+.site-preview #ra-artist-hero .lead > p{margin:0}
+@media(max-width:680px){
+  .site-preview:is(:not([data-wallpaper]),[data-wallpaper="none"]) #ra-artist-hero{
+    width:calc(100% - 32px)!important
+  }
+}
+.preview-viewport[data-preview-device="mobile"]
+.site-preview:is(:not([data-wallpaper]),[data-wallpaper="none"]) #ra-artist-hero{
+  width:calc(100% - 32px)!important
+}
+
+
+.site-preview #reconnaitre .recognize-grid{column-gap:28px!important;row-gap:0!important}
+.site-preview #reconnaitre .recognize-item{grid-template-columns:minmax(0,1fr)!important;align-items:center!important;background:transparent!important;border:0!important;border-top:1px solid var(--understand-accent,#94613d)!important;border-radius:0!important;padding:12px 0!important}
+.site-preview #reconnaitre .recognize-item:has(.recognize-photo){grid-template-columns:auto minmax(0,1fr)!important}
+.site-preview #reconnaitre .recognize-copy p{text-align:start!important;hyphens:manual!important}
+.site-preview:has(#section-biographie) {
+  --biography-gutter:32px;
+  --biography-sheet-edge:16px;
+}
+.site-preview:has(#section-biographie) #ra-artist-hero {
+  width:100%!important;
+  padding-inline:var(--biography-gutter)!important;
+}
+.site-preview #ra-artist-hero[data-hero-alignment="center"] {text-align:center}
+.site-preview #ra-artist-hero[data-hero-alignment="end"] {text-align:end}
+.site-preview #ra-artist-hero[data-hero-alignment="justify"] :is(.lead,.rich209-thesis) {text-align:justify}
+.site-preview #ra-artist-hero .lead {
+  inline-size:100%;
+  max-width:none!important;
+}
+.site-preview #section-biographie {
+  position:relative;
+  isolation:isolate;
+  box-sizing:border-box;
+  margin:clamp(24px,4vw,40px) 0 0;
+  padding:clamp(22px,3vw,34px) 0;
+  border-bottom:0;
+}
+.site-preview #section-biographie::before {
+  content:"";
+  position:absolute;
+  inset:0 calc(-1 * var(--biography-sheet-edge));
+  z-index:-1;
+  pointer-events:none;
+  border:1px solid #2f241517;
+  border-radius:2px;
+  background:linear-gradient(160deg,#fffdf8,#faf7ee);
+  background:linear-gradient(160deg,color-mix(in srgb,var(--paper,#f4f0e7) 19%,#fffdf8),color-mix(in srgb,var(--paper,#f4f0e7) 36%,#fffdf8));
+  box-shadow:0 1px 2px #372c1a0d,0 5px 13px #372c1a0f;
+}
+.preview-viewport[data-preview-device="mobile"] .site-preview:has(#section-biographie) {
+  --biography-gutter:20px;
+  --biography-sheet-edge:10px;
+}
+@media(max-width:680px) {
+  .site-preview:has(#section-biographie) {
+    --biography-gutter:20px;
+    --biography-sheet-edge:10px;
+  }
+}
+.site-preview #section-biographie h2 {
+  margin:0 0 14px!important;
+  font:normal clamp(24px,3vw,32px)/1.2 Georgia,serif!important;
+}
+.site-preview #section-biographie h2::before {
+  content:"";
+  display:block;
+  width:36px;
+  height:2px;
+  margin-bottom:12px;
+  background:var(--understand-accent,#94613d);
+}
+.site-preview #section-biographie .artist-bio-copy p {
+  margin:0!important;
+  line-height:1.7;
+  text-align:start!important;
+  hyphens:manual!important;
+}
+.site-preview #section-biographie .artist-bio-copy p+p {margin-block-start:.75em!important}
+
+.site-preview .site-art[data-work-layout]>figure>img,
+.site-preview .site-art[data-work-layout]>figure>.artwork-image>img,
+.site-preview .site-art[data-work-layout]>figure :is(.ra-trace-stage,.ra-guide-stage)>img {
+  display:block!important;
+  width:auto!important;
+  height:auto!important;
+  max-width:100%!important;
+  max-height:min(450px,53vh)!important;
+  object-fit:contain!important;
+}
+.site-preview .site-art:is([data-work-layout="stacked"],[data-work-layout="text-top"]) {
+  grid-template-columns:minmax(0,1fr)!important;
+  align-items:start!important;
+}
+.site-preview .site-art:is([data-work-layout="stacked"],[data-work-layout="text-top"])>figure {
+  width:min(100%,700px);
+  min-width:0;
+  justify-self:center;
+  text-align:center;
+}
+.site-preview .site-art:is([data-work-layout="stacked"],[data-work-layout="text-top"])>figure img {
+  max-height:min(490px,56vh)!important;
+  margin-inline:auto!important;
+}
+.site-preview .site-art[data-work-layout="text-top"]>.site-notes {order:-1!important}
+.site-preview .site-art[data-work-layout="text-top"]>figure {order:0!important}
+.preview-viewport[data-preview-device="mobile"] .site-preview .site-art[data-work-layout]>figure img {
+  max-height:min(340px,48vh)!important;
+}
+@media(max-width:680px){
+  .site-preview .site-art[data-work-layout]>figure img {max-height:min(340px,48vh)!important}
+}
+.site-preview .site-art[data-work-layout]>figure .ra-guide-stage {
+  display:inline-block;
+  width:auto;
+  container-type:normal;
+}
+.site-preview .site-art[data-work-layout]>figure .ra-guide-stage>img {
+  width:auto!important;
+}
+
+
+/* Image au-dessus du texte : cadre centré et photographie entière. */
+.site-preview .site-art[data-work-layout="stacked"]>figure {
+ --stacked-artwork-height: min(700px, 76vh);
+ justify-self: center!important;
+ text-align: center!important;
+}
+.site-preview .site-art[data-work-layout="stacked"]>figure>.artwork-image {
+ max-width: min(100%, 900px);
+}
+.site-preview .site-art[data-work-layout="stacked"]>figure :is(.ra-trace-stage,.ra-guide-stage) {
+ display: inline-block!important;
+ width: auto!important;
+ container-type: normal;
+}
+.site-preview .site-art[data-work-layout="stacked"]>figure :is(img.zoomable, .ra-trace-stage>img, .ra-guide-stage>img) {
+ width: auto!important;
+ max-width: min(100%, 900px)!important;
+ max-height: var(--stacked-artwork-height)!important;
+ margin-inline: auto!important;
+ object-position: center!important;
+}
+.site-preview .site-art[data-work-layout="stacked"]>figure .ra-trace-controls {
+ justify-content: center;
+}
+@media (max-width: 760px) {
+ .site-preview .site-art[data-work-layout="stacked"]>figure {
+  --stacked-artwork-height: min(340px, 48vh);
+ }
+}
+.preview-viewport[data-preview-device="mobile"] .site-preview .site-art[data-work-layout="stacked"]>figure {
+ --stacked-artwork-height: min(340px, 48vh);
+}
+.site-preview .artwork-image{display:inline-block;position:relative;max-width:100%;line-height:0;vertical-align:top}
+.site-preview .artwork-image>img{display:block;max-width:100%}
+.site-preview .artwork-zoom-button{
+ position:absolute;z-index:3;right:8px;bottom:8px;display:grid;place-items:center;
+ width:36px;height:36px;padding:0;border:1px solid rgba(255,255,255,.65);border-radius:5px;
+ background:rgba(18,27,42,.82);color:#fff;font:24px/1 Arial,sans-serif;cursor:zoom-in;
+}
+.site-preview .artwork-zoom-button:hover,.site-preview .artwork-zoom-button:focus-visible{background:#121b2a}
+.site-preview .artwork-zoom-button:focus-visible{outline:2px solid #fff;outline-offset:2px}
+.site-preview .artwork-zoom-button::after{
+ content:attr(aria-label);display:none;position:absolute;right:0;bottom:calc(100% + 6px);
+ padding:5px 8px;border-radius:4px;background:#121b2a;color:#fff;
+ font:12px/1.4 Tahoma,Arial,sans-serif;white-space:nowrap;pointer-events:none;
+}
+.site-preview .artwork-zoom-button:focus-visible::after{display:block}
+@media (hover:hover){.site-preview .artwork-zoom-button:hover::after{display:block}}
+@media (pointer:coarse){.site-preview .artwork-zoom-button{width:44px;height:44px}}
+.preview-viewport[data-preview-device="mobile"] .site-preview .artwork-zoom-button{width:44px;height:44px}
+
+@media (min-width:761px){
+ :is(body,.preview-viewport:not([data-preview-device="mobile"]))>.site-preview .site-art:is([data-work-layout="masaccio-two-columns"],[data-work-layout="image-right"]){
+  column-gap:24px;
+ }
+ :is(body,.preview-viewport:not([data-preview-device="mobile"]))>.site-preview .site-art:is([data-work-layout="masaccio-two-columns"],[data-work-layout="image-right"])>figure{
+  align-self:center!important;
+  width:100%;
+  min-width:0;
+  text-align:center!important;
+ }
+ :is(body,.preview-viewport:not([data-preview-device="mobile"]))>.site-preview .site-art:is([data-work-layout="masaccio-two-columns"],[data-work-layout="image-right"])>figure :is(.artwork-image,.ra-trace-stage,.ra-guide-stage){
+  display:inline-block!important;
+  width:auto!important;
+  vertical-align:top;
+ }
+ :is(body,.preview-viewport:not([data-preview-device="mobile"]))>.site-preview .site-art:is([data-work-layout="masaccio-two-columns"],[data-work-layout="image-right"])>figure img.zoomable{
+  width:auto!important;
+  max-width:100%!important;
+  height:auto!important;
+  max-height:min(680px,75vh)!important;
+ }
+}
+/* La photo fixe la largeur de la légende, indépendamment du crédit. */
+.site-preview .site-art:is([data-work-layout="masaccio-two-columns"],[data-work-layout="image-right"])>figure:has(>.artwork-image) {
+ display:grid;
+ grid-template-columns:minmax(0,1fr) minmax(0,max-content) minmax(0,1fr);
+ width:100%;
+ min-width:0;
+}
+.site-preview .site-art:is([data-work-layout="masaccio-two-columns"],[data-work-layout="image-right"])>figure:has(>.artwork-image)>* {
+ grid-column:1/-1;
+ min-width:0;
+}
+.site-preview .site-art:is([data-work-layout="masaccio-two-columns"],[data-work-layout="image-right"])>figure:has(>.artwork-image)>:is(.artwork-image,figcaption) {
+ grid-column:2;
+}
+.site-preview .site-art:is([data-work-layout="masaccio-two-columns"],[data-work-layout="image-right"])>figure>.artwork-image {
+ grid-row:1;
+}
+.site-preview .site-art:is([data-work-layout="masaccio-two-columns"],[data-work-layout="image-right"])>figure:has(>.artwork-image)>figcaption {
+ grid-row:2;
+ contain:inline-size;
+ text-align:center;
+ overflow-wrap:anywhere;
+}
+@media (max-width:760px){
+ .site-preview .site-art:is([data-work-layout="masaccio-two-columns"],[data-work-layout="image-right"]){grid-template-columns:minmax(0,1fr)!important}
+ .site-preview .site-art[data-work-layout="image-right"]>:is(figure,.site-notes){order:initial!important}
+ .site-preview .site-art[data-work-layout]>figure :is(.ra-trace-stage,.ra-guide-stage){display:inline-block!important;width:auto!important;max-width:100%}
+ .site-preview .site-art[data-work-layout]>figure img.zoomable{width:auto!important;max-width:100%!important;height:auto!important;max-height:min(340px,48vh)!important}
+}
+.preview-viewport[data-preview-device="mobile"] .site-preview .site-art[data-work-layout]{grid-template-columns:minmax(0,1fr)!important}
+.preview-viewport[data-preview-device="mobile"] .site-preview .site-art[data-work-layout="image-right"]>figure,
+.preview-viewport[data-preview-device="mobile"] .site-preview .site-art[data-work-layout="image-right"]>.site-notes{order:initial!important}
+.preview-viewport[data-preview-device="mobile"] .site-preview .site-art[data-work-layout]>figure :is(.ra-trace-stage,.ra-guide-stage){display:inline-block!important;width:auto!important;max-width:100%}
+.preview-viewport[data-preview-device="mobile"] .site-preview .site-art[data-work-layout]>figure img.zoomable{width:auto!important;max-width:100%!important;height:auto!important;max-height:min(340px,48vh)!important}
+
 /* Atelier V20.6.5: layout and quiz photographs */
 .site-preview .site-inner{max-width:1100px;padding-left:32px;padding-right:32px}
 .site-preview .site-hero,
@@ -179,42 +496,102 @@
 .preview-viewport[data-preview-device="mobile"] .site-preview .ra-quiz-images figure{flex-basis:calc((100% - 12px)/2);max-width:calc((100% - 12px)/2)}
 .preview-viewport[data-preview-device="mobile"] .site-preview .ra-quiz-images img{height:164px}
 
-/* V20.7.8 : portrait distinct du texte sur mobile uniquement. */
 @media(max-width:680px){
-.site-preview[data-portrait-style="fade"] .site-hero:has(>img){display:grid!important;grid-template-columns:minmax(0,1fr) 100px!important;grid-template-rows:auto auto auto auto!important;column-gap:14px!important;row-gap:8px!important;align-items:center!important;min-height:0!important}
-.site-preview[data-portrait-style="fade"] .site-hero:has(>img) >div:first-child{display:contents!important}
-.site-preview[data-portrait-style="fade"] .site-hero:has(>img) >div:first-child>.eyebrow{grid-column:1/-1!important;grid-row:1!important;min-width:0!important}
-.site-preview[data-portrait-style="fade"] .site-hero:has(>img) >div:first-child>h1{grid-column:1!important;grid-row:2!important;min-width:0!important;max-width:100%!important;overflow-wrap:break-word!important;margin:0!important}
-.site-preview[data-portrait-style="fade"] .site-hero:has(>img) >div:first-child>.dates{grid-column:1!important;grid-row:3!important;margin:0!important;min-width:0!important}
-.site-preview[data-portrait-style="fade"] .site-hero:has(>img) >div:first-child>.lead{grid-column:1/-1!important;grid-row:4!important;width:100%!important;max-width:100%!important;min-width:0!important;margin:12px 0 0!important}
-.site-preview[data-portrait-style="fade"] .site-hero:has(>img) >img{position:static!important;grid-column:2!important;grid-row:2/4!important;align-self:center!important;justify-self:end!important;inset:auto!important;transform:none!important;width:100px!important;max-width:100%!important;height:auto!important;max-height:145px!important;opacity:1!important;-webkit-mask-image:none!important;mask-image:none!important;pointer-events:none!important}
-.site-preview[data-portrait-style="fade"] .site-hero:has(>img)>div:first-child>p:not(.dates){grid-column:1/-1!important;grid-row:auto!important;width:100%!important;max-width:100%!important;min-width:0!important;margin:12px 0 0!important}
-.site-preview[data-portrait-style="fade"] .site-hero:has(>img)>div:first-child>p:empty{display:none!important}
+.site-preview:not(.preview-viewport .site-preview) .site-hero[data-hero-alignment]{display:grid!important;grid-template-columns:minmax(0,1fr)!important;grid-template-rows:auto auto auto auto;column-gap:14px!important;row-gap:8px!important;align-items:center!important;min-height:0!important}
+.site-preview:not(.preview-viewport .site-preview) .site-hero[data-hero-alignment]:has(>img){grid-template-columns:minmax(0,1fr) 100px!important}
+.site-preview:not(.preview-viewport .site-preview) .site-hero[data-hero-alignment]>div:first-child{display:contents!important}
+.site-preview:not(.preview-viewport .site-preview) .site-hero[data-hero-alignment]>div:first-child>.eyebrow{grid-column:1/-1;grid-row:1}
+.site-preview:not(.preview-viewport .site-preview) .site-hero[data-hero-alignment]>div:first-child>h1{grid-column:1;grid-row:2;min-width:0;overflow-wrap:anywhere;margin:0}
+.site-preview:not(.preview-viewport .site-preview) .site-hero[data-hero-alignment]>div:first-child>.dates{grid-column:1;grid-row:3;min-width:0;margin:0}
+.site-preview:not(.preview-viewport .site-preview) .site-hero[data-hero-alignment]>div:first-child>.site-hero-editorial{grid-column:1/-1;grid-row:4;min-width:0;margin-top:6px;overflow-wrap:anywhere}
+.site-preview:not(.preview-viewport .site-preview) .site-hero[data-hero-alignment]>div:first-child .rich209-thesis{font-size:16px;line-height:1.5}
+.site-preview:not(.preview-viewport .site-preview) .site-hero[data-hero-alignment]:has(>img)>img{position:static!important;grid-column:2;grid-row:2/4;align-self:center;justify-self:end;inset:auto!important;transform:none!important;width:100px!important;max-width:100%!important;height:auto!important;max-height:145px!important;opacity:1!important;-webkit-mask-image:none!important;mask-image:none!important}
 }
-.preview-viewport[data-preview-device="mobile"] .site-preview[data-portrait-style="fade"] .site-hero:has(>img){display:grid!important;grid-template-columns:minmax(0,1fr) 100px!important;grid-template-rows:auto auto auto auto!important;column-gap:14px!important;row-gap:8px!important;align-items:center!important;min-height:0!important}
-.preview-viewport[data-preview-device="mobile"] .site-preview[data-portrait-style="fade"] .site-hero:has(>img) >div:first-child{display:contents!important}
-.preview-viewport[data-preview-device="mobile"] .site-preview[data-portrait-style="fade"] .site-hero:has(>img) >div:first-child>.eyebrow{grid-column:1/-1!important;grid-row:1!important;min-width:0!important}
-.preview-viewport[data-preview-device="mobile"] .site-preview[data-portrait-style="fade"] .site-hero:has(>img) >div:first-child>h1{grid-column:1!important;grid-row:2!important;min-width:0!important;max-width:100%!important;overflow-wrap:break-word!important;margin:0!important}
-.preview-viewport[data-preview-device="mobile"] .site-preview[data-portrait-style="fade"] .site-hero:has(>img) >div:first-child>.dates{grid-column:1!important;grid-row:3!important;margin:0!important;min-width:0!important}
-.preview-viewport[data-preview-device="mobile"] .site-preview[data-portrait-style="fade"] .site-hero:has(>img) >div:first-child>.lead{grid-column:1/-1!important;grid-row:4!important;width:100%!important;max-width:100%!important;min-width:0!important;margin:12px 0 0!important}
-.preview-viewport[data-preview-device="mobile"] .site-preview[data-portrait-style="fade"] .site-hero:has(>img) >img{position:static!important;grid-column:2!important;grid-row:2/4!important;align-self:center!important;justify-self:end!important;inset:auto!important;transform:none!important;width:100px!important;max-width:100%!important;height:auto!important;max-height:145px!important;opacity:1!important;-webkit-mask-image:none!important;mask-image:none!important;pointer-events:none!important}
-.preview-viewport[data-preview-device="mobile"] .site-preview[data-portrait-style="fade"] .site-hero:has(>img)>div:first-child>p:not(.dates){grid-column:1/-1!important;grid-row:auto!important;width:100%!important;max-width:100%!important;min-width:0!important;margin:12px 0 0!important}
-.preview-viewport[data-preview-device="mobile"] .site-preview[data-portrait-style="fade"] .site-hero:has(>img)>div:first-child>p:empty{display:none!important}
+.preview-viewport[data-preview-device="mobile"] .site-preview .site-hero[data-hero-alignment]{display:grid!important;grid-template-columns:minmax(0,1fr)!important;grid-template-rows:auto auto auto auto;column-gap:14px!important;row-gap:8px!important;align-items:center!important;min-height:0!important}
+.preview-viewport[data-preview-device="mobile"] .site-preview .site-hero[data-hero-alignment]:has(>img){grid-template-columns:minmax(0,1fr) 100px!important}
+.preview-viewport[data-preview-device="mobile"] .site-preview .site-hero[data-hero-alignment]>div:first-child{display:contents!important}
+.preview-viewport[data-preview-device="mobile"] .site-preview .site-hero[data-hero-alignment]>div:first-child>.eyebrow{grid-column:1/-1;grid-row:1}
+.preview-viewport[data-preview-device="mobile"] .site-preview .site-hero[data-hero-alignment]>div:first-child>h1{grid-column:1;grid-row:2;min-width:0;overflow-wrap:anywhere;margin:0}
+.preview-viewport[data-preview-device="mobile"] .site-preview .site-hero[data-hero-alignment]>div:first-child>.dates{grid-column:1;grid-row:3;min-width:0;margin:0}
+.preview-viewport[data-preview-device="mobile"] .site-preview .site-hero[data-hero-alignment]>div:first-child>.site-hero-editorial{grid-column:1/-1;grid-row:4;min-width:0;margin-top:6px;overflow-wrap:anywhere}
+.preview-viewport[data-preview-device="mobile"] .site-preview .site-hero[data-hero-alignment]>div:first-child .rich209-thesis{font-size:16px;line-height:1.5}
+.preview-viewport[data-preview-device="mobile"] .site-preview .site-hero[data-hero-alignment]:has(>img)>img{position:static!important;grid-column:2;grid-row:2/4;align-self:center;justify-self:end;inset:auto!important;transform:none!important;width:100px!important;max-width:100%!important;height:auto!important;max-height:145px!important;opacity:1!important;-webkit-mask-image:none!important;mask-image:none!important}
 
-.site-preview .site-compare:not(.quiz-works){display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:36px!important;align-items:start!important}
-.site-preview .site-compare:not(.quiz-works)>figure{width:min(100%,var(--comparison-width,100%))!important;min-width:0!important;justify-self:center!important;margin:0 auto!important;display:grid!important;grid-template-rows:437.5px auto!important;text-align:left!important}
-.site-preview .site-compare:not(.quiz-works)>figure>img{display:block!important;width:100%!important;height:437.5px!important;max-height:none!important;object-fit:contain!important;object-position:center top!important;margin:0 auto!important}
-.site-preview .site-compare figcaption{width:100%;box-sizing:border-box;line-height:1.6;padding-top:12px!important}
-.site-preview .site-compare figcaption p{text-align:justify!important;hyphens:auto;overflow-wrap:break-word;font-size:14px;line-height:1.75;margin-top:12px!important}
-.site-preview .ra-quiz-images{display:grid!important;grid-template-columns:repeat(2,minmax(0,489.99999999999994px))!important;justify-content:center!important;gap:16px!important;align-items:start!important}
-.site-preview .ra-quiz-images figure{width:100%!important;min-width:0!important;max-width:489.99999999999994px!important;justify-self:center!important}
-.site-preview .ra-quiz-images img{height:461.99999999999994px!important;object-fit:contain!important;object-position:center center!important}
-.site-preview .quiz-works img{height:461.99999999999994px!important;object-position:center!important}
+
+.site-preview .site-compare{--paired-image-height:437.5px;display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:clamp(12px,4vw,36px);row-gap:20px;align-items:start}
+.site-preview :is(.ra-quiz-images,.quiz-works){--paired-image-height:461.99999999999994px}
+.site-preview .ra-quiz-images{display:grid!important;grid-template-columns:repeat(2,minmax(0,489.99999999999994px))!important;justify-content:center;column-gap:16px;row-gap:20px;align-items:start}
+.site-preview :is(.site-compare,.ra-quiz-images)>figure,
+.site-preview .rich209-comparison>.rich209-column>.rich209-photo{
+ display:grid!important;
+ grid-template-columns:minmax(0,1fr);
+ row-gap:6px;
+ width:100%!important;
+ max-width:100%!important;
+ min-width:0;
+ justify-self:center!important;
+ margin-inline:0!important;
+}
+.site-preview :is(.site-compare,.ra-quiz-images)>figure{margin-block:0!important}
+.site-preview :is(.site-compare,.ra-quiz-images)>figure>img,
+.site-preview .rich209-comparison>.rich209-column>.rich209-photo>img{
+ grid-row:1;
+ display:block!important;
+ box-sizing:border-box;
+ width:100%!important;
+ height:auto!important;
+ aspect-ratio:5 / 4;
+ max-width:100%!important;
+ max-height:var(--paired-image-height,540px)!important;
+ margin:0!important;
+ object-fit:contain!important;
+ object-position:center!important;
+ padding:var(--paired-mat,10px);
+ background:#171614;
+ border-radius:2px;
+}
+.site-preview :is(.site-compare,.ra-quiz-images)>figure>figcaption,
+.site-preview .rich209-comparison>.rich209-column>.rich209-photo>figcaption{
+ grid-row:2;
+ min-width:0;
+ overflow-wrap:anywhere;
+ text-align:center;
+ line-height:1.45;
+ margin:0!important;
+ padding:0!important;
+}
+.site-preview :is(.site-compare,.ra-quiz-images)>figure>figcaption:empty{display:none}
+.site-preview .site-compare figcaption p{text-align:justify!important;hyphens:auto;overflow-wrap:break-word;font-size:14px;line-height:1.75;margin-top:8px!important}
+/* Dans une comparaison détaillée, les titres peuvent avoir des hauteurs différentes. */
+@supports (grid-template-rows:subgrid){
+ @media(min-width:701px){
+  :is(body,.preview-viewport:not([data-preview-device="mobile"]))>.site-preview .rich209-comparison>.rich209-column{
+   display:grid;
+   grid-template-rows:subgrid;
+   grid-row:span 4;
+   row-gap:0;
+   align-self:stretch;
+  }
+  :is(body,.preview-viewport:not([data-preview-device="mobile"]))>.site-preview .rich209-comparison>.rich209-column>.rich209-photo{grid-row:2}
+  :is(body,.preview-viewport:not([data-preview-device="mobile"]))>.site-preview .rich209-comparison>.rich209-column>.rich209-details{grid-row:3}
+  :is(body,.preview-viewport:not([data-preview-device="mobile"]))>.site-preview .rich209-comparison>.rich209-column>.rich209-note{grid-row:4}
+ }
+}
 .site-preview[data-wallpaper]:not([data-wallpaper="none"]){padding:32px;box-sizing:border-box;background-repeat:repeat!important;background-size:var(--wallpaper-size)!important}
 .site-preview[data-wallpaper]:not([data-wallpaper="none"]) .site-inner{background:var(--reading-paper);box-shadow:0 8px 32px #1b21181c}
 .site-preview[data-wallpaper]:not([data-wallpaper="none"]) .site-hero{max-width:1100px;margin:0 auto;box-sizing:border-box}
-@media(max-width:680px){.site-preview .site-compare:not(.quiz-works){grid-template-columns:1fr!important;gap:28px!important}.site-preview .site-compare:not(.quiz-works)>figure{max-width:100%!important;grid-template-rows:auto auto!important}.site-preview .site-compare:not(.quiz-works)>figure>img{height:auto!important;max-height:560px!important}.site-preview .ra-quiz-images{grid-template-columns:repeat(2,minmax(0,1fr))!important}.site-preview .ra-quiz-images figure{max-width:100%!important}.site-preview .ra-quiz-images img{height:210px!important}.site-preview[data-wallpaper]:not([data-wallpaper="none"]){padding:12px!important}}
-.preview-viewport[data-preview-device="mobile"] .site-preview .site-compare:not(.quiz-works){grid-template-columns:1fr!important;gap:28px!important}.preview-viewport[data-preview-device="mobile"] .site-preview .site-compare:not(.quiz-works)>figure{max-width:100%!important;grid-template-rows:auto auto!important}.preview-viewport[data-preview-device="mobile"] .site-preview .site-compare:not(.quiz-works)>figure>img{height:auto!important;max-height:560px!important}.preview-viewport[data-preview-device="mobile"] .site-preview .ra-quiz-images{grid-template-columns:repeat(2,minmax(0,1fr))!important}.preview-viewport[data-preview-device="mobile"] .site-preview .ra-quiz-images figure{max-width:100%!important}.preview-viewport[data-preview-device="mobile"] .site-preview .ra-quiz-images img{height:210px!important}.preview-viewport[data-preview-device="mobile"] .site-preview[data-wallpaper]:not([data-wallpaper="none"]){padding:12px!important}
+@media(max-width:680px){
+.site-preview .site-compare:not(.quiz-works){grid-template-columns:minmax(0,1fr)!important;row-gap:28px}
+.site-preview :is(.ra-quiz-images,.quiz-works){--paired-image-height:210px;grid-template-columns:repeat(2,minmax(0,1fr))!important}
+.site-preview :is(.site-compare,.ra-quiz-images,.rich209-comparison){--paired-mat:6px}
+.site-preview[data-wallpaper]:not([data-wallpaper="none"]){padding:12px!important}
+}
+
+.preview-viewport[data-preview-device="mobile"] .site-preview .site-compare:not(.quiz-works){grid-template-columns:minmax(0,1fr)!important;row-gap:28px}
+.preview-viewport[data-preview-device="mobile"] .site-preview :is(.ra-quiz-images,.quiz-works){--paired-image-height:210px;grid-template-columns:repeat(2,minmax(0,1fr))!important}
+.preview-viewport[data-preview-device="mobile"] .site-preview :is(.site-compare,.ra-quiz-images,.rich209-comparison){--paired-mat:6px}
+.preview-viewport[data-preview-device="mobile"] .site-preview[data-wallpaper]:not([data-wallpaper="none"]){padding:12px!important}
+
 .wallpaper-choices{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin:14px 0}.wallpaper-choice{padding:0;background:#fff;color:#173b65;border:2px solid #d4c9b7;overflow:hidden;text-align:left}.wallpaper-choice[aria-pressed="true"]{border-color:#a8751b;box-shadow:0 0 0 2px #a8751b}.wallpaper-choice span{display:block;padding:10px;font-size:12px}.wallpaper-choice i{display:block;height:88px;background-size:100px}
 .site-preview[data-wallpaper="damas"],.wallpaper-choice[data-wallpaper-choice="damas"] i{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22180%22%20height%3D%22180%22%20viewBox%3D%220%200%20180%20180%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23183647%22%2F%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23bf9b52%22%20stroke-width%3D%221.6%22%3E%3Cpath%20d%3D%22M90%2012C62%2039%2051%2055%2068%2070C41%2066%2035%2089%2055%20101C69%20107%2082%2097%2090%2086C98%2097%20111%20107%20125%20101C145%2089%20139%2066%20112%2070C129%2055%20118%2039%2090%2012ZM90%2086V156M65%20135Q90%20113%20115%20135M90%20156Q47%20142%2028%20116M90%20156Q133%20142%20152%20116%22%2F%3E%3Cpath%20d%3D%22M0%200L90%20180L180%200M0%20180L90%200L180%20180%22%20opacity%3D%22.18%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E")!important}.site-preview[data-wallpaper="studiolo"],.wallpaper-choice[data-wallpaper-choice="studiolo"] i{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22160%22%20height%3D%22160%22%20viewBox%3D%220%200%20160%20160%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23493223%22%2F%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23d3b47c%22%20stroke-width%3D%221.6%22%3E%3Cpath%20d%3D%22M0%2040L80%200L160%2040V120L80%20160L0%20120ZM0%2040L80%2080L160%2040M80%2080V160M40%2020L120%2060V140M120%2020L40%2060V140%22%2F%3E%3Cpath%20d%3D%22M0%2040V120L40%20140V60ZM80%2080L120%2060V140L80%20160Z%22%20fill%3D%22%23ba8750%22%20stroke%3D%22none%22%20opacity%3D%22.45%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E")!important}.site-preview[data-wallpaper="marbre"],.wallpaper-choice[data-wallpaper-choice="marbre"] i{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22340%22%20height%3D%22340%22%20viewBox%3D%220%200%20340%20340%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23e4dfd3%22%2F%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%239d9f98%22%20stroke-width%3D%221.6%22%3E%3Cpath%20d%3D%22M-20%20275C110%20180%2030%20110%20190%2050S270-40%20370-80M30%20370C180%20290%20120%20200%20280%20165S275%2075%20380%2035%22%20stroke-width%3D%223%22%20opacity%3D%22.6%22%2F%3E%3Cpath%20d%3D%22M-20%20280C110%20185%2035%20113%20195%2056S274-35%20375-75M80%20370C160%20280%20200%20250%20350%20225M110%20150L40%20105L-20%2085M230%20175L210%20250L235%20340%22%20stroke-width%3D%221%22%20opacity%3D%22.55%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E")!important}.site-preview[data-wallpaper="fresque"],.wallpaper-choice[data-wallpaper-choice="fresque"] i{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22260%22%20height%3D%22260%22%20viewBox%3D%220%200%20260%20260%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23c08d65%22%2F%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23f3dfb6%22%20stroke-width%3D%221.6%22%3E%3Cpath%20d%3D%22M0%2032Q65%208%20130%2032T260%2032M0%20220Q65%20196%20130%20220T260%20220%22%20opacity%3D%22.4%22%2F%3E%3Cpath%20d%3D%22M32%2070Q130%200%20228%2070V190Q130%20260%2032%20190Z%22%20opacity%3D%22.3%22%2F%3E%3Cpath%20d%3D%22M0%20120L55%20100L64%20135L110%20145L98%20185M260%2077L219%2090L205%2063L159%2070M130%200L125%2025L146%2042%22%20opacity%3D%22.28%22%2F%3E%3Ccircle%20cx%3D%22130%22%20cy%3D%22130%22%20r%3D%2240%22%20opacity%3D%22.2%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E")!important}.site-preview[data-wallpaper="grotesques"],.wallpaper-choice[data-wallpaper-choice="grotesques"] i{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22240%22%20height%3D%22240%22%20viewBox%3D%220%200%20240%20240%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23efe5ce%22%2F%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%2364745b%22%20stroke-width%3D%221.6%22%3E%3Cpath%20d%3D%22M120%2020V218M120%2072C45%2015%2045%20125%2099%20108C38%20145%2085%20181%20120%20150C155%20181%20202%20145%20141%20108C195%20125%20195%2015%20120%2072ZM98%20187H142L135%20218H105ZM103%2042Q120%2017%20137%2042L120%2058Z%22%2F%3E%3Cpath%20d%3D%22M72%2071Q102%2063%2099%20108M168%2071Q138%2063%20141%20108M93%20140Q120%20105%20147%20140%22%20stroke%3D%22%23b38a4a%22%2F%3E%3Ccircle%20cx%3D%22120%22%20cy%3D%2292%22%20r%3D%226%22%20fill%3D%22%23b38a4a%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E")!important}
 
@@ -255,7 +632,38 @@
 #annotation-preview-dialog{width:min(1080px,96vw);max-width:none;height:92vh;max-height:96vh;padding:0;border:0;border-radius:10px;background:#f8f8f6}#annotation-preview-dialog::backdrop{background:#102d4bbf}#annotation-preview-dialog iframe{display:block;width:100%;height:calc(100% - 44px);border:0}#annotation-preview-dialog>button{display:block;height:36px;margin:4px 12px 4px auto}
 @media(max-width:480px){.site-preview[data-portrait-style="classic"] #ra-artist-hero{grid-template-columns:minmax(0,1fr) 90px!important}.site-preview[data-portrait-style="classic"] #ra-artist-hero>img{width:90px!important;max-height:130px!important}}.preview-viewport[data-preview-device="mobile"] .site-preview[data-portrait-style="classic"] #ra-artist-hero{grid-template-columns:minmax(0,1fr) 90px!important}.preview-viewport[data-preview-device="mobile"] .site-preview[data-portrait-style="classic"] #ra-artist-hero>img{width:90px!important;max-height:130px!important}
 .site-preview[data-body-font],.site-preview[data-body-font] :is(p,li,figcaption,small,button,summary,label,input,textarea,select,h3){font-family:var(--reading-font,Tahoma,Arial,sans-serif)!important}#view .site-preview[data-site-font],#view .site-preview[data-site-font] :is(div,span,p,li,h1,h2,h3,h4,h5,h6,a,button,figcaption,small,strong,em){font-family:var(--preview-site-font)!important}
-.site-preview .recognize-copy .ra-recognize-body{font-weight:400!important;line-height:1.75}.site-preview .recognize-copy .ra-recognize-body p{font-weight:400!important;margin:0 0 10px!important}.site-preview .recognize-copy h3{font-weight:700!important}.site-preview .site-section.takeaway p{font-weight:400!important}
+
+.ra-trace-stage{display:inline-block;position:relative;max-width:100%;vertical-align:top;line-height:0}
+.site-preview .ra-trace-stage>img{display:block!important;margin:0!important;max-width:100%;width:auto;height:auto}
+.ra-trace-svg{position:absolute;inset:0;width:100%;height:100%;overflow:hidden;pointer-events:none}
+.ra-trace-stage [data-trace-layer][hidden]{display:none!important}
+.ra-trace-text-layer{position:absolute;inset:0;display:block;container-type:inline-size;pointer-events:none}
+.ra-trace-text{position:absolute;display:grid;place-items:center;overflow:hidden;border:1px solid currentColor;border-radius:3px;padding:min(1cqw,4px);text-align:center;font-size:clamp(8px,var(--trace-text-size),48px);line-height:1.2;white-space:pre-wrap;overflow-wrap:anywhere}
+.ra-trace-text-content{display:block;width:100%;max-height:100%;overflow:hidden}
+.ra-trace-text-content:empty::before{content:attr(data-placeholder)}
+.trace-drawing .ra-trace-text-layer{z-index:1}
+.trace-drawing>svg{z-index:2}
+.trace-drawing .ra-trace-text.is-selected{outline:2px dashed #ff00bc}
+.ra-trace-controls{display:flex;flex-wrap:wrap;justify-content:center;gap:7px;margin:14px 0;line-height:1.5}
+.ra-trace-controls button{background:#fff;color:#173b66;border:1px solid #aab6bd;border-radius:6px;padding:9px 12px;font:14px Tahoma,Arial,sans-serif;cursor:pointer}
+.ra-trace-controls button[aria-pressed=true]{background:#173b66;color:#fff}.ra-trace-output{font:15px/1.7 Tahoma,Arial,sans-serif;border-left:3px solid #ae8550;padding:10px 15px;margin-top:12px;text-align:left;color:#25282c}
+.ra-trace-output[hidden],.ra-trace-output:empty{display:none!important}.ra-trace-output p{margin:4px 0!important}.ra-trace-panel{margin-top:16px;padding:16px;border:1px solid #b7c8d5;background:#f0f5f8;border-radius:8px}
+#trace-dialog-2093{width: min(1280px,98vw);max-width:98vw;height:94vh;max-height:94vh;padding:0;border:0;border-radius:10px;background:#f3f5f8;color:#1e293b;font:14px Tahoma,Arial,sans-serif}
+#trace-dialog-2093::backdrop{background:#102336ba}.trace-editor-head{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;background:#173b66;color:#fff;gap:10px}.trace-editor-head h2{font-size:18px;margin:0;color:#fff}
+.trace-editor-grid{display:grid;grid-template-columns:290px minmax(0,1fr);height:calc(100% - 64px)}.trace-editor-side{overflow:auto;padding:16px;background:#fff}.trace-editor-side textarea{min-height:70px;font-size:14px}.trace-editor-side .toolbar{gap:5px}.trace-editor-side button{font-size:12px;padding:8px 10px}
+.trace-editor-main{overflow:auto;padding:14px;min-width:0}.trace-tools{display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin-bottom:12px}.trace-tools button[aria-pressed=true]{background:#9b6924;color:white}.trace-tools label{margin:0;display:inline-flex;gap:7px;align-items:center;font-size:13px}.trace-tools input{width:52px;height:34px;padding:3px}
+.trace-drawing-wrap{overflow:auto;height:min(62vh,640px);background:#dce3e8;border-radius:8px;padding:12px}
+.trace-drawing{position:relative;width:max-content;margin:auto;line-height:0;touch-action:none;user-select:none}
+.trace-zoom-controls{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin:0 0 10px}
+.trace-zoom-controls output{min-width:54px;text-align:center}
+.trace-drawing>svg:focus-visible{outline:2px solid #173b66;outline-offset:2px}
+.trace-tools button:disabled,.trace-zoom-controls button:disabled{opacity:.45}
+.trace-drawing>img{display:block;width:100%;height:auto;pointer-events:none}.trace-drawing>svg{position:absolute;inset:0;width:100%;height:100%;touch-action:none;cursor:crosshair;overflow:hidden}
+.trace-drawing svg g[data-shape]{pointer-events:stroke;cursor:move}.trace-drawing svg g[data-shape-kind="text"]>rect{pointer-events:all}.trace-drawing svg g[data-shape-kind=marker]{pointer-events:all}.trace-drawing svg g.trace-selected{filter:drop-shadow(0 0 3px #ff00bc)}
+.trace-image-status{line-height:1.6;margin:10px 0;color:#526475}.trace-coordinates{display:grid;grid-template-columns:1fr 1fr;gap:6px}.trace-coordinates label{margin-top:6px}.trace-coordinates input{padding:6px}.trace-editor-side .hint{font-size:12px}
+@media(max-width:760px){.trace-editor-grid{grid-template-columns:1fr;height:auto}.trace-editor-side{overflow:visible}.trace-editor-main{overflow:visible}.trace-drawing-wrap{height:52vh}.trace-editor-head{position:sticky;top:0;z-index:2}.trace-editor-side textarea{min-height:55px}}
+
+.site-preview .recognize-copy .ra-recognize-body{font-weight:400!important;line-height:1.75}.site-preview .recognize-copy .ra-recognize-body p{font-weight:400!important;margin:0 0 10px!important}.site-preview .recognize-copy h3{font-weight:700!important}.site-preview .site-section.takeaway p{}
 /* V19.18: bilingual discovery links, recognition and compact medallions */
 
 /* V19.17 — médaillons compacts et repères à deux colonnes, FR/EN */
@@ -301,30 +709,77 @@
 .ra-site-header .ra-languages a:hover{outline:2px solid #fff!important;outline-offset:2px!important}
 @media(max-width:850px){.ra-site-header .ra-nav{justify-content:center!important;padding:12px!important}.ra-site-header .ra-links{order:3!important;flex-basis:100%!important;gap:12px!important}.ra-site-header .ra-links a{font-size:12px!important}}
 
-body{margin:0;background:#faf9f4;font-family:Tahoma,Arial,sans-serif}.site-preview{border-radius:0;box-shadow:none}.site-inner{max-width:1100px}.ra-reveal-link{display:flex;align-items:center;gap:16px;border:0!important;background:transparent!important;box-shadow:none!important;padding:12px 0!important;text-decoration:none;color:#173c63}.ra-reveal-link img{width:70px;height:70px;object-fit:contain}.ra-reveal-copy{display:flex;flex-direction:column}.ra-reveal-copy small{margin-top:5px}</style><link rel="stylesheet" href="assets/artwork-viewer.css"><link rel="stylesheet" href="assets/css/medaillons-communs.css"><style>.site-preview .site-compare:not(.quiz-works){display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:36px!important;align-items:start!important}
-.site-preview .site-compare:not(.quiz-works)>figure{width:min(100%,var(--comparison-width,100%))!important;min-width:0!important;justify-self:center!important;margin:0 auto!important;display:grid!important;grid-template-rows:437.5px auto!important;text-align:left!important}
-.site-preview .site-compare:not(.quiz-works)>figure>img{display:block!important;width:100%!important;height:437.5px!important;max-height:none!important;object-fit:contain!important;object-position:center top!important;margin:0 auto!important}
-.site-preview .site-compare figcaption{width:100%;box-sizing:border-box;line-height:1.6;padding-top:12px!important}
-.site-preview .site-compare figcaption p{text-align:justify!important;hyphens:auto;overflow-wrap:break-word;font-size:14px;line-height:1.75;margin-top:12px!important}
-.site-preview .ra-quiz-images{display:grid!important;grid-template-columns:repeat(2,minmax(0,489.99999999999994px))!important;justify-content:center!important;gap:16px!important;align-items:start!important}
-.site-preview .ra-quiz-images figure{width:100%!important;min-width:0!important;max-width:489.99999999999994px!important;justify-self:center!important}
-.site-preview .ra-quiz-images img{height:461.99999999999994px!important;object-fit:contain!important;object-position:center center!important}
-.site-preview .quiz-works img{height:461.99999999999994px!important;object-position:center!important}
-.site-preview[data-wallpaper]:not([data-wallpaper="none"]){padding:32px;box-sizing:border-box;background-repeat:repeat!important;background-size:var(--wallpaper-size)!important}
-.site-preview[data-wallpaper]:not([data-wallpaper="none"]) .site-inner{background:var(--reading-paper);box-shadow:0 8px 32px #1b21181c}
-.site-preview[data-wallpaper]:not([data-wallpaper="none"]) .site-hero{max-width:1100px;margin:0 auto;box-sizing:border-box}
-@media(max-width:680px){.site-preview .site-compare:not(.quiz-works){grid-template-columns:1fr!important;gap:28px!important}.site-preview .site-compare:not(.quiz-works)>figure{max-width:100%!important;grid-template-rows:auto auto!important}.site-preview .site-compare:not(.quiz-works)>figure>img{height:auto!important;max-height:560px!important}.site-preview .ra-quiz-images{grid-template-columns:repeat(2,minmax(0,1fr))!important}.site-preview .ra-quiz-images figure{max-width:100%!important}.site-preview .ra-quiz-images img{height:210px!important}.site-preview[data-wallpaper]:not([data-wallpaper="none"]){padding:12px!important}}
-.preview-viewport[data-preview-device="mobile"] .site-preview .site-compare:not(.quiz-works){grid-template-columns:1fr!important;gap:28px!important}.preview-viewport[data-preview-device="mobile"] .site-preview .site-compare:not(.quiz-works)>figure{max-width:100%!important;grid-template-rows:auto auto!important}.preview-viewport[data-preview-device="mobile"] .site-preview .site-compare:not(.quiz-works)>figure>img{height:auto!important;max-height:560px!important}.preview-viewport[data-preview-device="mobile"] .site-preview .ra-quiz-images{grid-template-columns:repeat(2,minmax(0,1fr))!important}.preview-viewport[data-preview-device="mobile"] .site-preview .ra-quiz-images figure{max-width:100%!important}.preview-viewport[data-preview-device="mobile"] .site-preview .ra-quiz-images img{height:210px!important}.preview-viewport[data-preview-device="mobile"] .site-preview[data-wallpaper]:not([data-wallpaper="none"]){padding:12px!important}
-.wallpaper-choices{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin:14px 0}.wallpaper-choice{padding:0;background:#fff;color:#173b65;border:2px solid #d4c9b7;overflow:hidden;text-align:left}.wallpaper-choice[aria-pressed="true"]{border-color:#a8751b;box-shadow:0 0 0 2px #a8751b}.wallpaper-choice span{display:block;padding:10px;font-size:12px}.wallpaper-choice i{display:block;height:88px;background-size:100px}
-.site-preview[data-wallpaper="damas"],.wallpaper-choice[data-wallpaper-choice="damas"] i{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22180%22%20height%3D%22180%22%20viewBox%3D%220%200%20180%20180%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23183647%22%2F%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23bf9b52%22%20stroke-width%3D%221.6%22%3E%3Cpath%20d%3D%22M90%2012C62%2039%2051%2055%2068%2070C41%2066%2035%2089%2055%20101C69%20107%2082%2097%2090%2086C98%2097%20111%20107%20125%20101C145%2089%20139%2066%20112%2070C129%2055%20118%2039%2090%2012ZM90%2086V156M65%20135Q90%20113%20115%20135M90%20156Q47%20142%2028%20116M90%20156Q133%20142%20152%20116%22%2F%3E%3Cpath%20d%3D%22M0%200L90%20180L180%200M0%20180L90%200L180%20180%22%20opacity%3D%22.18%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E")!important}.site-preview[data-wallpaper="studiolo"],.wallpaper-choice[data-wallpaper-choice="studiolo"] i{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22160%22%20height%3D%22160%22%20viewBox%3D%220%200%20160%20160%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23493223%22%2F%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23d3b47c%22%20stroke-width%3D%221.6%22%3E%3Cpath%20d%3D%22M0%2040L80%200L160%2040V120L80%20160L0%20120ZM0%2040L80%2080L160%2040M80%2080V160M40%2020L120%2060V140M120%2020L40%2060V140%22%2F%3E%3Cpath%20d%3D%22M0%2040V120L40%20140V60ZM80%2080L120%2060V140L80%20160Z%22%20fill%3D%22%23ba8750%22%20stroke%3D%22none%22%20opacity%3D%22.45%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E")!important}.site-preview[data-wallpaper="marbre"],.wallpaper-choice[data-wallpaper-choice="marbre"] i{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22340%22%20height%3D%22340%22%20viewBox%3D%220%200%20340%20340%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23e4dfd3%22%2F%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%239d9f98%22%20stroke-width%3D%221.6%22%3E%3Cpath%20d%3D%22M-20%20275C110%20180%2030%20110%20190%2050S270-40%20370-80M30%20370C180%20290%20120%20200%20280%20165S275%2075%20380%2035%22%20stroke-width%3D%223%22%20opacity%3D%22.6%22%2F%3E%3Cpath%20d%3D%22M-20%20280C110%20185%2035%20113%20195%2056S274-35%20375-75M80%20370C160%20280%20200%20250%20350%20225M110%20150L40%20105L-20%2085M230%20175L210%20250L235%20340%22%20stroke-width%3D%221%22%20opacity%3D%22.55%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E")!important}.site-preview[data-wallpaper="fresque"],.wallpaper-choice[data-wallpaper-choice="fresque"] i{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22260%22%20height%3D%22260%22%20viewBox%3D%220%200%20260%20260%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23c08d65%22%2F%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23f3dfb6%22%20stroke-width%3D%221.6%22%3E%3Cpath%20d%3D%22M0%2032Q65%208%20130%2032T260%2032M0%20220Q65%20196%20130%20220T260%20220%22%20opacity%3D%22.4%22%2F%3E%3Cpath%20d%3D%22M32%2070Q130%200%20228%2070V190Q130%20260%2032%20190Z%22%20opacity%3D%22.3%22%2F%3E%3Cpath%20d%3D%22M0%20120L55%20100L64%20135L110%20145L98%20185M260%2077L219%2090L205%2063L159%2070M130%200L125%2025L146%2042%22%20opacity%3D%22.28%22%2F%3E%3Ccircle%20cx%3D%22130%22%20cy%3D%22130%22%20r%3D%2240%22%20opacity%3D%22.2%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E")!important}.site-preview[data-wallpaper="grotesques"],.wallpaper-choice[data-wallpaper-choice="grotesques"] i{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22240%22%20height%3D%22240%22%20viewBox%3D%220%200%20240%20240%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23efe5ce%22%2F%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%2364745b%22%20stroke-width%3D%221.6%22%3E%3Cpath%20d%3D%22M120%2020V218M120%2072C45%2015%2045%20125%2099%20108C38%20145%2085%20181%20120%20150C155%20181%20202%20145%20141%20108C195%20125%20195%2015%20120%2072ZM98%20187H142L135%20218H105ZM103%2042Q120%2017%20137%2042L120%2058Z%22%2F%3E%3Cpath%20d%3D%22M72%2071Q102%2063%2099%20108M168%2071Q138%2063%20141%20108M93%20140Q120%20105%20147%20140%22%20stroke%3D%22%23b38a4a%22%2F%3E%3Ccircle%20cx%3D%22120%22%20cy%3D%2292%22%20r%3D%226%22%20fill%3D%22%23b38a4a%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E")!important}</style><style id="ra-artist-navigation-harmonised">
-/* Shared navigation dimensions; exclude the separate artist introduction panel. */
-html body header.ra-site-header.ra-site-header{box-sizing:border-box!important;width:100%!important;max-width:none!important;margin:0!important;padding:0!important;border:0!important;min-height:0!important;height:auto!important;box-shadow:none!important}
-html body header.ra-site-header.ra-site-header .ra-nav{box-sizing:border-box!important;width:100%!important;max-width:1180px!important;min-height:72px!important;height:auto!important;margin:0 auto!important;padding:16px 28px!important;display:flex!important;align-items:center!important;justify-content:space-between!important;gap:22px!important;flex-wrap:nowrap!important}
-html body header.ra-site-header.ra-site-header .ra-brand{font:700 15px/1.3 Tahoma,Arial,sans-serif!important;letter-spacing:.07em!important;white-space:nowrap!important}
-html body header.ra-site-header.ra-site-header .ra-links{display:flex!important;flex:1!important;align-items:center!important;justify-content:center!important;gap:16px!important;flex-wrap:nowrap!important}
-html body header.ra-site-header.ra-site-header .ra-links a{font:400 12px/1.4 Tahoma,Arial,sans-serif!important;padding:5px 0!important;white-space:nowrap!important}
-html body header.ra-site-header.ra-site-header .ra-languages{display:flex!important;gap:6px!important;flex-shrink:0!important;margin-left:0!important}
-html body header.ra-site-header.ra-site-header .ra-languages a{box-sizing:border-box!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;width:32px!important;min-width:32px!important;height:32px!important;padding:0!important;border-radius:3px!important;font:700 11px/1 Tahoma,Arial,sans-serif!important}
-@media(max-width:1100px){html body header.ra-site-header.ra-site-header .ra-nav{flex-wrap:wrap!important;gap:14px!important}html body header.ra-site-header.ra-site-header .ra-links{order:3!important;flex-basis:100%!important;justify-content:flex-start!important;flex-wrap:wrap!important;gap:8px 20px!important}html body header.ra-site-header.ra-site-header .ra-languages{margin-left:auto!important}}
-@media(max-width:760px){html body header.ra-site-header.ra-site-header .ra-nav{padding:14px 20px!important}}
-</style></head><body><header class="ra-site-header"><nav aria-label="Navigation principale" class="ra-nav"><a class="ra-brand" href="index.html">REGARDER L’ART</a><div class="ra-links"><a href="parcours.html">Parcours</a><a href="artistes.html">Artistes</a><a href="regards-croises.html">Regards croisés</a><a href="lieux.html">Lieux &amp; musées</a><a href="ressources.html">Écouter &amp; regarder</a><a href="hors-parcours.html">Carnets de visites</a><a href="a-propos.html">À propos</a></div><div aria-label="Language / Langue" class="ra-languages"><a href="perugin.html" lang="fr" aria-current="page">FR</a><a href="en/perugin.html" lang="en">EN</a></div></nav></header><div class="site-preview" style="--main: #b4bbbb; --secondary: #d9753f; --paper: #FAF8F4; --understand-bg: #F4EAE6; --understand-accent: #AD655B; --heading-color: #d9753f; --hero-title-font: Georgia,&quot;Times New Roman&quot;,serif; --hero-title-color: #ffffff; --hero-title-size: 42px; --hero-intro-font: Tahoma,Arial,sans-serif; --hero-intro-color: #ffffff; --hero-intro-size: 17px; --wallpaper-size: 180px; --reading-paper: #FAF8F4f7; --reading-font: Tahoma,Arial,sans-serif;" data-banner="dark" data-layout="masaccio-two-columns" data-compact-hero="false" data-portrait-style="classic" data-wallpaper="none" lang="fr" data-body-font="Tahoma"><div class="site-hero" id="ra-artist-hero"><div><span class="eyebrow">REGARDER L’ART · LES ARTISTES</span><h1>Pietro Vannucci, dit Le Pérugin</h1><p class="dates">Vers 1450–1523</p><p class="lead"></p><p>Des gestes mesurés, des visages paisibles, des paysages qui respirent : chez Le Pérugin, tout semble trouver sa juste place.</p><p></p></div><img class="zoomable" data-zoom title="Cliquer pour agrandir" src="images/LePerugin/Pietro_Perugino_031.jpg" alt="Pietro Vannucci, dit Le Pérugin" loading="lazy"></div><div class="site-inner"><section class="site-section"><h2>En quelques mots</h2><p></p><p>Pietro Vannucci, dit Le Pérugin (vers 1450–1523), est un peintre italien originaire d’Ombrie. </p><p>À Florence, il évolue dans l’entourage de Verrocchio, à la même époque que Léonard de Vinci. Il devient ensuite l’un des peintres les plus recherchés de son temps et participe au décor de la chapelle Sixtine. </p><p>Ses compositions équilibrées, ses visages paisibles et ses paysages lumineux marquent profondément le jeune Raphaël.</p><p></p></section><section class="site-section" id="section-0"><span class="eyebrow">01 · UNE ŒUVRE À REGARDER</span><h2>Dans un monde en équilibre, un geste fonde une autorité</h2><div class="site-art" data-work-layout="stacked"><figure><img class="zoomable" data-zoom title="Cliquer pour agrandir" src="images/LePerugin/Entrega_de_las_llaves_a_San_Pedro_(Perugino).jpg" alt="La Remise des clés à saint Pierre" loading="lazy"><figcaption>Pietro Vannucci, dit Le Pérugin · La Remise des clés à saint Pierre<br><small>Erzalibillas — recadrage : Alonso de Mendoza · Domaine public — reproduction d’une œuvre du domaine public</small></figcaption></figure><div class="site-notes"><h3>À regarder</h3><p></p><p>Suivez les lignes du pavement : elles convergent vers la porte du temple central et creusent la profondeur de la place. De part et d’autre, deux arcs de triomphe équilibrent le décor. </p><p>Au premier plan, les personnages laissent un espace autour du Christ et de Pierre : le geste de la remise des clés reste parfaitement lisible. </p><p>Entre cette assemblée et le temple, de petites figures donnent l’échelle et font respirer la composition.</p><p></p><div class="understand"><h3>À comprendre</h3><p></p><p>Les clés symbolisent l’autorité spirituelle confiée par le Christ à Pierre. </p><p>Dans la chapelle du pape, considéré comme le successeur de Pierre, ce sujet affirme donc aussi la légitimité du pouvoir pontifical. </p><p>Le Pérugin rend cette transmission solennelle par une composition ordonnée et des gestes mesurés. </p><p>La perspective ne sert pas seulement à représenter la profondeur : elle donne à l’événement un cadre stable, monumental et harmonieux.</p><p></p></div><div class="site-medals"><a class="ra-reveal-link" id="medaillon-0" href="recit-perugin-id-1793105449351-2b2hx.html"><span><img src="images/icone-livre.png" alt=""></span><span class="ra-reveal-copy"><strong>Que se joue-t-il sous nos yeux ?</strong><small>Découvrir le récit →</small></span></a><a class="ra-reveal-link" id="medaillon-1" href="recit-perugin-id-1793105657879-079dv.html"><span><img src="images/icone-science.png" alt=""></span><span class="ra-reveal-copy"><strong>L’art à la loupe des sciences</strong><small>Réfléchissons →</small></span></a></div></div></div></section><section class="site-section" id="section-1"><span class="eyebrow">02 · UNE ŒUVRE À REGARDER</span><h2> Quand la douleur se fait silence</h2><div class="site-art" data-work-layout="masaccio-two-columns"><figure><img class="zoomable" data-zoom title="Cliquer pour agrandir" src="images/LePerugin/Pietro_Perugino_-_Pietà_-_WGA17278.jpg" alt="La Pietà" loading="lazy"><figcaption>Pietro Vannucci, dit Le Pérugin · La Pietà<br><small>Web Gallery of Art · Domaine public — reproduction d’une œuvre du domaine public</small></figcaption></figure><div class="site-notes"><h3>À regarder</h3><p></p><p>Observez le corps du Christ : sa pâleur et son abandon contrastent avec les personnages qui le soutiennent. À gauche, saint Jean soulève son buste ; à droite, Marie-Madeleine joint les mains, les joues marquées de larmes. Les regards se baissent vers lui. Derrière le groupe, les piliers et les voûtes conduisent l’œil vers un paysage lumineux.</p><p></p><div class="understand"><h3>À comprendre</h3><p></p><p>Le calme de la composition n’efface pas la douleur : il nous invite à nous y attarder. Le Pérugin exprime le deuil par les visages, les mains et le soin apporté au corps plutôt que par de grands mouvements. L’architecture ordonne la scène et rassemble les figures autour du Christ. La perspective, déjà essentielle dans La Remise des clés, sert ici une émotion intime.</p><p></p></div><div class="site-medals"><a class="ra-reveal-link" id="medaillon-2" href="recit-perugin-id-1793108762504-f30k6.html"><span><img src="images/icone-livre.png" alt=""></span><span class="ra-reveal-copy"><strong>Que se joue-t-il sous nos yeux ?</strong><small>Découvrir le récit →</small></span></a></div></div></div></section><section class="site-section" id="section-2"><span class="eyebrow">03 · UNE ŒUVRE À REGARDER</span><h2>Un instant de tendresse, un paysage sans fin</h2><div class="site-art" data-work-layout="masaccio-two-columns"><figure><img class="zoomable" data-zoom title="Cliquer pour agrandir" src="images/LePerugin/Perugino_virgin_child_with_an_angel_c_1499.jpg" alt="La Vierge à l’Enfant avec un ange" loading="lazy"><figcaption>Pietro Vannucci, dit Le Pérugin · La Vierge à l’Enfant avec un ange<br><small>Art Gallery ErgsArt · Domaine public — reproduction d’une œuvre du domaine public</small></figcaption></figure><div class="site-notes"><h3>À regarder</h3><p></p><p>Marie est agenouillée dans l’herbe devant l’Enfant, soutenu par un ange. Observez ses mains jointes, son visage incliné et la douceur des regards. </p><p>Derrière eux, une rivière serpente entre les collines. Les montagnes deviennent plus bleues et plus pâles à mesure qu’elles s’éloignent : le paysage semble se prolonger bien au-delà des figures.</p><p></p><div class="understand"><h3>À comprendre</h3><p></p><p>En plaçant Marie à même le sol, Le Pérugin souligne son humilité. La scène unit la tendresse envers un enfant et l’adoration du Christ. Les transitions délicates de la peinture à l’huile adoucissent les visages, tandis que les couleurs du paysage créent la profondeur. </p><p>L’harmonie naît ici de l’accord entre les gestes, la lumière et la nature.</p><p></p></div></div></div></section><section class="site-section" id="section-3"><span class="eyebrow">04 · POUR ALLER PLUS LOIN · COMPARER</span><h2>Le Mariage de la Vierge : du Pérugin à Raphaël - Un même mariage, deux façons d’habiter l’espace.</h2><div class="site-compare"><figure><img class="zoomable" data-zoom title="Cliquer pour agrandir" src="images/LePerugin/Pietro_Perugino_cat66.jpg" alt="Le Mariage de la Vierge" loading="lazy"><figcaption>Pietro Vannucci, dit Le Pérugin — Le Mariage de la Vierge<p></p><p>Les personnages forment une rangée au premier plan. Au centre, le prêtre unit les mains de Marie et de Joseph, dans l’axe de la porte du temple. Le pavement conduit le regard vers cet édifice monumental. L’organisation est frontale, solennelle : chaque figure trouve sa place dans un ensemble ordonné.</p><p></p></figcaption></figure><figure><img class="zoomable" data-zoom title="Cliquer pour agrandir" src="images/LePerugin/Raffaello_-_Spozalizio_-_Web_Gallery_of_Art.jpg" alt="Le Mariage de la Vierge" loading="lazy"><figcaption>Raphaël — Le Mariage de la Vierge<p></p><p>Le groupe s’incurve et les attitudes se diversifient. À droite, un prétendant se penche pour briser son bâton contre son genou : son mouvement anime le premier plan. Le temple, entouré d’un portique, paraît plus léger. Plus d’espace le sépare des personnages, et les petites silhouettes nous accompagnent dans la profondeur.</p><p></p></figcaption></figure></div><p></p><p></p><p></p><div class="site-notes"><h3>À regarder</h3><p></p><p>Cherchez celui qui brise son bâton dans chaque tableau. Chez Le Pérugin, il reste à gauche, en retrait ; chez Raphaël, il s’impose au premier plan à droite. Un détail semblable, mais une énergie différente.</p><p></p><div class="understand"><h3>À comprendre</h3><p></p><p>Les deux tableaux sont datés de 1504. Raphaël reprend un langage qu’il connaît bien : temple central, perspective et équilibre des figures. Mais il assouplit la disposition des personnages et renforce la continuité entre le groupe, la place et l’architecture. Chez Le Pérugin, nous admirons un ordre majestueux ; chez Raphaël, nous sentons davantage circuler l’espace et le mouvement.</p><p></p></div></div><div class="site-medals"><a class="ra-reveal-link" id="medaillon-3" href="recit-perugin-id-1793108878399-5srtg.html"><span><img src="images/icone-livre.png" alt=""></span><span class="ra-reveal-copy"><strong>Que se joue-t-il sous nos yeux ?</strong><small>Découvrir le récit →</small></span></a></div></section><section class="site-section"><h2>Comment reconnaître Pietro Vannucci, dit Le Pérugin ?</h2><div class="recognize-grid"><div class="recognize-item"><div class="recognize-photo"><img class="zoomable" data-zoom title="Cliquer pour agrandir" src="images/LePerugin/Entrega_de_las_llaves_a_San_Pedro_(Perugino).jpg" alt="1. Des compositions qui respirent" loading="lazy"></div><div class="recognize-copy"><h3>1. Des compositions qui respirent</h3><div class="ra-recognize-body"><p>Les figures sont espacées et les groupes équilibrés. Même dans une scène peuplée, le geste essentiel reste facile à repérer.</p></div></div></div><div class="recognize-item"><div class="recognize-photo"><img class="zoomable" data-zoom title="Cliquer pour agrandir" src="images/LePerugin/paisible.png" alt="2. Des visages paisibles" loading="lazy"></div><div class="recognize-copy"><h3>2. Des visages paisibles</h3><div class="ra-recognize-body"><p>Visages ovales, paupières baissées, têtes légèrement inclinées : l’émotion s’exprime avec douceur et retenue.</p></div></div></div><div class="recognize-item"><div class="recognize-photo"><img class="zoomable" data-zoom title="Cliquer pour agrandir" src="images/LePerugin/gestes.png" alt="3. Des gestes mesurés" loading="lazy"></div><div class="recognize-copy"><h3>3. Des gestes mesurés</h3><div class="ra-recognize-body"><p>Les mains prient, soutiennent ou transmettent. Chaque geste est lisible, sans agitation excessive.</p></div></div></div><div class="recognize-item"><div class="recognize-photo"><img class="zoomable" data-zoom title="Cliquer pour agrandir" src="images/LePerugin/paysage.png" alt="4. Des paysages ouverts au loin" loading="lazy"></div><div class="recognize-copy"><h3>4. Des paysages ouverts au loin</h3><div class="ra-recognize-body"><p>Des arbres fins ponctuent les collines. Les lointains deviennent plus pâles et bleutés, donnant une impression d’espace et de calme.</p></div></div></div></div></section><section class="site-section takeaway"><h2>À retenir</h2><p></p><p>Le Pérugin fait de l’harmonie une force expressive : l’espace, les gestes et les couleurs rendent les scènes claires sans effacer l’émotion. Grand maître de son temps, il donne au jeune Raphaël un langage que celui-ci transformera.</p><p></p></section></div></div><script>document.addEventListener('click',function(e){const b=e.target.closest('[data-act="sectionquizanswer"],[data-act="sectionquizreveal"]');if(!b)return;const list=[null,null,null,null][Number(b.dataset.i)];const q=list?.[Number(b.dataset.q)];const out=document.getElementById('sectionQuizResult-'+b.dataset.i+'-'+b.dataset.q);if(!q||!out)return;if(b.dataset.act==='sectionquizreveal'){const show=out.hidden;out.hidden=!show;if(show)out.textContent=q.explanation;b.textContent=(show?'Masquer la réponse':'Voir la réponse');}else{out.hidden=false;out.textContent=(Number(b.dataset.choice)===Number(q.answer)?'✓ ':'✕ ')+q.explanation;}});</script><dialog id="artist-zoom" class="ra-viewer" aria-label="Explorer l’œuvre" aria-describedby="ra-view-hint"><div class="ra-view-bar"><div class="ra-view-controls"><button type="button" data-action="minus" aria-label="Réduire">−</button><button type="button" data-action="plus" aria-label="Agrandir">+</button><button type="button" data-action="reset">Vue entière</button></div><button type="button" data-action="close" aria-label="Fermer" autofocus>×</button></div><div class="ra-view-stage" tabindex="0" role="group" aria-label="Œuvre : faites glisser pour déplacer ; flèches du clavier pour explorer"><img class="ra-view-image" alt="" draggable="false"/></div><div class="ra-view-footer"><p class="ra-view-hint" id="ra-view-hint"></p><p class="ra-view-caption"></p></div></dialog><script src="assets/artwork-viewer.js" defer></script><script>const quiz={"answer":"1","artist1":"","artist2":"","explanation":""};document.addEventListener('click',e=>{const b=e.target.closest('[data-act="quizanswer"]');if(b){const box=document.getElementById('quizResult');if(box){box.hidden=false;box.textContent=(b.dataset.choice===quiz.answer?'Bravo ! ':'Pas tout à fait ! ')+'Tableau A : '+quiz.artist1+' · Tableau B : '+quiz.artist2+'. '+quiz.explanation}}});</script><script>(function alignComparisons208(root=document){root.querySelectorAll('.site-compare:not(.quiz-works)>figure').forEach(f=>{const im=f.querySelector('img');if(!im)return;const apply=()=>{if(im.naturalWidth&&im.naturalHeight)f.style.setProperty('--comparison-width',(im.naturalWidth/im.naturalHeight*parseFloat(getComputedStyle(im).height))+'px')};if(im.complete)apply();else im.addEventListener('load',apply,{once:true})})})(document);</script></body></html>
+body{margin:0;background:#faf9f4;font-family:Tahoma,Arial,sans-serif}.site-preview{border-radius:0;box-shadow:none}.site-inner{max-width:1100px}.ra-reveal-link{display:flex;align-items:center;gap:16px;border:0!important;background:transparent!important;box-shadow:none!important;padding:12px 0!important;text-decoration:none;color:#173c63}.ra-reveal-link img{width:70px;height:70px;object-fit:contain}.ra-reveal-copy{display:flex;flex-direction:column}.ra-reveal-copy small{margin-top:5px}</style><link rel="stylesheet" href="assets/artwork-viewer.css"><link rel="stylesheet" href="assets/css/medaillons-communs.css"></head><body><header class="ra-site-header"><nav aria-label="Navigation principale" class="ra-nav"><a class="ra-brand" href="index.html">REGARDER L’ART</a><div class="ra-links"><a href="parcours.html">Parcours</a><a href="artistes.html">Artistes</a><a href="regards-croises.html">Regards croisés</a><a href="lieux.html">Lieux &amp; musées</a><a href="ressources.html">Écouter &amp; regarder</a><a href="hors-parcours.html">Carnets de visites</a><a href="a-propos.html">À propos</a></div><div aria-label="Language / Langue" class="ra-languages"><a href="perugin.html" lang="fr" aria-current="page">FR</a><a href="en/perugin.html" lang="en">EN</a></div></nav></header><div class="site-preview" style="--main: #b4bbbb; --secondary: #d9753f; --paper: #FAF8F4; --understand-bg: #F4EAE6; --understand-accent: #AD655B; --heading-color: #d9753f; --hero-title-font: Georgia,&quot;Times New Roman&quot;,serif; --hero-title-color: #ffffff; --hero-title-size: 42px; --hero-intro-font: Tahoma,Arial,sans-serif; --hero-intro-color: #ffffff; --hero-intro-size: 17px; --wallpaper-size: 180px; --reading-paper: #FAF8F4f7; --reading-font: Tahoma,Arial,sans-serif;" data-banner="dark" data-layout="masaccio-two-columns" data-compact-hero="false" data-portrait-style="classic" data-wallpaper="none" lang="fr" data-body-font="Tahoma"><div class="site-hero" data-hero-alignment="start" id="ra-artist-hero"><div><span class="eyebrow">REGARDER L’ART · LES ARTISTES</span><h1>Pietro Vannucci, dit Le Pérugin</h1><p class="dates">Vers 1450–1523</p><div class="site-hero-editorial"><div class="lead"><p>Des mains se tendent, se joignent ou soutiennent un corps. Le Pérugin donne à ces gestes toute la place qu’il faut pour que vous les remarquiez.</p></div></div></div><img class="zoomable" data-zoom src="images/LePerugin/perugin.png" alt="Pietro Vannucci, dit Le Pérugin"></div><div class="site-inner"><section class="site-section" id="section-biographie"><h2>En quelques mots</h2><div class="artist-bio-copy"><p>Né à Città della Pieve, en Ombrie, Pietro Vannucci travaille à Florence dans l’entourage de Verrocchio. En 1481–1482, il participe au décor des murs de la chapelle Sixtine. Il peint aussi des retables pour des églises, de Florence à la chartreuse de Pavie. Vers 1500, Raphaël travaille à ses côtés à Pérouse.</p><p>Comment Le Pérugin fait-il pour qu’au milieu d’une place, sous un portique ou devant un vaste paysage, votre regard s’arrête sur un geste ?</p><p><a href="https://www.nationalgallery.org.uk/artists/pietro-perugino" target="_blank" rel="noopener noreferrer">National Gallery, biographie du Pérugin</a> · <a href="https://www.museivaticani.va/content/museivaticani/fr/collezioni/musei/cappella-sistina/storia-cappella-sistina.html" target="_blank" rel="noopener noreferrer">Musées du Vatican, histoire de la chapelle Sixtine</a></p></div></section><section class="site-section" id="section-0"><span class="eyebrow">01 · UNE ŒUVRE À REGARDER</span><h2>Un geste qui engage toute l’assemblée</h2><div class="site-art" data-work-layout="stacked"><figure><div class="artwork-image"><img class="zoomable" data-zoom title="Cliquer pour agrandir" src="images/LePerugin/Entrega_de_las_llaves_a_San_Pedro_(Perugino).jpg" alt="La Remise des clés à saint Pierre" loading="lazy"><button type="button" class="artwork-zoom-button" data-artwork-zoom="" aria-label="Agrandir l’image"><span aria-hidden="true">⤢</span></button></div><figcaption>La Remise des clés à saint Pierre · Chapelle Sixtine — Musées du Vatican · Domaine public</figcaption></figure><div class="site-notes"><h3>À regarder</h3><p>Au premier plan, repérez Pierre agenouillé devant le Christ. Regardez entre leurs mains. Les clés se détachent dans l’espace laissé libre entre les deux hommes, devant les groupes disposés de part et d’autre.</p><p>Suivez ensuite une ligne du dallage vers la porte du temple. De chaque côté du bâtiment, un arc de triomphe marque le bord de la place.</p><div class="understand"><h3>À comprendre</h3><h4 class="ra-intertitle">Une transmission devant témoins</h4><p>L’espace laissé autour des clés permet de saisir le geste d’un coup d’œil. Les groupes qui l’encadrent en font un acte devant témoins. Le dallage et les deux arcs donnent à cette rencontre le cadre solennel d’une grande place.</p><p>Les clés représentent l’autorité que le Christ confie à Pierre dans l’Évangile selon Matthieu. Dans la chapelle de Sixte IV, le geste évoque aussi le fondement de l’autorité des papes, considérés comme les successeurs de Pierre.</p><p></p></div><div class="site-medals"><a class="ra-reveal-link" id="medaillon-0" href="recit-perugin-id-1793105449351-2b2hx.html"><span><img src="images/icone-livre.png" alt=""></span><span class="ra-reveal-copy"><strong>Pourquoi Jésus donne-t-il des clés à Pierre ?</strong><small>Découvrir le récit →</small></span></a><a class="ra-reveal-link" id="medaillon-1" href="recit-perugin-id-1793105657879-079dv.html"><span><img src="images/icone-science.png" alt=""></span><span class="ra-reveal-copy"><strong>Pourquoi notre regard entre-t-il dans la place ?</strong><small>Réfléchissons →</small></span></a></div></div></div></section><section class="site-section" id="section-1"><span class="eyebrow">02 · UNE ŒUVRE À REGARDER</span><h2>Quand la douleur se fait silence</h2><div class="site-art" data-work-layout="masaccio-two-columns"><figure><div class="artwork-image"><img class="zoomable" data-zoom title="Cliquer pour agrandir" src="images/LePerugin/Pietro_Perugino_-_Pietà_-_WGA17278.jpg" alt="La Pietà" loading="lazy"><button type="button" class="artwork-zoom-button" data-artwork-zoom="" aria-label="Agrandir l’image"><span aria-hidden="true">⤢</span></button></div><figcaption>La Pietà · Galerie des Offices · Domaine public</figcaption></figure><div class="site-notes"><h3>À regarder</h3><p>Au centre, repérez Marie, qui reçoit le corps pâle de son fils. Suivez le corps vers la gauche, où saint Jean en soutient le buste. À droite, regardez les mains jointes de Marie-Madeleine et, en agrandissant l’image, les larmes sur ses joues.</p><p>Regardez ensuite derrière Marie. Les piliers du portique se succèdent jusqu’à l’ouverture sur les collines.</p><div class="understand"><h3>À comprendre</h3><h4 class="ra-intertitle">Soutenir le corps, se recueillir auprès de lui</h4><p>Les mains de Jean vous font sentir le poids du corps. Celles de Madeleine font de la prière une autre manière de se tenir auprès du Christ. Ses larmes donnent un signe visible du deuil.</p><p>Le portique abrite le groupe tout en ouvrant une échappée derrière lui. Vous pouvez suivre cette profondeur jusqu’aux collines, puis revenir au corps étendu au premier plan. Dans ce panneau destiné à l’église florentine de San Giusto alle Mura, cette disposition se prête à une observation prolongée du deuil.</p><p></p></div><div class="site-medals"><a class="ra-reveal-link" id="medaillon-2" href="recit-perugin-id-1793108762504-f30k6.html"><span><img src="images/icone-livre.png" alt=""></span><span class="ra-reveal-copy"><strong>Qu’est-ce qu’une Pietà ?</strong><small>Découvrir le récit →</small></span></a></div></div></div></section><section class="site-section" id="section-2"><span class="eyebrow">03 · UNE ŒUVRE À REGARDER</span><h2>Un instant de tendresse, un paysage sans fin</h2><div class="site-art" data-work-layout="masaccio-two-columns"><figure><div class="artwork-image"><img class="zoomable" data-zoom title="Cliquer pour agrandir" src="images/LePerugin/Perugino_virgin_child_with_an_angel_c_1499.jpg" alt="La Vierge à l’Enfant avec un ange" loading="lazy"><button type="button" class="artwork-zoom-button" data-artwork-zoom="" aria-label="Agrandir l’image"><span aria-hidden="true">⤢</span></button></div><figcaption>La Vierge à l’Enfant avec un ange · National Gallery · Domaine public</figcaption></figure><div class="site-notes"><h3>À regarder</h3><p>À droite, Marie s’agenouille dans l’herbe, les mains jointes et les yeux baissés vers l’Enfant. À gauche, l’ange qui soutient l’Enfant regarde vers elle. Si vous agrandissez le visage de Marie, vous verrez le trait sombre de sa paupière au milieu des nuances de rose et de crème.</p><p>Derrière les figures, suivez la rivière entre les collines jusqu’aux montagnes. Les reliefs deviennent plus pâles et plus bleus à mesure qu’ils s’éloignent.</p><div class="understand"><h3>À comprendre</h3><h4 class="ra-intertitle">Une prière à hauteur d’enfant</h4><p>En faisant s’agenouiller Marie à même l’herbe, Le Pérugin donne une forme visible à son humilité. Le regard de l’ange vous ramène vers elle. Les tons fondus de la peinture à l’huile modèlent doucement son visage, tandis que le trait de la paupière donne du poids à son regard baissé.</p><p>Les bleus du lointain font paraître le paysage beaucoup plus profond. Dans ce panneau qui occupait le centre du registre inférieur d’un retable de la chartreuse de Pavie, cette profondeur donne de l’ampleur à un geste de prière que vous pouvez lire de près.</p><p></p></div></div></div></section><section class="site-section" id="section-3"><span class="eyebrow">04 · POUR ALLER PLUS LOIN · COMPARER</span><h2>Le Mariage de la Vierge, du Pérugin à Raphaël</h2><div class="site-compare"><figure><img class="zoomable" data-zoom title="Cliquer pour agrandir" src="images/LePerugin/Pietro_Perugino_cat66.jpg" alt="Le Mariage de la Vierge" loading="lazy"><figcaption>Le Mariage de la Vierge · Musée des Beaux-Arts de Caen · Domaine public<p>Le Pérugin place le prêtre dans l’axe de la porte du temple. Joseph se tient à gauche, Marie à droite.</p></figcaption></figure><figure><img class="zoomable" data-zoom title="Cliquer pour agrandir" src="images/LePerugin/Raffaello_-_Spozalizio_-_Web_Gallery_of_Art.jpg" alt="Le Mariage de la Vierge" loading="lazy"><figcaption>Le Mariage de la Vierge · Pinacothèque de Brera · Domaine public<p>Raphaël place Marie à gauche et Joseph à droite. Un portique entoure le temple.</p></figcaption></figure></div><p></p><p></p><p></p><div class="site-notes"><h3>À regarder</h3><p>Suivez les pieds des figures les plus proches de vous. Chez Le Pérugin, ils dessinent un rang presque droit. Chez Raphaël, ils s’échelonnent en arc devant le temple.</p><p>Cherchez ensuite la baguette que l’on brise contre un genou. Chez Le Pérugin, le geste est visible au premier plan à gauche et se répète plus loin sur la place. Chez Raphaël, repérez la grande figure penchée au premier plan à droite.</p><div class="understand"><h3>À comprendre</h3><h4 class="ra-intertitle">Du rang à la courbe</h4><p>Le Pérugin donne à la cérémonie la solennité d’un groupe disposé face à vous. Le jeune homme penché rompt localement le rythme de ce rang, tandis que l’alignement du prêtre et de la porte maintient le geste du mariage au centre.</p><p>Raphaël reprend le temple central et le dallage en perspective. La courbe du groupe répond au contour du portique et vous fait sentir une continuité entre les figures et le bâtiment. Le prétendant penché, près du bord inférieur, marque le point où cette courbe vient le plus près de vous.</p><p></p></div></div><div class="site-medals"><a class="ra-reveal-link" id="medaillon-3" href="recit-perugin-id-1793108878399-5srtg.html"><span><img src="images/icone-livre.png" alt=""></span><span class="ra-reveal-copy"><strong>Le Mariage de Marie : une branche fleurie et des espoirs brisés</strong><small>Découvrir le récit →</small></span></a></div></section><section class="site-section" id="reconnaitre"><h2>Comment reconnaître Pietro Vannucci, dit Le Pérugin ?</h2><div class="recognize-grid"><div class="recognize-item"><div class="recognize-photo"><img class="zoomable" data-zoom title="Cliquer pour agrandir" src="images/LePerugin/Entrega_de_las_llaves_a_San_Pedro_(Perugino).jpg" alt="1. De l’espace autour du geste" loading="lazy"></div><div class="recognize-copy"><h3>1. De l’espace autour du geste</h3><div class="ra-recognize-body"><p>Dans <em>La Remise des clés</em>, cherchez le vide entre le Christ et Pierre. Les figures se rassemblent de part et d’autre et laissent les clés bien visibles.</p></div></div></div><div class="recognize-item"><div class="recognize-photo"><img class="zoomable" data-zoom title="Cliquer pour agrandir" src="images/LePerugin/paisible.png" alt="2. Des têtes inclinées, des paupières baissées" loading="lazy"></div><div class="recognize-copy"><h3>2. Des têtes inclinées, des paupières baissées</h3><div class="ra-recognize-body"><p>Dans <em>La Vierge à l’Enfant avec un ange</em>, repérez l’inclinaison de la tête de Marie et le trait sombre de sa paupière. Dans une autre œuvre, cherchez comment une tête légèrement penchée vous indique où regarder.</p></div></div></div><div class="recognize-item"><div class="recognize-photo"><img class="zoomable" data-zoom title="Cliquer pour agrandir" src="images/LePerugin/gestes.png" alt="3. Des mains dont on lit le rôle" loading="lazy"></div><div class="recognize-copy"><h3>3. Des mains dont on lit le rôle</h3><div class="ra-recognize-body"><p>Dans la <em>Pietà</em>, les mains de Jean portent le buste du Christ et celles de Marie-Madeleine se joignent. Cherchez ailleurs des mains qui indiquent, par leur position, ce que chacun fait.</p></div></div></div><div class="recognize-item"><div class="recognize-photo"><img class="zoomable" data-zoom title="Cliquer pour agrandir" src="images/LePerugin/paysage.png" alt="4. Des collines qui pâlissent au loin" loading="lazy"></div><div class="recognize-copy"><h3>4. Des collines qui pâlissent au loin</h3><div class="ra-recognize-body"><p>Derrière les figures de la <em>Vierge à l’Enfant</em>, suivez les collines jusqu’aux montagnes. Les tons bleus et pâles vous aident à sentir la distance.</p></div></div></div></div></section><section class="site-section takeaway" id="retenir"><h2>À retenir</h2><div class="takeaway-copy"><p>Le Pérugin règle la place des figures et la profondeur de l’espace pour donner à chaque geste sa portée. Dans <em>La Remise des clés</em>, l’assemblée donne à l’échange sa solennité. Sous le portique de la <em>Pietà</em>, les mains qui soutiennent le Christ ou se joignent ramènent le regard vers son corps. Dans <em>La Vierge à l’Enfant</em>, les regards de Marie et de l’ange se répondent devant un paysage qui s’étend au loin.</p><p>Le <em>Mariage de la Vierge</em> permet de voir ce que Raphaël reprend et transforme. Devant une autre œuvre du Pérugin, cherchez d’abord le geste qui retient votre regard. Regardez ensuite ce que le peintre a placé autour de lui.</p></div></section></div></div><script>(function bindArtworkZoom(){
+ document.addEventListener('click',event=>{
+  const button=event.target.closest('button[data-artwork-zoom]');
+  button?.closest('.artwork-image')?.querySelector('img.zoomable')?.click();
+ });
+})();
+ const showSectionQuizFeedback=function showSectionQuizFeedback(box,button,action,choice,answer,explanation,en){
+ if(action==='sectionquizreveal'){
+  const show=box.hidden;
+  if(show)box.innerHTML=explanation;
+  box.hidden=!show;
+  if(button){
+   button.setAttribute('aria-expanded',String(show));
+   button.textContent=en?(show?'Hide the answer':'Reveal the answer'):(show?'Masquer la réponse':'Voir la réponse');
+  }
+  return;
+ }
+ const correct=Number(choice)===Number(answer);
+ const feedback=correct?'success':'retry';
+ const label=en?(correct?'Correct!':'Wrong answer!'):(correct?'Bonne réponse !':'Mauvaise réponse !');
+ const miniature=correct?
+  `<svg class="ra-quiz-feedback-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 84">
+<rect width="72" height="84" fill="#5c391e"/>
+<rect x="2.5" y="2.5" width="67" height="79" fill="#bb8842" stroke="#e1bd74" stroke-width="2"/>
+<rect x="7" y="7" width="58" height="70" fill="#f0cc82"/>
+<rect x="9" y="9" width="54" height="66" fill="#a7b9a1"/>
+<path d="M9 38l12-12 7 9 8-10 9 11 10-8 8 5v42H9z" fill="#708378"/>
+<path d="M9 44l15-9 12 14 17-11 10 5v32H9z" fill="#526e62"/>
+<path d="M9 62c10-7 11-14 17-15m37 3c-11 0-10 9-17 14" fill="none" stroke="#c9b78c" stroke-width="3"/>
+<path d="M21 48c-1-5 0-8 1-18 1-12 6-16 15-16 9 0 14 6 16 17l2 21z" fill="#2e2622"/>
+<path d="M31 36h13v12l7 4-12 11-17-13 9-5z" fill="#b87955"/>
+<path d="M13 75l2-16c2-6 6-11 13-12 6 9 13 12 22 1 6 1 10 7 11 16l2 11z" fill="#332c24"/>
+<path d="M26 22c4-3 12-4 19 1l3 8-2 10c-2 4-5 6-10 6l-6-6-4-11z" fill="#d9a77b"/>
+<path d="M27 30l4-6 14-1c-4-6-15-6-19 0l-2 8z" fill="#342822"/>
+<path d="M31 30l5-1m6 0 4 1m-10 8q4 3 8-1" fill="none" stroke="#50362d" stroke-width="1.7" stroke-linecap="round"/>
+<path d="M18 68l12-7q5-2 7 2l-3 2 10 2 2 4-17 1-12-1z" fill="#b98a64"/>
+<path d="M50 69q-9-5-17-2l-4 4 23 2z" fill="#d5a477"/>
+</svg>`:
+  `<svg class="ra-quiz-feedback-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 84">
+<rect width="72" height="84" fill="#5c391e"/>
+<rect x="2.5" y="2.5" width="67" height="79" fill="#bb8842" stroke="#e1bd74" stroke-width="2"/>
+<rect x="7" y="7" width="58" height="70" fill="#f0cc82"/>
+<rect x="9" y="9" width="54" height="66" fill="#e98a5a"/>
+<path d="M9 14c18 12 26-3 54 1M9 26c18 10 28-5 54-1M9 35c19 7 29-8 54-4" fill="none" stroke="#a73d32" stroke-width="4"/>
+<path d="M9 37c13 7 31-8 54-5v43H9z" fill="#3b6a74"/>
+<path d="M9 44c21 5 31-13 54-4M9 53c21 0 31-13 54-8" fill="none" stroke="#90a8a0" stroke-width="3"/>
+<path d="M9 49l54 20v6H9z" fill="#a46c49"/>
+<path d="M9 44l54 22M9 54l54 18" fill="none" stroke="#533f3c" stroke-width="2"/>
+<path d="M22 75c5-10 5-22 9-27l14-2c4 6 3 15 10 29z" fill="#26353b"/>
+<path d="M29 40c1-7 5-12 10-12 5 0 8 5 8 11 0 5-4 8-4 13-1 6-3 9-7 8-4-1-5-6-5-11-1-2-3-5-2-9z" fill="#efcf9e" stroke="#4d4040" stroke-width="1.5"/>
+<path d="M27 61q4-6 2-15l-3-9m20 24q-2-8 2-14l2-8" fill="none" stroke="#edc39a" stroke-width="4" stroke-linecap="round"/>
+<path d="M33 40l2-1m6 1h2" fill="none" stroke="#4c3934" stroke-width="2" stroke-linecap="round"/>
+<ellipse cx="37.5" cy="49" rx="3.2" ry="5" fill="#3b3030"/>
+</svg>`;
+ const options=button?.closest('.quiz-actions')?.querySelectorAll('[data-act="sectionquizanswer"]')||[];
+ for(const option of options){
+  const selected=option===button;
+  option.setAttribute('aria-pressed',String(selected));
+  if(selected)option.dataset.feedback=feedback;
+  else delete option.dataset.feedback;
+ }
+ box.dataset.feedback=feedback;
+ box.innerHTML='<div class="ra-quiz-feedback-title">'+miniature+'<strong>'+label+'</strong></div>'+explanation;
+ box.hidden=false;
+};
+ const quizQuestions=[null,null,null,null];
+ document.addEventListener('click',function(e){
+  const b=e.target.closest('[data-act="sectionquizanswer"],[data-act="sectionquizreveal"]');if(!b)return;
+  const {act,i,q:question,choice}=b.dataset;
+  const q=quizQuestions[Number(i)]?.[Number(question)];
+  const box=document.getElementById('sectionQuizResult-'+i+'-'+question);
+  if(q&&box)showSectionQuizFeedback(box,b,act,choice,q.answer,q.explanation,false);
+ });
+ </script><dialog id="artist-zoom" class="ra-viewer" aria-label="Explorer l’œuvre" aria-describedby="ra-view-hint"><div class="ra-view-bar"><div class="ra-view-controls"><button type="button" data-action="minus" aria-label="Réduire">−</button><button type="button" data-action="plus" aria-label="Agrandir">+</button><button type="button" data-action="reset">Vue entière</button></div><button type="button" data-action="close" aria-label="Fermer" autofocus>×</button></div><div class="ra-view-stage" tabindex="0" role="group" aria-label="Œuvre : faites glisser pour déplacer ; flèches du clavier pour explorer"><img class="ra-view-image" alt="" draggable="false"/></div><div class="ra-view-footer"><p class="ra-view-hint" id="ra-view-hint"></p><p class="ra-view-caption"></p></div></dialog><script src="assets/artwork-viewer.js" defer></script><script>const quiz={"answer":"1","artist1":"","artist2":"","explanation":""};document.addEventListener('click',e=>{const b=e.target.closest('[data-act="quizanswer"]');if(b){const box=document.getElementById('quizResult');if(box){box.hidden=false;box.textContent=(b.dataset.choice===quiz.answer?'Bravo ! ':'Pas tout à fait ! ')+'Tableau A : '+quiz.artist1+' · Tableau B : '+quiz.artist2+'. '+quiz.explanation}}});</script></body></html>
