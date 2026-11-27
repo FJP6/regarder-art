@@ -279,7 +279,7 @@ body.ra-home h1,body.ra-home h2,body.ra-home h3{font-family:"Space Grotesk",Aria
  </div>
  <div class="home-trailer-controls" hidden>
   <div class="home-trailer-tabs" role="group" aria-label="Choose a section"><button type="button" data-scene-index="0" aria-controls="home-trailer-scenes" aria-pressed="true">Renaissance</button><button type="button" data-scene-index="1" aria-controls="home-trailer-scenes" aria-pressed="false">Artists</button><button type="button" data-scene-index="2" aria-controls="home-trailer-scenes" aria-pressed="false">Museums</button><button type="button" data-scene-index="3" aria-controls="home-trailer-scenes" aria-pressed="false">Art in Dialogue</button><button type="button" data-scene-index="4" aria-controls="home-trailer-scenes" aria-pressed="false">Travel journals</button><button type="button" data-scene-index="5" aria-controls="home-trailer-scenes" aria-pressed="false">Resources</button></div>
-  <button class="home-trailer-toggle" type="button" aria-label="Pause trailer" aria-pressed="false"><span class="home-trailer-toggle-icon" aria-hidden="true">Ⅱ</span><span class="home-trailer-toggle-word">Pause</span></button>
+  <button class="home-trailer-toggle" type="button" aria-label="Pause trailer" aria-pressed="false"><span class="home-trailer-toggle-word">Pause</span></button>
  </div>
  <div class="home-trailer-signature" hidden><p class="home-trailer-signature-main">Learn to see</p><p class="home-trailer-signature-accent">dare to look.</p></div>
 </section><div class="wrap letter-teaser-wrap"><a aria-label="Lire la lettre : l’esprit de Regarder l’Art" class="letter-teaser" href="../a-propos.html#lettre-auteur"><img alt="Illustration épurée d’une lettre et d’une plume" height="1024" loading="lazy" src="../assets/images/lettre-plume.png" width="1536"/><span class="letter-teaser-text"><span class="letter-teaser-title">The spirit of Regarder l’Art</span><span class="letter-teaser-caption">Keys to understanding artworks without limiting your own way of seeing.</span><span class="letter-teaser-read">Read the letter →</span></span></a></div><section class="white home-section"><div class="wrap"><div class="kicker">Start exploring</div><h2>Explore art history</h2><p class="lead">Three ways to explore artworks, artists and places.</p><div class="home-cards">
@@ -300,7 +300,6 @@ body.ra-home h1,body.ra-home h2,body.ra-home h3{font-family:"Space Grotesk",Aria
  const tabs=[...controls.querySelectorAll("[data-scene-index]")];
  const toggle=controls.querySelector(".home-trailer-toggle");
  const toggleWord=toggle.querySelector(".home-trailer-toggle-word");
- const toggleIcon=toggle.querySelector(".home-trailer-toggle-icon");
  const signature=trailer.querySelector(".home-trailer-signature");
  const motion=window.matchMedia("(prefers-reduced-motion: reduce)");
  const isEnglish=document.documentElement.lang==="en";
@@ -352,10 +351,10 @@ body.ra-home h1,body.ra-home h2,body.ra-home h3{font-family:"Space Grotesk",Aria
    if(isPlaying){isPlaying=false;stage.classList.remove("is-playing");clearTimer()}
    if(phase==="intro"||phase==="breather")clearTimer();
    if(phase==="trailer"&&!motion.matches&&wantsPlayback&&!document.hidden)playScene();
-   toggle.setAttribute("aria-label",playLabel);toggle.setAttribute("aria-pressed","true");toggleWord.textContent=playText;toggleIcon.textContent="▶";
+   toggle.setAttribute("aria-label",playLabel);toggle.setAttribute("aria-pressed","true");toggleWord.textContent=playText;
    return;
   }
-  toggle.setAttribute("aria-label",pauseLabel);toggle.setAttribute("aria-pressed","false");toggleWord.textContent=pauseText;toggleIcon.textContent="Ⅱ";
+  toggle.setAttribute("aria-label",pauseLabel);toggle.setAttribute("aria-pressed","false");toggleWord.textContent=pauseText;
   if(phase==="intro"&&!phaseTimer)startIntro();
   else if(phase==="breather"&&!phaseTimer)showEyeOnly(breatherDuration,()=>{current=0;playScene()});
   else if(phase==="trailer"&&!isPlaying)playScene();
@@ -363,14 +362,14 @@ body.ra-home h1,body.ra-home h2,body.ra-home h3{font-family:"Space Grotesk",Aria
  tabs.forEach((tab,index)=>tab.addEventListener("click",()=>{
   wantsPlayback=false;clearTimer();current=index;chooseScene(current);applyPhase("trailer");
   stage.classList.remove("is-playing");isPlaying=false;
-  toggle.setAttribute("aria-label",playLabel);toggle.setAttribute("aria-pressed","true");toggleWord.textContent=playText;toggleIcon.textContent="▶";
+  toggle.setAttribute("aria-label",playLabel);toggle.setAttribute("aria-pressed","true");toggleWord.textContent=playText;
  }));
  toggle.addEventListener("click",()=>{
   wantsPlayback=!wantsPlayback;
   if(wantsPlayback&&phase!=="trailer"){current=0;applyPhase("trailer")}
   sync();
  });
- if(motion.matches){chooseScene(0);applyPhase("trailer");toggle.setAttribute("aria-label",playLabel);toggle.setAttribute("aria-pressed","true");toggleWord.textContent=playText;toggleIcon.textContent="▶"}
+ if(motion.matches){chooseScene(0);applyPhase("trailer");toggle.setAttribute("aria-label",playLabel);toggle.setAttribute("aria-pressed","true");toggleWord.textContent=playText}
  if("IntersectionObserver"in window){
   const observer=new IntersectionObserver(([entry])=>{isInView=entry.intersectionRatio>=.25;sync()},{threshold:[0,.25,.55]});
   observer.observe(trailer);
