@@ -132,7 +132,6 @@ body header.ra-site-header .ra-languages a{width:32px!important;min-width:32px!i
 .home-dialogue-thumb img{display:block;width:100%;height:100%;min-width:0;min-height:0;object-fit:contain}
 .home-dialogue-thumb:focus-visible{outline:3px solid #b6793e;outline-offset:4px}
 @media(max-width:700px){.home-dialogue-thumb{max-width:440px;width:100%}}</style><style id="home-dialogue-personal-photo">.home-dialogue-thumb{display:block}.home-dialogue-thumb img{width:100%;height:100%;object-fit:contain;object-position:center}</style><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"/><style id="ra-home-motion-redesign">
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
 body.ra-home{background:#f7f5ef;color:#202b33}
 .ra-home main{overflow:hidden}
 .ra-home h1,.ra-home h2,.ra-home h3,.ra-home .kicker,.ra-home .home-trailer-controls,.ra-home .home-trailer-signature{font-family:"Space Grotesk",Arial,sans-serif}
@@ -238,7 +237,7 @@ body.ra-home{background:#f7f5ef;color:#202b33}
  <div class="home-trailer-frame">
   <figure class="home-trailer-figure">
    <img class="home-trailer-eye" src="/assets/images/oeil-regarder-art.webp" alt="A drawn eye inspired by Renaissance studies" width="1448" decoding="async"/>
-   <div class="home-trailer-stage" aria-live="off">
+   <div class="home-trailer-stage" id="home-trailer-scenes" aria-live="off">
    <article class="home-trailer-scene home-trailer-renaissance is-current" >
     <div class="home-trailer-reflection"><div class="home-trailer-image"><img src="/assets/images/figures/oeuvre-16.jpg" alt="A Renaissance scene, at the heart of a journey through the human figure" decoding="async"/></div></div>
     <div class="home-trailer-shade" aria-hidden="true"></div>
@@ -301,6 +300,7 @@ body.ra-home{background:#f7f5ef;color:#202b33}
  const tabs=[...controls.querySelectorAll("[data-scene-index]")];
  const toggle=controls.querySelector(".home-trailer-toggle");
  const toggleWord=toggle.querySelector(".home-trailer-toggle-word");
+ const toggleIcon=toggle.querySelector(".home-trailer-toggle-icon");
  const signature=trailer.querySelector(".home-trailer-signature");
  const motion=window.matchMedia("(prefers-reduced-motion: reduce)");
  const isEnglish=document.documentElement.lang==="en";
@@ -352,10 +352,10 @@ body.ra-home{background:#f7f5ef;color:#202b33}
    if(isPlaying){isPlaying=false;stage.classList.remove("is-playing");clearTimer()}
    if(phase==="intro"||phase==="breather")clearTimer();
    if(phase==="trailer"&&!motion.matches&&wantsPlayback&&!document.hidden)playScene();
-   toggle.setAttribute("aria-label",playLabel);toggle.setAttribute("aria-pressed","true");toggleWord.textContent=playText;
+   toggle.setAttribute("aria-label",playLabel);toggle.setAttribute("aria-pressed","true");toggleWord.textContent=playText;toggleIcon.textContent="▶";
    return;
   }
-  toggle.setAttribute("aria-label",pauseLabel);toggle.setAttribute("aria-pressed","false");toggleWord.textContent=pauseText;
+  toggle.setAttribute("aria-label",pauseLabel);toggle.setAttribute("aria-pressed","false");toggleWord.textContent=pauseText;toggleIcon.textContent="Ⅱ";
   if(phase==="intro"&&!phaseTimer)startIntro();
   else if(phase==="breather"&&!phaseTimer)showEyeOnly(breatherDuration,()=>{current=0;playScene()});
   else if(phase==="trailer"&&!isPlaying)playScene();
@@ -363,13 +363,14 @@ body.ra-home{background:#f7f5ef;color:#202b33}
  tabs.forEach((tab,index)=>tab.addEventListener("click",()=>{
   wantsPlayback=false;clearTimer();current=index;chooseScene(current);applyPhase("trailer");
   stage.classList.remove("is-playing");isPlaying=false;
-  toggle.setAttribute("aria-label",playLabel);toggle.setAttribute("aria-pressed","true");toggleWord.textContent=playText;
+  toggle.setAttribute("aria-label",playLabel);toggle.setAttribute("aria-pressed","true");toggleWord.textContent=playText;toggleIcon.textContent="▶";
  }));
  toggle.addEventListener("click",()=>{
   wantsPlayback=!wantsPlayback;
   if(wantsPlayback&&phase!=="trailer"){current=0;applyPhase("trailer")}
   sync();
  });
+ if(motion.matches){chooseScene(0);applyPhase("trailer");toggle.setAttribute("aria-label",playLabel);toggle.setAttribute("aria-pressed","true");toggleWord.textContent=playText;toggleIcon.textContent="▶"}
  if("IntersectionObserver"in window){
   const observer=new IntersectionObserver(([entry])=>{isInView=entry.intersectionRatio>=.25;sync()},{threshold:[0,.25,.55]});
   observer.observe(trailer);
