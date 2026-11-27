@@ -318,8 +318,8 @@ body.ra-home h1,body.ra-home h2,body.ra-home h3{font-family:"Cormorant Garamond"
  const pauseText=isEnglish?"Pause":"Pause";
  const playLabel=isEnglish?"Play trailer":"Lire la bande-annonce";
  const pauseLabel=isEnglish?"Pause trailer":"Mettre en pause";
- const sceneDuration=6000,breatherDuration=3200;
- let current=0,phase="intro",wantsPlayback=false,isInView=false,isPlaying=false,phaseTimer=0;
+ const sceneDuration=6000,introDuration=3200,breatherDuration=3200;
+ let current=0,phase="intro",wantsPlayback=!motion.matches,isInView=false,isPlaying=false,phaseTimer=0;
  function applyPhase(next){
   phase=next;trailer.dataset.phase=next;
   controls.hidden=false;
@@ -353,7 +353,7 @@ body.ra-home h1,body.ra-home h2,body.ra-home h3{font-family:"Cormorant Garamond"
  }
  function startIntro(){
   applyPhase("intro");stage.classList.remove("is-playing");clearTimer();
-
+  if(wantsPlayback&&isInView&&!document.hidden&&!motion.matches)phaseTimer=window.setTimeout(()=>{current=0;playScene()},introDuration);
  }
  function sync(){
   if(!isInView||document.hidden||!wantsPlayback||motion.matches){
@@ -384,7 +384,7 @@ body.ra-home h1,body.ra-home h2,body.ra-home h3{font-family:"Cormorant Garamond"
  }else{isInView=true;startIntro()}
  document.addEventListener("visibilitychange",sync);
  motion.addEventListener?.("change",()=>{
-  wantsPlayback=false;clearTimer();isPlaying=false;stage.classList.remove("is-playing");current=0;chooseScene(current);applyPhase("intro");sync()
+  clearTimer();isPlaying=false;stage.classList.remove("is-playing");current=0;chooseScene(current);wantsPlayback=!motion.matches;applyPhase("intro");sync()
  });
  const reveal=[...document.querySelectorAll(".home-section,.letter-teaser-wrap")];
  reveal.forEach(el=>el.classList.add("home-trailer-reveal"));
