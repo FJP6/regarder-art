@@ -384,8 +384,7 @@ body.ra-home h1,body.ra-home h2,body.ra-home h3{font-family:"Cormorant Garamond"
  }else{isInView=true;startIntro()}
  document.addEventListener("visibilitychange",sync);
  motion.addEventListener?.("change",()=>{
-  if(motion.matches){wantsPlayback=false;clearTimer();isPlaying=false;stage.classList.remove("is-playing");current=0;chooseScene(current);applyPhase("trailer")}
-  else{wantsPlayback=true;startIntro();sync()}
+  wantsPlayback=false;clearTimer();isPlaying=false;stage.classList.remove("is-playing");current=0;chooseScene(current);applyPhase("intro");sync()
  });
  const reveal=[...document.querySelectorAll(".home-section,.letter-teaser-wrap")];
  reveal.forEach(el=>el.classList.add("home-trailer-reveal"));
