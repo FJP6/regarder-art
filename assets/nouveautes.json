@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-11-28",
+    "type": "new",
+    "fr": {
+      "title": "Léonard de Vinci — Peindre ce qui ne se voit pas",
+      "description": "Quatre œuvres pour regarder la lumière, les gestes et la vie intérieure chez Léonard de Vinci.",
+      "url": "leonard-de-vinci.html"
+    },
+    "en": {
+      "title": "Leonardo da Vinci — Painting the Unseen",
+      "description": "Four works exploring light, gesture and inner life in Leonardo da Vinci’s paintings.",
+      "url": "leonard-de-vinci.html"
+    }
+  },
+  {
     "date": "2026-11-27",
     "type": "update",
     "fr": {
